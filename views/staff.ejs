@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+    <link rel="stylesheet" href="/stylesheets/staff.css">
+    <style>
+        .input__staff--create {
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            outline: none;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        }
+
+        .select2-selection__rendered {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 150px;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+
+    <body id="body-pd" class="body-pd">
+        <%- include("./nav.html") %>
+            <div class="height-100 ">
+                <main class="content p-0 pt-4">
+                    <div class="container-fluid p-0 ">
+                        <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                            <div class="col-5" style="width: max-content;">
+                                <h3 class="color_header">Quản lý nhân sự</h3>
+                            </div>
+                            <button style="width: max-content; border-radius: 29px;"
+                                class="col-1 btn bg-color-all c-white" data-bs-toggle="modal" data-bs-target="#addStaff"
+                                onclick="changeSelectlocation()">Thêm
+                                nhân viên
+                            </button>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 p-0 d-flex">
+                                <div class="card flex-fill"
+                                    style="overflow-y:auto; overflow-x: scroll; max-height: 85vh;">
+                                    <!-- <div class="card-header">
+
+                                <h5 class="card-title mb-0">Thêm nhân viên</h5>
+                            </div> -->
+                                    <table class="table table-bordered table-hover table-responsive w-100  my-0"
+                                        style="width: max-content !important;" id="table-staff">
+                                        <thead class="th_table_sticky">
+                                            <tr class="align-middle text-center justify-content-between">
+                                                <!-- <th class="col ">
+                                            </th> -->
+                                                <th class="col text-center">
+                                                    Sửa
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Mã nhân viên</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Tên</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Công ty</span>
+                                                    <!-- <select class="form-select border-0 w-auto" id="chipset"></select> -->
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Công việc</span>
+                                                    <!-- <select class="form-select border-0 w-auto" id="ram"></select> -->
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Phòng ban</span>
+                                                    <!-- <select class="form-select border-0 w-auto" id="ram"></select> -->
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Vị trí</span>
+                                                    <!-- <select class="form-select border-0 w-auto" id="ram"></select> -->
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Người quản lý</span>
+                                                    <!-- <select class="form-select border-0 w-auto" id="ram"></select> -->
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Địa chỉ</span>
+
+                                                    <!-- <select class="form-select border-0 w-auto" id="VGA"></select> -->
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Tầng</span>
+
+                                                    <!-- <select class="form-select border-0 w-auto" id="VGA"></select> -->
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Số điện thoại</span>
+                                                </th>
+
+                                                <th class="col text-center">
+                                                    <span>Ngày tạo</span>
+                                                    <!-- <select class="form-select border-0 w-auto" id="main_broard"></select> -->
+                                                </th>
+
+                                                <!-- <th class="col text-center">
+                                            <select class="form-select border-0 w-auto" id="distributor"></select>
+                                        </th> -->
+                                                <th class="col text-center">
+                                                    <span>Trạng thái</span>
+                                                    <!-- <select class="form-select border-0 w-auto" id="supplier"></select> -->
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="dataStaff" style="background-color: #fff;">
+                                            <!-- <tr>
+                                            <td class="col">
+
+                                            </td>
+                                        </tr> -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+            <div class="modal modal-lg fade " id="addStaff" data-bs-backdrop="static" data-bs-keyboard="false"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="mb-0 f-s-24 font-weight-bold color_header">Thêm nhân viên</h3>
+                            <button type="button" class="btn-close" onclick="removeValueInput()" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-4 ">
+                                                <label class="col-form-label color_title">Tên: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <input type="text" id="staff-name" list="" autocomplete="off"
+                                                    class="form-control" placeholder="Nhập tên nhân viên">
+                                                <div class="invalid-feedback">Vui lòng nhập tên</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-4 ">
+                                                <label class="col-form-label color_title"
+                                                    style="white-space: nowrap;">Mã nhân
+                                                    viên: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <input type="text" id="code" list="" autocomplete="off"
+                                                    class="form-control" placeholder="Nhập mã nhân viên nhân viên">
+                                                <div class="invalid-feedback">Vui lòng nhập mã nhân viên</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-6 mb-3" id="input_address_create">
+                                        <div class="row justify-content-center">
+                                            <div class="col-4 ">
+                                                <label class="col-form-label color_title">Địa chỉ: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <select class="form-select" id="staff-address" name="type"
+                                                    aria-label="Default select example">
+                                                    <option value="461 Vũ Tông Phan" selected="">461 Vũ Tông Phan
+                                                    </option>
+                                                    <option value="399B Vũ Tông Phan" selected="">399B Vũ Tông Phan
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-4 ">
+                                                <label class="col-form-label color_title">Công ty: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <select class="form-select" id="staff-company" name="type"
+                                                    aria-label="Default select example">
+                                                    <option value="Plus Studio">Plus Studio</option>
+                                                    <option value="9Pixel">9Pixel</option>
+                                                    <option value="Minh Việt">Minh Việt</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-4 ">
+                                                <label class="col-form-label color_title">Công việc: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <select class="form-select" id="staff-job" name="type"
+                                                    aria-label="Default select example">
+                                                    <option value="Kế toán">Kế toán</option>
+                                                    <option value="3D">3D</option>
+                                                    <option value="IT">IT</option>
+                                                    <option value="Content">Content</option>
+                                                    <option value="2D">2D</option>
+                                                    <option value="Dựng">Dựng</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-4 ">
+                                                <label class="col-form-label color_title">Tầng: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <select class="form-select" id="staff-floor" name="type"
+                                                    aria-label="Default select example">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="7">8</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row justify-content-center">
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-4 ">
+                                                <label class="col-form-label color_title">Phòng ban: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <select class="form-select" id="staff-department" name="type"
+                                                    aria-label="Default select example">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-4 ">
+                                                <label class="col-form-label color_title">Vị trí: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <select class="form-select" id="staff-position" name="type"
+                                                    aria-label="Default select example">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-start">
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-4 ">
+                                                <label class="col-form-label color_title">Điện thoại: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <input type="number" id="staff-phoneNumber" list="" autocomplete="off"
+                                                    class="form-control" placeholder="Nhập số điện thoại">
+                                                <div class="invalid-feedback">Vui lòng nhập số điện thoại</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-4 ">
+                                                <label class="col-form-label color_title">Quản lý: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <select class="form-select" id="staff-manager_create" name="type"
+                                                    aria-label="Default select example">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-danger " onclick="removeValueInput()"
+                                data-bs-dismiss="modal"
+                                style="border-radius: 29px; background-color: #F81111; padding-left: 2.3rem; padding-right: 2.3rem;">Hủy</button>
+                            <button type="button" class="btn btn-success" onclick="createStaff()"
+                                style="border-radius: 29px; background-color: #04A544; padding-left: 2.3rem; padding-right: 2.3rem;">Tạo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--todo modal update -->
+            <div class="modal modal-lg fade " id="modal__staff-update" data-bs-backdrop="static"
+                data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="mb-0">Sửa thông tin nhân viên</h2>
+                            <button type="button" class="btn-close" onclick="removeValueInput()" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-6 mb-3">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4">
+                                                    <label class="col-form-label color_title">Tên: </label>
+                                                </div>
+                                                <div class="col-7 mb-2">
+                                                    <input type="text" id="staff-name_update" list="" autocomplete="off"
+                                                        class="form-control" placeholder="Nhập tên nhân viên">
+                                                    <div class="invalid-feedback">Vui lòng nhập tên</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="row justify-content-center">
+                                                <div class="col-5 ">
+                                                    <label class="col-form-label color_title">Mã
+                                                        nhân viên: </label>
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <input type="text" id="code_update" list="" autocomplete="off"
+                                                        class="form-control" placeholder="Nhập mã nhân viên nhân viên">
+                                                    <div class="invalid-feedback">Vui lòng nhập mã nhân viên</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-6 mb-3" id="input_address_update">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4 ">
+                                                    <label class="col-form-label color_title">Địa chỉ: </label>
+                                                </div>
+                                                <div class="col-7 mb-2">
+                                                    <input type="text" id="staff-address_update" list=""
+                                                        autocomplete="off" class="form-control"
+                                                        placeholder="Nhập địa chỉ">
+                                                    <div class="invalid-feedback">Vui lòng nhập địa chỉ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 mb-3">
+                                            <div class="row justify-content-center">
+                                                <div class="col-5 ">
+                                                    <label class="col-form-label color_title">Công ty: </label>
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <select class="form-select" id="staff-company_update" name="type"
+                                                        aria-label="Default select example">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-6 mb-3">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4 ">
+                                                    <label class="col-form-label color_title">Công việc: </label>
+                                                </div>
+                                                <div class="col-7 mb-2">
+                                                    <select class="form-select" id="staff-job_update" name="type"
+                                                        aria-label="Default select example">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="row justify-content-center">
+                                                <div class="col-5 ">
+                                                    <label class="col-form-label color_title">Tầng: </label>
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <select class="form-select" id="staff-floor_update" name="type"
+                                                        aria-label="Default select example">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-6 mb-3">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4 ">
+                                                    <label class="col-form-label color_title">Phòng ban: </label>
+                                                </div>
+                                                <div class="col-7 mb-2">
+                                                    <select class="form-select" id="staff-department_update" name="type"
+                                                        aria-label="Default select example">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="row justify-content-center">
+                                                <div class="col-5 ">
+                                                    <label class="col-form-label color_title">Vị trí: </label>
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <select class="form-select" id="staff-position_update" name="type"
+                                                        aria-label="Default select example">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-between">
+                                        <div class="col-6 mb-3">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4 ">
+                                                    <label class="col-form-label color_title">Điện thoại: </label>
+                                                </div>
+                                                <div class="col-7 mb-2">
+                                                    <input type="number" id="staff-phoneNumber_update" list=""
+                                                        autocomplete="off" class="form-control"
+                                                        placeholder="Nhập số điện thoại">
+                                                    <div class="invalid-feedback">Vui lòng nhập số điện thoại</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="row justify-content-center">
+                                                <div class="col-5 ">
+                                                    <label class="col-form-label color_title">Trạng thái</label>
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <select class="form-select" id="staff_status-update" name="status"
+                                                        aria-label="Default select example">
+                                                        <option value="1">Đang làm</option>
+                                                        <option value="0">Đã nghỉ</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-start">
+                                        <div class="col-6 mb-3">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4 ">
+                                                    <label class="col-form-label color_title">Quản lý: </label>
+                                                </div>
+                                                <div class="col-7 mb-2">
+                                                    <select class="form-select" id="staff-manager_update" name="type"
+                                                        aria-label="Default select example">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" id="button_cancel_update_staff" class="btn btn-danger px-5"
+                                data-bs-dismiss="modal"
+                                style="border-radius:29px ; background-color: #F81111;">Hủy</button>
+                            <button type="button" id="button_update_staff" class="btn btn-success px-5"
+                                style="border-radius: 29px; background-color: #04A544;">Đồng
+                                ý</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+    <script src="/select2-4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- <script src="/javascripts/GVS.js"></script> -->
+    <script>
+        $(document).ready(() => {
+            renderListStaff()
+        })
+        let staff
+        let dataManager
+        function renderListStaff() {
+            $.ajax(GVS.setting(GVS.GetAllStaff, 'GET')).done(res => {
+                var data = res.metadata
+                dataManager = res.metadata.filter(_ => GVS.levelManager.includes(_.position.level) && _.status != 0)
+                var datas
+                // let arr = datas
+                datas = renderDeviceByStatus(data, datas)
+                var html = ""
+                datas = datas.sort((a, b) => b.status - a.status)
+                staff = datas
+                datas.forEach(elm => {
+                    if (elm.status == 1) {
+                        html += `<tr class ="text-center">`
+                    } else {
+                        html += `<tr class ="text-center bg-red">`
+                    }
+                    html += `
+                            <td class="col py-2"><a class="" data-bs-toggle="modal" data-bs-target="#modal__staff-update"  onclick="getStaff('${elm._id}','${elm.name}')"><i class="fa fa-pencil"></i></a></td>
+                            <td class="col py-2">${elm.code ? elm.code : ""}</td>
+                            <td class="col py-2">${elm.name}</td>
+                            <td class="col py-2">${elm.company}</td>
+                            <td class="col py-2">${elm.job ? elm.job.name : ""}</td>
+                            <td class="col py-2">${elm.department ? elm.department.name : ""}</td>
+                            <td class="col py-2">${elm.position ? elm.position.name : ""}</td>
+                            <td class="col py-2">${elm.manager ? elm.manager.name : ""}</td>
+                            <td class="col py-2">${elm.location.address}</td>
+                            <td class="col py-2">${elm.location.floor}</td>
+                            <td class="col py-2">${elm.phoneNumber}</td>
+                            <td class="col py-2">${new Date(elm.createdAt).toLocaleDateString("vi-VN")}</td>
+                            <td class="col py-2">${elm.status == 1 ? "Đang làm" : "Đã nghỉ"}</td>
+                        </tr>
+                        `
+                });
+                $("#table-staff").DataTable().destroy()
+                $("#dataStaff").html(html)
+                // $("#code").val(changeInputManv(staff))
+
+                $("#table-staff").DataTable({
+                    "pageLength": 50,
+                    lengthMenu: [20, 40, 50, 100, 200, 500],
+                })
+
+            })
+        }
+
+        function createStaff() {
+            if (validateInputCreate() == 0) {
+                validateInputCreate();
+            } else {
+                validateInputCreate()
+                const name = $("#staff-name").val()
+                const code = $("#code").val()
+                const company = $("#staff-company").val()
+                let job = $("#staff-job").val() == 'undefined' ? undefined : $("#staff-job").val()
+                let department = $("#staff-department").val() == 'undefined' ? undefined : $("#staff-department").val()
+                let manager = $("#staff-manager_create").val() == 'undefined' ? undefined : $("#staff-manager_create").val()
+                console.log(manager)
+                let position = $("#staff-position").val() == 'undefined' ? undefined : $("#staff-position").val()
+                const address = $("#staff-address").val()
+                const floor = "Tầng " + $("#staff-floor").val()
+                const phoneNumber = $("#staff-phoneNumber").val()
+                $.ajax(GVS.setting(GVS.CreateStaff, 'POST', {
+                    code,
+                    name,
+                    company,
+                    job,
+                    department,
+                    position,
+                    location: {
+                        address,
+                        floor
+                    },
+                    manager,
+                    phoneNumber
+                })).done(data => {
+                    if (data.success == 1) {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: data.message,
+                            icon: "success",
+                            confirmButtonText: "OK",
+                        }).then(() => {
+                            $("#addStaff").modal('toggle')
+                            removeValueInput()
+                        }).then(() => {
+                            renderListStaff()
+                        })
+                    } else {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: data.message,
+                            icon: "error",
+                            confirmButtonText: "OK",
+                        })
+                    }
+                })
+            }
+        }
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        async function getStaff(id, name) {
+            var role = getCookie("role")
+            if (role != 0 && role != 2) {
+                $("#staff-manager_update").parent().parent().parent().remove()
+            }
+            await changeSelectlocation()
+            let datas = staff.find(el => el._id == id)
+            $("#button_update_staff").attr("onclick", `updateStaff('${id}','${name}')`)
+            changeInputStaffUpdate(datas)
+        }
+
+        function removeValueInput() {
+            $("#addStaff #staff-name").val("")
+            $("#addStaff #staff-phoneNumber").val("")
+        }
+
+        function validateInputCreate() {
+            var check = 1;
+            if (invalid("staff-name") == 0) {
+                check = 0
+            }
+            if (invalid("code") == 0) {
+                check = 0
+            }
+            if (invalid("staff-phoneNumber") == 0) {
+                check = 0
+            }
+
+            $('input[type="text"]').keyup(function () {
+                $(this).removeClass('is-invalid')
+            });
+            $('input[type="number"]').keyup(function () {
+                $(this).removeClass('is-invalid')
+            });
+            return check;
+        }
+
+        function validateInputUpdate() {
+            var check = 1;
+            if (invalid("staff-phoneNumber_update") == 0) {
+                check = 0
+            }
+            // if (invalid("code_update") == 0) {
+            //     check = 0
+            // }
+            if (invalid("staff-phoneNumber_update") == 0) {
+                check = 0
+            }
+            $('input[type="text"]').keyup(function () {
+                $(this).removeClass('is-invalid')
+            });
+            $('input[type="number"]').keyup(function () {
+                $(this).removeClass('is-invalid')
+            });
+            return check;
+        }
+
+        function invalid(id) {
+            var check = 1
+            if ($(`#${id}`).val() == '') {
+                $(`#${id}`).addClass('is-invalid')
+                check = 0
+            } else {
+                $(`#${id}`).removeClass('is-invalid')
+            }
+            return check
+        }
+
+        async function changeSelectlocation() {
+            var role = getCookie("role")
+            if (role != 0 && role != 2) {
+                $("#staff-manager_create").parent().parent().parent().remove()
+            }
+            $("#staff-manager_create").html(returnHtmlSelectManager(dataManager))
+
+            // onchange = 'changeOptionSelect(\`${stringifyData}\`)'
+            var stringifyData = JSON.stringify(GVS.location)
+            var html = '';
+            html +=
+                `<div class="row justify-content-center">
+                            <div class="col-4 ">
+                                <label class="col-form-label color_title">Địa chỉ: </label>
+                            </div>
+                            <div class="col-7 mb-2">
+                                <select class="form-select" id="staff-address" name="type"
+                                        aria-label="Default select example" >`
+            GVS.location.forEach(element => {
+                html += `<option value="${element.address}" selected>${element.address}</option>`
+            });
+            html += `</select>
+                    </div>
+                </div>`
+
+            var html1 = '';
+            html1 +=
+                `<div class="row justify-content-center">
+                            <div class="col-4 ">
+                                <label class="col-form-label color_title">Địa chỉ: </label>
+                            </div>
+                            <div class="col-7 mb-2">
+                                <select class="form-select" id="staff-address_update" name="type"
+                                        aria-label="Default select example" >`
+            GVS.location.forEach(element => {
+                html1 += `<option value="${element.address}">${element.address}</option>`
+            });
+            html1 += `</select>
+                    </div>
+                </div>`
+            $("#input_address_create").html(html)
+            $("#input_address_update").html(html1)
+            await changeSelectJDP()
+            // changeOptionSelect(stringifyData)
+        }
+
+        function changeOptionSelect(data) {
+            data = JSON.parse(data)
+            var address = $("#staff-address").val()
+            var addressUpdate = $("#staff-address_update").val()
+            data.forEach(element => {
+                if (element.address == address) {
+                    $("#staff-company").html(returnHtmlSelectOption(element.company))
+                    $("#staff-floor").html(returnHtmlSelectOption(parseInt(element.floor)))
+                }
+                if (element.address == addressUpdate) {
+                    $("#staff-company_update").html(returnHtmlSelectOption(element.company))
+                    $("#staff-floor_update").html(returnHtmlSelectOption(parseInt(element.floor)))
+                }
+            });
+        }
+
+        function returnHtmlSelectOption(data) {
+            var html = ''
+            if (typeof data == "number") {
+                for (let i = 1; i <= data; i++) {
+                    html += `<option value="${i}" >${i}</option>`
+                }
+            } else {
+                data.forEach(el => {
+                    html += `<option value="${el}">${el}</option>`
+                })
+            }
+            return html
+        }
+        async function changeSelectJDP() {
+            var dataJob = await $.ajax(GVS.setting(GVS.GETALLJOB, 'GET'))
+            var dataDepartment = await $.ajax(GVS.setting(GVS.GETALLDEPARTMENT, 'GET'))
+            var dataPosition = await $.ajax(GVS.setting(GVS.GETALLPOSITION, 'GET'))
+            $("#staff-job").html(returnHtmlSelectJDP(dataJob))
+            $("#staff-department").html(returnHtmlSelectJDP(dataDepartment))
+            $("#staff-position").html(returnHtmlSelectJDP(dataPosition))
+            $("#staff-job_update").html(returnHtmlSelectJDP(dataJob))
+            $("#staff-department_update").html(returnHtmlSelectJDP(dataDepartment))
+            $("#staff-position_update").html(returnHtmlSelectJDP(dataPosition))
+            $("#staff-manager_update").html(returnHtmlSelectManager(dataManager))
+        }
+
+        function returnHtmlSelectJDP(data) {
+            // var html = `<option value = "undefined">None</option>`
+            data.metadata = data.metadata.filter(_ => _.status != 0)
+            var html = ``
+            data.metadata.forEach(element => {
+                html += `<option value = "${element._id}">${element.name}</option>`
+            });
+            return html
+        }
+        function returnHtmlSelectManager(data) {
+            console.log(data)
+            data = data.filter(_ => _.status != 0)
+
+            var html = `<option value = "undefined">None</option>`
+            data.forEach(element => {
+                html += `<option value = "${element._id}">${element.name}</option>`
+            });
+            return html
+        }
+
+        function changeInputStaffUpdate(data) {
+            var stringifyData = JSON.stringify(GVS.location)
+            $("#modal__staff-update #staff-address_update").val(data.location.address)
+            changeOptionSelect(stringifyData)
+            $("#staff-name_update").val(data.name)
+            $("#code_update").val(data.code)
+            $('#staff_status-update').val(data.status)
+            $('#staff-job_update').val(data.job ? data.job._id : "undefined")
+            $('#staff-position_update').val(data.position ? data.position._id : "undefined")
+            $('#staff-department_update').val(data.department ? data.department._id : "undefined")
+            $('#staff-manager_update').val(data.manager ? data.manager._id : "undefined")
+            $("#modal__staff-update #staff-company_update").val(data.company)
+            $("#modal__staff-update #staff-floor_update").val(data.location.floor.match(/\d+/))
+            $("#modal__staff-update #staff-phoneNumber_update").val(data.phoneNumber)
+        }
+
+        function updateStaff(id, name) {
+
+            var staffUpdate = {
+                name: $("#staff-name_update").val(),
+                code: $("#code_update").val(),
+                job: $("#staff-job_update").val() == 'undefined' ? undefined : $("#staff-job_update").val(),
+                position: $("#staff-position_update").val() == 'undefined' ? undefined : $("#staff-position_update").val(),
+                department: $("#staff-department_update").val() == 'undefined' ? undefined : $("#staff-department_update").val(),
+                manager: $("#staff-manager_update").val() == 'undefined' ? undefined : $("#staff-manager_update").val(),
+                status: $('#staff_status-update').val(),
+                phoneNumber: $("#staff-phoneNumber_update").val(),
+                company: $("#modal__staff-update #staff-company_update").val(),
+                location: {
+                    floor: "Tầng " + $("#modal__staff-update #staff-floor_update").val(),
+                    address: $("#modal__staff-update #staff-address_update").val()
+                },
+            }
+            if (validateInputUpdate() == 0) {
+                validateInputUpdate()
+            } else {
+                validateInputUpdate()
+                if (staffUpdate.status == 0) {
+                    Swal.fire({
+                        title: `Bạn có chắc chắn muốn cho ${name} nghỉ và thu hồi hết thiết bị?`,
+                        showDenyButton: true,
+                        confirmButtonText: "Có",
+                        denyButtonText: `Không`,
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            $.ajax(GVS.setting(GVS.revokeDeviceAll, 'POST', {
+                                idStaff: id,
+                                note: `Thu hồi tất cả thiết bị của ${name}`
+                            })).done(response => {
+                                if (response.success == 1) {
+                                    Swal.fire({
+                                        title: "Thông báo!",
+                                        text: response.message,
+                                        icon: "success",
+                                        confirmButtonText: "OK",
+                                        timer: 1000,
+                                    }).then(() => {
+                                        $.ajax(GVS.setting(GVS.GetStaff + "/" + id, 'PATCH',
+                                            staffUpdate
+                                        )).done(res => {
+                                            if (res.success == 1) {
+                                                Swal.fire({
+                                                    title: "Thông báo!",
+                                                    text: res.message,
+                                                    icon: "success",
+                                                    confirmButtonText: "OK",
+                                                }).then(() => {
+                                                    $("#button_cancel_update_staff")
+                                                        .click()
+                                                    // renderListStaff()
+                                                    var staffUpdated = res.metadata;
+                                                    updateRow(id, staffUpdated)
+                                                });
+                                            } else {
+                                                Swal.fire({
+                                                    title: "Thông báo!",
+                                                    text: res.message,
+                                                    icon: "error",
+                                                    confirmButtonText: "OK",
+                                                });
+                                            }
+                                        })
+                                    })
+                                } else {
+                                    Swal.fire({
+                                        title: "Thông báo!",
+                                        text: response.message,
+                                        icon: "error",
+                                        confirmButtonText: "OK",
+                                        timer: 1000,
+                                    })
+                                }
+                            })
+                        }
+                    })
+                } else {
+                    $.ajax(GVS.setting(GVS.GetStaff + "/" + id, 'PATCH', staffUpdate)).done(res => {
+                        if (res.success == 1) {
+
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: res.message,
+                                icon: "success",
+                                confirmButtonText: "OK",
+                            }).then(() => {
+                                $("#button_cancel_update_staff").click()
+                                var staffUpdated = res.metadata;
+                                updateRow(id, staffUpdated)
+                                // renderListStaff()
+                            });
+                        } else {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: res.message,
+                                icon: "error",
+                                confirmButtonText: "OK",
+                            });
+                        }
+
+                    })
+                }
+
+            }
+
+        }
+
+        function updateRow(id, staffUpdated) {
+            const manager = staff.find(_ => _._id == staffUpdated.manager)
+            // Tạo dữ liệu mới cho hàng
+            var newData = [
+                `<a class="" data-bs-toggle="modal" data-bs-target="#modal__staff-update" onclick="getStaff('${id}','${staffUpdated.name}')"><i class="fa fa-pencil"></i></a>`,
+                staffUpdated.code ? staffUpdated.code : "",
+                staffUpdated.name,
+                staffUpdated.company,
+                staffUpdated.job ? staffUpdated.job.name : "",
+                staffUpdated.department ? staffUpdated.department.name : "",
+                staffUpdated.position ? staffUpdated.position.name : "",
+                manager ? manager.name : "",
+                staffUpdated.location.address,
+                staffUpdated.location.floor,
+                staffUpdated.phoneNumber,
+                new Date(staffUpdated.createdAt).toLocaleDateString("vi-VN"),
+                staffUpdated.status == 1 ? "Đang làm" : "Đã nghỉ"
+            ];
+            // Lấy tham chiếu đến bảng DataTable
+            var table = $("#table-staff").DataTable();
+
+            // Tìm index của hàng cần cập nhật trong DataTable
+            var rowIndex = table.rows().indexes().filter(function (index) {
+                var row = table.row(index);
+                var rowData = row.data();
+                return rowData && rowData[0] && rowData[0].includes(`'${id}'`);
+            });
+
+            // Kiểm tra nếu tìm thấy hàng và cập nhật dữ liệu
+            if (rowIndex.length > 0) {
+                var row = table.row(rowIndex[0]); // Lưu hàng vào biến 'row'
+                row.data(newData).draw(false);
+
+                // Thêm class 'bg-red' nếu trạng thái là 0
+                if (staffUpdated.status == 0) {
+                    $(row.node()).addClass('bg-red');
+                }
+
+                // Cập nhật mảng staff
+                var staffIndex = staff.findIndex(_ => _._id === id);
+                if (staffIndex !== -1) {
+                    staff[staffIndex] = staffUpdated;
+                    staff[staffIndex].manager = manager
+                }
+            } else {
+                console.error('Không tìm thấy hàng với ID:', id);
+            }
+        }
+    </script>
+
+</html>

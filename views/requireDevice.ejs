@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+    <link rel="stylesheet" href="/stylesheets/monitor.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <style>
+        #current_devices,
+        #additional_devices {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+            /* Hide sections by default */
+        }
+
+        #handover .select2 {
+            width: 100% !important;
+        }
+
+        .select2-selection__rendered {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .select2-selection--multiple {
+            overflow: hidden;
+            white-space: nowrap;
+            max-width: 100%;
+        }
+
+        .select2-container--below {
+            width: 100% !important;
+        }
+
+        #table_require_device {
+            table-layout: fixed;
+        }
+
+        #table_require_device th {
+            width: max-content !important;
+        }
+
+        #inputNumPreview::-webkit-outer-spin-button,
+        #inputNumPreview::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .connector_monitor {
+            color: rgba(10, 20, 108, 1);
+            border: none;
+            border-radius: 0;
+            border-bottom: 2px solid #c7c7c7 !important;
+        }
+
+        .connector_monitor:focus {
+            border-color: #c7c7c7;
+            box-shadow: none;
+
+        }
+    </style>
+
+    <body id="body-pd" class="body-pd">
+        <%- include("./nav.html") %>
+            <div class="height-100 ">
+                <main class="content p-0 pt-4">
+                    <div class="container-fluid p-0">
+                        <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                            <div class="col-5" style="width: max-content;">
+                                <h3 class="color_header">Phiếu bàn giao cá nhân</h3>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-4 text-end">
+                                <button style="background-color: #0085FF; border-radius: 29px;" class=" btn text-white"
+                                    data-bs-toggle="modal" data-bs-target="#handover" onclick="renderOptionHandover()">
+                                    <i class="fa fa-plus"></i>
+                                    Tạo phiếu
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12  d-flex">
+                                <div class="card flex-fill"
+                                    style="overflow-x:auto; overflow-x: scroll; max-height: 85vh;">
+
+                                    <table class="table table-hover table-bordered  my-0 text-center"
+                                        id="table_require_device"
+                                        style="width: max-content !important; min-width: 100%;">
+                                        <thead class="th_table_sticky">
+                                            <tr class="align-middle text-center">
+                                                <th class="col text-center ">
+                                                    <span>STT</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Thiết bị bàn giao</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Thiết bị hoàn trả</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Ghi chú nhân viên</span>
+                                                </th>
+                                                <th class="col text-center text-break">
+                                                    <span>Ghi chú người duyệt</span>
+                                                </th>
+                                                <th class="col text-center text-break">
+                                                    <span>Người duyệt</span>
+                                                </th>
+                                                <th class="col text-center text-break">
+                                                    <span>Loại phiếu</span>
+                                                </th>
+                                                <th class="col text-center text-break">
+                                                    <span>Trạng thái</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="content_table">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div class="modal modal-xl fade " id="handover" data-bs-backdrop="static" data-bs-keyboard="false"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content" style="    overflow-y: scroll; max-height: 90vh;">
+
+                        <div class="modal-header border-bottom-0">
+                            <b class="modal-title f-s-24 color_header" id="addDeviceLabel">
+                                Yêu cầu bàn giao thiết bị
+                            </b>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                onclick="deleteInput()"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-2 color_title">Loại bàn giao: </div>
+                                    <div class="col-3">
+                                        <select class="form-control" id="handover_type" name="handover_type"
+                                            onchange="updateHandoverType()">
+                                            <option selected value="0">Luân chuyển nội bộ</option>
+                                            <option value="1">Bàn giao thêm thiết bị</option>
+                                            <option value="2">Hoàn trả thiết bị</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-5">
+                                        <div id="preview_select_case" class="font-bold px-2 text-case"></div>
+                                    </div>
+                                </div>
+
+                                <div id="current_devices" class="mt-3">
+                                    <h4>Thiết bị hiện tại</h4>
+                                </div>
+
+                                <div id="additional_devices" class="mt-3">
+                                    <h4>Thêm thiết bị</h4>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col-2 color_title">Máy tính: </div>
+                                        <div class="col-3">
+                                            <select class="js-example-basic-multiple" id="handover_device_case"
+                                                onchange="changePreviewSelect(this,'case')" name="handover_device_case"
+                                                multiple="multiple">
+                                            </select>
+                                        </div>
+                                        <div class="col-5">
+                                            <div id="preview_select_case" class="font-bold px-2 text-case"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col-2 color_title">Màn hình: </div>
+                                        <div class="col-3">
+                                            <select class="js-example-basic-multiple" id="handover_device_monitor"
+                                                onchange="changePreviewSelect(this,'monitor')" name="handover_monitor"
+                                                multiple="multiple">
+                                            </select>
+                                            </select>
+                                        </div>
+                                        <div class="col-5">
+                                            <div id="preview_select_monitor" class="font-bold px-2 text-monitor"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col-2 color_title">Wacom: </div>
+                                        <div class="col-3">
+                                            <select class="js-example-basic-multiple" id="handover_device_wacom"
+                                                onchange="changePreviewSelect(this,'wacom')" name="handover_wacom"
+                                                multiple="multiple">
+                                            </select>
+                                            </select>
+                                        </div>
+                                        <div class="col-5">
+                                            <div id="preview_select_wacom" class="font-bold px-2 text-wacom"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col-2 color_title">Webcam: </div>
+                                        <div class="col-3">
+                                            <select class="js-example-basic-multiple" id="handover_device_webcam"
+                                                onchange="changePreviewSelect(this,'webcam')" name="handover_webcam"
+                                                multiple="multiple">
+                                            </select>
+                                            </select>
+                                        </div>
+                                        <div class="col-5">
+                                            <div id="preview_select_webcam" class="font-bold px-2 text-webcam"></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col-2 color_title">Tai nghe: </div>
+                                        <div class="col-3">
+                                            <select class="js-example-basic-multiple" id="handover_device_headphone"
+                                                onchange="changePreviewSelect(this,'headphone')"
+                                                name="handover_device_headphone" multiple="multiple">
+                                            </select>
+                                            </select>
+                                        </div>
+                                        <div class="col-5">
+                                            <div id="preview_select_headphone" class="font-bold px-2 text-headphone">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col-2 color_title">Ups: </div>
+                                        <div class="col-3">
+                                            <select class="js-example-basic-multiple" id="handover_device_ups"
+                                                onchange="changePreviewSelect(this,'ups')" name="handover_device_ups"
+                                                multiple="multiple">
+                                            </select>
+                                            </select>
+                                        </div>
+                                        <div class="col-5">
+                                            <div id="preview_select_ups" class="font-bold px-2 text-ups">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col-2 color_title">Chuột: </div>
+                                        <div class="col-3">
+                                            <input class="form-check-input" type="checkbox" style="font-size: 1.52rem;"
+                                                value="" id="checkBoxmouse">
+                                        </div>
+                                        <div class="col-5"></div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col-2 color_title">Bàn phím: </div>
+                                        <div class="col-3">
+                                            <input class="form-check-input" type="checkbox" style="font-size: 1.52rem;"
+                                                value="" id="checkBoxkeyboard">
+                                        </div>
+                                        <div class="col-5"></div>
+
+                                    </div>
+                                    <div class="row my-3">
+                                        <b class="col color_header f-s-20">
+                                            <div id="selectedItems"></div>
+                                        </b>
+                                    </div>
+                                    <div class="row ">
+                                        <b class="col color_header f-s-20">
+                                            Ghi chú:
+                                        </b>
+                                    </div>
+                                    <div class="row my-3">
+                                        <div class="form-floating">
+                                            <textarea class="form-control p-0" placeholder="Leave a comment here"
+                                                id="note_handover"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" d-flex justify-content-center my-4">
+                            <button class="btn bg_btn_danger me-3 px-4" data-bs-dismiss="modal" onclick="deleteInput()"
+                                style="border-radius: 29px;">Hủy</button>
+                            <button class="btn bg_btn_success px-3" onclick="requestDevice()"
+                                style="border-radius: 29px;">Bàn giao</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            getAllRequestDeviceByStaff()
+        })
+        function getAllRequestDeviceByStaff() {
+            $.ajax(GVS.setting(GVS.getAllRequestDeviceByStaff, 'GET')).done(res => {
+                if (res.success == 1) {
+                    var data = res.metadata
+                    var dataRequire = []
+                    data.forEach(el => {
+                        dataRequire.push({
+                            _id: el._id,
+                            devices: el.devices,
+                            devices_return: el.devices_return,
+                            note_staff: el.note_staff,
+                            note_user: el.note_user,
+                            user: el.user,
+                            status: el.status,
+                            type: el.type,
+                        })
+                    })
+                    renderTableMain(dataRequire)
+                    $("#table_require_device").DataTable({
+                        "pageLength": 50,
+                        lengthMenu: [20, 40, 50, 100, 200, 500],
+                    })
+                }
+            })
+        }
+        function renderTableMain(requireData) {
+            let html = '';
+            requireData.forEach((require, index) => {
+                console.log(require)
+                const deviceLinks = require.devices.map(device => `<a href="${GVS.GetDetailDevice.concat(device._id)}" class="d-block text-primary" target="_blank">${device.name}</a>`).join('');
+
+                const deviceReturnLinks = require.devices_return?.map(device => `<a href="${GVS.GetDetailDevice.concat(device._id)}" class="d-block text-primary" target="_blank">${device.name}</a>`).join('') || '';
+
+                // Chuyển đổi trạng thái
+                const statusMap = {
+                    0: 'Từ chối',
+                    1: 'Đã duyệt',
+                    2: 'Chưa duyệt'
+                };
+                const status = statusMap[require.status] || 'Unknown';
+
+                // Chuyển đổi loại phiếu
+                const typeMap = {
+                    0: 'Luân chuyển',
+                    1: 'Bàn giao',
+                    2: 'Hoàn trả'
+                };
+                const type = typeMap[require.type] || 'Unknown';
+
+                html += `
+                            <tr>
+                                <td class="col text-center">
+                                    <span>${index + 1}</span>
+                                </td>
+                                <td class="col text-center">
+                                    ${deviceLinks}
+                                </td>
+                                <td class="col text-center">
+                                    ${deviceReturnLinks}
+                                </td>
+                                <td class="col text-center">
+                                    <span>${require.note_staff || ''}</span>
+                                </td>
+                                <td class="col text-center text-break">
+                                    <span>${require.note_user || ''}</span>
+                                </td>
+                                <td class="col text-center text-break">
+                                    <span>${require.user?.name || ''}</span>
+                                </td>
+                                <td class="col text-center text-break">
+                                    <span>${type}</span>
+                                </td>
+                                <td class="col text-center text-break">
+                                    <span>${status}</span>
+                                </td>
+                            </tr>
+                        `;
+            });
+
+
+            $("#content_table").html(html)
+        }
+
+
+        function renderOptionHandover() {
+            renderCurrentDevice();
+            updateHandoverType();
+            $.ajax(GVS.setting(GVS.GetAllInventories, 'GET')).done(res => {
+                if (res.success == 1) {
+                    renderSelectOptionHandover('case', res.metadata)
+                    renderSelectOptionHandover('monitor', res.metadata)
+                    renderSelectOptionHandover('wacom', res.metadata)
+                    renderSelectOptionHandover('webcam', res.metadata)
+                    renderSelectOptionHandover('headphone', res.metadata)
+                    renderSelectOptionHandover('ups', res.metadata)
+                    renderIdMouseKeyboard('mouse', res.metadata)
+                    renderIdMouseKeyboard('keyboard', res.metadata)
+                } else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    })
+                }
+            })
+        }
+
+
+        function renderIdMouseKeyboard(typeDevice, datas) {
+            var data = datas.find(_ => _.type == typeDevice)
+            if (data && data.device && data.device.length > 0) {
+                $(`#checkBox${typeDevice}`).attr("data", data.device[0].device._id)
+            } else {
+                $(`#checkBox${typeDevice}`).prop('disabled', true)
+            }
+        }
+        function renderSelectOptionHandover(typeDevice, data) {
+            data.forEach((device) => {
+                if (device.type == typeDevice) {
+                    let html = '';
+                    html += `<option value = "">Chọn ${typeDevice} bàn giao</option>`
+                    device.device.forEach((element) => {
+                        if (parseInt(element.quantity) != 0) {
+                            html +=
+                                `<option value="${element.device._id}">${element.device.type == "case" ? "Máy số " : ""}${element.device.attributes && element.device.attributes.num ? element.device.attributes.num : ""}  ${element.device.type == "case" ? "" : "- " + element.device.name}</option>`
+                        }
+                    })
+                    $('#handover_device_' + `${typeDevice}`).html(html)
+
+                }
+            })
+        }
+        $(document).ready(async () => {
+            placeholderSelectHandoverDevice('case')
+            placeholderSelectHandoverDevice('monitor')
+            placeholderSelectHandoverDevice('webcam')
+            placeholderSelectHandoverDevice('wacom')
+            placeholderSelectHandoverDevice('headphone')
+            placeholderSelectHandoverDevice('ups')
+
+        });
+
+        function placeholderSelectHandoverDevice(typeDevice) {
+            $(`#handover_device_${typeDevice}`).select2();
+            $(`#handover_device_${typeDevice}`).select2({
+                dropdownParent: $('#handover'),
+                placeholder: `Chọn ${typeDevice} bàn giao`,
+                "language": {
+                    "noResults": function () {
+                        return "Không tìm thấy thiết bị";
+                    }
+                },
+            });
+        }
+        function changePreviewSelect(e, nameSelect) {
+            if ($(e).val() != "") {
+                if (nameSelect == "staff") {
+                    $(`#preview_select_${nameSelect} `).text($(`#handover_${nameSelect} option:selected`).text())
+                } else {
+                    var selectedTexts = $(`#handover_device_${nameSelect}`).find('option:selected').map(function () {
+                        return $(this).text();
+                    }).get();
+                    let html = ''
+                    selectedTexts.forEach((el, index) => {
+                        if (index == 0) {
+                            html += `${el} `
+                        } else {
+                            html += `, ${el} `
+                        }
+                    })
+                    $(`#preview_select_${nameSelect} `).html(html)
+                }
+            } else {
+                $(`#preview_select_${nameSelect}`).text("")
+            }
+        }
+
+        async function requestDevice(staff, id, note) {
+            let ids = [];
+            ids = [
+                ...ids,
+                ...$('#handover_device_case').val(),
+                ...$('#handover_device_monitor').val(),
+                ...$('#handover_device_wacom').val(),
+                ...$('#handover_device_headphone').val(),
+                ...$('#handover_device_webcam').val(),
+                ...$('#handover_device_ups').val()
+            ];
+
+            const valueNote = $('#note_handover').val();
+            const valueType = $('#handover_type').val();
+
+            // Lấy ID chuột/bàn phím từ attribute data đã lưu sẵn khi renderOptionHandover
+            if ($("#checkBoxmouse").prop("checked")) {
+                const mouseId = $("#checkBoxmouse").attr("data");
+                if (mouseId) ids.push(mouseId);
+            }
+            if ($("#checkBoxkeyboard").prop("checked")) {
+                const keyboardId = $("#checkBoxkeyboard").attr("data");
+                if (keyboardId) ids.push(keyboardId);
+            }
+
+            let selectedDevices = [];
+            $('.form-check-input:checked').each(function () {
+                selectedDevices.push($(this).attr('data-id'));
+            });
+
+            const requestData = {
+                devices: ids,
+                devices_return: selectedDevices,
+                note_staff: valueNote,
+                type: valueType
+            };
+            $.ajax(GVS.setting(GVS.requestHandoverDevice, 'POST', requestData)).done(res => {
+                if (res.success == 1) {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "success",
+                        confirmButtonText: "OK",
+                    }).then(() => {
+                        $(`#handover`).modal('toggle')
+                    }).then(() => {
+                        location.reload();
+                        deleteInput();
+                    });
+                } else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    });
+                }
+            }).fail(err => {
+                console.error("Lỗi khi gửi yêu cầu thiết bị:", err);
+                Swal.fire({
+                    title: "Lỗi!",
+                    text: "Đã xảy ra lỗi khi gửi yêu cầu.",
+                    icon: "error",
+                    confirmButtonText: "OK",
+                });
+            });
+        }
+
+
+        function updateHandoverType() {
+            const handoverType = document.getElementById('handover_type').value;
+            const currentDevices = document.getElementById('current_devices');
+            const additionalDevices = document.getElementById('additional_devices');
+
+            if (handoverType === "0") { // Luân chuyển nội bộ
+                currentDevices.style.display = "block";
+                additionalDevices.style.display = "block";
+            } else if (handoverType === "1") { // Bàn giao thêm thiết bị
+                currentDevices.style.display = "none";
+                additionalDevices.style.display = "block";
+            } else if (handoverType === "2") { // Hoàn trả thiết bị
+                currentDevices.style.display = "block";
+                additionalDevices.style.display = "none";
+            }
+        }
+
+        function renderCurrentDevice() {
+            $.ajax(GVS.setting(GVS.GETALLDEVICE + '/by-staff', 'GET')).done(data => {
+                const container = $('#current_devices');
+                container.empty();
+
+                if (data.success && data.metadata && data.metadata.length > 0) {
+                    const devices = data.metadata[0].devices;
+
+                    container.append('<h4 class="mb-3">Thiết bị hiện tại</h4>');
+
+                    const deviceList = $('<div class="row g-3 justify-content-center"></div>'); // Bootstrap row với khoảng cách giữa các thiết bị
+
+                    devices.forEach((device, index) => {
+                        const checkboxId = `device-checkbox-${index}`;
+                        const deviceCard = $(`
+                    <div class="col-md-2 col-sm-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 1rem;">${device.name}</h5>
+                                <p class="card-text" style="font-size: 1rem;">Loại: ${device.type}</p>
+                                <div class="form-check d-flex align-items-center">
+                                    <input type="checkbox" class="form-check-input me-2" style="font-size: 1.25rem" id="${checkboxId}" data-id="${device._id}">
+                                    <label class="form-check-label mb-0" for="${checkboxId}" style="font-size: 1rem;">Chọn thiết bị</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `);
+                        deviceList.append(deviceCard);
+                    });
+
+                    // Thêm chuột nếu có
+                    if (data.metadata[0].staff.mouse > 0) {
+                        const mouseCheckboxId = `mouse-checkbox`;
+                        deviceList.append(`
+                    <div class="col-md-2 col-sm-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 1rem;">Chuột</h5> <!-- Tăng kích thước font của tên chuột -->
+                                <p class="card-text" style="font-size: 1rem;">Loại: Phụ kiện</p> <!-- Tăng kích thước font của loại chuột -->
+                                <div class="form-check d-flex align-items-center">
+                                    <input type="checkbox" class="form-check-input me-2" style="font-size: 1.25rem" id="${mouseCheckboxId}">
+                                    <label class="form-check-label mb-0" for="${mouseCheckboxId}" style="font-size: 1rem;">Chọn thiết bị</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `);
+                    }
+
+                    // Thêm bàn phím nếu có
+                    if (data.metadata[0].staff.keyboard > 0) {
+                        const keyboardCheckboxId = `keyboard-checkbox`;
+                        deviceList.append(`
+                    <div class="col-md-2 col-sm-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 1rem;">Bàn phím</h5> <!-- Tăng kích thước font của tên bàn phím -->
+                                <p class="card-text" style="font-size: 1rem;">Loại: Phụ kiện</p> <!-- Tăng kích thước font của loại bàn phím -->
+                                <div class="form-check d-flex align-items-center">
+                                    <input type="checkbox" class="form-check-input me-2" style="font-size: 1.25rem" id="${keyboardCheckboxId}">
+                                    <label class="form-check-label mb-0" for="${keyboardCheckboxId}" style="font-size: 1rem;">Chọn thiết bị</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `);
+                    }
+
+                    container.append(deviceList);
+                } else {
+                    container.html('<div class="alert alert-warning" role="alert">Không có thiết bị nào được tìm thấy.</div>');
+                }
+            }).fail(err => {
+                console.error("Lỗi khi lấy danh sách thiết bị:", err);
+                $('#current_devices').html('<div class="alert alert-danger" role="alert">Lỗi khi tải thiết bị.</div>');
+            });
+        }
+
+        function deleteInput() {
+            $('#handover_device_case').val(null).trigger('change');
+            $('#handover_device_monitor').val(null).trigger('change');
+            $('#handover_device_wacom').val(null).trigger('change');
+            $('#handover_device_webcam').val(null).trigger('change');
+            $('#handover_device_headphone').val(null).trigger('change');
+            $('#handover_device_ups').val(null).trigger('change');
+            $('#checkBoxmouse').prop('checked', false);
+            $('#checkBoxkeyboard').prop('checked', false);
+            $('#note_handover').val('');
+            $('#handover_type').val('0');
+            updateHandoverType();
+            $('.preview_select_case, .preview_select_monitor, .preview_select_wacom, .preview_select_webcam, .preview_select_headphone, .preview_select_ups').text('');
+        }
+
+    </script>
+
+</html>

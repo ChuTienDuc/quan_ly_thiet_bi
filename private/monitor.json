@@ -1,0 +1,6035 @@
+{
+	"items": [
+		{
+			"name": "DELL U2414H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "14/07/23, Tầng 7",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI",
+					"DP"
+				],
+				"num": "31"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-16",
+			"expirationDate": "",
+			"note": "14/07/23, Tầng 7",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "32"
+			}
+		},
+		{
+			"name": "SAMSUNG S22F350FHE",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "13/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "92"
+			}
+		},
+		{
+			"name": "SAMSUNG S27E500",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "13/07/23, Tầng 5\r\nMờ nhòe",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "122"
+			}
+		},
+		{
+			"name": "SAMSUNG B1930N",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "13/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "165"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "13/07/23, Tầng 5\r\nHỏng bóng nền",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "203"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-21",
+			"expirationDate": "",
+			"note": "09/08/23, Tầng 4",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "283"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "33"
+			}
+		},
+		{
+			"name": "DELL E2220H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"VGA"
+				],
+				"num": "38"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "39"
+			}
+		},
+		{
+			"name": "DELL E2417H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"VGA"
+				],
+				"num": "73"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "81"
+			}
+		},
+		{
+			"name": "ACER KG251Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "82"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-07",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "84"
+			}
+		},
+		{
+			"name": "DELL E2214H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "85"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-22",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "86"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-22",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "102"
+			}
+		},
+		{
+			"name": "DUAN BKY 248",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "114"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "127"
+			}
+		},
+		{
+			"name": "LG 24MP66HQ",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "128"
+			}
+		},
+		{
+			"name": "DUAN BKY 248",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "139"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-07",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "140"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "146"
+			}
+		},
+		{
+			"name": "LG 24MP56HQ",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "147"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-07",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "150"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "151"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-09-15",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "158"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "159"
+			}
+		},
+		{
+			"name": "Skyworth 24B1",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-07",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "191"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-10-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "223"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-29",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "232"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-23",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "251"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-06-09",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "272"
+			}
+		},
+		{
+			"name": "DELL P2314H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "273"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "298"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "299"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-08",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "307"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-13",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "65"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-01",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "66"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-16",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "87"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-07",
+			"expirationDate": "",
+			"note": "10/10/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "88"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-13",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "95"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "96"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "288"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "289"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "313"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "04/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "317"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "339"
+			}
+		},
+		{
+			"name": "LG 24MK600M-B",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-05-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI",
+					"VGA"
+				],
+				"num": "344"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-05-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "345"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-05-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "346"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "10/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "326"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "10/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "331"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "10/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "321"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "10/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "320"
+			}
+		},
+		{
+			"name": "DELL P2312H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-21",
+			"expirationDate": "",
+			"note": "14/07/23, Tầng 3",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "79"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "10/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "315"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "10/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "319"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "1"
+			}
+		},
+		{
+			"name": "DELL U2414H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI",
+					"DP"
+				],
+				"num": "2"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "3"
+			}
+		},
+		{
+			"name": "DELL P2314H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "4"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "5"
+			}
+		},
+		{
+			"name": "DELL E2314H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "6"
+			}
+		},
+		{
+			"name": "Skyworth 24B1",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-07",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "7"
+			}
+		},
+		{
+			"name": "DELL S2240L",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "8"
+			}
+		},
+		{
+			"name": "DELL U2414H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI",
+					"DP"
+				],
+				"num": "9"
+			}
+		},
+		{
+			"name": "DELL P2314H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "10"
+			}
+		},
+		{
+			"name": "DELL E2220H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"VGA"
+				],
+				"num": "11"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "12"
+			}
+		},
+		{
+			"name": "DELL U2414H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI",
+					"DP"
+				],
+				"num": "13"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "14"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-13",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "15"
+			}
+		},
+		{
+			"name": "DELL E2417H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"VGA"
+				],
+				"num": "16"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "17"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-11-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "18"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "19"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "20"
+			}
+		},
+		{
+			"name": "ACER KG251Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "21"
+			}
+		},
+		{
+			"name": "ACER KG251Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "22"
+			}
+		},
+		{
+			"name": "DELL E2417H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"VGA"
+				],
+				"num": "23"
+			}
+		},
+		{
+			"name": "DELL P2314H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "24"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-13",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "25"
+			}
+		},
+		{
+			"name": "Skyworth 24B1",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-21",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "26"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "27"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "28"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "29"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "30"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "34"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "35"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "36"
+			}
+		},
+		{
+			"name": "HP LA2306",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "37"
+			}
+		},
+		{
+			"name": "AOC Q3477",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-01",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"DVI"
+				],
+				"num": "40"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-02",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "41"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "42"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-02",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "43"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "44"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "45"
+			}
+		},
+		{
+			"name": "DELL E2417H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"VGA"
+				],
+				"num": "46"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-10-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "47"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-06-09",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "48"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-07",
+			"expirationDate": "",
+			"note": "16/11/23",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "49"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-01",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "50"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-06-09",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "51"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "52"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-06-09",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "53"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-06-09",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "54"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-06-09",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "55"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-01",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "56"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-01",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "57"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "58"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-01",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "59"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "60"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-01",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "61"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "62"
+			}
+		},
+		{
+			"name": "DELL U2312H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "63"
+			}
+		},
+		{
+			"name": "DELL P2214H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "64"
+			}
+		},
+		{
+			"name": "DELL P2214H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "67"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-13",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "68"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "69"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "70"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "71"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "72"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-21",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "74"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-13",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "75"
+			}
+		},
+		{
+			"name": "DELL E2417H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"VGA"
+				],
+				"num": "76"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-04-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "77"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-13",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "78"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "80"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-27",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "83"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-05-30",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "89"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "90"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "91"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-10",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "93"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "94"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-02",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "97"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "98"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "99"
+			}
+		},
+		{
+			"name": "DELL E2220H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"VGA"
+				],
+				"num": "100"
+			}
+		},
+		{
+			"name": "DELL P2314H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "101"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-19",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "103"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-26",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "104"
+			}
+		},
+		{
+			"name": "DELL P2214H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "105"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "106"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "107"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "108"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-10-03",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "109"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "110"
+			}
+		},
+		{
+			"name": "DELL E2417H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"VGA"
+				],
+				"num": "111"
+			}
+		},
+		{
+			"name": "Skyworth 24B1",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-07",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "112"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "113"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-10-03",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "115"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-26",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "116"
+			}
+		},
+		{
+			"name": "DELL U2518D",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2020-12-26",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"miniDP"
+				],
+				"num": "117"
+			}
+		},
+		{
+			"name": "DELL U2414H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI",
+					"DP"
+				],
+				"num": "118"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "119"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "120"
+			}
+		},
+		{
+			"name": "LG 24MP66HQ",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "121"
+			}
+		},
+		{
+			"name": "DUAN BKY 248",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "123"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "124"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "125"
+			}
+		},
+		{
+			"name": "LG 24M47VQ",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "126"
+			}
+		},
+		{
+			"name": "DELL E2417H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"VGA"
+				],
+				"num": "129"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "130"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "131"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "132"
+			}
+		},
+		{
+			"name": "DELL U2518D",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2020-12-26",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"miniDP"
+				],
+				"num": "133"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "134"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-22",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "135"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "136"
+			}
+		},
+		{
+			"name": "DELL U2414H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI",
+					"DP"
+				],
+				"num": "137"
+			}
+		},
+		{
+			"name": "DELL U2414H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI",
+					"DP"
+				],
+				"num": "138"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "141"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "142"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-22",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "143"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "144"
+			}
+		},
+		{
+			"name": "DUAN BKY 248",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "145"
+			}
+		},
+		{
+			"name": "DELL U2518D",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2020-12-26",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"miniDP"
+				],
+				"num": "148"
+			}
+		},
+		{
+			"name": "DELL S2318H/HX",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "149"
+			}
+		},
+		{
+			"name": "DELL U2518D",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2020-12-26",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"miniDP"
+				],
+				"num": "152"
+			}
+		},
+		{
+			"name": "DELL P2214H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "153"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "154"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-10-27",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "155"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-01",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "156"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "157"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-09-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "160"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "161"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-09-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "162"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-07",
+			"expirationDate": "",
+			"note": "BH: 19/08/23\r\n04/04/23: Tầng 4",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "163"
+			}
+		},
+		{
+			"name": "DELL E2211H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "13/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "164"
+			}
+		},
+		{
+			"name": "DELL P2214H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "166"
+			}
+		},
+		{
+			"name": "DELL P2312H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "167"
+			}
+		},
+		{
+			"name": "BenQ GW2255",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "168"
+			}
+		},
+		{
+			"name": "DELL U2518D",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2020-12-26",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"miniDP"
+				],
+				"num": "169"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "170"
+			}
+		},
+		{
+			"name": "DUAN BKY 248",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "171"
+			}
+		},
+		{
+			"name": "ACER Predator X34",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI",
+					"DP",
+					"DP",
+					"TypeC"
+				],
+				"num": "172"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "173"
+			}
+		},
+		{
+			"name": "DELL P2214H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "174"
+			}
+		},
+		{
+			"name": "LG 24MP56HQ",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "175"
+			}
+		},
+		{
+			"name": "DELL P2314H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "176"
+			}
+		},
+		{
+			"name": "DELL P2314H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "177"
+			}
+		},
+		{
+			"name": "DELL U2414H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI",
+					"DP"
+				],
+				"num": "178"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "179"
+			}
+		},
+		{
+			"name": "Skyworth 24B1",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-07",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "180"
+			}
+		},
+		{
+			"name": "Skyworth 24B1",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-07",
+			"expirationDate": "",
+			"note": "19/06/23, Kho",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "181"
+			}
+		},
+		{
+			"name": "BenQ GW2255",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "182"
+			}
+		},
+		{
+			"name": "LG 24MP66HQ",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "183"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "184"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-06-09",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "185"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-29",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "186"
+			}
+		},
+		{
+			"name": "LG 24MP66HQ",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "187"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-26",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "188"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "189"
+			}
+		},
+		{
+			"name": "DELL P2314H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "190"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-05-24",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "192"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "193"
+			}
+		},
+		{
+			"name": "LG 22M47D-P",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "194"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-08",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "195"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "196"
+			}
+		},
+		{
+			"name": "DELL P2312H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-10",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "197"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-13",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "198"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "199"
+			}
+		},
+		{
+			"name": "DUAN BKY 248",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "200"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "201"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "202"
+			}
+		},
+		{
+			"name": "DELL P2312H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "204"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-27",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "205"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-02",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "206"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "207"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "208"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "209"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-26",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "210"
+			}
+		},
+		{
+			"name": "Skyworth 24B1",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-07",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "211"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-07",
+			"expirationDate": "",
+			"note": "28/11/23",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "212"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-11-28",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "213"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-06-09",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "214"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "215"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-13",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "216"
+			}
+		},
+		{
+			"name": "DELL P2214H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "217"
+			}
+		},
+		{
+			"name": "DUAN BKY 248",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "218"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "219"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "220"
+			}
+		},
+		{
+			"name": "DELL E2316H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"VGA"
+				],
+				"num": "221"
+			}
+		},
+		{
+			"name": "BenQ GW2255",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "222"
+			}
+		},
+		{
+			"name": "DELL P2312H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "224"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-26",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "225"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-08",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "226"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-01",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "227"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "228"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "229"
+			}
+		},
+		{
+			"name": "Skyworth 24B1",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-27",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "230"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "231"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-04-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "233"
+			}
+		},
+		{
+			"name": "DELL P2314H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "234"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-29",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "235"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-17",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "236"
+			}
+		},
+		{
+			"name": "DELL P2312H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-10",
+			"expirationDate": "",
+			"note": "04/05/23, Kho, Màn lỗi",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "237"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "238"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "239"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-05-24",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "240"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "241"
+			}
+		},
+		{
+			"name": "DELL P2312H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-10",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "242"
+			}
+		},
+		{
+			"name": "DUAN BKY 248",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "243"
+			}
+		},
+		{
+			"name": "DELL E2314H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "244"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-10-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "245"
+			}
+		},
+		{
+			"name": "LG 24M47VQ",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "246"
+			}
+		},
+		{
+			"name": "DELL P2312H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-10",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "247"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-02",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "248"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "249"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-02",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "250"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-08",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "252"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "253"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "254"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-08",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "255"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-09-23",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "256"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-22",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "257"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "258"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-22",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "259"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-11-22",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "260"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "261"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "262"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-09-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "263"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "264"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "265"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "266"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "267"
+			}
+		},
+		{
+			"name": "LG 24MP56HQ",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "268"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-09-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "269"
+			}
+		},
+		{
+			"name": "DUAN BKY 248",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "270"
+			}
+		},
+		{
+			"name": "DUAN BKY 248",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-25",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "271"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-06-09",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "274"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-06-09",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "275"
+			}
+		},
+		{
+			"name": "LG 24MP66HQ",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "276"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-02",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "277"
+			}
+		},
+		{
+			"name": "DELL P2214H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DVI",
+					"VGA"
+				],
+				"num": "278"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-18",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "279"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-07-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "280"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-12-12",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "281"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "282"
+			}
+		},
+		{
+			"name": "LG 24MP66HQ",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "284"
+			}
+		},
+		{
+			"name": "DELL P2319H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-10-26",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"VGA"
+				],
+				"num": "285"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "286"
+			}
+		},
+		{
+			"name": "DELL U2412M",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"DP",
+					"DVI",
+					"VGA"
+				],
+				"num": "287"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-02-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "290"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-02-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "291"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "05/05/23, Tầng 1",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "292"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "05/05/23, Tầng 1",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "293"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "294"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "295"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "296"
+			}
+		},
+		{
+			"name": "AOC 24V2Q",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "297"
+			}
+		},
+		{
+			"name": "KINGVIEW 2219H",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "300"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2022-04-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "301"
+			}
+		},
+		{
+			"name": "ACER Nitro VG240Y",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-03-16",
+			"expirationDate": "",
+			"note": "04/05/23, Tầng 2",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"VGA"
+				],
+				"num": "302"
+			}
+		},
+		{
+			"name": "LG 34UM58A",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2021-03-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI"
+				],
+				"num": "303"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "304"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-08",
+			"expirationDate": "",
+			"note": "09/05/23, Tầng 7",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "305"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-08",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "306"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-08",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "308"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-08",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "309"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-08",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "310"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-08",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "311"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "314"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "316"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "318"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "23/06/23, Kho",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "322"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "323"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "324"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "325"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "04/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "327"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "332"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "04/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "333"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "334"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "335"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "336"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "337"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "338"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "340"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "10/07/23, Tầng 5",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "341"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-19",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "342"
+			}
+		},
+		{
+			"name": "CoolerMaster CW34",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-20",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"HDMI",
+					"DP",
+					"DP"
+				],
+				"num": "343"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "347"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "348"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "349"
+			}
+		},
+		{
+			"name": "DELL U2518D",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2020-12-26",
+			"expirationDate": "",
+			"note": "11/07/23, Kho\r\nVỡ tấm nền",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP",
+					"miniDP"
+				],
+				"num": "312"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "329"
+			}
+		},
+		{
+			"name": "MSI Pro MP243",
+			"supplier": "",
+			"type": "monitor",
+			"billPrice": "",
+			"createdAt": "2023-04-05",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"connector": [
+					"HDMI",
+					"DP"
+				],
+				"num": "330"
+			}
+		}
+	]
+}

@@ -1,0 +1,53 @@
+<!-- Chatbot Floating Button -->
+<div id="chatbot-btn" onclick="toggleChatbot()" title="Trợ lý AI">
+    <i class="fa fa-comments"></i>
+</div>
+
+<!-- Chatbot Panel -->
+<div id="chatbot-panel">
+    <!-- Header -->
+    <div class="chatbot-header">
+        <div class="chatbot-header-title">
+            <i class="fa fa-robot"></i>
+            <span>Trợ lý AI</span>
+        </div>
+        <div class="chatbot-header-actions">
+            <button onclick="clearChatHistory()" title="Xóa lịch sử">
+                <i class="fa fa-trash" style="font-size:14px;"></i>
+            </button>
+            <button onclick="toggleChatbot()" title="Đóng">
+                <i class="fa fa-times" style="font-size:16px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Messages Area -->
+    <div id="chatbot-messages">
+        <!-- Welcome message -->
+        <div style="display:flex;gap:8px;align-items:flex-start;">
+            <div class="chatbot-avatar">
+                <i class="fa fa-robot"></i>
+            </div>
+            <div class="chatbot-bubble-ai">
+                Xin chào! Tôi là trợ lý AI hỗ trợ quản lý thiết bị. Bạn có thể hỏi tôi về:<br>
+                • Thiết bị của nhân viên<br>
+                • Tồn kho thiết bị<br>
+                • Bảo hành thiết bị<br>
+                • Lịch sử bàn giao<br>
+                • Quy trình bàn giao/thu hồi
+            </div>
+        </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="chatbot-input-area">
+        <input type="text" id="chatbot-input" placeholder="Nhập câu hỏi..."
+            onkeydown="if(event.key==='Enter')sendChatMessage()"
+            maxlength="500">
+        <button onclick="sendChatMessage()" id="chatbot-send-btn">
+            <i class="fa fa-paper-plane"></i>
+        </button>
+    </div>
+</div>
+
+<script src="/javascripts/chatbot.js"></script>

@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'SanF-Black';
+    src: url('/fonts/SanFranciscoDisplay-Black.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Bold';
+    src: url('/fonts/SanFranciscoDisplay-Bold.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Heavy';
+    src: url('/fonts/SanFranciscoDisplay-Heavy.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Light';
+    src: url('/fonts/SanFranciscoDisplay-Light.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Medium';
+    src: url('/fonts/SanFranciscoDisplay-Medium.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Regular';
+    src: url('/fonts/SanFranciscoDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Semibold';
+    src: url('/fonts/SanFranciscoDisplay-Semibold.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Thin';
+    src: url('/fonts/SanFranciscoDisplay-Thin.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Ultralight';
+    src: url('/fonts/SanFranciscoDisplay-Ultralight.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-Bold';
+    src: url('/fonts/SanFranciscoText-Bold.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-BoldG1';
+    src: url('/fonts/SanFranciscoText-BoldG1.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-BoldG2';
+    src: url('/fonts/SanFranciscoText-BoldG2.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-BoldG3';
+    src: url('/fonts/SanFranciscoText-BoldG3.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-BoldItalic';
+    src: url('/fonts/SanFranciscoText-BoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-BoldItalicG1';
+    src: url('/fonts/SanFranciscoText-BoldItalicG1.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-BoldItalicG2';
+    src: url('/fonts/SanFranciscoText-BoldItalicG2.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-BoldItalicG3';
+    src: url('/fonts/SanFranciscoText-BoldItalicG3.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-Heavy';
+    src: url('/fonts/SanFranciscoText-Heavy.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-HeavyItalic';
+    src: url('/fonts/SanFranciscoText-HeavyItalic.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-Italic';
+    src: url('/fonts/SanFranciscoText-Italic.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-ItalicG1';
+    src: url('/fonts/SanFranciscoText-ItalicG1.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-ItalicG2';
+    src: url('/fonts/SanFranciscoText-ItalicG2.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-ItalicG3';
+    src: url('/fonts/SanFranciscoText-ItalicG3.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-Light';
+    src: url('/fonts/SanFranciscoText-Light.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-LightItalic';
+    src: url('/fonts/SanFranciscoText-LightItalic.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-Medium';
+    src: url('/fonts/SanFranciscoText-Medium.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-MediumItalic';
+    src: url('/fonts/SanFranciscoText-MediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-Regular';
+    src: url('/fonts/SanFranciscoText-Regular.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-RegularG1';
+    src: url('/fonts/SanFranciscoText-RegularG1.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-RegularG2';
+    src: url('/fonts/SanFranciscoText-RegularG2.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-RegularG3';
+    src: url('/fonts/SanFranciscoText-RegularG3.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-Semibold';
+    src: url('/fonts/SanFranciscoText-Semibold.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-SemiboldItalic';
+    src: url('/fonts/SanFranciscoText-SemiboldItalic.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-Thin';
+    src: url('/fonts/SanFranciscoText-Thin.otf');
+}
+
+@font-face {
+    font-family: 'SanF-Text-ThinItalic';
+    src: url('/fonts/SanFranciscoText-ThinItalic.otf');
+}
+
+
+.f-f-SanF-Black{
+    font-family: 'SanF-Black';
+}
+
+.f-f-SanF-Bold{
+    font-family: 'SanF-Bold';
+}
+
+.f-f-SanF-Heavy{
+    font-family: 'SanF-Heavy';
+}
+
+.f-f-SanF-Light{
+    font-family: 'SanF-Light';
+}
+
+.f-f-SanF-Medium{
+    font-family: 'SanF-Medium';
+}
+
+.f-f-SanF-Regular{
+    font-family: 'SanF-Regular';
+}
+
+.f-f-SanF-Semibold{
+    font-family: 'SanF-Semibold';
+}
+
+.f-f-SanF-Thin{
+    font-family: 'SanF-Thin';
+}
+
+.f-f-SanF-Ultralight{
+    font-family: 'SanF-Ultralight';
+}
+
+.f-f-SanF-Text-Bold{
+    font-family: 'SanF-Text-Bold';
+}
+
+.f-f-SanF-Text-BoldG1{
+    font-family: 'SanF-Text-BoldG1';
+}
+
+.f-f-SanF-Text-BoldG2{
+    font-family: 'SanF-Text-BoldG2';
+}
+
+.f-f-SanF-Text-BoldG3{
+    font-family: 'SanF-Text-BoldG3';
+}
+
+.f-f-SanF-Text-BoldItalic{
+    font-family: 'SanF-Text-BoldItalic';
+}
+
+.f-f-SanF-Text-BoldItalicG1{
+    font-family: 'SanF-Text-BoldItalicG1';
+}
+
+.f-f-SanF-Text-BoldItalicG2{
+    font-family: 'SanF-Text-BoldItalicG2';
+}
+
+.f-f-SanF-Text-BoldItalicG3{
+    font-family: 'SanF-Text-BoldItalicG3';
+}
+
+.f-f-SanF-Text-Heavy{
+    font-family: 'SanF-Text-Heavy';
+}
+
+.f-f-SanF-Text-HeavyItalic{
+    font-family: 'SanF-Text-HeavyItalic';
+}
+
+.f-f-SanF-Text-Italic{
+    font-family: 'SanF-Text-Italic';
+}
+
+.f-f-SanF-Text-ItalicG1{
+    font-family: 'SanF-Text-ItalicG1';
+}
+
+.f-f-SanF-Text-ItalicG2{
+    font-family: 'SanF-Text-ItalicG2';
+}
+
+.f-f-SanF-Text-ItalicG3{
+    font-family: 'SanF-Text-ItalicG3';
+}
+
+.f-f-SanF-Text-Light{
+    font-family: 'SanF-Text-Light';
+}
+
+.f-f-SanF-Text-LightItalic{
+    font-family: 'SanF-Text-LightItalic';
+}
+
+.f-f-SanF-Text-Medium{
+    font-family: 'SanF-Text-Medium';
+}
+
+.f-f-SanF-Text-MediumItalic{
+    font-family: 'SanF-Text-MediumItalic';
+}
+
+.f-f-SanF-Text-Regular{
+    font-family: 'SanF-Text-Regular';
+}
+
+.f-f-SanF-Text-RegularG1{
+    font-family: 'SanF-Text-RegularG1';
+}
+
+.f-f-SanF-Text-RegularG2{
+    font-family: 'SanF-Text-RegularG2';
+}
+
+.f-f-SanF-Text-RegularG3{
+    font-family: 'SanF-Text-RegularG3';
+}
+
+.f-f-SanF-Text-Semibold{
+    font-family: 'SanF-Text-Semibold';
+}
+
+.f-f-SanF-Text-SemiboldItalic{
+    font-family: 'SanF-Text-SemiboldItalic';
+}
+
+.f-f-SanF-Text-Thin{
+    font-family: 'SanF-Text-Thin';
+}
+
+.f-f-SanF-Text-ThinItalic{
+    font-family: 'SanF-Text-ThinItalic';
+}

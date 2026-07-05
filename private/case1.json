@@ -1,0 +1,8760 @@
+{
+	"items": [
+		{
+			"name": "PC-1",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "18-66-DA-31-60-33",
+				"num": "1",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Xeon E3 - 1225 v5",
+				"ram": [
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050",
+						"vram": "2GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "120GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-2",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Dell 3060",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "2",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 8500T",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "Quadro P620 2GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-3",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/11",
+			"note": "HP Prodesk 600 G2",
+			"attributes": {
+				"connector": [],
+				"macAddress": "DC-4A-3E-81-E5-77",
+				"num": "3",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 6400",
+				"ram": [
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro P400",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-4",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2020/12/23",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "00-D8-61-0F-51-34",
+				"num": "4",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-5",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2020/12/23",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-E7-8D-10",
+				"num": "5",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3500",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-6",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E4-54-E8-8F-F9-14",
+				"num": "6",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 6770",
+				"ram": [
+					"04GB 2133MHz",
+					"04GB 2133MHz",
+					"04GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-7",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-CB-8A-CA-99-C5",
+				"num": "7",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Xeon E3 - 1231 v3",
+				"ram": [
+					"08GB 1600MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro K620",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-8",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "00-D8-61-32-D7-3A",
+				"num": "8",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i9 9900K",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1080 Ti",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "M2",
+						"brand": ""
+					},
+					{
+						"size": "2TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-9",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/04/19",
+			"note": "Tầng 4, 09/03/23",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-E7-8D-72",
+				"num": "9",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050",
+						"vram": "2GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-10",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Dell đồng bộ",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-9E-F3-29-7B-4D",
+				"num": "10",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 6400",
+				"ram": [
+					"08GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro P400",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-11",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Dell đồng bộ",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-9E-F3-29-CD-52",
+				"num": "11",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 6400",
+				"ram": [
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro P400",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-12",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/6/11",
+			"note": "Dell đồng bộ",
+			"attributes": {
+				"connector": [],
+				"macAddress": "30-9C-23-5B-3A-22",
+				"num": "12",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 7400",
+				"ram": [
+					"08GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro P400",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-13",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/7",
+			"note": "Kho 16/03/23, 1 thanh ram lấy ngày 02/04/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "FC-34-97-A4-59-52",
+				"num": "13",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-14",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/25",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-96-9D-1A",
+				"num": "14",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2933MHz",
+					"08GB 2933MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-15",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/11",
+			"note": "HP Prodesk 600 G2",
+			"attributes": {
+				"connector": [],
+				"macAddress": "70-5A-0F-30-45-D4",
+				"num": "15",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 6400",
+				"ram": [
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro P400",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-16",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/05/31",
+			"note": "Lenovo B250",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "16",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i3 7100",
+				"ram": [
+					"08GB 3200MHz"
+				],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-17",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/7/1",
+			"note": "Tầng 5 17/04/23",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-2F-04-22",
+				"num": "17",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3000MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-18",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "14/04/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "48-4D-7E-F4-14-AA",
+				"num": "18",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Xeon E3 - 1270 v5",
+				"ram": [
+					"08GB 2133MHz",
+					"08GB 2133MHz",
+					"08GB 2133MHz",
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro K2200",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "120GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-19",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E6-56-90",
+				"num": "19",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 7 2700",
+				"ram": [
+					"08GB 2800MHz",
+					"08GB 2800MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-20",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "14/07/23, Tầng 7",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-06-E2-07",
+				"num": "20",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 7 2700",
+				"ram": [
+					"08GB 2400MHz",
+					"08GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-21",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "1 ổ 1TB lấy ngày 17/03/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "AC-22-0B-8B-10-AB",
+				"num": "21",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700F",
+				"ram": [
+					"08GB 1333MHz",
+					"08GB 1333MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-22",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Tầng 5 14/04/23, Không lên nguồn",
+			"attributes": {
+				"connector": [],
+				"macAddress": "18-66-DA-30-9C-0E",
+				"num": "22",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Xeon E3 - 1270 v5",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro K620",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-23",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/3/10",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-E7-90-0E",
+				"num": "23",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX TITAN X",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-24",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/6/9",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-D4-C4-07-63-8A",
+				"num": "24",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 9700F",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-25",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/7",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "FC-34-97-A4-59-37",
+				"num": "25",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-26",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/25",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D4-5D-64-B6-3C-64",
+				"num": "26",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 9400F",
+				"ram": [
+					"08GB 2933MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-27",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/11/9",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D4-5D-64-EF-24-1F",
+				"num": "27",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 9400F",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-28",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/17",
+			"note": "Card 1060 lấy bên a Hưng",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-0B-65-6C",
+				"num": "28",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600X",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-29",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/19",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "2C-F0-5D-22-81-7A",
+				"num": "29",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600X",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-30",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/05/24",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-EB-E8-8F",
+				"num": "30",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700K",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz",
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-31",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/6/10",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "18-C0-4D-7C-19-73",
+				"num": "31",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700K",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-32",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/6/10",
+			"note": "01/07/23, Kho",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-20-8D-F8",
+				"num": "32",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700K",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-33",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/06/18",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-2F-04-4F",
+				"num": "33",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-34",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/7/1",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-63-3A-9C",
+				"num": "34",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-35",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/7/1",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "2C-F0-5D-72-AF-ED",
+				"num": "35",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-36",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/7/1",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-2F-04-87",
+				"num": "36",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-37",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/07/16",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-20-0F-0B",
+				"num": "37",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 11700K",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-38",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/07/16",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-21-B8-D4",
+				"num": "38",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 11700K",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-39",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/07/16",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-22-14-31",
+				"num": "39",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 11700K",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-40",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/2/11",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-FE-FD-B6",
+				"num": "40",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 11700KF",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-41",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/02/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-FF-00-4E",
+				"num": "41",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 11700KF",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-42",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/03/14",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "42",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700F",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660 6GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-43",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Kho",
+			"attributes": {
+				"connector": [],
+				"macAddress": "18-66-DA-32-37-AC",
+				"num": "43",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Xeon E3 - 1225 v5",
+				"ram": [
+					"04GB 2133MHz",
+					"04GB 2133MHz",
+					"04GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro K2200",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "120GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-44",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2020/12/13",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-E7-8D-63",
+				"num": "44",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"16GB 2400MHz",
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-45",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Dell đồng bộ",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-9E-F3-05-A2-77",
+				"num": "45",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 6400",
+				"ram": [
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro P400",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-46",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/7",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "FC-34-97-A4-58-FC",
+				"num": "46",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-47",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/7",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "FC-34-97-A4-59-35",
+				"num": "47",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-48",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/22",
+			"note": "10/05/23, Kho. Máy đồng bộ, HP đồng bộ",
+			"attributes": {
+				"connector": [],
+				"macAddress": "DC-4A-3E-81-E5-70",
+				"num": "48",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 6400",
+				"ram": [
+					"08GB 2133MHz",
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "Gpro 4200 4GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-49",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/3/12",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-5C-0F-82",
+				"num": "49",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 10500",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-50",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/03/15",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-2F-03-10",
+				"num": "50",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "M2",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-51",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/6/10",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "A8-A1-59-2E-8E-C2",
+				"num": "51",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-52",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/06/18",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "50-EB-F6-28-78-3D",
+				"num": "52",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-53",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/7/1",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-2F-02-7A",
+				"num": "53",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-54",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/7/1",
+			"note": "04/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-2F-04-22",
+				"num": "54",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-55",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/7/9",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "70-85-C2-F2-C7-BC",
+				"num": "55",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2667MHz",
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-56",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/07/16",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-D9-F5-CD-D7-71",
+				"num": "56",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-57",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/11/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "57",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Xeon W2195",
+				"ram": [
+					"64GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA RTX 3080",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "1TB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-58",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/11/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "F0-2F-74-95-36-8A\r\nF0-2F-74-95-36-89",
+				"num": "58",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Xeon W2175",
+				"ram": [
+					"64GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA RTX 3080",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "1TB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-59",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/11/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "F0-2F-74-95-37-80\r\nF0-2F-74-95-37-7F",
+				"num": "59",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Xeon W2195",
+				"ram": [
+					"64GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA RTX 3080",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "1TB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-60",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/11/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "F0-2F-74-95-37-B6\r\nF0-2F-74-95-37-B5",
+				"num": "60",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Xeon W2195",
+				"ram": [
+					"64GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA RTX 3080",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "1TB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-61",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "61",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "iMac",
+				"ram": [],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": []
+			}
+		},
+		{
+			"name": "PC-62",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/12/24",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "62",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Mac mini 2020",
+				"ram": [],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": []
+			}
+		},
+		{
+			"name": "PC-63",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/02/18",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "7C-10-C9-3F-07-9F",
+				"num": "63",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen Threadripper 3960X",
+				"ram": [
+					"32GB 3200MHz",
+					"32GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3090",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-64",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Tầng 5 ngày 28/03/23",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-98-75-8F",
+				"num": "64",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600X",
+				"ram": [
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 960",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-65",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/01/27",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "7C-10-C9-3F-07-92",
+				"num": "65",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen Threadripper 3960X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA RTX A4000\r",
+						"vram": "",
+						"connector": []
+					},
+					{
+						"name": "NVIDIA Quadro P2200",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-66",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/02/22",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "66",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i9 10980XE",
+				"ram": [
+					"32GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3090",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "1TB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-67",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/6/9",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E6-AE-F8",
+				"num": "67",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i9 9900K",
+				"ram": [
+					"16GB 3000MHz",
+					"16GB 3000MHz",
+					"16GB 3000MHz",
+					"16GB 3000MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3080",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-68",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/04",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "68",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "MSI đi họp",
+				"ram": [],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": []
+			}
+		},
+		{
+			"name": "PC-69",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2020/11/16",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "30-9C-23-A8-5E-03",
+				"num": "69",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 9700K",
+				"ram": [
+					"16GB 2667MHz",
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 2080Ti",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-70",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "70",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 5830K",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz",
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 2070\r",
+						"vram": "",
+						"connector": []
+					},
+					{
+						"name": "NVIDIA GeForce GTX 2070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "120GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-71",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "01/07/23. Kho",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-AD-14-39",
+				"num": "71",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-72",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/3/10",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "02-50-08-60-C2-E3",
+				"num": "72",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-73",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2020/12/13",
+			"note": "Thay tản chip + lắp thêm ssd M2 256 ngày 03/11\r\nA Dân mang vào SG 05/11\r\n28/9/2022 (card bị hỏng 1 bên quạt không có thiết bị thay)",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-E7-8D-F3",
+				"num": "73",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 2070 Super",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-74",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/02/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-D9-F5-CD-D8-33",
+				"num": "74",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 9 5900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060 12GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-75",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/7",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "F0-2F-74-88-F2-64",
+				"num": "75",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 7 3700X",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-76",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/09/30",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-56-E6-5A",
+				"num": "76",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 11700K",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-77",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-18-E7-C6",
+				"num": "77",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600X",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-78",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2020/11/29",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "1C-1B-0D-6E-A3-BA",
+				"num": "78",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 7 2700",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-79",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/12/9",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-1D-F0-63",
+				"num": "79",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Ryzen 9 5900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060",
+						"vram": "12GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-80",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/25",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D4-5D-64-B6-3D-60",
+				"num": "80",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 9400F",
+				"ram": [
+					"08GB 2933MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-81",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Kho",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E6-5B-9C",
+				"num": "81",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 7 2700",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1080 Ti",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-82",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-36-1E-69",
+				"num": "82",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 7 2700",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz",
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1080 Ti",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "480GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-83",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2020/11/13",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "18-C0-4D-18-98-C1",
+				"num": "83",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i9 9960K",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz",
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3090",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-84",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "1 thanh ram lấy ngày 02/04/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "24-4B-FE-99-88-6A",
+				"num": "84",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i9 10900K",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1080 Ti",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-85",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E6-56-99",
+				"num": "85",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"04GB 2400MHz",
+					"04GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "Radeon RX 570 Series",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-86",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/03/14",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "86",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 9 5900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060 12GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-88",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "04/07/23, Tầng 1",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E4-8F-77",
+				"num": "88",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 7 2700",
+				"ram": [
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-89",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Ổ cứng lắp ngày 21/09/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-98-75-2E",
+				"num": "89",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600X",
+				"ram": [
+					"08GB 2133MHz",
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-90",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-30-C5-4C",
+				"num": "90",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz",
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1080",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-91",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "88-D7-F6-55-67-F1",
+				"num": "91",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Asus ROG G20AJ",
+				"ram": [],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": []
+			}
+		},
+		{
+			"name": "PC-92",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "04/04/23: Thay 3070",
+			"attributes": {
+				"connector": [],
+				"macAddress": "1C-1B-0D-9B-80-12",
+				"num": "92",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 6850K",
+				"ram": [
+					"08GB 2667MHz",
+					"08GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-93",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E7-CA-9B",
+				"num": "93",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i9 9960X",
+				"ram": [
+					"16GB 2400MHz",
+					"16GB 2400MHz",
+					"16GB 2400MHz",
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3080",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-94",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/03/21",
+			"note": "1 thanh ram lấy ngày 02/04/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-40-A5-29",
+				"num": "94",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 9700K",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060 12GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-95",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/5/5",
+			"note": "04/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "A8-A1-59-3E-41-4C",
+				"num": "95",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700",
+				"ram": [
+					"16GB 2667MHz",
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 2070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-96",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "48-4D-7E-DD-46-CE",
+				"num": "96",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 6700",
+				"ram": [
+					"08GB 2133MHz",
+					"08GB 2133MHz",
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-97",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/25",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D4-5D-64-B6-44-57",
+				"num": "97",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700F",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 3060",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-98",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/11/9",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D4-5D-64-EF-65-10",
+				"num": "98",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-99",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/12/3",
+			"note": "1 thanh ram lấy ngày 02/04/22\r\nĐổi card A4000, card cũ MSI RTX 2070",
+			"attributes": {
+				"connector": [],
+				"macAddress": "18-C0-4D-7E-73-38",
+				"num": "99",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 9700KF",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 2060",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-100",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/3/12",
+			"note": "1 thanh ram lắp ngày 21/09/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-A8-06-F6",
+				"num": "100",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i9 12900K",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060",
+						"vram": "12GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-101",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/03/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-AC-08-46",
+				"num": "101",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 12600K",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "512GB",
+						"type": "M2",
+						"brand": ""
+					},
+					{
+						"size": "2TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-102",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/4/2",
+			"note": "Thêm 1 ram 16GB ngày 01/08/22\r\n1 thanh ram lắp ngày 21/09/22\r\nCard 3060 lấy ngày 26/05/23",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-21-C1-DB",
+				"num": "102",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i9 10900K",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060",
+						"vram": "12GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-103",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/4/6",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-88-C1-0B-65-6A",
+				"num": "103",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-104",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/19",
+			"note": "Đổi ram, card, ssd, hdd với máy 63, lắp thêm 1 Ram",
+			"attributes": {
+				"connector": [],
+				"macAddress": "2C-F0-5D-22-81-6F",
+				"num": "104",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600X",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1080",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-105",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/07/16",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-D9-F5-CD-D7-52",
+				"num": "105",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-106",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/10/27",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-56-E6-7C",
+				"num": "106",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 11600K",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA RTX 3060",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-107",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/11/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "F0-2F-74-95-36-96\r\nF0-2F-74-95-36-95",
+				"num": "107",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Xeon W2175",
+				"ram": [
+					"64GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA RTX 3080",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "1TB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-108",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/09/13",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-0E-2A-91",
+				"num": "108",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700",
+				"ram": [
+					"16GB 2667MHz",
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060",
+						"vram": "12GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-109",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/09/13",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-0E-34-B6",
+				"num": "109",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700",
+				"ram": [
+					"16GB 2667MHz",
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3090",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-110",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/03/25",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "110",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 12700K",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 2070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-112",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "04/07/23, Tầng 3",
+			"attributes": {
+				"connector": [],
+				"macAddress": "3C:07:54:7D:85:8A",
+				"num": "112",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Mac Pro",
+				"ram": [],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": []
+			}
+		},
+		{
+			"name": "PC-113",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D0-17-C2-99-B4-A6",
+				"num": "113",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 4790",
+				"ram": [
+					"08GB 1600MHz",
+					"08GB 1600MHz"
+				],
+				"VGA": [
+					{
+						"name": "Intel HD Graphics 4600",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-114",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-9E-F3-32-45-3B",
+				"num": "114",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 6700",
+				"ram": [
+					"04GB 2133MHz",
+					"04GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro K620",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "2 ổ 120GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1 ổ 1TB",
+						"type": "HDD",
+						"brand": ""
+					},
+					{
+						"size": "1 ổ 500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-115",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/3/9",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "C8-5A-CF-6E-6D-BF",
+				"num": "115",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "HP 15S - DU",
+				"ram": [],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": []
+			}
+		},
+		{
+			"name": "PC-116",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/12/9",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "44-AF-28-56-83-22\r\n44-AF-28-56-83-21",
+				"num": "116",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700T",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA RTX 3060",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-117",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "117",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 7400",
+				"ram": [
+					"8GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050Ti",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "1TB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-118",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/03/14",
+			"note": "Dell 3060",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "118",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 8600",
+				"ram": [
+					"16GB"
+				],
+				"VGA": [
+					{
+						"name": "Quadro P600 2GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": []
+			}
+		},
+		{
+			"name": "PC-119",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/3/10",
+			"note": "Thêm 2 ram 8GB ngày 30/12/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-07-7F-30",
+				"num": "119",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3400G",
+				"ram": [
+					"16GB 2666MHz\r\n08GBx2 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-120",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "70-4D-7B-A5-03-9D",
+				"num": "120",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Asus ROG G20AJ",
+				"ram": [],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": []
+			}
+		},
+		{
+			"name": "PC-121",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-AD-14-51",
+				"num": "121",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-122",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "34-97-F6-00-A2-8E",
+				"num": "122",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Dual Intel Xeon E5 - 2670 v2",
+				"ram": [
+					"08GB 1866MHz",
+					"08GB 1866MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-123",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "04/05/23, Kho",
+			"attributes": {
+				"connector": [],
+				"macAddress": "00-25-90-A8-16-F4",
+				"num": "123",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Dual Core Xeon E5 - 2670 v2",
+				"ram": [
+					"16GB 1066MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-124",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-06-EF-AF",
+				"num": "124",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050",
+						"vram": "2GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-125",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Thêm 2 ram 8GB ngày 30/12/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E6-4F-0C",
+				"num": "125",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2400MHz\r\n08GBx2 2133MHz",
+					"08GB 2400MHz\r\n08GBx2 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-126",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/1/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "18-C0-4D-18-A5-E4",
+				"num": "126",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 9700",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1080 Ti",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-127",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-30-C5-9B",
+				"num": "127",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-128",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Thêm 2 ram 8gb ngày 30/12/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-07-7F-AA",
+				"num": "128",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2400MHz\r\n08GBx2 2133MHz",
+					"08GB 2400MHz\r\n08GBx2 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050Ti",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-129",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Đi sửa 22/9",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-E7-8D-F6",
+				"num": "129",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3500",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-130",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Thêm 2 ram 8gb ngày 30/12/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-30-C5-83",
+				"num": "130",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2133MHz",
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-131",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-30-95-E3",
+				"num": "131",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2666MHz\r\n08GBx1 2133MHz",
+					"08GB 2666MHz\r\n08GBx1 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-132",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-E7-8E-9D",
+				"num": "132",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-133",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/6/11",
+			"note": "Zotac đồng bộ",
+			"attributes": {
+				"connector": [],
+				"macAddress": "00-01-2E-70-82-91",
+				"num": "133",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 6400T",
+				"ram": [
+					"04GB 2133MHz\r\n16GBx1 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-134",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-E7-8F-08",
+				"num": "134",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"16GB 2666MHz\r\n08GBx1 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-135",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/7",
+			"note": "Tầng 1",
+			"attributes": {
+				"connector": [],
+				"macAddress": "FC-34-97-A4-58-A5",
+				"num": "135",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-136",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/7",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "FC-34-97-A4-58-92",
+				"num": "136",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-137",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/25",
+			"note": "Thay main + chip ngày 28/02/23",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D4-5D-64-B6-43-1A",
+				"num": "137",
+				"ipAddress": "",
+				"mainBoard": "Gigabyte B450M",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz\r\n08GBx1 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-138",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/3/12",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-5E-D3-20-97-5A",
+				"num": "138",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060",
+						"vram": "12GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-139",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/03/23",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-2F-03-1E",
+				"num": "139",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "M2",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-140",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/4/2",
+			"note": "Lắp tạm 3500",
+			"attributes": {
+				"connector": [],
+				"macAddress": "2C-F0-5D-E3-D5-87",
+				"num": "140",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-141",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/4/2",
+			"note": "Thêm 2 ram 8GB ngày 30/12/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "2C-F0-5D-E3-D5-83",
+				"num": "141",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz\r\n08GBx2 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-142",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/15",
+			"note": "Card 1060 lấy bên a Hưng",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-0B-65-4F",
+				"num": "142",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600X",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-143",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/05/24",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-15-A3-99",
+				"num": "143",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-144",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/6/10",
+			"note": "Kho",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "144",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i3 7100",
+				"ram": [
+					"08GB 3200MHz"
+				],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-145",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/06/18",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-2F-03-13",
+				"num": "145",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"08GB 2400MHz",
+					"08GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-146",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/06/18",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-2F-03-04",
+				"num": "146",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz\r\n08GBx1 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-147",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/7/1",
+			"note": "Thêm 2 ram 8GB ngày 30/12/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-2F-04-5B",
+				"num": "147",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"08GB 2133MHz\r\n08GBx1 2133MHz",
+					"08GB 2133MHz\r\n08GBx1 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-148",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/7/1",
+			"note": "Tầng 1",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-42-1A-2F-04-29",
+				"num": "148",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2666MHz\r\n08GBx2 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 2060",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-149",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/7/1",
+			"note": "Tầng 1",
+			"attributes": {
+				"connector": [],
+				"macAddress": "2C-F0-5D-72-AF-83",
+				"num": "149",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2400MHz",
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-150",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/10/14",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E2-5C-89",
+				"num": "150",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-151",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/8/12",
+			"note": "Thêm 2 ram 8GB ngày 30/12/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-15-A3-56",
+				"num": "151",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2667MHz\r\n08GBx2 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-152",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/8/12",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-15-A3-77",
+				"num": "152",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-153",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/8/12",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-15-A3-62",
+				"num": "153",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-154",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/8/12",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-15-A3-C3",
+				"num": "154",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2667MHz\r\n08GBx1 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-155",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/8/12",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-15-A3-79",
+				"num": "155",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-156",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Kho 09/03/23",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E6-56-B3",
+				"num": "156",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-157",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/05/24",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "6C-4B-90-48-54-75",
+				"num": "157",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i3 7100",
+				"ram": [
+					"08GB 3200MHz"
+				],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-158",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/04/19",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-E7-90-06",
+				"num": "158",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1080",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-159",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/03/14",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "159",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 9 5900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3090",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-160",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-30-C5-4A",
+				"num": "160",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2400MHz",
+					"08GB 2400MHz",
+					"08GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-161",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-30-C5-48",
+				"num": "161",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-162",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-33-AF-A4",
+				"num": "162",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen Threadripper 1920X",
+				"ram": [
+					"16GB 2133MHz",
+					"16GB 2133MHz",
+					"16GB 2133MHz",
+					"16GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 2070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-163",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "70-85-C2-AB-EF-1F",
+				"num": "163",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 7 2700",
+				"ram": [
+					"16GB 2667MHz",
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1080 Ti",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-164",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "01/07/23, Tầng 3",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-E8-94-86",
+				"num": "164",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050",
+						"vram": "2GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-165",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-98-75-52",
+				"num": "165",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2133MHz",
+					"08GB 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-166",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Đang sửa",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E4-8F-75",
+				"num": "166",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2400MHz",
+					"08GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-167",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E6-56-A6",
+				"num": "167",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-168",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-AD-14-50",
+				"num": "168",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-169",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/3/10",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-E7-90-07",
+				"num": "169",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-170",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/03/29",
+			"note": "Hỏng 1 ram ngày 26/12/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D4-5D-64-B6-46-37",
+				"num": "170",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 9700K",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 2070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-171",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/03/31",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D4-5D-64-B6-44-21",
+				"num": "171",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 9700K",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz",
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 2070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-172",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/11/22",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D4-5D-64-B6-44-3A",
+				"num": "172",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 9700K",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 2070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "512GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-173",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/7",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "FC-34-97-A4-59-20",
+				"num": "173",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-174",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/7",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "FC-34-97-A4-59-1D",
+				"num": "174",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA RTX 3060",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-175",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "04/05/23, Kho. Máy đồng bộ",
+			"attributes": {
+				"connector": [],
+				"macAddress": "A0-48-1C-AB-CD-19",
+				"num": "175",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Xeon E5 - 2620",
+				"ram": [
+					"08GB 1333MHz",
+					"08GB 1333MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro 600",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "120GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-176",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/25",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "FC-34-97-A4-58-CE",
+				"num": "176",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2600MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "M2",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-177",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/25",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "18-C0-4D-22-87-74",
+				"num": "177",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2933MHz\r\n08GBx1 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-178",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/25",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D4-5D-64-B6-44-4D",
+				"num": "178",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 9400F",
+				"ram": [
+					"08GB 2933MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-179",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/1",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "179",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 8700",
+				"ram": [
+					"16GB 2666MHz"
+				],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-180",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/4/2",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "2C-F0-5D-E3-D5-7F",
+				"num": "180",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-181",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/17",
+			"note": "Card 1060 lấy bên a Hưng",
+			"attributes": {
+				"connector": [],
+				"macAddress": "2C-F0-5D-E3-D5-A0",
+				"num": "181",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600X",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-182",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-0B-65-54",
+				"num": "182",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600X",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-183",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-0B-65-58",
+				"num": "183",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600X",
+				"ram": [
+					"16GB 2400MHz",
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-184",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-0B-65-BA",
+				"num": "184",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600X",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-185",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "2C-F0-5D-E3-D5-45",
+				"num": "185",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600X",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-186",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "2C-F0-5D-E3-D5-9E",
+				"num": "186",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 5600X",
+				"ram": [
+					"16GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-187",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/05/24",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "F4-4D-30-F9-F3-88",
+				"num": "187",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 7400",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-188",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/6/10",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "A8-A1-59-2E-86-3E",
+				"num": "188",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-189",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/6/10",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "A8-A1-59-2E-85-F4",
+				"num": "189",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-190",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/6/10",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "A8-A1-59-2E-86-36",
+				"num": "190",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-191",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/7/1",
+			"note": "Tầng 1",
+			"attributes": {
+				"connector": [],
+				"macAddress": "2C-F0-5D-72-AF-AB",
+				"num": "191",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-192",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "04/05/23, Kho",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B0-6E-BF-D0-94-31",
+				"num": "192",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200Mhz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-193",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/12/9",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "D8-BB-C1-1D-FA-F2",
+				"num": "193",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Ryzen 9 5900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 2060",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-194",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/09/23",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "18-C0-4D-38-75-AC",
+				"num": "194",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 9 5900X",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz",
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3080",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "1TB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-195",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/09/13",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "18-C0-4D-38-75-AC",
+				"num": "195",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700",
+				"ram": [
+					"16GB 2667MHz",
+					"16GB 2667MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060",
+						"vram": "12GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "256GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-196",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Thay main + chip ngày 28/02/23\r\nThay ổ cứng 240GB ngày 17/04/23",
+			"attributes": {
+				"connector": [],
+				"macAddress": "54-A0-50-86-B7-EC",
+				"num": "196",
+				"ipAddress": "",
+				"mainBoard": "Gigabyte B450M",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-197",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Ram 8GB lấy ngày 02/04/22",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E4-84-D7",
+				"num": "197",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"04GB 2133MHz\r\n08GBx1 2800MHz",
+					"04GB 2133MHz\r\n08GBx1 2800MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-198",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/09/23",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "B4-2E-99-AB-36-ED",
+				"num": "198",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i9 10900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3090",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-199",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/02/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-D9-F5-CD-D5-9B",
+				"num": "199",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 9 5900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060 12GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-200",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/02/17",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-D9-F5-CD-DB-36",
+				"num": "200",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 9 5900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060 12GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-201",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/02/17",
+			"note": "05/05/23, Tầng 1",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-D9-F5-CD-DA-B2",
+				"num": "201",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 9 5900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060 12GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-202",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/02/17",
+			"note": "Lắp thêm 1 ổ 1Tb mượn tạm",
+			"attributes": {
+				"connector": [],
+				"macAddress": "04-D9-F5-CD-D4-21",
+				"num": "202",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 9 5900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060 12GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-203",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/03/14",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "203",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 9 5900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060 12GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-204",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/03/14",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "204",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 9 5900X",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060 12GB",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "500GB",
+						"type": "M2",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-205",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2022/04/15",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "18-C0-4D-60-21-75",
+				"num": "205",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700K",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz",
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA RTX A4000",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-207",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2021/10/7",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "F0-2F-74-88-F2-35",
+				"num": "207",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 7 3700X",
+				"ram": [
+					"16GB 2666MHz",
+					"16GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-208",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E4-75-A8",
+				"num": "208",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1070",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-209",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "Kho 16/03/23",
+			"attributes": {
+				"connector": [],
+				"macAddress": "0C-C4-7A-00-89-5F",
+				"num": "209",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"08GB 1866MHz",
+					"08GB 1866MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-211",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "04/05/23, Kho",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "211",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Asus ROG G20AJ",
+				"ram": [],
+				"VGA": [],
+				"PSU": "",
+				"hardDrives": []
+			}
+		},
+		{
+			"name": "PC-212",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "04/04/23 Tầng 4",
+			"attributes": {
+				"connector": [],
+				"macAddress": "E0-D5-5E-E4-8F-33",
+				"num": "212",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 2600",
+				"ram": [
+					"08GB 2400MHz",
+					"08GB 2400MHz",
+					"08GB 2400MHz",
+					"08GB 2400MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1060",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-213",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "04/05/23, Kho. Máy đồng bộ",
+			"attributes": {
+				"connector": [],
+				"macAddress": "64-51-06-3F-AC-99",
+				"num": "213",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Xeon E5 - 2620 v2",
+				"ram": [
+					"04GB 1333MHz",
+					"04GB 1333MHz",
+					"04GB 1333MHz",
+					"04GB 1333MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA Quadro K620",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "120GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "500GB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-214",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "214",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 10700F",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-215",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "215",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i7 5830K",
+				"ram": [
+					"08GB 2666MHz",
+					"08GB 2666MHz",
+					"08GB 2666MHz",
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce RTX 3060",
+						"vram": "12GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "120GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-216",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "216",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-217",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "a Bắc",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "217",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-219",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "219",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-220",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "220",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-221",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "05/07/23, Tầng 3",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "221",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-222",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "222",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-223",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "223",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-224",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "224",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-225",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "225",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-227",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "227",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-228",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "228",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-229",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "229",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-233",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "233",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-234",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "234",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-235",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "235",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-236",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "236",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-237",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "237",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-239",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "239",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-240",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "240",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-241",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "241",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-244",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/04/18",
+			"note": "04/05/23, Tầng 2",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "244",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-245",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/04/18",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "245",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-246",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/04/18",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "246",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz\r\n08GBx1 2133MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-247",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "247",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-248",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/5/5",
+			"note": "09/05/23, Tầng 7",
+			"attributes": {
+				"connector": [],
+				"macAddress": "58-11-22-B6-51-78",
+				"num": "248",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i5 10400F",
+				"ram": [
+					"16GB 3200MHz",
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "M2",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-249",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/06/15",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "50-EB-F6-79-1B-B5",
+				"num": "249",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "Intel Core i3 10105F",
+				"ram": [
+					"08GB 2666MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GT 730",
+						"vram": "",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "250GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-250",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "250",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1050 Ti",
+						"vram": "4GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-251",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "251",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-252",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "252",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-253",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "253",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-254",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "254",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-255",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "255",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-256",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "12/07/23, Tầng 5",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "256",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "PC-257",
+			"supplier": "",
+			"type": "case",
+			"billPrice": "",
+			"createdAt": "2023/4/5",
+			"note": "04/07/23, Tầng 3",
+			"attributes": {
+				"connector": [],
+				"macAddress": "",
+				"num": "257",
+				"ipAddress": "",
+				"mainBoard": "",
+				"chipset": "AMD Ryzen 5 3600",
+				"ram": [
+					"16GB 3200MHz"
+				],
+				"VGA": [
+					{
+						"name": "NVIDIA GeForce GTX 1660",
+						"vram": "6GB",
+						"connector": []
+					}
+				],
+				"PSU": "",
+				"hardDrives": [
+					{
+						"size": "240GB",
+						"type": "SSD",
+						"brand": ""
+					},
+					{
+						"size": "1TB",
+						"type": "HDD",
+						"brand": ""
+					}
+				]
+			}
+		}
+	]
+}

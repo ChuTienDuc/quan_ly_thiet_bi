@@ -1,0 +1,68 @@
+{
+  "items": [{
+      "_id": "64a90b0dcbdfc98ee05dcd16",
+      "name": "Maya",
+      "status": 1
+    },
+    {
+      "_id": "64a90b12cbdfc98ee05dcd19",
+      "name": "Blender",
+      "status": 1
+    },
+    {
+      "_id": "64a90b16cbdfc98ee05dcd1c",
+      "name": "UE",
+      "status": 1
+    },
+    {
+      "_id": "64a90b1bcbdfc98ee05dcd1f",
+      "name": "Rig",
+      "status": 1
+    },
+    {
+      "_id": "64a90b1ecbdfc98ee05dcd22",
+      "name": "Com",
+      "status": 1
+    },
+    {
+      "_id": "64a90b22cbdfc98ee05dcd25",
+      "name": "Model",
+      "status": 1
+    },
+    {
+      "_id": "64a90b26cbdfc98ee05dcd28",
+      "name": "Virtual",
+      "status": 1
+    },
+    {
+      "_id": "64a90b2bcbdfc98ee05dcd2b",
+      "name": "Lập trình",
+      "status": 1
+    },
+    {
+      "_id": "64a90b31cbdfc98ee05dcd2e",
+      "name": "Thiết kế",
+      "status": 1
+    },
+    {
+      "_id": "64ad3098424fa5c0385db94c",
+      "name": "Nội dung",
+      "status": 1
+    },
+    {
+      "_id": "64ae62fdf2b65c8073e6d7cb",
+      "name": "Điều hành",
+      "status": 1
+    },
+    {
+      "_id": "64bf4e6e50ce04180df2114f",
+      "name": "HC-KT",
+      "status": 1
+    },
+    {
+      "_id": "64bf513b5154f14e328dad58",
+      "name": "Marketing",
+      "status": 1
+    }
+  ]
+}

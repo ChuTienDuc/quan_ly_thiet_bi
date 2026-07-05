@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="/stylesheets/case.css">
+    <style>
+        #table_component th {
+            width: max-content !important;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+
+    <body id="body-pd" class="body-pd">
+        <%- include("./nav.html") %>
+            <!--Container Main start-->
+            <div class="height-100">
+                <main class="content p-0 pt-4">
+                    <div class="container-fluid p-0 ">
+                        <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                            <div class="col-5" style="width: max-content;">
+                                <h3 class="color_header">Quản lý phụ kiện</h3>
+                            </div>
+                            <button class="col-1 btn bg-color-all c-white" data-bs-toggle="modal"
+                                data-bs-target="#addDevice" style="width: max-content; border-radius: 29px;">Thêm
+                                phụ kiện
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0 d-flex">
+                                <div class="card flex-fill"
+                                    style="overflow-y:auto; overflow-x: scroll; max-height: 85vh;">
+                                    <table class="table table-bordered table-hover table-responsive w-100 my-0"
+                                        style="width: max-content;" id="table_component">
+                                        <thead class="th_table_sticky">
+                                            <tr class="align-middle text-center">
+                                                <th class="col text-center">
+                                                    <span>Chi tiết</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Kiểu phụ kiện</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Thuộc tính</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Tổng số lượng</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Số lượng còn lại</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Nhà cung cấp</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Giá hóa đơn</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Ngày nhập kho</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Hạn bảo hành</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Ghi chú</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="dataComponent" style="background-color: #fff;">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <div class="modal fade modal-xl" id="addDevice" tabindex="-1" aria-labelledby="exampleModalLabel"
+                data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-black">
+                        <div class="modal-header text-center">
+                            <span class="modal-title f-s-24 color_title" id="addComponentLabel">
+                                Thêm phụ kiện
+                            </span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                onclick="deleteInput()"></button>
+                        </div>
+                        <div class="modal-body f-s-16 container pb-0">
+                            <div id="input_add_component">
+                                <div class="row justify-content-center">
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="type_add_component" class="col-form-label color_title">Kiểu
+                                                    phụ kiện:
+                                                </label>
+                                            </div>
+                                            <div class="col-7">
+                                                <select class="form-select form-select-md connector"
+                                                    id="type_add_component" aria-label=".form-select-lg example"
+                                                    onchange="changeAddComponent(this.value,'create')">
+                                                    <option value="ram">Ram</option>
+                                                    <option value="VGA">VGA</option>
+                                                    <option value="PSU">PSU</option>
+                                                    <option value="hardDrives">Ổ cứng</option>
+                                                    <option value="chipset">Chipset</option>
+                                                    <option value="mainBoard">Main broard</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="quantity" class="col-form-label color_title">Số lượng:
+                                                </label>
+                                            </div>
+                                            <div class="col-7">
+                                                <input type="number" id="quantity" min="1" class="form-control"
+                                                    placeholder="Nhập số lượng">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-center p-0">
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center" id="add_component">
+                                            <div class="col-3">
+                                                <label class="col-form-label color_title">Ram: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <input type="text" name="ram" id="ram_create" list="datalistram"
+                                                    autocomplete="off" class="form-control" placeholder="Nhập Ram">
+                                                <div class="invalid-feedback">Vui lòng nhập ram</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="supplier_addcomponent"
+                                                    class="col-form-label color_title">Nhà cung cấp:
+                                                </label>
+                                            </div>
+                                            <div class="col-6">
+                                                <select class="form-select form-select-md supplier"
+                                                    id="supplier_addcomponent" aria-label=".form-select-lg example">
+                                                    <option></option>
+                                                </select>
+
+                                            </div>
+                                            <div class="col-1 ps-0 d-flex align-items-end"><button
+                                                    data-bs-target="#create_supplier" data-bs-toggle="modal"
+                                                    class="btn btn_add" id="createSupplier"><i
+                                                        class="fa fa-plus text-white"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row justify-content-center p-0">
+                                    <div class="col-6 mb-3" style="position: relative;">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="bill_price" class="col-form-label color_title">Giá hóa đơn:
+                                                </label>
+                                            </div>
+                                            <div class="col-7 ">
+                                                <input type="text" id="bill_price" autocomplete="off"
+                                                    list="datalistbillprice" class="form-control"
+                                                    placeholder="Nhập giá hóa đơn">
+                                                <div class="invalid-feedback">Vui lòng nhập giá hóa đơn</div>
+                                                <div style="position: absolute;top: 5.5%;right: 11%; color: #163EB1;">
+                                                    VND</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3" style="position: relative;">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="total_price" class="col-form-label color_title">Tổng giá:
+                                                </label>
+                                            </div>
+                                            <div class="col-7 ">
+                                                <input type="text" id="total_price" disabled autocomplete="off"
+                                                    class="form-control" placeholder="Nhập tổng giá">
+                                                <div style="position: absolute;top: 5.5%;right: 11%; color: #163EB1;">
+                                                    VND</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center p-0">
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="expirationDate" class="col-form-label color_title">Hạn bảo
+                                                    hành:
+                                                </label>
+                                            </div>
+                                            <div class="col-7">
+                                                <input type="date" id="expirationDate" class="form-control"
+                                                    placeholder="Nhập hạn bảo hành">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="row justify-content-center">
+                                            <div class="input-group" style="max-width: 83%;">
+                                                <span class="input-group-text">Ghi chú</span>
+                                                <textarea class="form-control p-0" autocomplete="off"
+                                                    id="note_addcomponent" aria-label="With textarea"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex justify-content-center my-3">
+                                    <button type="button" id="button_cancel_create_component" onclick="deleteInput()"
+                                        class="btn btn-danger me-3" data-bs-dismiss="modal"
+                                        style="border-radius: 29px; background-color: #F81111; padding-left: 2.3rem; padding-right: 2.3rem;">Hủy</button>
+                                    <button type="button" id="button_create_component" class="btn btn-success "
+                                        onclick="createComponent()"
+                                        style="border-radius: 29px; background-color: #04A544; padding-left: 2.3rem; padding-right: 2.3rem;">Tạo</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- TODO Modal UpdateComponent -->
+            <div class="modal fade modal-xl" id="updateComponent" tabindex="-1" aria-labelledby="exampleModalLabel"
+                data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-black">
+                        <div class="modal-header text-center">
+                            <span class="modal-title f-s-24 font-weight-bold" id="updateComponentLabel">
+                                Cập nhật phụ kiện
+                            </span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body f-s-16 container pb-0">
+                            <div id="input_update_component">
+                                <div class="row justify-content-center">
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="type_update_component"
+                                                    class="col-form-label color_title">Kiểu phụ kiện:
+                                                </label>
+                                            </div>
+                                            <div class="col-7">
+                                                <input type="text" id="type_update_component" list="datalistname"
+                                                    autocomplete="off" class="form-control"
+                                                    placeholder="Nhập kiểu phụ kiện">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="expirationDate_updatecomponent"
+                                                    class="col-form-label color_title">Hạn
+                                                    bảo hành:
+                                                </label>
+                                            </div>
+                                            <div class="col-7">
+                                                <input type="date" id="expirationDate_updatecomponent"
+                                                    class="form-control" placeholder="Nhập hạn bảo hành">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-center p-0">
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center" id="update_component">
+                                            <div class="col-3">
+                                                <label class="col-form-label color_title">Ram: </label>
+                                            </div>
+                                            <div class="col-7 mb-2">
+                                                <input type="text" name="ram" id="ram_update" list="datalistram"
+                                                    autocomplete="off" class="form-control" placeholder="Nhập Ram">
+                                                <div class="invalid-feedback">Vui lòng nhập ram</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="supplier_updatecomponent"
+                                                    class="col-form-label color_title">Nhà cung
+                                                    cấp:
+                                                </label>
+                                            </div>
+                                            <div class="col-7">
+                                                <select class="form-select form-select-md connector"
+                                                    id="supplier_updatecomponent" aria-label=".form-select-lg example">
+                                                    <option></option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row justify-content-center p-0">
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="bill_price_update" class="col-form-label color_title">Giá
+                                                    hóa đơn:
+                                                </label>
+                                            </div>
+                                            <div class="col-7 ">
+                                                <input type="text" id="bill_price_update" autocomplete="off"
+                                                    list="datalistbillprice" class="form-control"
+                                                    placeholder="Nhập giá hóa đơn">
+                                                <div class="invalid-feedback">Vui lòng nhập giá hóa đơn</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="total_price_update" class="col-form-label color_title">Tổng
+                                                    giá:
+                                                </label>
+                                            </div>
+                                            <div class="col-7 ">
+                                                <input type="text" id="total_price_update" autocomplete="off"
+                                                    class="form-control" placeholder="Nhập tổng giá">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center p-0">
+                                    <div class="col-6 mb-3" id="data_status__component">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 ">
+                                                <label for="status_component" class="col-form-label color_title">Trạng
+                                                    thái:
+                                                </label>
+                                            </div>
+                                            <div class="col-7">
+                                                <select class="form-select form-select-md connector"
+                                                    id="status_component" aria-label=".form-select-lg example">
+                                                    <option value="-1">Đã hỏng</option>
+                                                    <option value="1">Có thế sử dụng</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Ghi chú</span>
+                                            <textarea class="form-control p-0" autocomplete="off"
+                                                id="note_updatecomponent" aria-label="With textarea"></textarea>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex justify-content-center my-3">
+                                    <button type="button" id="button_cancel_update_component"
+                                        class="btn btn-danger px-4 py-2 m-2" data-bs-dismiss="modal">Hủy</button>
+                                    <button type="button" id="button_update_component"
+                                        class="btn btn-success px-4 py-2 m-2">Cập
+                                        nhật</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- TODO Create Supplier -->
+            <div class="modal fade modal-lg" id="create_supplier" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2" tabindex="-1" data-bs-backdrop="static">
+
+            </div>
+            <script src="/javascripts/fomat.js"></script>
+            <script src="/javascripts/supplier.js"></script>
+    </body>
+    <script>
+        var dataComponent
+        function renderOptionSupplier() {
+            $.ajax({
+                url: GVS.GetAllSupplier,
+                method: "GET",
+                success: (res) => {
+                    var html = ''
+                    res.metadata.forEach((el) => {
+                        html += `<option value = "${el._id}">${el.name}</option>`
+                    })
+                    $("#supplier_addcomponent").html(html)
+                    $("#supplier_updatecomponent").html(html)
+
+                }
+            })
+        }
+
+        function getAllComponent() {
+            var ComponentInventory = []
+            $.ajax({
+                url: GVS.GetAllInventories,
+                method: "GET",
+                success: (res) => {
+                    res.metadata = res.metadata.filter((el) => el.type == "component")
+                    if (res.metadata.length > 0) {
+                        res.metadata[0].device.forEach(element => {
+                            ComponentInventory.push(element)
+                        })
+                    }
+                }
+            }).then(() => {
+                $.ajax({
+                    url: GVS.GetAllDeciveByType,
+                    method: "POST",
+                    data: {
+                        type: "component"
+                    },
+                    success: (res) => {
+                        ComponentInventory.forEach((elm) => {
+                            res.metadata.forEach((element, index) => {
+                                if (elm.device._id == element._id) {
+                                    res.metadata[index]["quantity"] = elm.quantity
+                                    res.metadata[index]["total"] = elm.total
+                                }
+                            });
+                        })
+                        $("#table_component").DataTable().destroy()
+                        dataComponent = res.metadata
+                        renderMain(res.metadata)
+                        renderOptionSupplier()
+                        $("#table_component").DataTable(
+                            {
+                                "pageLength": 50,
+                                lengthMenu: [20, 40, 50, 100, 200, 500],
+                            }
+                        )
+                    }
+                })
+            })
+        }
+
+        function renderMain(device) {
+            var typeComponentObj = {
+                "ram": "Ram",
+                "hardDrives": "Ổ cứng",
+                "chipset": "Chip set",
+                "mainBoard": "Bo mạch chủ",
+                "VGA": "VGA",
+                "PSU": "PSU"
+            }
+            var html = '';
+            device.sort((a, b) => b.quantity - a.quantity)
+            device.forEach(el => {
+                html += `
+            <tr class= "align-middle text-center ${el.quantity == 0 || el.status == -1 ? 'bg-red' : ''}">
+            <td class ="p-1">
+                    <a data-bs-toggle="modal" data-bs-target="#updateComponent" onclick ="changeInputUpdate('${el._id}')">
+                <i class='fa fa-pencil text-primary p-2'  style ="font-size: 1.5rem ;"></i>
+                </a>
+            </td>
+            <td>${typeComponentObj[el.attributes.type]}</td>
+            <td>${renderByTypeComponent(el.attributes.attributes)}</td>
+            <td>${el.total}</td>
+            <td>${el.quantity}</td>
+            <td>${el.supplier ? el.supplier.name : ''}</td>
+            <td>${el.hasOwnProperty('billPrice') == true ? new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(el.billPrice) : ''}</td>
+            <td>${new Date(el.createdAt).toLocaleDateString('vi-VN')}</td>
+            <td>${new Date(el.expirationDate).toLocaleDateString('vi-VN')}</td>
+            <td>${el.note}</td>
+            </tr>`
+            });
+            $("#dataComponent").html(html)
+        }
+
+        function renderByTypeComponent(attributes) {
+            if (typeof (attributes) == "object") {
+                const result = Object.keys(attributes)
+                    .map(key => `${attributes[key]}`)
+                    .join(' ');
+                return result
+            } else if (attributes.name) {
+                return attributes.name
+            } else {
+                return attributes
+            }
+
+        }
+
+        function changeAddComponent(value, action) {
+            var html = '';
+            if (value != "VGA" && value != "hardDrives") {
+                html = `<div class="col-3">
+                        <label class="col-form-label color_title" style = "text-transform: capitalize;">${value}: </label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input type="text" id = "${value}_${action}" name="${value}" list="datalist${value}" autocomplete="off"
+                            class="form-control" placeholder="Nhập ${value}">
+                        <div class="invalid-feedback">Vui lòng nhập ${value}</div>
+                    </div>`
+            } else if (value == "VGA") {
+                html = `<div class="row justify-content-center">
+                            <div class="col-3 px-0">
+                                <label class="col-form-label color_title" for="VGA_name_${action}">VGA: </label>
+                            </div>
+                            <div class="col-4 mb-2 px-2">
+                                <input type="text" id="VGA_name_${action}" name="vga" autocomplete="off" list="datalistvga" class="form-control" placeholder="Nhập VGA">
+                                <div class="invalid-feedback">Vui lòng nhập VGA</div>
+                            </div>
+                            <div class="col-3 mb-2 px-1">
+                                <input type="number" autocomplete="off" id="VGA_vram_${action}" name="vram" list="datalistvram" class="form-control" placeholder="Nhập VRAM" onclick="fomatValueVram(this)" onblur="fomatValueVramGB(this)">
+                                <div class="invalid-feedback">Vui lòng nhập Vram</div>
+
+                            </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row justify-content-center mx-0">
+                                    
+                                    <div class="col-3 px-0">
+                                        <label class="col-form-label color_title" for="VGA_connector_${action}">Connector:
+                                        </label>
+                                    </div>
+                                    <div class="col-6 px-2">
+                                        <select class="form-select form-select-md connector" list="datalistconnector" id = "VGA_connector_${action}" name = "connector" aria-label=".form-select-lg example">
+                                            <option value="VGA">VGA</option>
+                                            <option value="DVI">DVI</option>
+                                            <option value="HDMI" selected="">HDMI</option>
+                                            <option value="DisplayPort">DisplayPort</option>
+                                            <option value="Mini-DP">Mini-DP</option>
+                                            <option value="Type-C">Type-C</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-1 ps-0">
+                                        <button class="btn btn-primary" onclick="addConnector(this)">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+            } else if (value == "hardDrives") {
+                html = `<div class="row justify-content-center px-0">
+                            <div class="col-3 ">
+                                <label for="hardDrives_addComponent" class="col-form-label color_title">Ổ cứng: </label>
+                            </div>
+                            <div class="col-2">
+                                <input type="number" name="size" id = "hardDrives_size_${action}" list="datalistsize" autocomplete="off" class="form-control pe-0" min="0" placeholder="Size" onclick = "fomatValueSize(this)" onblur="fomatValue(this)">
+                                <div class="invalid-feedback">Vui lòng nhập size</div>
+                            </div>
+                            <div class="col-2">
+                                <select class="form-select pe-2 ps-2" id = "hardDrives_type_${action}" name="type" aria-label="Default select example">
+                                    <option value="SSD" selected="">SSD</option>
+                                    <option value="HDD">HDD</option>
+                                    <option value="M2">M2</option>
+                                </select>
+                                <div class="invalid-feedback">Vui lòng nhập type</div>
+
+                            </div>
+                            <div class="col-3">
+                                <input type="text" name="brand" id ="hardDrives_brand_${action}" list="datalistbrand" autocomplete="off" class="form-control" placeholder="Brand">
+                                <div class="invalid-feedback">Vui lòng nhập brand</div>
+
+                            </div>
+                        </div>`
+            }
+            if (action == "create") {
+                $("#add_component").html(html)
+            } else {
+                $("#update_component").html(html)
+            }
+        }
+
+        function fomatValueVramGB(e) {
+            if ($(e).val() != "" && $(e).val().substring($(e).val().length - 2) != "GB") {
+                $(e).attr("type", "text")
+                $(e).val($(e).val() + "GB")
+            }
+        }
+
+        function fomatValueVram(e) {
+            $(e).val(parseInt($(e).val()))
+            $(e).select()
+        }
+
+        function getInputAttributes(action) {
+            var arrconnector = []
+            var inputConnector = $(`select[name ^= connector]`);
+            for (i = 0; i < inputConnector.length; i++) {
+                let el = inputConnector[i];
+                arrconnector.push(el.value);
+            }
+            var attributes;
+            var typeComponent
+            if (action == "_create") {
+                typeComponent = "type_add_component"
+            } else {
+                typeComponent = "type_update_component"
+            }
+            if ($(`#${typeComponent}`).val() == "ram") {
+                attributes = $("#ram" + action).val()
+            } else if ($(`#${typeComponent}`).val() == "PSU" || $(`#${typeComponent}`).val() == "mainBoard" || $(
+                `#${typeComponent}`).val() == "chipset") {
+                attributes = {
+                    name: $(`#` + $(`#${typeComponent}`).val() + action).val()
+                }
+            } else if ($(`#${typeComponent}`).val() == "VGA") {
+                attributes = {
+                    name: $("#VGA_name" + action).val(),
+                    vram: $("#VGA_vram" + action).val(),
+                    connector: arrconnector
+                    // connector: $("#VGA_connector" + action).val()
+                }
+            } else if ($(`#${typeComponent}`).val() == "hardDrives") {
+                attributes = {
+                    size: $("#hardDrives_size" + action).val(),
+                    type: $("#hardDrives_type" + action).val(),
+                    brand: $("#hardDrives_brand" + action).val()
+                }
+            }
+            return attributes
+        }
+
+        function addConnector(e) {
+            $(e).parent().parent().parent().parent().append(`
+            <div class="col-12 mt-2">
+                <div class="row justify-content-center mx-0">
+                    
+                    <div class="col-3 px-0">
+                        <label class="col-form-label color_title" for="VGA_connector_create">
+                        </label>
+                    </div>
+                    <div class="col-6 px-2">
+                        <select class="form-select form-select-md connector" list="datalistconnector" id="VGA_connector_create" name = "connector" aria-label=".form-select-lg example">
+                            <option value="VGA">VGA</option>
+                            <option value="DVI">DVI</option>
+                            <option value="HDMI" selected="">HDMI</option>
+                            <option value="DisplayPort">DisplayPort</option>
+                            <option value="Mini-DP">Mini-DP</option>
+                            <option value="Type-C">Type-C</option>
+                        </select>
+                    </div>
+                    <div class="col-1 ps-0">
+                        <button class="btn btn-danger" onclick="removeConnector(this)"><i class="fa fa-minus"></i></button>
+                    </div>
+                </div>
+            </div>`);
+        }
+
+        function removeConnector(e) {
+            $(e).parent().parent().parent().remove()
+        }
+
+        function createComponent() {
+            var dataCreateComponent = {
+                supplier: $("#supplier_addcomponent").val(),
+                type: "component",
+                location: {
+                    "address": "1C Định Công Thượng",
+                    "floor": "Tầng 5"
+                },
+                attributes: {
+                    type: $("#type_add_component").val(),
+                    attributes: getInputAttributes("_create")
+                },
+                billPrice: parseInt($("#bill_price").val().replace(',', "")),
+                totalPrice: parseInt($("#total_price").val().replace(',', "")),
+                expirationDate: $("#expirationDate").val(),
+                note: $("#note_addcomponent").val(),
+                total: parseInt($("#quantity").val())
+            }
+            $.ajax({
+                url: GVS.CreateDevice,
+                method: "POST",
+                data: dataCreateComponent,
+                success: (res) => {
+                    if (res.success == 1) {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "success",
+                            confirmButtonText: "OK",
+                        }).then((result) => {
+                            $("#button_cancel_create_component").click()
+                            getAllComponent()
+                        });
+                    } else {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "error",
+                            confirmButtonText: "OK",
+                        });
+                    }
+                }
+            })
+        }
+
+        // }
+        function formatDate(date) {
+            var d = new Date(date),
+                month = '' + (d.getMonth() + 1),
+                day = '' + d.getDate(),
+                year = d.getFullYear();
+
+            if (month.length < 2)
+                month = '0' + month;
+            if (day.length < 2)
+                day = '0' + day;
+
+            return [year, month, day].join('-');
+        }
+        let statusComponent
+        let quantityComponent
+
+        function changeInputUpdate(id) {
+            $("#button_update_component").attr("onclick", `updateComponent('${id}')`)
+            dataComponent.forEach((component) => {
+                if (component._id == id) {
+                    $("#type_update_component").val(component.attributes.type)
+                    $("#bill_price_update").val(component.billPrice).attr("disabled", true)
+                    $("#total_price_update").val(component.totalPrice)
+                    $("#expirationDate_updatecomponent").val(formatDate(component.expirationDate))
+                    $("#note_updatecomponent").val(component.note)
+                    $("#type_update_component").attr("disabled", true)
+                    formatCurrency($("#bill_price_update"))
+                    formatCurrency($("#total_price_update"))
+                    changeAddComponent(component.attributes.type, "update")
+                    $('#status_component').val(component.status)
+                    $('#data_status__component').removeClass('d-none')
+                    if (component.quantity == 0) {
+                        $('#data_status__component').addClass('d-none')
+                        statusComponent = component.status
+                        // $('button_update_component').off()
+                    }
+                    quantityComponent = component.quantity
+
+                    if (component.attributes.type == "ram") {
+                        $(`#${component.attributes.type}_update`).val(component.attributes.attributes)
+                    } else if (component.attributes.type == "VGA") {
+
+                        $("#VGA_name_update").val(component.attributes.attributes.name)
+                        $("#VGA_vram_update").val(component.attributes.attributes.vram)
+                        $("#VGA_connector_update").val(component.attributes.attributes.connector)
+                    } else if (component.attributes.type == "hardDrives") {
+                        $("#hardDrives_size_update").val(parseInt(component.attributes.attributes.size))
+                        fomatValue($("#hardDrives_size_update"))
+                        $("#hardDrives_type_update").val(component.attributes.attributes.type)
+                        $("#hardDrives_brand_update").val(component.attributes.attributes.brand)
+                    } else {
+                        $(`#${component.attributes.type}_update`).val(component.attributes.attributes.name)
+
+                    }
+                }
+            })
+        }
+
+        function updateComponent(id) {
+            let status
+            if (quantityComponent !== 0) {
+                status = $('#status_component').val()
+            } else {
+                status = statusComponent
+            }
+            var dataUpdateComponent = {
+                type: "component",
+                supplier: $("#supplier_updatecomponent").val(),
+                attributes: {
+                    attributes: getInputAttributes("_update")
+                },
+                status,
+                totalPrice: parseInt($("#total_price_update").val().replace(',', "")),
+                expirationDate: $("#expirationDate_updatecomponent").val(),
+                note: $("#note_updatecomponent").val(),
+            }
+            $.ajax({
+                url: GVS.UpdateDevice + `${id}`,
+                method: "PATCH",
+                data: dataUpdateComponent,
+                success: (res) => {
+                    if (res.success == 1) {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "success",
+                            confirmButtonText: "OK",
+                        }).then((result) => {
+                            $("#button_cancel_update_component").click()
+                            getAllComponent()
+
+                        });
+                    } else {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "error",
+                            confirmButtonText: "OK",
+                        });
+                    }
+                }
+            })
+        }
+
+        function validateInput() {
+            var check = 1;
+            var inputRAM = $("input[name^=ram]");
+            for (i = 0; i < inputRAM.length; i++) {
+                let el = inputRAM[i];;
+                if (el.value === '') {
+                    check = 0;
+                    $("input[name^=ram]").eq(i).addClass('is-invalid');
+                } else {
+                    $("input[name^=ram]").eq(i).removeClass('is-invalid');
+                }
+            }
+            if ($('#name_addcomponent').val() === '') {
+                check = 0;
+                $('#name_addcomponent').addClass('is-invalid');
+            } else {
+                $('#name_addcomponent').removeClass('is-invalid');
+
+            }
+            if ($('#chipset_create').val() === '') {
+                check = 0;
+                $('#chipset_create').addClass('is-invalid')
+            } else {
+                $('#chipset_create').removeClass('is-invalid')
+
+            }
+            if ($('#PSU_create').val() === '') {
+                check = 0;
+                $('#PSU_create').addClass('is-invalid')
+            } else {
+                $('#PSU_create').removeClass('is-invalid')
+
+            }
+            if ($('#mainBoard_create').val() === '') {
+                check = 0;
+                $('#mainBoard_create').addClass('is-invalid')
+            } else {
+                $('#mainBoard_create').removeClass('is-invalid')
+
+            }
+            var inputVGA = $("input[name^=vga]");
+            for (i = 0; i < inputVGA.length; i++) {
+                let el = inputVGA[i];
+
+                if (el.value === '') {
+                    check = 0;
+                    $("input[name^=vga]").eq(i).addClass('is-invalid');
+                } else {
+                    $("input[name^=vga]").eq(i).removeClass('is-invalid');
+                }
+            }
+            var inputVRAM = $("input[name^=vram]");
+            for (i = 0; i < inputVRAM.length; i++) {
+                let el = inputVRAM[i];
+
+                if (el.value === '') {
+                    check = 0;
+                    $("input[name^=vram]").eq(i).addClass('is-invalid');
+                } else {
+                    $("input[name^=vram]").eq(i).removeClass('is-invalid');
+                }
+            }
+            if ($('#supplier_updatecomponent').val() === '') {
+                check = 0;
+                $('#supplier_updatecomponent').addClass('is-invalid')
+            } else {
+                $('#supplier_updatecomponent').removeClass('is-invalid')
+            }
+            if ($('#bill_price').val() === '') {
+                check = 0;
+                $('#bill_price').addClass('is-invalid')
+            } else {
+                $('#bill_price').removeClass('is-invalid')
+            }
+            var inputSize = $("input[name^=size]");
+            var type = document.getElementsByName('type')
+            var inputBrand = $("input[name^=brand]");
+            for (i = 0; i < inputSize.length; i++) {
+                if (inputSize[i].value === '') {
+                    check = 0;
+                    $("input[name^=size]").eq(i).addClass('is-invalid')
+                } else {
+                    $("input[name^=size]").eq(i).removeClass('is-invalid')
+                }
+                if (type[i].value === '') {
+                    check = 0;
+                    $("type").eq(i).addClass('is-invalid')
+                } else {
+                    $("type").eq(i).removeClass('is-invalid')
+                }
+                if (inputBrand[i].value === '') {
+                    check = 0;
+                    $("input[name^=brand]").eq(i).addClass('is-invalid')
+                } else {
+                    $("input[name^=brand]").eq(i).removeClass('is-invalid')
+                }
+            }
+            $('input[type="text"]').keyup(function () {
+                $(this).removeClass('is-invalid')
+            });
+            return check;
+        }
+
+        function fomatValue(e) {
+            if ($(e).val() != "" && $(e).val().substring($(e).val().length - 2) != "GB" && $(e).val().substring($(e).val()
+                .length - 2) != "TB") {
+                if ($(e).val() < 100) {
+                    $(e).attr("type", "text")
+                    $(e).val($(e).val() + "TB")
+                } else {
+                    $(e).attr("type", "text")
+                    $(e).val($(e).val() + "GB")
+                }
+            }
+        }
+
+        function fomatValueSize(e) {
+            if ($(e) == '') return
+            $(e).val(parseInt($(e).val()))
+            $(e).select()
+
+        }
+        $(document).ready(() => {
+            getAllComponent()
+        })
+
+        function deleteInput() {
+            $("input").val("")
+            $("#expirationDate").val(formatDate(new Date()))
+        }
+    </script>
+
+</html>

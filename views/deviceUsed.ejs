@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+    <link rel="stylesheet" href="/stylesheets/staff.css">
+
+    <body id="body-pd" class="body-pd">
+        <%- include("./nav.html") %>
+            <div class="height-100 bg-light">
+                <main class="content px-0 pb-0">
+                    <div class="container-fluid p-0 ">
+                        <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                            <div class="col-5" style="width: max-content;">
+                                <h3><strong>Lịch sử sử dụng</strong></h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 p-0 d-flex">
+                                <div class="card flex-fill"
+                                    style="overflow-y:auto; overflow-x: scroll; max-height: 85vh;">
+
+                                    <table class="table table-bordered table-hover table-responsive w-100  my-0"
+                                        style="width: max-content;" id="history_staff_deviceUsed">
+                                        <thead style="position: sticky; top: -1px; background-color: white;">
+                                            <tr class="align-middle text-center justify-content-between">
+                                                <th class="col text-center">
+                                                    <span>Mã nhân viên</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Tên</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Thiết bị</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Thời gian bắt đầu</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Thời gian kết thúc</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Công ty</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Công việc</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Địa chỉ</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Tầng</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Số điện thoại</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="dataHistory" style="background-color: #fff;">
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+    </body>
+    <script>
+        function dataHistoryDevice() {
+            var html = '';
+            $.ajax({
+                url: GVS.getAllHistory,
+                method: "GET",
+                data: {},
+                success: (res) => {
+                    renderHistoryDevice(res.metadata)
+
+                }
+            })
+        }
+        dataHistoryDevice()
+
+
+
+        function renderHistoryDevice(historyUsed) {
+            var html = []
+
+            historyUsed.forEach(element => {
+                var deviceUsing = []
+                var deviceUsed = []
+                for (const item of element.devices) {
+                    const deviceId = item.device._id;
+
+                    // Kiểm tra xem đối tượng có trùng device._id không
+                    const isDuplicate = element.devices.filter(obj => obj.device._id === deviceId).length > 1;
+
+                    if (isDuplicate) {
+                        deviceUsed.push(item);
+                    } else {
+                        deviceUsing.push(item);
+                    }
+                }
+
+
+
+                html += ` <tr class ="text-center">
+                    <td rowspan = "${deviceUsing.length + 1 + (deviceUsed.length) / 2}">${element.staff.code}</td>
+                    <td rowspan ="${deviceUsing.length + 1 + (deviceUsed.length) / 2}">${element.staff.name}</td>
+                    </tr>
+                    `
+                deviceUsing.forEach((el, index) => {
+                    html += `
+                        <tr class = "text-center">
+                        <td scope="row" class ="text-center">${el.device.type === "case" ? `Máy số ${el.device.attributes.num}` : el.device.name}</td>
+                        <td scope="row" class ="text-center">${new Date(el.createdAt).toLocaleDateString('vi-VN')}</td>
+                        <td scope="row"></td>
+                        <td scope="row">${element.staff.company}</td>
+                        <td scope="row">${element.staff.job}</td>
+                        <td scope="row">${element.staff.location.address}</td>
+                        <td scope="row">${element.staff.location.floor}</td>
+                        <td scope="row">${element.staff.phoneNumber}</td>
+                    </tr>`
+                })
+
+                const deviceIDs = {};
+                var deviceNames = []
+                // Lặp qua mảng deviceUsed và tạo một đối tượng để lưu trữ các createdAt tương ứng với từng _id
+                deviceUsed.forEach((item) => {
+
+                    if (item.device.type == 'case') {
+                        deviceNames.push(item.device.attributes.num)
+                    }
+                    else {
+                        deviceNames.push(item.device.name)
+                    }
+                    deviceNames.map(function (element) {
+                        return (!isNaN(element)) ? parseInt(element) : element;
+                    });
+                    const deviceID = item.device._id;
+                    const createdAt = item.createdAt;
+
+                    if (deviceIDs.hasOwnProperty(deviceID)) {
+                        deviceIDs[deviceID].push(createdAt);
+                    } else {
+                        deviceIDs[deviceID] = [createdAt];
+                    }
+                });
+
+                const uniqueDeviceNames = deviceNames.filter((value, index) => {
+                    return deviceNames.indexOf(value) === index;
+                });
+                const keys = Object.keys(deviceIDs);
+
+                const timeObject = {};
+                for (const deviceID in deviceIDs) {
+                    const [createTime, timeRecall] = deviceIDs[deviceID];
+                    timeObject[deviceID] = {
+                        CreateTime: createTime,
+                        TimeRecall: timeRecall
+                    };
+                }
+                var convertNames = uniqueDeviceNames.map(function (element) {
+                    return (!isNaN(element)) ? parseInt(element) : element;
+                });
+
+                let count = 0;
+
+                for (let i = 0; i < convertNames.length; i++) {
+                    const deviceName = convertNames[i];
+
+                    html += `
+                    <tr class = "text-center">
+                    `
+                    if (typeof deviceName == 'number') {
+                        html += `<td class="text-center">Máy số ${deviceName}</td>`
+                    }
+                    else {
+                        html +=
+                            `<td class="text-center"> ${deviceName}</td>`
+                    }
+
+                    if (count < keys.length) {
+                        const key = keys[count];
+
+                        html += `
+                        <td class="text-center">${new Date(timeObject[key]["CreateTime"]).toLocaleDateString('vi-VN')}</td>     
+                        <td class="text-center">${new Date(timeObject[key]["TimeRecall"]).toLocaleDateString('vi-VN')}</td>
+                        <td scope="row">${element.staff.company}</td>
+                        <td scope="row">${element.staff.job}</td>
+                        <td scope="row">${element.staff.location.address}</td>
+                        <td scope="row">${element.staff.location.floor}</td>
+                        <td scope="row">${element.staff.phoneNumber}</td>
+                        </tr>
+                        `
+                        count++;
+                    }
+                }
+
+
+            });
+
+            $('#dataHistory').html(html)
+        }
+    </script>
+
+</html>

@@ -1,0 +1,4970 @@
+{
+  "items": [
+    {
+      "code": "88",
+      "name": "Vũ Duy Nam",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0903409339",
+      "job": "64a90b7ecbdfc98ee05dcd3a",
+      "department": "64ae62fdf2b65c8073e6d7cb",
+      "status": 1,
+      "case_id": [
+        "138"
+      ],
+      "monitor": [
+        "343"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b60cbdfc98ee05dcd31"
+    },
+    {
+      "code": "241",
+      "name": "Bùi Quang Huy",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0912228878",
+      "job": "64a90b7ecbdfc98ee05dcd3a",
+      "department": "64ae62fdf2b65c8073e6d7cb",
+      "status": 1,
+      "case_id": [
+        "1",
+        "68"
+      ],
+      "monitor": [
+        "1",
+        "2"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "0",
+      "position": "64a90b60cbdfc98ee05dcd31"
+    },
+    {
+      "code": "256",
+      "name": "Trần Thị Hồng Nhung",
+      "company": "Plusstudio",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0913211404",
+      "job": "64a90b7ecbdfc98ee05dcd3a",
+      "department": "64ae62fdf2b65c8073e6d7cb",
+      "status": 1,
+      "case_id": [
+        "114"
+      ],
+      "monitor": [
+        "169",
+        "170"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b60cbdfc98ee05dcd31"
+    },
+    {
+      "code": "8386",
+      "name": "Hà Anh Sơn",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0912081209",
+      "job": "64a90b7ecbdfc98ee05dcd3a",
+      "department": "64ae62fdf2b65c8073e6d7cb",
+      "status": 1,
+      "case_id": [
+        "116"
+      ],
+      "monitor": [
+        "172"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b60cbdfc98ee05dcd31"
+    },
+    {
+      "code": "58",
+      "name": "Nguyễn Võ Tòng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0849075667",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "183"
+      ],
+      "monitor": [
+        "258",
+        "238"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "87",
+      "name": "Võ Tuấn Vũ",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0971277211",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "126",
+      "name": "Nguyễn Thế Trường",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0981201604",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "141",
+      "name": "Đỗ Thị Son",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0969223621",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "167"
+      ],
+      "monitor": [
+        "247",
+        "248"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "204",
+      "name": "Bùi Thị Hương Ly",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0962493302",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "181"
+      ],
+      "monitor": [
+        "264",
+        "278"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "214",
+      "name": "Trương Huệ Đan",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0855024769",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "186"
+      ],
+      "monitor": [
+        "261",
+        "333"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "215",
+      "name": "Vũ Thị Thu Hiền",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0367071386",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "165"
+      ],
+      "monitor": [
+        "244",
+        "245"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "216",
+      "name": "Đồng Thị Thu Trang",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0869972365",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "184"
+      ],
+      "monitor": [
+        "268",
+        "340"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "217",
+      "name": "Tô Thị Thu Phương",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0968743250",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "182"
+      ],
+      "monitor": [
+        "265",
+        "316"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "218",
+      "name": "Đoàn Thành Trung",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0396477507",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "161"
+      ],
+      "monitor": [
+        "253",
+        "271"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "219",
+      "name": "Lưu Thành Lộc",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0983024450",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "160"
+      ],
+      "monitor": [
+        "256"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "227",
+      "name": "Bùi Huy Hoàng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0382949033",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "189"
+      ],
+      "monitor": [
+        "274",
+        "269"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "228",
+      "name": "Nguyễn Sĩ Thành",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0328662825",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "258",
+      "name": "Nguyễn Quốc Cường",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0961093317",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "185"
+      ],
+      "monitor": [
+        "270",
+        "73"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "259",
+      "name": "Tạ Văn Thịnh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0986143036",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "180"
+      ],
+      "monitor": [
+        "263"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "260",
+      "name": "Lê Ngọc Dương",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0363544451",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "166"
+      ],
+      "monitor": [
+        "246",
+        "250"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "273",
+      "name": "Dương Minh Phong",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0368094546",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "276",
+      "name": "Nguyễn Tiến Lợi",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0373015797",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "191"
+      ],
+      "monitor": [
+        "276",
+        "277"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "277",
+      "name": "Hoàng Tiến Quân",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0348529326",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "187"
+      ],
+      "monitor": [
+        "267",
+        "128"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "324",
+      "name": "Cao Đăng Quang",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0344395656",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "72"
+      ],
+      "monitor": [
+        "342"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "332",
+      "name": "Hà Thị Hoài",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0345559035",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "168"
+      ],
+      "monitor": [
+        "305"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "333",
+      "name": "Nguyễn Anh Tú",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0983270094",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "164"
+      ],
+      "monitor": [
+        "76"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "",
+      "name": "Bùi Thị Luyến",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0357803695",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": [
+        "54"
+      ],
+      "monitor": [
+        "285",
+        "284"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "59",
+      "name": "Trần Văn Linh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0356628833",
+      "job": "64a90be6cbdfc98ee05dcd59",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": [
+        "82"
+      ],
+      "monitor": [
+        "117",
+        "118"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "60",
+      "name": "Đỗ Thị Thủy",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0367017523",
+      "job": "64a90be6cbdfc98ee05dcd59",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": [
+        "104"
+      ],
+      "monitor": [
+        "152",
+        "153"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "175",
+      "name": "Cao Văn Mạnh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0374249958",
+      "job": "64a90be6cbdfc98ee05dcd59",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": [
+        "100"
+      ],
+      "monitor": [
+        "144",
+        "145"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "179",
+      "name": "Nguyễn Xuân Tú",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0944750751",
+      "job": "64a90be1cbdfc98ee05dcd56",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "230",
+      "name": "Vũ Minh Công",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0377396930",
+      "job": "64a90be6cbdfc98ee05dcd59",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": [
+        "105"
+      ],
+      "monitor": [
+        "136"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "247",
+      "name": "Nguyễn Mạnh Dũng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0365943978",
+      "job": "64a90be6cbdfc98ee05dcd59",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": [
+        "75"
+      ],
+      "monitor": [
+        "108",
+        "154"
+      ],
+      "wacom": "",
+      "headphone": "5",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "279",
+      "name": "Trần Trung Trường",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0358604775",
+      "job": "64a90be6cbdfc98ee05dcd59",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": [
+        "76"
+      ],
+      "monitor": [
+        "109",
+        "146"
+      ],
+      "wacom": "",
+      "headphone": "6",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "286",
+      "name": "Phạm Thị Vân Anh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0934275719",
+      "job": "64a90be6cbdfc98ee05dcd59",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": [
+        "106"
+      ],
+      "monitor": [
+        "155",
+        "336"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "312",
+      "name": "Hoàng Minh Tú",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0385530328",
+      "job": "64a90be6cbdfc98ee05dcd59",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": [
+        "94"
+      ],
+      "monitor": [
+        "135"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "314",
+      "name": "Nguyễn Tuấn Anh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0901212995",
+      "job": "64a90be6cbdfc98ee05dcd59",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": [
+        "19"
+      ],
+      "monitor": [
+        "29",
+        "30"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "315",
+      "name": "Lê Thanh Bình",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0977746071",
+      "job": "64a90be6cbdfc98ee05dcd59",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": [
+        "110"
+      ],
+      "monitor": [
+        "162",
+        "163"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "1",
+      "name": "Trần Thị Thanh Hương",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0338112980",
+      "job": "64a90b7ecbdfc98ee05dcd3a",
+      "department": "64bf4e6e50ce04180df2114f",
+      "status": 1,
+      "case_id": [
+        "118",
+        "258"
+      ],
+      "monitor": [
+        "173",
+        "174"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "2",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "3",
+      "name": "Bùi Minh Đức",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0912166866",
+      "job": "64a90b83cbdfc98ee05dcd3d",
+      "department": "64bf4e6e50ce04180df2114f",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "7",
+      "name": "Đặng Thị Tâm",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0979542891",
+      "job": "64a90b83cbdfc98ee05dcd3d",
+      "department": "64bf4e6e50ce04180df2114f",
+      "status": 1,
+      "case_id": [
+        "221"
+      ],
+      "monitor": [
+        "323",
+        "321"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "14",
+      "name": "Lê Xuân Trường",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0913536623",
+      "job": "64a90b83cbdfc98ee05dcd3d",
+      "department": "64bf4e6e50ce04180df2114f",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "37",
+      "name": "Nguyễn Thị Hải Yến",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0987099868",
+      "job": "64a90b83cbdfc98ee05dcd3d",
+      "department": "64bf4e6e50ce04180df2114f",
+      "status": 1,
+      "case_id": [
+        "213"
+      ],
+      "monitor": [
+        "166",
+        "25"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "93",
+      "name": "Vũ Thùy Trang",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0962388648",
+      "job": "64a90b83cbdfc98ee05dcd3d",
+      "department": "64bf4e6e50ce04180df2114f",
+      "status": 1,
+      "case_id": [
+        "113"
+      ],
+      "monitor": [
+        "167",
+        "168"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "328",
+      "name": "Vũ Thị Trang Thảo",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0818095033",
+      "job": "64a90b83cbdfc98ee05dcd3d",
+      "department": "64bf4e6e50ce04180df2114f",
+      "status": 1,
+      "case_id": [
+        "15"
+      ],
+      "monitor": [
+        "306",
+        "320"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "48",
+      "name": "Vũ Tiến Đạt",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0965568930",
+      "job": "64a90b8bcbdfc98ee05dcd40",
+      "department": "64a90b2bcbdfc98ee05dcd2b",
+      "status": 1,
+      "case_id": [
+        "257"
+      ],
+      "monitor": [
+        "243",
+        "325"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "68",
+      "name": "Nguyễn Thái Học",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0336491279",
+      "job": "64a90b8bcbdfc98ee05dcd40",
+      "department": "64a90b2bcbdfc98ee05dcd2b",
+      "status": 1,
+      "case_id": [
+        "13"
+      ],
+      "monitor": [
+        "20",
+        "21"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "226",
+      "name": "Đặng Tuấn Anh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0375871003",
+      "job": "64a90b8bcbdfc98ee05dcd40",
+      "department": "64a90b2bcbdfc98ee05dcd2b",
+      "status": 1,
+      "case_id": [
+        "64"
+      ],
+      "monitor": [
+        "7",
+        "6"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "233",
+      "name": "Hà Minh Chí",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0368471986",
+      "job": "64a90b8bcbdfc98ee05dcd40",
+      "department": "64a90b2bcbdfc98ee05dcd2b",
+      "status": 1,
+      "case_id": [
+        "216"
+      ],
+      "monitor": [
+        "10",
+        "304"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "263",
+      "name": "Đặng Việt Anh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0389901003",
+      "job": "64a90b8bcbdfc98ee05dcd40",
+      "department": "64a90b2bcbdfc98ee05dcd2b",
+      "status": 1,
+      "case_id": [
+        "173"
+      ],
+      "monitor": [
+        "24",
+        "178"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "290",
+      "name": "Đặng Thị Mỹ Huyền",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0352832931",
+      "job": "64a90b8bcbdfc98ee05dcd40",
+      "department": "64a90b2bcbdfc98ee05dcd2b",
+      "status": 1,
+      "case_id": [
+        "10"
+      ],
+      "monitor": [
+        "11"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "317",
+      "name": "Vũ Huy Hoàng",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0335773123",
+      "job": "64a90b8bcbdfc98ee05dcd40",
+      "department": "64a90b2bcbdfc98ee05dcd2b",
+      "status": 1,
+      "case_id": [
+        "4"
+      ],
+      "monitor": [
+        "16",
+        "79"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "304",
+      "name": "Vũ Thị Phương Anh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0981821484",
+      "job": "64a90beacbdfc98ee05dcd5c",
+      "department": "64bf513b5154f14e328dad58",
+      "status": 1,
+      "case_id": [
+        "179"
+      ],
+      "monitor": [
+        "262"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "19",
+      "name": "Nguyễn Văn Dân",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0364406000",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "67"
+      ],
+      "monitor": [
+        "104",
+        "105"
+      ],
+      "wacom": "",
+      "headphone": "3",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "118",
+      "name": "Nguyễn Tiến Minh Nhật",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0949978708",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "119",
+      "name": "Nguyễn Việt Anh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0773250500",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "122",
+      "name": "Quách Đình Tùng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0972741825",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "124",
+      "name": "Vũ Tất Thành",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0916282771",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "125",
+      "name": "Nguyễn Ngọc Hiển",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0374510076",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "142"
+      ],
+      "monitor": [
+        "210",
+        "211"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "137",
+      "name": "Lã Khánh Duy",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0943465994",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "136"
+      ],
+      "monitor": [
+        "199",
+        "200"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "152",
+      "name": "Đỗ Văn Tuyền",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0977529011",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "92"
+      ],
+      "monitor": [
+        "131",
+        "132"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "153",
+      "name": "Đặng Quốc Bảo",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0855949070",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "125"
+      ],
+      "monitor": [
+        "183",
+        "184"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "158",
+      "name": "Nguyễn Hữu Sáng",
+      "company": "Minh Việt",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0963018765",
+      "job": "64a90b7ecbdfc98ee05dcd3a",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "144"
+      ],
+      "monitor": [
+        "300",
+        "341"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "177",
+      "name": "Tạ Minh Đức",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0329563686",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "139"
+      ],
+      "monitor": [
+        "204",
+        "205"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "185",
+      "name": "Lê Kim Hồng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0947378883",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "141"
+      ],
+      "monitor": [
+        "208",
+        "209"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "188",
+      "name": "Trần Anh Tuấn",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0866865969",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "140"
+      ],
+      "monitor": [
+        "206",
+        "207"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "205",
+      "name": "Phạm Kiều Anh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0988700293",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "121"
+      ],
+      "monitor": [
+        "179"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "208",
+      "name": "Đỗ Trung Huy",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0773391918",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "146"
+      ],
+      "monitor": [
+        "216",
+        "217"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "223",
+      "name": "Phạm Minh Châu",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0365920650",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "145"
+      ],
+      "monitor": [
+        "214",
+        "215"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "240",
+      "name": "Nguyễn Đình Duyên",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0966232334",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "127"
+      ],
+      "monitor": [
+        "187",
+        "188"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "244",
+      "name": "Cao Thu Phương",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0347606622",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "132"
+      ],
+      "monitor": [
+        "194"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "248",
+      "name": "Vi Văn Nguyện",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0904592961",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "143"
+      ],
+      "monitor": [
+        "212",
+        "311"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "249",
+      "name": "Hoàng Xuân Khang",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0866877015",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "147"
+      ],
+      "monitor": [
+        "218",
+        "310"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "253",
+      "name": "Đinh Đức Hiệp",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0382958271",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "124"
+      ],
+      "monitor": [
+        "182"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "268",
+      "name": "Trịnh Quang Hưng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0909956695",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "269",
+      "name": "Nguyễn Bảo Ngọc",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0395376221",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "137"
+      ],
+      "monitor": [
+        "198",
+        "308"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "284",
+      "name": "Tô Thùy Linh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0336330296",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "153"
+      ],
+      "monitor": [
+        "227",
+        "228"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "305",
+      "name": "Hoàng Đình Nhân",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0981347900",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "122"
+      ],
+      "monitor": [
+        "180"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "306",
+      "name": "Hoàng Ngọc Minh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0843079998",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "219"
+      ],
+      "monitor": [
+        "334"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "307",
+      "name": "Mai Thanh Huyền",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0869988681",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "130"
+      ],
+      "monitor": [
+        "192"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "308",
+      "name": "Nguyễn Mai Linh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0946713389",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "309",
+      "name": "Trần Đức Minh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0915685975",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "155"
+      ],
+      "monitor": [
+        "231"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "316",
+      "name": "Bùi Mạnh Tùng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0368418734",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "330",
+      "name": "Đỗ Thị Hương Thảo",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0966655432",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "246"
+      ],
+      "monitor": [
+        "266",
+        "327"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "351",
+      "name": "Bùi Văn Xiển",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0374750010",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "134"
+      ],
+      "monitor": [
+        "225"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "",
+      "name": "Phạm Thùy Linh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0913861105",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "196"
+      ],
+      "monitor": [
+        "224"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "72",
+      "name": "Bùi Văn Hiên",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 1"
+      },
+      "phoneNumber": "0377334439",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b22cbdfc98ee05dcd25",
+      "status": 1,
+      "case_id": [
+        "78"
+      ],
+      "monitor": [
+        "111",
+        "112"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "136",
+      "name": "Trương Thanh An",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 1"
+      },
+      "phoneNumber": "0967918634",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b22cbdfc98ee05dcd25",
+      "status": 1,
+      "case_id": [
+        "98"
+      ],
+      "monitor": [
+        "141",
+        "142"
+      ],
+      "wacom": "12",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "172",
+      "name": "Lê Chí Công",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 1"
+      },
+      "phoneNumber": "0379489971",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b22cbdfc98ee05dcd25",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "270",
+      "name": "Đinh Quốc Huy",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 1"
+      },
+      "phoneNumber": "0857057901",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b22cbdfc98ee05dcd25",
+      "status": 1,
+      "case_id": [
+        "81"
+      ],
+      "monitor": [
+        "115",
+        "116"
+      ],
+      "wacom": "7",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "155",
+      "name": "Nguyễn Ngọc Minh Phương",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0916159655",
+      "job": "64a90bd3cbdfc98ee05dcd53",
+      "department": "64ad3098424fa5c0385db94c",
+      "status": 1,
+      "case_id": [
+        "250"
+      ],
+      "monitor": [
+        "347",
+        "326"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "156",
+      "name": "Trần Duy Tùng",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0359829055",
+      "job": "64a90bd3cbdfc98ee05dcd53",
+      "department": "64ad3098424fa5c0385db94c",
+      "status": 1,
+      "case_id": [
+        "3"
+      ],
+      "monitor": [
+        "4",
+        "5"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "157",
+      "name": "Nguyễn Thành Công",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0916410782",
+      "job": "64a90bd3cbdfc98ee05dcd53",
+      "department": "64ad3098424fa5c0385db94c",
+      "status": 1,
+      "case_id": [
+        "12"
+      ],
+      "monitor": [
+        "18",
+        "19"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "168",
+      "name": "Nguyễn Đức Minh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0396665686",
+      "job": "64a90bd3cbdfc98ee05dcd53",
+      "department": "64ad3098424fa5c0385db94c",
+      "status": 1,
+      "case_id": [
+        "11"
+      ],
+      "monitor": [
+        "17"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "170",
+      "name": "Trần Nguyễn Thanh Bình",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0332817520",
+      "job": "64a90bd3cbdfc98ee05dcd53",
+      "department": "64ad3098424fa5c0385db94c",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "210",
+      "name": "Bùi Thị Hà",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0345743485",
+      "job": "64a90bd3cbdfc98ee05dcd53",
+      "department": "64ad3098424fa5c0385db94c",
+      "status": 1,
+      "case_id": [
+        "244"
+      ],
+      "monitor": [
+        "319",
+        "331"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "264",
+      "name": "Nguyễn Thị Hồng",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0827160901",
+      "job": "64a90bd3cbdfc98ee05dcd53",
+      "department": "64ad3098424fa5c0385db94c",
+      "status": 1,
+      "case_id": [
+        "9"
+      ],
+      "monitor": [
+        "26",
+        "18"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "265",
+      "name": "Trần Như Quỳnh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0343036041",
+      "job": "64a90bd3cbdfc98ee05dcd53",
+      "department": "64ad3098424fa5c0385db94c",
+      "status": 1,
+      "case_id": [
+        "252"
+      ],
+      "monitor": [
+        "349"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "267",
+      "name": "Nguyễn Thị Vân",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0344844088",
+      "job": "64a90bd3cbdfc98ee05dcd53",
+      "department": "64ad3098424fa5c0385db94c",
+      "status": 1,
+      "case_id": [
+        "251"
+      ],
+      "monitor": [
+        "348",
+        "315"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "282",
+      "name": "Trần Thanh Vy",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0921891058",
+      "job": "64a90bd3cbdfc98ee05dcd53",
+      "department": "64ad3098424fa5c0385db94c",
+      "status": 1,
+      "case_id": [
+        "16"
+      ],
+      "monitor": [
+        "15"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "346",
+      "name": "Nguyễn Thị Vân Hương",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0839833284",
+      "job": "6544ac1b6a0a7a5130cd6182",
+      "department": "64ad3098424fa5c0385db94c",
+      "status": 1,
+      "case_id": [
+        "249"
+      ],
+      "monitor": [
+        "237"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "61",
+      "name": "Nguyễn Tiến Phong",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 1"
+      },
+      "phoneNumber": "0963824718",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b1bcbdfc98ee05dcd1f",
+      "status": 1,
+      "case_id": [
+        "89"
+      ],
+      "monitor": [
+        "125",
+        "126"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "245",
+      "name": "Bùi Thị Bình",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 1"
+      },
+      "phoneNumber": "0357352947",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b1bcbdfc98ee05dcd1f",
+      "status": 1,
+      "case_id": [
+        "77"
+      ],
+      "monitor": [
+        "110",
+        "164"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "135",
+      "name": "Nguyễn Thị Thương",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0339791144",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "21"
+      ],
+      "monitor": [
+        "40"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "171",
+      "name": "Đỗ Mai Hương",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0947695732",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "41"
+      ],
+      "monitor": [
+        "70"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "173",
+      "name": "Dương Đức Huy",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0986654504",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "180",
+      "name": "Nguyễn Ngọc Hải",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0967916938",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "181",
+      "name": "Đặng Vũ Xuân Mai",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0968150798",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "27"
+      ],
+      "monitor": [
+        "43",
+        "44"
+      ],
+      "wacom": "24",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "182",
+      "name": "Vũ Quỳnh Chi",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0945206620",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "51"
+      ],
+      "monitor": [
+        "53",
+        "54"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "187",
+      "name": "Vũ Thị Kim Oanh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0877999268",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "212"
+      ],
+      "monitor": [
+        "34",
+        "35"
+      ],
+      "wacom": "25",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "194",
+      "name": "Đỗ Minh Khánh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0364453016",
+      "job": "64a90bbacbdfc98ee05dcd47",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "29"
+      ],
+      "monitor": [
+        "47",
+        "48"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "195",
+      "name": "Đỗ Long Vũ",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0353571307",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "44"
+      ],
+      "monitor": [
+        "74",
+        "75"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "197",
+      "name": "Ngô Trọng Nghĩa",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0358282163",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "46"
+      ],
+      "monitor": [
+        "77",
+        "78"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "200",
+      "name": "Nguyễn Bá Ngọc",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0366340069",
+      "job": "64a90bbacbdfc98ee05dcd47",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "211",
+      "name": "Phùng Minh Châu",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0964610059",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "33"
+      ],
+      "monitor": [
+        "55",
+        "56"
+      ],
+      "wacom": "3",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "212",
+      "name": "Hà Thị Ngọc Trâm",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0333405055",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "28"
+      ],
+      "monitor": [
+        "45",
+        "46"
+      ],
+      "wacom": "4",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "222",
+      "name": "Trần Minh Tuấn",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0946234498",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "176"
+      ],
+      "monitor": [
+        "259"
+      ],
+      "wacom": "15",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "224",
+      "name": "Đào Gia Phong",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0368441154",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "55"
+      ],
+      "monitor": [
+        "93",
+        "94"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "225",
+      "name": "Trần Tiến Anh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0395241072",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "53"
+      ],
+      "monitor": [
+        "89",
+        "90"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "231",
+      "name": "Nguyễn Như Phong",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0368410985",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "56"
+      ],
+      "monitor": [
+        "95",
+        "96"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "232",
+      "name": "Nguyễn Anh Tuấn",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0394923363",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "37"
+      ],
+      "monitor": [
+        "63",
+        "64"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "235",
+      "name": "Nguyễn Sỹ Đắc",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0985511164",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "236",
+      "name": "Đỗ Bá Hùng",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0373180340",
+      "job": "64a90bbacbdfc98ee05dcd47",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "39"
+      ],
+      "monitor": [
+        "67",
+        "68"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "237",
+      "name": "Dương Thị Bích Thủy",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0835556971",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "35"
+      ],
+      "monitor": [
+        "59",
+        "60"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "238",
+      "name": "Nguyễn Thùy Linh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0833589519",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "36"
+      ],
+      "monitor": [
+        "61",
+        "62"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "257",
+      "name": "Ngô Kim Ánh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0961637901",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "34"
+      ],
+      "monitor": [
+        "57",
+        "58"
+      ],
+      "wacom": "26",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "271",
+      "name": "Phạm Minh Anh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0358709902",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "31"
+      ],
+      "monitor": [
+        "51",
+        "52"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "280",
+      "name": "Nghiêm Xuân Tâm",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0978446503",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "288",
+      "name": "Đinh Thị Thu Hiền",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0393391190",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "26"
+      ],
+      "monitor": [
+        "41",
+        "42"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "289",
+      "name": "Bùi Vũ Khánh Linh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0904562319",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "299",
+      "name": "Đặng Khương Duy",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0963790053",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "311",
+      "name": "Hồ Quang Huy",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0904839302",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "42"
+      ],
+      "monitor": [
+        "71",
+        "72"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "318",
+      "name": "Nguyễn Bằng Việt",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0965072770",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "321",
+      "name": "Nguyễn Mai Linh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0986419964",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "322",
+      "name": "Trần Thảo Hiền",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0868109358",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "18"
+      ],
+      "monitor": [
+        "12"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "353",
+      "name": "Nguyễn Đình Thành",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0983439590",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "224"
+      ],
+      "monitor": [
+        "332"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "15",
+      "name": "Võ Thị Oanh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0383973029",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "102"
+      ],
+      "monitor": [
+        "148",
+        "149"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "21",
+      "name": "Nguyễn Thiên Sơn",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0868829795",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "83"
+      ],
+      "monitor": [
+        "119",
+        "120"
+      ],
+      "wacom": "8",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "84",
+      "name": "Đoàn Trung Kiên",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0374539622",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "159"
+      ],
+      "monitor": [
+        "236"
+      ],
+      "wacom": "13",
+      "headphone": "21",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "91",
+      "name": "Nguyễn Thị Ngọc Anh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0963737421",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "110",
+      "name": "Nguyễn Vũ Hoàng Linh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0825588806",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "174"
+      ],
+      "monitor": [
+        "257"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "112",
+      "name": "Lê Hải Khôi",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0983507037",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "170"
+      ],
+      "monitor": [
+        "252"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "142",
+      "name": "Lê Minh Tiến",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0357135111",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "172"
+      ],
+      "monitor": [
+        "301",
+        "213"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "151",
+      "name": "Phạm Quang Hiếu",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0984820811",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "237"
+      ],
+      "monitor": [
+        "241"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "207",
+      "name": "Cái Minh Hoàng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0392112109",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "79"
+      ],
+      "monitor": [
+        "113"
+      ],
+      "wacom": "6",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "221",
+      "name": "Hà Văn Vương",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0337272281",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "195"
+      ],
+      "monitor": [
+        "282"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "250",
+      "name": "Nguyễn Quang Trung",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0375501832",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "207"
+      ],
+      "monitor": [
+        "303"
+      ],
+      "wacom": "22",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "294",
+      "name": "Đào Thị Ánh Nguyệt",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0962269959",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "199"
+      ],
+      "monitor": [
+        "288",
+        "289"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "302",
+      "name": "Hoàng Thị Linh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0967738908",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "313",
+      "name": "Nguyễn Thị Thảo Vân",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0974540343",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "203"
+      ],
+      "monitor": [
+        "296",
+        "297"
+      ],
+      "wacom": "21",
+      "headphone": "16",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "320",
+      "name": "Lê Hải Minh Đức",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0935178621",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "329",
+      "name": "Vũ Việt Hùng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0374179408",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "201"
+      ],
+      "monitor": [
+        "292",
+        "293"
+      ],
+      "wacom": "",
+      "headphone": "14",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "334",
+      "name": "Nguyễn Linh Chi",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0782169295",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "104",
+      "name": "Nguyễn Đức Trung",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0582151208",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "85"
+      ],
+      "monitor": [
+        "121"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "127",
+      "name": "Đỗ Duyên Hương",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0389173707",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "177"
+      ],
+      "monitor": [
+        "260"
+      ],
+      "wacom": "16",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "145",
+      "name": "Vũ Minh Huy",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0366809782",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "146",
+      "name": "Nguyễn Thanh Phi",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0925150005",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "148",
+      "name": "Hoàng Tuấn Linh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0339868666",
+      "job": "64a90b7ecbdfc98ee05dcd3a",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "133"
+      ],
+      "monitor": [
+        "195"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "161",
+      "name": "Nguyễn Duy Hiếu",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0968928482",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "99",
+        "65",
+        "66"
+      ],
+      "monitor": [
+        "143",
+        "97",
+        "98",
+        "99",
+        "100"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "178",
+      "name": "Bùi Văn Dũng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0964917407",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "107"
+      ],
+      "monitor": [
+        "156",
+        "157"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "190",
+      "name": "Cao Đinh Hùng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0398340106",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "191",
+      "name": "Hồ Văn Nhâm",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0365629722",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "199",
+      "name": "Đào Hữu Dư",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0964605954",
+      "job": "64a90bbacbdfc98ee05dcd47",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "272",
+      "name": "Phạm Hoàng Anh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0346018542",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "109"
+      ],
+      "monitor": [
+        "160",
+        "161"
+      ],
+      "wacom": "19",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "291",
+      "name": "Đỗ Đức Phương",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0386634427",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "202"
+      ],
+      "monitor": [
+        "294",
+        "295"
+      ],
+      "wacom": "",
+      "headphone": "15",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "296",
+      "name": "Nguyễn Đăng Khoa",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0343320819",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "23"
+      ],
+      "monitor": [
+        "36",
+        "37"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "298",
+      "name": "Lê Quốc Dũng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0349819595",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "74"
+      ],
+      "monitor": [
+        "106",
+        "107"
+      ],
+      "wacom": "5",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "300",
+      "name": "Nguyễn Ngọc Khánh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0966995827",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "205"
+      ],
+      "monitor": [
+        "255"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "323",
+      "name": "Nguyễn Nhật Nam",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0705061251",
+      "job": "64a90bbacbdfc98ee05dcd47",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "325",
+      "name": "Nguyễn Đức Mạnh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0356539527",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "245"
+      ],
+      "monitor": [
+        "313",
+        "191"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "331",
+      "name": "Nguyễn Ngọc Minh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0387387512",
+      "job": "64a90bbacbdfc98ee05dcd47",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "248"
+      ],
+      "monitor": [
+        "103"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "348",
+      "name": "Phạm Đức Sơn",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0367472292",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "209"
+      ],
+      "monitor": [
+        "249"
+      ],
+      "wacom": "27",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "349",
+      "name": "Phạm Khánh Toàn",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0333280696",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "152"
+      ],
+      "monitor": [
+        "226"
+      ],
+      "wacom": "28",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "10",
+      "name": "Lê Chi Thắng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0377401719",
+      "job": "",
+      "department": "",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "196",
+      "name": "Vũ Minh Đức",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0877201909",
+      "job": "",
+      "department": "",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "",
+      "name": "Đặng Duy Long",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0963930610",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "235"
+      ],
+      "monitor": [
+        "318"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "",
+      "name": "Hoàng Minh Đức",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0967625910",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "",
+      "name": "Phạm Hải Đăng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0355916018",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "239"
+      ],
+      "monitor": [
+        "335"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "",
+      "name": "Đoàn Quốc Đại",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0962208966",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "84"
+      ],
+      "monitor": [
+        "338"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "",
+      "name": "Lê Quốc Anh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0335277636",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "228"
+      ],
+      "monitor": [
+        "324"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "",
+      "name": "Phạm Tuấn Dũng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0346181451",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "223"
+      ],
+      "monitor": [
+        "337"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "",
+      "name": "Trần Khánh Việt",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0942618975",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "233"
+      ],
+      "monitor": [
+        "322"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b6ecbdfc98ee05dcd37"
+    },
+    {
+      "code": "62",
+      "name": "Nguyễn Hồng Quang",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0396724733",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b12cbdfc98ee05dcd19",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "35",
+      "name": "Tô Văn Tuấn",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0349555070",
+      "job": "64a90be6cbdfc98ee05dcd59",
+      "department": "64a90b1ecbdfc98ee05dcd22",
+      "status": 1,
+      "case_id": [
+        "70",
+        "215",
+        "57",
+        "58",
+        "59",
+        "60",
+        "93"
+      ],
+      "monitor": [
+        "133",
+        "134"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "154",
+      "name": "Phan Thị Chung Thủy",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0989243276",
+      "job": "64a90b83cbdfc98ee05dcd3d",
+      "department": "64bf4e6e50ce04180df2114f",
+      "status": 1,
+      "case_id": [
+        "115"
+      ],
+      "monitor": [
+        "171"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "2",
+      "name": "Chu Hải Đăng",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0358991973",
+      "job": "64a90b8bcbdfc98ee05dcd40",
+      "department": "64a90b2bcbdfc98ee05dcd2b",
+      "status": 1,
+      "case_id": [
+        "8",
+        "117"
+      ],
+      "monitor": [
+        "13",
+        "14"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "2",
+      "mouse": "2",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "6",
+      "name": "Nguyễn Quang Bắc",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0398550111",
+      "job": "64a90b8bcbdfc98ee05dcd40",
+      "department": "64a90b2bcbdfc98ee05dcd2b",
+      "status": 1,
+      "case_id": [
+        "62",
+        "157",
+        "69",
+        "63"
+      ],
+      "monitor": [
+        "8",
+        "9",
+        "233"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "67",
+      "name": "Đỗ Văn Tuấn",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0983152695",
+      "job": "64a90b8bcbdfc98ee05dcd40",
+      "department": "64a90b2bcbdfc98ee05dcd2b",
+      "status": 1,
+      "case_id": [
+        "14"
+      ],
+      "monitor": [
+        "22",
+        "23"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "310",
+      "name": "Phạm Tất Thắng",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0912125548",
+      "job": "64a90beacbdfc98ee05dcd5c",
+      "department": "64bf513b5154f14e328dad58",
+      "status": 1,
+      "case_id": [
+        "2"
+      ],
+      "monitor": [
+        "3"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "25",
+      "name": "Lê Chi Tân",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0349780152",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "126"
+      ],
+      "monitor": [
+        "185",
+        "186"
+      ],
+      "wacom": "",
+      "headphone": "8",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "47",
+      "name": "Lê Kim Phượng",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0397333412",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "148"
+      ],
+      "monitor": [
+        "219",
+        "220"
+      ],
+      "wacom": "",
+      "headphone": "19",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "49",
+      "name": "Chử Đức Hiếu",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 5"
+      },
+      "phoneNumber": "0976762998",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "171"
+      ],
+      "monitor": [
+        "239",
+        "240"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "50",
+      "name": "Nguyễn Đức Hải",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0975022900",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "149"
+      ],
+      "monitor": [
+        "221",
+        "222"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "52",
+      "name": "Lê Minh Đức",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0397756065",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "154"
+      ],
+      "monitor": [
+        "229",
+        "230"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "99",
+      "name": "Đỗ Tuấn Anh",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 8"
+      },
+      "phoneNumber": "0985905117",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b0dcbdfc98ee05dcd16",
+      "status": 1,
+      "case_id": [
+        "119"
+      ],
+      "monitor": [
+        "175",
+        "176"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "11",
+      "name": "Bùi Xuân Tuấn",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 1"
+      },
+      "phoneNumber": "0969530631",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b22cbdfc98ee05dcd25",
+      "status": 1,
+      "case_id": "",
+      "monitor": [],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "30",
+      "name": "Lại Bạch Hoàng Yến",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 1"
+      },
+      "phoneNumber": "0985810968",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b22cbdfc98ee05dcd25",
+      "status": 1,
+      "case_id": [
+        "32"
+      ],
+      "monitor": [
+        "129",
+        "130"
+      ],
+      "wacom": "10",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "4",
+      "name": "Nguyễn Việt Bắc",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0912686144",
+      "job": "64a90b7ecbdfc98ee05dcd3a",
+      "department": "64ae62fdf2b65c8073e6d7cb",
+      "status": 1,
+      "case_id": [
+        "120",
+        "256"
+      ],
+      "monitor": [
+        "177",
+        "32",
+        "314"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "17",
+      "name": "Bùi Công Hiệp",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 1"
+      },
+      "phoneNumber": "0982305261",
+      "job": "64a90bc0cbdfc98ee05dcd4a",
+      "department": "64a90b1bcbdfc98ee05dcd1f",
+      "status": 1,
+      "case_id": [
+        "96"
+      ],
+      "monitor": [
+        "137",
+        "138"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "5",
+      "name": "Trần Nam Hoài",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0904247524",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "214"
+      ],
+      "monitor": [
+        "27",
+        "28"
+      ],
+      "wacom": "1",
+      "headphone": "1",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "16",
+      "name": "Nguyễn Thị Thư",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0917660896",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "163"
+      ],
+      "monitor": [
+        "242"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "44",
+      "name": "Trần Duy Thanh",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0392273368",
+      "job": "64a90bbacbdfc98ee05dcd47",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "30"
+      ],
+      "monitor": [
+        "49",
+        "50"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "0",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "57",
+      "name": "Nguyễn Diệu Thúy",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 7"
+      },
+      "phoneNumber": "0363748557",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "40"
+      ],
+      "monitor": [
+        "69"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "0",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "113",
+      "name": "Ngô Gia Hiếu",
+      "company": "Minh Việt",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 3"
+      },
+      "phoneNumber": "0978362989",
+      "job": "64a90bc6cbdfc98ee05dcd4d",
+      "department": "64a90b31cbdfc98ee05dcd2e",
+      "status": 1,
+      "case_id": [
+        "47"
+      ],
+      "monitor": [
+        "83",
+        "80"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "22",
+      "name": "Kiều Văn Trường",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0386874190",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "198"
+      ],
+      "monitor": [
+        "286",
+        "287"
+      ],
+      "wacom": "20",
+      "headphone": "11",
+      "keyboard": "1",
+      "mouse": "0",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "140",
+      "name": "Nguyễn Văn Tiến",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0984091525",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "158"
+      ],
+      "monitor": [
+        "234",
+        "235"
+      ],
+      "wacom": "",
+      "headphone": "10",
+      "keyboard": "0",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "144",
+      "name": "Phạm Văn Hà",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "401 Vũ Tông Phan",
+        "floor": "Tầng 6"
+      },
+      "phoneNumber": "0976049161",
+      "job": "64a90bcecbdfc98ee05dcd50",
+      "department": "64a90b16cbdfc98ee05dcd1c",
+      "status": 1,
+      "case_id": [
+        "194"
+      ],
+      "monitor": [
+        "280",
+        "281"
+      ],
+      "wacom": "",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    },
+    {
+      "code": "31",
+      "name": "Nguyễn Thị Mai Phương",
+      "company": "Dấu Cộng",
+      "location": {
+        "address": "461 Vũ Tông Phan",
+        "floor": "Tầng 2"
+      },
+      "phoneNumber": "0932268667",
+      "job": "64a90bb2cbdfc98ee05dcd44",
+      "department": "64a90b26cbdfc98ee05dcd28",
+      "status": 1,
+      "case_id": [
+        "193"
+      ],
+      "monitor": [
+        "279"
+      ],
+      "wacom": "18",
+      "headphone": "",
+      "keyboard": "1",
+      "mouse": "1",
+      "position": "64a90b67cbdfc98ee05dcd34"
+    }
+  ]
+}

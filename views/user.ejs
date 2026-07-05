@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+
+    <link rel="stylesheet" href="/stylesheets/case.css">
+
+    <style>
+        #phoneNumber-user::-webkit-outer-spin-button,
+        #phoneNumber-user::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+
+    <body id="body-pd" class="body-pd">
+        <%- include("./nav.html") %>
+            <!--Container Main start-->
+            <div class="height-100 bg-light">
+                <main class="content p-0 pt-4">
+                    <div class="container-fluid p-0 ">
+                        <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                            <div class="col-5 color_title">
+                                <h3 class="color_header">Quản lý tài khoản</h3>
+                            </div>
+                            <button class="col-auto btn bg-color-all c-white" data-bs-toggle="modal"
+                                style="border-radius: 29px;" data-bs-target="#addUser">Thêm
+                                tài khoản</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-12  d-flex">
+                                <div class="card flex-fill"
+                                    style="overflow-x:auto; overflow-x: scroll; max-height: 85vh;">
+
+                                    <table class="table table-hover table-bordered my-0 text-center" id="table_user">
+                                        <thead class="th_table_sticky">
+                                            <tr class="align-middle text-center">
+                                                <th class="col text-center ">
+
+                                                </th>
+
+                                                <th class="col text-center ">
+                                                    STT
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Tên</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Số điện thoại</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Role</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Ngày tạo</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Cập nhật gần đây</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Trạng thái</span>
+                                                </th>
+                                                <th class="col text-center ">
+                                                    Khóa tài khoản
+                                                </th>
+                                                <th class="col text-center ">
+                                                    Cập nhật
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="content_user-table">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </main>
+
+            </div>
+
+            <!-- TODO MODAL ADD_CASE -->
+            <div class="modal fade modal-lg" id="addUser" tabindex="-1" aria-labelledby="exampleModalLabel"
+                data-bs-backdrop="static">
+                <div class="modal-dialog ">
+                    <div class="modal-content text-black">
+                        <div class="modal-header text-center">
+                            <span class="modal-title f-s-24 color_header" id="addCaseLabel">
+                                Thêm tài khoản
+                            </span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                onclick="deleteData('name-user','phoneNumber-user','password-user','role-user')"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body f-s-18 container pb-0">
+                            <div class="container align-items-center">
+                                <div class="row my-3  justify-content-between align-items-middle">
+                                    <div class="col-6">
+                                        <div class="row justify-content-between align-items-middle">
+                                            <div class="col-5 color_title">
+                                                Tên tài khoản:
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="w-100 form-control"
+                                                    placeholder="Nhập tên tài khoản" name="" id="name-user">
+                                                <div class="invalid-feedback">Vui lòng nhập tên</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row justify-content-between align-items-middle">
+                                            <div class="col-5 color_title">
+                                                Số điện thoại:
+                                            </div>
+                                            <div class="col">
+                                                <input type="number" class="w-100 form-control"
+                                                    placeholder="Nhập số điện thoại" name="" id="phoneNumber-user">
+                                                <div class="invalid-feedback">Vui lòng nhập số điện thoại</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-3  justify-content-between align-items-middle">
+                                    <div class="col-6">
+                                        <div class="row justify-content-between align-items-middle">
+                                            <div class="col-5 color_title">
+                                                Mật khẩu:
+                                            </div>
+                                            <div class="col">
+                                                <input type="password" class="w-100 form-control" minlength="6"
+                                                    placeholder="Nhập mật khẩu" name="" id="password-user">
+                                                <div class="invalid-feedback">Mật khẩu phải có ít nhất 6 ký tự</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 justify-content-between align-items-middle">
+                                        <div class="row justify-content-between align-items-middle">
+                                            <div class="col-5 color_title">
+                                                Role:
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-select" name="" id="role-user"
+                                                    style="place-content: dâd;">
+                                                    <!-- <option value="">Chọn quyền</option> -->
+                                                    <option value="0">Admin</option>
+                                                    <option value="1">Kỹ thuật</option>
+                                                    <option value="2" selected>Hành Chính</option>
+                                                    <option value="3" selected>Nhân viên</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id=""
+                                onclick="deleteData('name-user','phoneNumber-user','password-user','role-user')"
+                                class="btn btn-danger  " data-bs-dismiss="modal"
+                                style="border-radius: 29px; background-color: #F81111; padding-left: 2.3rem; padding-right: 2.3rem;">Hủy</button>
+                            <button type="button" id="" class="btn btn-success  " onclick="createAccount()"
+                                style="border-radius: 29px; background-color: #04A544; padding-left: 2.3rem; padding-right: 2.3rem;">Thêm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //TODO update user -->
+            <div class="modal fade modal-lg" id="updateUser" tabindex="-1" aria-labelledby="exampleModalLabel"
+                data-bs-backdrop="static">
+                <div class="modal-dialog ">
+                    <div class="modal-content text-black">
+                        <div class="modal-header text-center">
+                            <span class="modal-title f-s-24 font-weight-bold" id="addCaseLabel">
+                                Sửa tài khoản
+                            </span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body f-s-18 container pb-0">
+                            <div class="container align-items-center" id="data__update--user">
+                                <div class="row my-3  justify-content-between align-items-middle">
+                                    <div class="col-6">
+                                        <div class="row justify-content-between align-items-middle">
+                                            <div class="col-5 color_title">
+                                                Tên tài khoản:
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="w-100 form-control"
+                                                    placeholder="Nhập tên tài khoản" name="" id="name__update-user">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row justify-content-between align-items-middle">
+                                            <div class="col-5 color_title">
+                                                Số điện thoại:
+                                            </div>
+                                            <div class="col">
+                                                <input type="number" class="w-100 form-control"
+                                                    placeholder="Nhập số điện thoại" name=""
+                                                    id="phoneNumber__update-user">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-3  justify-content-between align-items-middle">
+                                    <!-- <div class="col-6">
+                                        <div class="row justify-content-between align-items-middle">
+                                            <div class="col-5 color_title">
+                                                Mật khẩu:
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="w-100 form-control"
+                                                    placeholder="Nhập mật khẩu" name="" id="password__update-user">
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-6 justify-content-between align-items-middle">
+                                        <div class="row justify-content-between align-items-middle">
+                                            <div class="col-5 color_title">
+                                                Role:
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-select" name="" id="role__update-user">
+                                                    <option value="0">Admin</option>
+                                                    <option value="1">Kỹ thuật</option>
+                                                    <option value="2">Hành chính</option>
+                                                    <option value="3">Nhân viên</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="" class="btn btn-danger px-4 py-2"
+                                data-bs-dismiss="modal">Hủy</button>
+                            <button type="button" id="" onclick="updateAccount()"
+                                class="btn btn-success px-4 py-2">Sửa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <script src="/javascripts/GVS.js"></script> -->
+            <script>
+                $(document).ready(() => {
+                    renderListUser()
+
+                })
+                var users
+                var userId
+
+                function renderListUser() {
+                    $.ajax(GVS.setting(GVS.GetAllListUser, 'GET')).done(data => {
+                        if (data.success == 1) {
+                            console.log(data);
+                            users = data.metadata
+                            let html = ""
+                            var statusChange = {
+                                "0": "Đã khóa",
+                                "1": "Đang hoạt động"
+                            }
+                            data.metadata.forEach((elm, i) => {
+                                if (elm.status == 0) {
+                                    html += `<tr class= "align-middle text-center bg-red">`
+                                } else if (elm.status == 1) {
+                                    html += `<tr class= "align-middle text-center">`
+                                }
+                                html += `
+                                        <td class="col align-middle text-center"><a class="" data-bs-toggle="modal" data-bs-target="#updateUser" onclick="getAccountByIdToUpdate('${elm._id}')"><i class="fa fa-pencil"></i></a></td>
+                                        
+                                        <td class="col align-middle text-center"  >${i + 1}</td>
+                                        <td class="col align-middle text-center"  >${elm.name}</td>
+                                        <td class="col align-middle text-center"  >${elm.phoneNumber}</td>
+                                        <td class="col align-middle text-center"  >${GVS.objRole[elm.role]}</td>
+                                        <td class="col align-middle text-center"  >${new Date(elm.createdAt).toLocaleDateString("vi-VN")}</td>
+                                        <td class="col align-middle text-center"  >${new Date(elm.updatedAt).toLocaleDateString("vi-VN")}</td>
+                                        <td class="col align-middle text-center"  >${statusChange[elm.status]}</td>
+                                        <td class="col align-middle text-center ">
+                                            <button class="btn badge ${elm.status == 0 ? 'bg_btn_success' : 'bg_btn_danger'}  p-2" ${elm.status == 0 ? `onclick="lockAccount('${elm._id}',1,'${elm.name}','mở')"` : `onclick="lockAccount('${elm._id}',0,'${elm.name}','khóa')"`} >${elm.status == 0 ? 'Mở tài khoản' : 'Khóa tài khoản'} </button>
+                                        </td>
+                                        <td class="col align-middle text-center ">
+                                            <button class="btn badge btn-primary p-2" onclick ="resetPassword('${elm._id}','${GVS.escapeHTML(elm.name)}')">Đặt lại mật khẩu </button>
+                                        </td>
+                                        </tr>`
+                            });
+                            $("#table_user").DataTable().destroy()
+                            $('#content_user-table').html(html)
+                            $("#table_user").DataTable(
+                                {
+                                    "pageLength": 50,
+                                    lengthMenu: [20, 40, 50, 100, 200, 500],
+                                }
+                            )
+
+                        } else {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: data.message,
+                                icon: "error",
+                                confirmButtonText: "OK",
+                            })
+                        }
+                    })
+                }
+
+                function getAccountByIdToUpdate(id) {
+                    const user = users.find(el => el._id == id)
+                    userId = id
+                    $('#name__update-user').val(`${user.name}`)
+                    $('#phoneNumber__update-user').val(`${user.phoneNumber}`)
+                    $('#password__update-user').val(`${user.password}`)
+                    $('#role__update-user').val(`${user.role}`)
+                }
+
+                function createAccount() {
+
+                    const name = $('#name-user').val()
+                    const phoneNumber = $('#phoneNumber-user').val()
+                    const password = $('#password-user').val()
+                    const role = parseInt($('#role-user').val())
+                    // if (role == "") {
+                    //     Swal.fire({
+                    //         title: "Thông báo!",
+                    //         text: "Vui lòng chọn quyền của tài khoản!",
+                    //         icon: "error",
+                    //         confirmButtonText: "OK",
+                    //     })
+                    // } else {
+
+                    // }
+                    if (validateInputCreate() == 0) {
+                        validateInputCreate()
+                    } else {
+                        validateInputCreate()
+                        $.ajax(GVS.setting(GVS.CreateAccount, 'POST', {
+                            name,
+                            phoneNumber,
+                            password,
+                            role
+                        })).done(data => {
+                            if (data.success == 1) {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: data.message,
+                                    icon: "success",
+                                    confirmButtonText: "OK",
+                                }).then(() => {
+                                    $('#addUser').modal('toggle')
+                                    renderListUser()
+                                }).then(() => {
+                                    deleteData('name-user', 'phoneNumber-user', 'password-user', 'role-user')
+                                })
+                            } else {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: data.message,
+                                    icon: "error",
+                                    confirmButtonText: "OK",
+                                })
+                            }
+                        })
+
+                    }
+                }
+
+                function lockAccount(id, num, name, modifile) {
+                    Swal.fire({
+                        title: `Bạn có chắc chắn muốn ${modifile} tài khoản ${name} ?`,
+                        showDenyButton: true,
+                        confirmButtonText: "Có",
+                        denyButtonText: `Không`,
+                    }).then(result => {
+                        if (result.isConfirmed) {
+                            $.ajax(GVS.setting(GVS.UpdateAccount + id, 'PATCH', {
+                                status: num,
+                            })).done(data => {
+                                if (data.success == 1) {
+                                    Swal.fire({
+                                        title: "Thông báo!",
+                                        text: data.message,
+                                        icon: "success",
+                                        confirmButtonText: "OK",
+                                    }).then(() => {
+                                        renderListUser()
+                                    })
+                                } else {
+                                    Swal.fire({
+                                        title: "Thông báo!",
+                                        text: data.message,
+                                        icon: "error",
+                                        confirmButtonText: "OK",
+                                    })
+                                }
+                            })
+                        }
+                    })
+                }
+
+                function updateAccount() {
+                    console.log(validateInputUpdate());
+                    const name = $('#name__update-user').val()
+                    const phoneNumber = $('#phoneNumber__update-user').val()
+                    const password = $('#password__update-user').val()
+                    const role = parseInt($('#role__update-user').val())
+                    if (validateInputUpdate() == 0) {
+                        validateInputUpdate()
+                    } else {
+                        validateInputUpdate()
+                        $.ajax(GVS.setting(GVS.UpdateAccount + userId, 'PATCH', {
+                            name,
+                            phoneNumber,
+                            // password,
+                            role
+                        })).done(data => {
+                            if (data.success == 1) {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: data.message,
+                                    icon: "success",
+                                    confirmButtonText: "OK",
+                                }).then(() => {
+                                    $('#updateUser').modal('toggle')
+                                    renderListUser()
+                                })
+                            } else {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: data.message,
+                                    icon: "error",
+                                    confirmButtonText: "OK",
+                                })
+                            }
+                        })
+                    }
+
+                }
+
+                function resetPassword(id, name) {
+                    Swal.fire({
+                        title: `Đặt lại mật khẩu cho ${name}`,
+                        input: 'password',
+                        inputLabel: 'Nhập mật khẩu mới',
+                        inputPlaceholder: 'Mật khẩu mới',
+                        showCancelButton: true,
+                        confirmButtonText: 'Đặt lại',
+                        cancelButtonText: 'Hủy',
+                        inputValidator: (value) => {
+                            if (!value || value.length < 6) {
+                                return 'Mật khẩu mới phải có ít nhất 6 ký tự!'
+                            }
+                        }
+                    }).then(result => {
+                        if (result.isConfirmed) {
+                            $.ajax(GVS.setting(GVS.ResetPassword + id, 'POST', {
+                                newPassword: result.value
+                            })).done(data => {
+                                if (data.success == 1) {
+                                    Swal.fire({
+                                        title: "Thông báo!",
+                                        text: data.message,
+                                        icon: "success",
+                                        confirmButtonText: "OK",
+                                        timer: 1500,
+                                    })
+                                } else {
+                                    Swal.fire({
+                                        title: "Thông báo!",
+                                        text: data.message,
+                                        icon: "error",
+                                        confirmButtonText: "OK",
+                                    })
+                                }
+                            }).fail(() => {
+                                Swal.fire({
+                                    title: "Lỗi!",
+                                    text: "Không thể kết nối server",
+                                    icon: "error",
+                                    confirmButtonText: "OK",
+                                })
+                            })
+                        }
+                    })
+                }
+
+                function deleteData(name, phoneNumber, password, role) {
+                    $(`#${name}`).val("")
+                    $(`#${phoneNumber}`).val("")
+                    $(`#${password}`).val("")
+                    $(`#${role}`).val("")
+                }
+
+                function validateInputCreate() {
+                    var check = 1;
+                    if (returnCheck("name-user") == 0) {
+                        check = 0;
+                    }
+                    if (returnCheck("phoneNumber-user") == 0) {
+                        check = 0;
+                    }
+                    if (returnPasswordCheck("password-user") == 0) {
+                        check = 0;
+                    }
+                    $('input[type="text"]').keyup(function () {
+                        console.log($(this));
+                        $(this).removeClass('is-invalid')
+                    });
+                    $('input[type="number"]').keyup(function () {
+                        console.log($(this));
+                        $(this).removeClass('is-invalid')
+                    });
+                    return check;
+
+                }
+
+                function validateInputUpdate() {
+                    var check = 1;
+                    if (returnCheck("name__update-user") == 0) {
+                        check = 0;
+                    }
+                    if (returnCheck("password__update-user") == 0) {
+                        check = 0;
+                    }
+                    if (returnCheck("phoneNumber__update-user") == 0) {
+                        check = 0;
+                    }
+                    // check = returnCheck("name__update-user")
+                    // check =  returnCheck("password__update-user")
+                    // check = returnCheck("phoneNumber__update-user")
+                    $('input[type="text"]').keyup(function () {
+                        console.log($(this));
+                        $(this).removeClass('is-invalid')
+                    });
+                    $('input[type="number"]').keyup(function () {
+                        console.log($(this));
+                        $(this).removeClass('is-invalid')
+                    });
+                    return check;
+
+                }
+
+                function returnCheck(id) {
+                    var check = 1
+                    if ($(`#${id}`).val() === '') {
+                        check = 0;
+                        $(`#${id}`).addClass('is-invalid')
+                    } else {
+                        $(`#${id}`).removeClass('is-invalid')
+                    }
+                    return check
+                }
+
+                function returnPasswordCheck(id) {
+                    var check = 1
+                    if ($(`#${id}`).val().length < 6) {
+                        check = 0;
+                        $(`#${id}`).addClass('is-invalid')
+                    } else {
+                        $(`#${id}`).removeClass('is-invalid')
+                    }
+                    return check
+                }
+            </script>
+
+    </body>
+
+</html>

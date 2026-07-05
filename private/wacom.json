@@ -1,0 +1,437 @@
+{
+	"items": [{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-03-17",
+			"expirationDate": "",
+			"note": "04/07/23, Kho",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "0KE00R2003372",
+				"num": "9"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2021-08-27",
+			"expirationDate": "",
+			"note": "01/07/23, Kho",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1DH00R2016751",
+				"num": "11"
+			}
+		},
+		{
+			"name": "Huion Inspiroy H430P",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2023-06-15",
+			"expirationDate": "",
+			"note": "04/07/23, Kho",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "D1T41SH05431",
+				"num": "29"
+			}
+		},
+		{
+			"name": "Huion Inspiroy H430P",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2023-06-15",
+			"expirationDate": "",
+			"note": "04/07/23, Kho",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "D2T41SH00018",
+				"num": "30"
+			}
+		},
+		{
+			"name": "Huion Inspiroy H430P",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2023-06-15",
+			"expirationDate": "",
+			"note": "01/07/23, Kho",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "D2T41SH00024",
+				"num": "31"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2023-05-08",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1HJ00R2019399",
+				"num": "23"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-03-17",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "0KE00R2003375",
+				"num": "14"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2020-12-24",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "8BH00R2055001",
+				"num": "1"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-03-17",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "0KE00R2003373",
+				"num": "2"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2020-12-24",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "8BH00R2034052",
+				"num": "3"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-03-17",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "0KE00R2003376",
+				"num": "4"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-09-07",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "0KE00R2008494",
+				"num": "5"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-03-17",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "0KE00R2003374",
+				"num": "6"
+			}
+		},
+		{
+			"name": "Wacom Intuos PTH-851",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "6HDH002838",
+				"num": "7"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-07-27",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1BE00R2001273",
+				"num": "8"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2020-12-24",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "0IH00R2002177",
+				"num": "10"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2020-12-24",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "0IH00R2002178",
+				"num": "12"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-09-07",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "0KE00R2008493",
+				"num": "13"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-07-27",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1BE00R2001271",
+				"num": "15"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "0IH00R2002179",
+				"num": "16"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-07-27",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1BE00R2001272",
+				"num": "17"
+			}
+		},
+		{
+			"name": "Wacom Intuos PTH-851",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "6HDH002837",
+				"num": "18"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2023-03-27",
+			"expirationDate": "",
+			"note": "09/08/23, Kho",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1JH00R2003273",
+				"num": "19"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-11-01",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1HE00R2001277 ",
+				"num": "20"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2021-08-27",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1DH00R2016610",
+				"num": "21"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2022-11-01",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1HE00R2001276 ",
+				"num": "22"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2023-05-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1JH00R2004375",
+				"num": "24"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2023-05-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1JH00R2004377",
+				"num": "25"
+			}
+		},
+		{
+			"name": "Wacom CTL-4100",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2023-05-16",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "1JH00R2004376",
+				"num": "26"
+			}
+		},
+		{
+			"name": "Huion Inspiroy H430P",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2023-06-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "BBT41SH09971",
+				"num": "27"
+			}
+		},
+		{
+			"name": "Huion Inspiroy H430P",
+			"supplier": "",
+			"type": "wacom",
+			"billPrice": "",
+			"createdAt": "2023-06-15",
+			"expirationDate": "",
+			"note": "",
+			"status": "1",
+			"attributes": {
+				"seriesNumber": "D2T41SH00022",
+				"num": "28"
+			}
+		}
+	]
+}

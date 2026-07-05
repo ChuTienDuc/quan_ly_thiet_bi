@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+    <!-- <link rel="stylesheet" href="/select2-4.1.0-rc.0/dist/css/select2.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+    <script src="//datatables.net/download/build/nightly/jquery.dataTables.js"></script> -->
+    <link rel="stylesheet" href="/RowGroup-1.3.1/css/rowGroup.bootstrap.min.css">
+    <!-- <script src="/RowGroup-1.3.1/js/rowGroup.bootstrap5.min.js"></script> -->
+
+    <script src="//cdn.rawgit.com/ashl1/datatables-rowsgroup/v1.0.0/dataTables.rowsGroup.js"></script>
+    <style>
+        #floatingTextarea:focus {
+            box-shadow: none;
+        }
+
+        #floatingTextarea::placeholder {
+            color: #C7C7C7;
+
+        }
+
+        /* #handover .select2-selection__rendered {
+            text-wrap: balance !important;
+        } */
+
+        .circle {
+            z-index: -1;
+            border-radius: 374.276px;
+            background: linear-gradient(180deg, rgba(123, 80, 243, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+            width: 344.43px;
+            height: 374.276px;
+            transform: rotate(104.585deg);
+            position: absolute;
+            bottom: 10%;
+            right: -2%;
+        }
+
+        .circle1 {
+            z-index: -1;
+            border-radius: 374.276px;
+            background: linear-gradient(180deg, rgba(123, 80, 243, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+            width: 374.43px;
+            height: 404.276px;
+            transform: rotate(104.585deg);
+            position: absolute;
+            top: -11%;
+            left: 5%;
+        }
+
+        @keyframes backgroundanimation {
+            from {
+                transform: translate(0, 0);
+            }
+
+            to {
+                transform: translate(-100px, 100px);
+            }
+        }
+
+        @keyframes bg-device-style {
+            from {
+                color: rgb(10, 20, 108);
+
+            }
+
+            to {
+                color: rgba(0, 133, 255, 1);
+            }
+        }
+
+        table#table-index_1.table-bordered.dataTable td {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+
+        td.border-bold {
+            border-top: 1px solid !important;
+        }
+
+        .w-90 {
+            width: 160px;
+        }
+
+        #table-index_1 th,
+        td {
+            width: max-content !important;
+        }
+
+        #table-index th,
+        td {
+            width: max-content !important;
+            text-align: center;
+        }
+
+        #table-index,
+        #table-index_1 td,
+        #table-index,
+        #table-index_1 th {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .select2-selection__rendered {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .select2-selection--multiple {
+            overflow: hidden;
+            white-space: nowrap;
+            max-width: 100%;
+        }
+
+        .select2-container--below {
+            width: 100% !important;
+        }
+
+        .nav-pills .nav-link {
+            background: #C4D3D6;
+
+            color: #fff;
+
+        }
+
+        .nav-pills .nav-link.active {
+            background: #0085FF !important;
+        }
+
+        #pills-profile-tab:hover {
+            cursor: pointer;
+            background: #0085FF;
+            ;
+            animation-name: background-btn;
+            animation-duration: 1s;
+        }
+
+        #pills-home-tab:hover {
+            background: #0085FF;
+            ;
+            animation-name: background-btn;
+            animation-duration: 1.5s;
+        }
+
+        .title-home-page::after {
+            content: "";
+            position: absolute;
+            background: #D0F1FF;
+            width: 197px;
+            height: 13px;
+            flex-shrink: 0;
+            top: 18px;
+            left: -7px;
+            z-index: -1;
+        }
+
+        .title-home-page-first::after {
+            content: "";
+            position: absolute;
+            background: #D0F1FF;
+            width: 197px;
+            height: 13px;
+            flex-shrink: 0;
+            top: 18px;
+            left: -9.5px;
+            z-index: 1;
+        }
+
+        .device-style {
+            color: #0A146C;
+            font-weight: 500;
+        }
+
+        .link__device--index:hover {
+            color: #3F52FF !important;
+        }
+
+        .device-text {
+            color: #0A146C;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .line-device {
+            bottom: 25px;
+            position: absolute;
+            width: 31%;
+            height: 1px;
+            left: 52%;
+            transform: translateX(-25%);
+            border-radius: 3px;
+            background: #DBDBDB;
+        }
+
+        #handover .select2 {
+            width: 100% !important;
+        }
+
+        /* .dt-row {
+            overflow-y: auto;
+            overflow-x: scroll;
+            max-height: 85vh;
+        } */
+
+        /* .th_table_sticky {
+            top: -0.5px;
+        } */
+
+        @keyframes background-btn {
+            from {
+                background: #C4D3D6;
+            }
+
+            to {
+                background: #0085FF;
+                ;
+            }
+        }
+    </style>
+
+
+    <body id="body-pd" class="body-pd" style="overflow-x: hidden">
+
+        <%- include("./nav.html") %>
+            <!-- <div class="height-100 "> -->
+            <main class="content p-0 pt-4">
+                <div class="container-fluid p-0 ">
+                    <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                        <div class="col-5">
+                            <span style="font-style: normal;
+                                font-weight: 800;
+                                font-size: 56px;
+                                line-height: 56px;
+                                display: flex;
+                                align-items: center;
+                                background: linear-gradient(360deg, #0075FF 20%, #74DDFE 106%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;">WELCOME BACK!</span>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-4 text-end">
+                            <button style="background-color: #0085FF; border-radius: 29px;"
+                                class=" btn text-white" data-bs-toggle="modal" data-bs-target="#handover"
+                                onclick="renderOptionHandover()">
+                                <i class="fa fa-plus"></i>
+                                Bàn giao
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 d-flex align-items-center justify-content-end" id="icon">
+
+                        </div>
+                        <div class="col-8">
+                            <div class="row row-cols-6 justify-content-center" id="device__index">
+
+                            </div>
+                        </div>
+                        <div class="col-1">
+
+                        </div>
+                    </div>
+
+                    <h3 class="title-home-page position-relative" style="color: #3F52FF; font-size: 24px;">
+                        <strong style="font-weight: 700;">Bảng thống kê</strong>
+                    </h3>
+
+                    <ul class="nav nav-pills my-3 h-auto mx-0" id="pills-tab" role="tablist">
+                        <div class="row justify-content-start align-items-center mx-0">
+                            <button class="nav-link active btn btn-primary col-auto " id="pills-home-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                aria-controls="pills-home" aria-selected="true">Bảng chi tiết</button>
+                            <button class="nav-link col-auto  btn btn-primary mx-2" id="pills-profile-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                                aria-controls="pills-profile" aria-selected="false">Bảng thu gọn</button>
+                        </div>
+
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent" style="z-index: 100; position: relative;">
+                        <div class="tab-pane fade show active text-black" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-12 p-0 d-flex">
+                                    <div class="card flex-fill"
+                                        style="overflow-y:auto; overflow-x: scroll; max-height: 85vh;">
+                                        <table class="table table-bordered table-responsive w-100 my-0"
+                                            id="table-index_1" style="width: max-content !important;">
+                                            <thead class="th_table_sticky">
+                                                <th>STT</th>
+                                                <th>Họ và tên</th>
+                                                <th>Số máy</th>
+                                                <th>Màn hình 1</th>
+                                                <th>Màn hình 2</th>
+                                                <th>Wacom</th>
+                                                <th>Webcam</th>
+                                                <th>Tai nghe</th>
+                                                <th>Ups</th>
+                                                <th>Bàn phím</th>
+                                                <th>Chuột</th>
+                                                <th>Đơn vị làm việc</th>
+                                                <th>Vị trí làm việc</th>
+                                                <th>Địa chỉ</th>
+                                                <th>Tầng</th>
+                                                <th></th>
+                                            </thead>
+                                            <tbody id="table-tbody_index_1"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade text-black" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-12 p-0 d-flex">
+                                    <div class="card flex-fill"
+                                        style="overflow-y:auto; overflow-x: scroll; max-height: 85vh;">
+                                        <table class="table table-bordered table-responsive w-100 my-0 th_table_sticky"
+                                            id="table-index">
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div class="row">
+                <div class="col-12 p-0 d-flex">
+                    <div class="card flex-fill" style="overflow-y:auto; overflow-x: scroll; max-height: 85vh;">
+                        <table class="table table-bordered table-responsive w-100 my-0 d-none"
+                                        id="table-index">
+                                    </table>
+                        <table class="table table-bordered table-responsive w-100 my-0" id="table-index_1">
+                                <thead>
+                                    <th>STT</th>
+                                    <th>Họ và tên</th>
+                                    <th>Số máy</th>
+                                    <th>Màn hình 1</th>
+                                    <th>Màn hình 2</th>
+                                    <th>Wacom</th>
+                                    <th>Webcam</th>
+                                    <th>Tai nghe</th>
+                                    <th>Đơn vị làm việc</th>
+                                    <th>Vị trí làm việc</th>
+                                    <th>Địa điểm làm việc</th>
+                                    <th>Tầng</th>
+                                    <th></th>
+                                </thead>
+                                <tbody id="table-tbody_index_1"></tbody>
+                            </table>
+                    </div>
+                </div>
+            </div> -->
+                </div>
+            </main>
+            </div>
+            <!--TODO modal bàn giao -->
+            <div class="modal modal-xl fade " id="handover" data-bs-backdrop="static" data-bs-keyboard="false"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <div class="modal-header border-bottom-0">
+                            <b class="modal-title f-s-24 color_header" id="addDeviceLabel">
+                                Bàn giao thiết bị
+                            </b>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                onclick="deleteInput()"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-2 color_title">Nhân viên: </div>
+                                    <div class="col-3">
+                                        <select class="js-example-basic-single w-100" id="handover_staff"
+                                            name="handover_staff" tabindex="0" data-dropdown-auto-width="true"
+                                            onchange="changePreviewSelect(this,'staff')">
+                                        </select>
+                                    </div>
+                                    <div class="col-5">
+                                        <div id="preview_select_staff" class="font-bold px-2 text-primary"></div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-2 color_title">Máy tính: </div>
+                                    <div class="col-3">
+                                        <select class="js-example-basic-multiple" id="handover_device_case"
+                                            onchange="changePreviewSelect(this,'case')" name="handover_device_case"
+                                            multiple="multiple">
+                                        </select>
+                                        <!-- </select> -->
+                                    </div>
+                                    <div class="col-5">
+                                        <div id="preview_select_case" class="font-bold px-2 text-case"></div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-2 color_title">Màn hình: </div>
+                                    <div class="col-3">
+                                        <select class="js-example-basic-multiple" id="handover_device_monitor"
+                                            onchange="changePreviewSelect(this,'monitor')" name="handover_monitor"
+                                            multiple="multiple">
+                                        </select>
+                                        </select>
+                                    </div>
+                                    <div class="col-5">
+                                        <div id="preview_select_monitor" class="font-bold px-2 text-monitor"></div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-2 color_title">Wacom: </div>
+                                    <div class="col-3">
+                                        <select class="js-example-basic-multiple" id="handover_device_wacom"
+                                            onchange="changePreviewSelect(this,'wacom')" name="handover_wacom"
+                                            multiple="multiple">
+                                        </select>
+                                        </select>
+                                    </div>
+                                    <div class="col-5">
+                                        <div id="preview_select_wacom" class="font-bold px-2 text-wacom"></div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-2 color_title">Webcam: </div>
+                                    <div class="col-3">
+                                        <select class="js-example-basic-multiple" id="handover_device_webcam"
+                                            onchange="changePreviewSelect(this,'webcam')" name="handover_webcam"
+                                            multiple="multiple">
+                                        </select>
+                                        </select>
+                                    </div>
+                                    <div class="col-5">
+                                        <div id="preview_select_webcam" class="font-bold px-2 text-webcam"></div>
+
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-2 color_title">Tai nghe: </div>
+                                    <div class="col-3">
+                                        <select class="js-example-basic-multiple" id="handover_device_headphone"
+                                            onchange="changePreviewSelect(this,'headphone')"
+                                            name="handover_device_headphone" multiple="multiple">
+                                        </select>
+                                        </select>
+                                    </div>
+                                    <div class="col-5">
+                                        <div id="preview_select_headphone" class="font-bold px-2 text-headphone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-2 color_title">Ups: </div>
+                                    <div class="col-3">
+                                        <select class="js-example-basic-multiple" id="handover_device_ups"
+                                            onchange="changePreviewSelect(this,'ups')" name="handover_device_ups"
+                                            multiple="multiple">
+                                        </select>
+                                        </select>
+                                    </div>
+                                    <div class="col-5">
+                                        <div id="preview_select_ups" class="font-bold px-2 text-ups">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-2 color_title">Chuột: </div>
+                                    <div class="col-3">
+                                        <input class="form-check-input" type="checkbox" style="font-size: 1.5rem;"
+                                            value="" id="checkBoxmouse">
+                                    </div>
+                                    <div class="col-5"></div>
+                                </div>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-2 color_title">Bàn phím: </div>
+                                    <div class="col-3">
+                                        <input class="form-check-input" type="checkbox" style="font-size: 1.5rem;"
+                                            value="" id="checkBoxkeyboard">
+                                    </div>
+                                    <div class="col-5"></div>
+
+                                </div>
+                                <div class="row my-3">
+                                    <b class="col color_header f-s-20">
+                                        <div id="selectedItems"></div>
+                                    </b>
+                                </div>
+                                <div class="row ">
+                                    <b class="col color_header f-s-20">
+                                        Ghi chú:
+                                    </b>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="form-floating">
+                                        <textarea class="form-control p-0" placeholder="Leave a comment here"
+                                            id="note_handover"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class=" d-flex justify-content-center my-4">
+                            <button class="btn bg_btn_danger me-3 px-4" data-bs-dismiss="modal" onclick="deleteInput()"
+                                style="border-radius: 29px;">Hủy</button>
+                            <button class="btn bg_btn_success px-3" id = "btn_handover" onclick="checkDataHandover()"
+                                style="border-radius: 29px;">Bàn giao</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!--TODO modal staff -->
+            <div class="modal modal-md fade " id="staff_detail" data-bs-backdrop="static" data-bs-keyboard="false"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center color_header f-s-22 border-bottom-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 col">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-danger px-5 py-2" style="border-radius: 29px;"
+                                data-bs-dismiss="modal">Hủy</button>
+                            <button type="button" class="btn btn-success px-4 py-2">Tạo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--TODO modal case -->
+            <div class="modal modal-xl fade " id="data-Detail" data-bs-backdrop="static" data-bs-keyboard="false"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center color_header f-s-22 border-bottom-0">
+
+                            <!-- <h1 class="modal-title fs-5" id="">Case</h1> -->
+                            <div>Chi tiết máy tính</div>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 col">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-danger px-4 py-2" data-bs-dismiss="modal">Hủy</button>
+                            <button type="button" class="btn btn-success px-4 py-2">Tạo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--todo model history staff -->
+            <div class="modal modal-lg fade " id="history-staff" data-bs-backdrop="static" data-bs-keyboard="false"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center color_header f-s-22 border-bottom-0">
+
+                            <!-- <h1 class="modal-title fs-5" id="">Case</h1> -->
+                            <div>Lịch sử nhân viên</div>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="">
+                            <div class="container f-s-16">
+                                <table class="table table-bordered text-center">
+                                    <thead class="color_header">
+                                        <th>STT</th>
+                                        <th>Tên thiết bị:</th>
+                                        <th>Dùng từ ngày:</th>
+                                        <th>Chi tiết thiết bị:</th>
+                                    </thead>
+                                    <tbody id="history_staff-detail">
+                                        <tr>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-danger px-4 py-2" data-bs-dismiss="modal">Đóng</button>
+                            <!-- <button type="button" class="btn btn-success px-4 py-2">Tạo</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="revokeMK" tabindex="-1" aria-labelledby="revokeMKLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title color_header" id="revokeMKLabel">Thu hồi thiết bị</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h2 class="color_title">Bạn có chắc chắn thu hồi thiết bị này không?</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Hủy</button>
+                            <button type="button" class="btn btn-primary">Đồng ý</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle1"></div>
+            <div class="circle"></div>
+
+    </body>
+    <!-- <script src="/select2-4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="https://cdn.datatables.net/rowgroup/1.3.1/js/dataTables.rowGroup.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            renderDeviceSummary()
+            renderListDevice()
+        })
+
+        var datas;
+        async function renderStaffSummary() {
+            const staff = await $.ajax(GVS.setting(GVS.GetStaffSummary, 'GET'))
+            let html = ""
+            staff.metadata.forEach((elm) => {
+                html += `
+                <div class="col-4 mb-4 d-inline-flex position-relative" id="staff__index">
+                    <div class="card h-100 py-2" style="box-shadow: none; position: relative; left: 50%; transform: translateX(-25%); width: 155px" onmouseover="hoverChangeBgColor(this)" onmouseout="hoverDeleteChangeBgColor(this)">
+                        <div class="card-body pb-1 align-items-center">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2 device-style" >
+                                    <div class="text-xs f-s-18 font-weight-bold text-uppercase mb-3">
+                                        Nhân sự</div>
+                                    <div class="d-inline-flex flex-column">
+                                    <a href="${GVS.CreateStaff}" class="link__device--index text-decoration-none f-s-16 mb-0 font-weight-bold  device-text" href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">Tổng số: ${elm.total} </a>
+                                    <a href="${GVS.CreateStaff}?status=1" class="link__device--index text-decoration-none f-s-16 mb-0 font-weight-bold  device-text" href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">Đang làm: ${elm.is_working} </a>
+                                    </div>                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-device"></div>
+                </div>
+                `
+            })
+            return html
+        }
+        // danh sách số lương thiết bị sắp xếp
+        let arrDeviceSort = ['case', 'monitor', 'wacom', 'webcam', 'headphone']
+
+        function sortTypeDeviceInSummary(array, order) {
+            var newArray = [];
+            for (let i = 0; i < array.length; i++) {
+                const device = array[i];
+                for (let j = 0; j < order.length; j++) {
+                    const type = order[j];
+                    if (device._id == type) {
+                        newArray.push(device)
+                    }
+                }
+            }
+            return newArray
+        }
+
+        function renderDeviceSummary(params) {
+            $.ajax(GVS.setting(GVS.GetDeviceSummary, 'GET')).done(async (data) => {
+                if (data.success == 1) {
+                    let html = ""
+                    let htmls = ""
+                    htmls += `<div>
+                                    <img class="w-100" style="scale: 1.5;" src="/images/Frame.svg" alt="">
+                                </div>
+                                <h3 class="title-home-page-first position-relative" style = "color: #3F52FF; font-size: 24px; left: -32px;top: 23px;">
+                                    <strong class="position-relative" style="z-index: 2; top: -2px; font-weight: 700">Quản lý chung</strong>
+                                </h3>`
+                    // data.metadata = sortTypeDeviceInSummary(data.metadata, arrDeviceSort)
+                    html += await renderStaffSummary()
+                    data.metadata = data.metadata.filter(_ => _._id != "mouse" && _._id != "keyboard")
+                    data.metadata.forEach((elm) => {
+                        html += `
+                            <div class="col-4 mb-4 d-inline-flex position-relative">
+                                <div onmouseover="hoverChangeBgColor(this)" onmouseout="hoverDeleteChangeBgColor(this)" class="card  ${elm._id == "headphone" ? "border-left-headphone" :
+                                elm._id == "webcam" ? "border-left-webcam" :
+                                    elm._id == "case" ? "border-left-case" :
+                                        elm._id == "monitor" ? "border-left-monitor" : "border-left-wacom"
+                            } h-100 py-2" style="box-shadow: none; border-left: none !important; position: relative; left: 50%; transform: translateX(-25%); width:155px">
+                                    <div class="card-body pb-1 align-items-center">
+                                        <div class="row no-gutters align-items-center" style ="cursor: pointer">
+                                            <div class="col mr-2 device-style" >
+                                                <div class="text-xs f-s-18 font-weight-bold  text-uppercase mb-3">
+                                                    ${elm._id == "headphone" ? "Tai nghe" :
+                                elm._id == "case" ? "Máy tính" :
+                                    elm._id == "monitor" ? "Màn hình" :
+                                        elm._id == "wacom" ? "wacom" :
+                                            elm._id == "headphone" ? "Tai nghe" :
+                                                elm._id == "webcam" ? "Webcam" :
+                                                    elm._id == "mouse" ? "Chuột" : "Bàn phím"
+                            }
+
+                            </div>
+                                               <div class="d-flex flex-column">
+                                                <a href="${GVS.GETALLDEVICE}/${elm._id}"  class="link__device--index text-decoration-none f-s-16 mb-0 font-weight-bold
+                                                device-text">
+                                                Tổng số: ${elm.total}
+                                                </a>
+                                               <a href="${GVS.GETALLDEVICE}/${elm._id}?status=1" class="link__device--index text-decoration-none f-s-16 mb-0 font-weight-bold device-text ">Chưa dùng: ${elm.not_inuse}</a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line-device"></div>
+                            </div>
+                            `
+                    })
+                    $('#icon').html(htmls)
+                    $('#device__index').html(html)
+                } else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: data.message,
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    })
+                }
+            })
+        }
+        var tableIndex = $('#table-index')
+        var test111;
+
+        function getHistotyStaff(idStaff) {
+            $.ajax(GVS.setting(GVS.GetHistoryStaff + idStaff, 'POST')).done(data => {
+                if (data.metadata.length != 0) {
+                    var datas = data.metadata[0].devices.filter(obj => obj.hasOwnProperty('device') && obj.type == 1)
+                    let html = ''
+                    datas.forEach((elm, i) => {
+                        html += `
+                        <tr>
+                            <td>${i + 1}</td>
+                            
+                            <td>${elm.device.type == 'case' ? 'Máy số' :
+                                elm.device.type == 'monitor' ? 'Màn hình' :
+                                    elm.device.type == 'wacom' ? 'Wacom' :
+                                        elm.device.type == 'headphone' ? 'Tai nghe' :
+                                            elm.device.type == 'Webcam' ? 'Webcam' :
+                                                elm.device.type == 'mouse' ? 'Chuột' :
+                                                    elm.device.type == 'keyboard' ? 'Bàn phím' : ''
+                            }  ${elm.device.attributes ? elm.device.attributes.num ? "- " + elm.device.attributes.num : "" : ""}
+                            ${elm.device.type == 'case' ? '' : + elm.device.name && elm.device.name != undefined ? '- ' + elm.device.name : ""
+                            }
+                            </td>
+                            <td>${new Date(elm.createdAt).toLocaleDateString("vi-VN")}</td>
+                            <td><a href="${GVS.GetDetailDevice}${elm.device._id}">Xem chi tiết <i class="fa fa-sharp fa-solid fa-forward"></i></a></td>
+                        </tr>
+                    `
+                    })
+                    $('#history_staff-detail').html(html)
+                    $('#history-staff').modal('toggle')
+                }
+                else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: "Nhân viên chưa có sự thay đổi nào",
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    })
+                }
+            })
+        }
+
+        function sortTypeDevice(array, order) {
+            var newArray = [];
+
+            for (let i = 0; i < array.length; i++) {
+                const device = array[i];
+                for (let j = 0; j < order.length; j++) {
+                    const type = order[j];
+                    if (device.type == type) {
+                        newArray.push(device)
+                    }
+                }
+            }
+            return newArray
+        }
+
+        function renderStaff(staff_name, id_staff) {
+            var html = ''
+            html += `<div><a data-bs-toggle="tooltip" data-bs-title="Default tooltip" class="" 
+                                onclick="staffModal('${id_staff}')">${staff_name}
+                            </a></div>`
+            return html
+        }
+
+        function renderArrDeviceByType(arrDevice, id_staff) {
+            var html = ''
+            if (arrDevice) {
+                arrDevice.forEach(dv => {
+                    html += `<div><a data-bs-toggle="tooltip" data-bs-title="Default tooltip" class="" 
+                                onclick="${dv.type == "case" ? `caseModal('${dv._id}','${id_staff}')` :
+                            dv.type == "wacom" ? `wacomModal('${dv._id}','${id_staff}')` :
+                                dv.type == "webcam" ? `webcamModal('${dv._id}','${id_staff}')` :
+                                    dv.type == "headphone" ? `headphoneModal('${dv._id}','${id_staff}')` :
+                                        `UpsModal('${dv._id}','${id_staff}')`}">${dv.type === "case" ? `Máy số ${dv.attributes.num}` : `${dv.attributes.num}-${dv.name}`}
+                            </a></div>`
+                });
+            }
+            return html
+        }
+
+        function renderArrDeviceByMonitor(arrDevice, mod, id_staff) {
+            if (!arrDevice) {
+                return ''
+            }
+            var html = ''
+            var html1 = ''
+            for (let index = 0; index < arrDevice.length; index += 2) {
+                const monitor = arrDevice[index];
+                html += `<div><a data-bs-toggle="tooltip" data-bs-title="Default tooltip" class="" 
+                                onclick="monitorModal('${monitor._id}','${id_staff}')">${monitor.attributes.num}-${monitor.name}
+                            </a></div>`
+            }
+            if (mod == 1)
+                return html;
+            for (let index = 1; index < arrDevice.length; index += 2) {
+                const monitor = arrDevice[index];
+                html1 += `<div><a data-bs-toggle="tooltip" data-bs-title="Default tooltip" class="" 
+                                onclick="monitorModal('${monitor._id}','${id_staff}')">${monitor.attributes.num}-${monitor.name}
+                            </a></div>`
+            }
+            if (mod == 2)
+                return html1;
+        }
+
+        function separateDevicesByType(devices) {
+            return devices.reduce((result, device) => {
+                const type = device.type;
+                if (!result[type]) {
+                    result[type] = [];
+                }
+                result[type].push(device);
+                return result;
+            }, {});
+        }
+
+        function renderListDevice() {
+            var objectTypeDevice = {
+                "case": "Máy",
+                "monitor": "Màn hình",
+                "headphone": "Tai nghe",
+                "webcam": "Webcam",
+                "wacom": "Wacom"
+            }
+            var html = ""
+            $.ajax(GVS.setting(GVS.GETALLDEVICE, 'GET')).done(data => {
+                datas = data.metadata
+                // TODO Table 0 
+                var htmlTableIndex0 = ''
+                datas.sort(function (a, b) {
+                    return a.staff.name.localeCompare(b.staff.name);
+                })
+                datas.forEach((elm, index) => {
+                    const separatedDevices = separateDevicesByType(elm.devices)
+                    html += `<tr style = "border-top: 1px solid !important">
+                            <td>${index + +1}</td>
+                            <td>${renderStaff(elm.staff.name, elm.staff._id)}</td>
+                            <td>${renderArrDeviceByType(separatedDevices["case"], elm.staff._id)}</td>
+                            <td>${renderArrDeviceByMonitor(separatedDevices["monitor"], 1, elm.staff._id)}</td>
+                            <td>${renderArrDeviceByMonitor(separatedDevices["monitor"], 2, elm.staff._id)}</td>
+                            <td>${renderArrDeviceByType(separatedDevices["wacom"], elm.staff._id)}</td>
+                            <td>${renderArrDeviceByType(separatedDevices["webcam"], elm.staff._id)}</td>
+                            <td>${renderArrDeviceByType(separatedDevices["headphone"], elm.staff._id)}</td>
+                            <td>${renderArrDeviceByType(separatedDevices["ups"], elm.staff._id)}</td>
+                            <td>
+                                <div>
+                                    <a data-bs-title= "Default tooltip" data-bs-toggle="tooltip" class = "" onclick = "revokeMK('${elm.staff._id}','${elm.staff.name}','keyboard')">
+                                    ${elm.staff.keyboard}
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <a data-bs-title= "Default tooltip" data-bs-toggle="tooltip" class = "" onclick = "revokeMK('${elm.staff._id}','${elm.staff.name}','mouse')">
+                                        ${elm.staff.mouse}
+                                    </a>
+                                </div>
+                            </td>
+                            <td>${elm.staff.company}</td>
+                            <td>${elm.staff.position ? elm.staff.position.name : ""}</td>
+                            <td>${elm.staff.location.address}</td>
+                            <td>${elm.staff.location.floor}</td>
+                            <td><div class="btn-group dropstart cursor-pointer">
+                                <span class="font-bold f-s-24" data-bs-toggle="dropdown" aria-expanded="false">
+                                    ...
+                                </span>
+                                <ul class="dropdown-menu ">
+                                    <li class = "text-center">
+                                        <button class="btn btn-danger my-2" onclick = "revokeAllDevice('${elm.staff._id}','${elm.staff.name}','${elm.staff.company}','${elm.staff.job.name}')">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                        
+                                    </li>
+                                    <li class = "text-center">
+                                        <button onclick="getHistotyStaff('${elm.staff._id}')" class="btn my-2 btn-success">
+                                            <i class="fa fa-eye"></i>
+                                        </button> 
+                                        
+                                    </li>
+                                </ul>
+                            </div></td>`
+
+                    html += `</tr>`
+                })
+                $("#table-tbody_index_1").html(html)
+                $('#table-index_1').DataTable(
+                    {
+                        columnDefs: [
+                            {
+                                type: 'numeric',
+                                targets: [2, 3, 4, 5, 6, 7, 8]
+                            }
+                        ],
+                        pageLength: 50,
+                        lengthMenu: [20, 40, 50, 100, 200, 500]
+                    },
+                )
+                // TODO Table 1
+                var dataTableIndex = []
+                var sortingTypeDevice = ['case', 'monitor', 'headphone', 'wacom', 'webcam', "ups"];
+                data.metadata.forEach((elm, index) => {
+                    elm.devices = sortTypeDevice(elm.devices, sortingTypeDevice);
+                    elm.devices.forEach((dv) => {
+                        dataTableIndex.push(
+                            [
+                                index + 1,
+                                `<a data-bs-toggle="tooltip" data-bs-title="Default tooltip" class="" 
+                                onclick="staffModal('${elm.staff._id}')">${elm.staff.name}
+                            </a>`,
+                                `<a data-bs-toggle="tooltip" data-bs-title="Default tooltip" class="" onclick="${dv.type == "case" ? `caseModal('${dv._id}','${elm.staff._id}')` :
+                                    dv.type == "monitor" ? `monitorModal('${dv._id}','${elm.staff._id}')` :
+                                        dv.type == "wacom" ? `wacomModal('${dv._id}','${elm.staff._id}')` :
+                                            dv.type == "webcam" ? `webcamModal('${dv._id}','${elm.staff._id}')` :
+                                                dv.type == "headphone" ? `headphoneModal('${dv._id}','${elm.staff._id}')` :
+                                                    `UpsModal('${dv._id}','${elm.staff._id}')`}">${dv.type === "case" ? `Máy số ${dv.attributes.num}` :
+                                                        `${dv.attributes.num}-${dv.name}`}
+                            </a>`,
+                                `${objectTypeDevice[dv.type]}`,
+                                elm.staff.job.name,
+                                elm.staff.company,
+                                elm.staff.location.address,
+                                elm.staff.location.floor,
+                                `<div class="btn-group dropstart cursor-pointer">
+                                <span class="font-bold f-s-24" data-bs-toggle="dropdown" aria-expanded="false">
+                                    ...
+                                </span>
+                                <ul class="dropdown-menu ">
+                                    <li class = "text-center">
+                                        <button class="btn btn-danger my-2" onclick = "revokeAllDevice('${elm.staff._id}','${elm.staff.name}','${elm.staff.company}',${elm.staff.job.name})">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                        
+                                    </li>
+                                    <li class = "text-center">
+                                        <button onclick="getHistotyStaff('${elm.staff._id}')" class="btn my-2 btn-success">
+                                            <i class="fa fa-eye"></i>
+                                        </button> 
+                                        
+                                    </li>
+                                </ul>
+                            </div>`
+                            ]
+                        )
+                    })
+                });
+
+                tableIndex = $('#table-index').DataTable({
+                    "order": [
+                        [0, 'asc']
+                    ],
+                    columns: [{
+                        name: 'second',
+                        title: 'STT',
+                        className: 'border-bold'
+                    },
+                    {
+                        title: 'Tên',
+                        name: 'second',
+                        orderable: true,
+                        className: 'border-bold'
+                    },
+                    {
+                        title: 'Tên thiết bị',
+                        className: 'text-center text-truncate w-90',
+                        order: [],
+                        orderable: false,
+
+                    },
+                    {
+                        title: 'Loại thiết bị',
+                        order: [],
+                        orderable: false,
+                    },
+                    {
+                        name: 'second',
+                        title: 'Công việc',
+                        orderable: true,
+                        className: 'border-bold'
+
+                    },
+                    {
+                        name: 'second',
+                        title: 'Công ty',
+                        orderable: true,
+                        className: 'border-bold'
+                    },
+                    {
+                        name: 'second',
+                        title: 'Địa chỉ',
+                        orderable: true,
+                        className: 'border-bold'
+                    },
+                    {
+                        name: 'second',
+                        title: 'Tầng',
+                        orderable: true,
+                        className: 'border-bold'
+                    },
+
+                    {
+                        title: '',
+                        name: 'second',
+                        orderable: true,
+                        className: 'border-bold'
+                    }
+                    ],
+                    data: dataTableIndex,
+                    rowsGroup: [
+                        'second:name'
+                    ],
+                    "pageLength": 100,
+                })
+                $("#table-index thead").addClass("th_table_sticky")
+                // Get the column index for the grouping column (e.g., column index 1)
+                var groupColumnIndex = 1;
+
+                // Create an empty object to store unique group values
+                var groups = {};
+                var arrLengthRowGroup = []
+                // Iterate over the rows and collect unique group values
+                tableIndex.rows().every(function (index) {
+                    var rowData = this.data();
+                    var groupValue = rowData[groupColumnIndex];
+                    groups[groupValue] = index;
+                });
+                // Get the count of unique groups
+                var groupedRows = tableIndex.rows({
+                    group: 'name'
+                }).nodes();
+
+                var numGroups = Object.values(groups);
+                for (let i = 0; i < numGroups.length; i++) {
+                    const element = numGroups[i];
+                    $(groupedRows).each(function (index) {
+                        if (index == 0 || index == (element + 1)) {
+                            var firstCellTenThietBi = $(this).find('td:nth-child(3)').eq(0);
+                            var firstCellLoaiThietBi = $(this).find('td:nth-child(4)').eq(0);
+                            $(firstCellTenThietBi).addClass("border-bold")
+                            $(firstCellLoaiThietBi).addClass("border-bold")
+                        }
+
+                    });
+                }
+                // tableIndex.on('order', function (event, settings) {
+                //     var order = settings.aiOrder;
+                //     var columnIndex = order.indexOf(0); // Chỉnh index của cột "STT" trong mảng order
+                //     if (columnIndex > -1) {
+                //         order.splice(columnIndex, 1); // Xóa cột "STT" khỏi mảng order
+                //         settings.aiOrder = order;
+                //     }
+                // }).draw();
+            })
+        }
+
+        async function monitorModal(_id, staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            if (!staff) {
+                return
+            }
+            const data = staff.devices.find(_ => _._id == _id)
+            let monitorTheme = ""
+            monitorTheme += `
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="color : #0A146C">
+                    <div class="row justify-content-center">
+                            <div class="col-10">
+                                <div class="modal-header modal_header f-s-22 px-0 mt-3">
+                                <div>
+                                    <span class="color_header f-s-30 mt-2">Chi tiết màn hình số ${data.attributes.num}</span>
+                                    <br>
+                                    <span class="${data.status == 1 ? "color_can_use" : `${data.status == 0 ? "color_in_use" : "color_error"}`} f-s-18"><img src = "/images/${data.status == 1 ? "icon_can_use.svg" : `${data.status == 0 ? "icon_in_use.svg" : "icon_error.svg"}`}"/>${data.status == 1 ? " Có thẻ sử dụng" : `${data.status == 0 ? " Đang sử dụng" : " Đã hỏng"}`} </span>
+                                </div>
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute;right: 2%;top: 2%;"></button>
+                            </div>
+                            <div class="modal-body f-s-18 px-0">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <a class="col-sm-5 col-lg-5 col text-decoration-none text-end" style="color: #0085FF;font-weight: 700;" href="${GVS.GetDetailDevice}${_id}">
+                                            <span class="underline"> Trang chi tiết của thiết bị </span> &gt;
+                                        </a>
+                                    </div>
+                                    <div class="row color_header my-2">
+                                        <div class="col-12 ">
+                                            <span class="underline_blue f-s-24" style="z-index: 1">Thông tin</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <div class="row my-3">
+                                                <b class="color_title col-5"> Loại thiết bị:</b> 
+                                                <span class="col-7 color_title1 f-f-SanF-Thin ps-0">Monitor</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-5"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7 ">
+                                            <div class="row my-3">
+                                                <b class=" color_title col-5">Địa chỉ thiết bị:</b> <span class="col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.address}</span> 
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class="row my-3">
+                                                <b class=" color_title col-8">Nhà cung cấp:</b> <span class="col-4 color_title1 f-f-SanF-Thin">${data.supplier ? data.supplier.name : ""}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7 ">
+                                            <div class="row my-3">
+                                        
+                                                <b class=" color_title col-5">Tầng đặt thiết bị:</b> <span class="col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.floor}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class="row my-3">
+                                                <b class=" color_title col-8">Thời hạn bảo hành:</b> <span class="col-4 color_title1 f-f-SanF-Thin">${data.expirationDate == null ? "" : new Date(data.expirationDate).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7 ">
+                                            <div class="row my-3">
+                                                <b class=" color_title col-5">Giá theo hóa đơn:</b> <span class="col-7 color_title1 f-f-SanF-Thin ps-0">${data.billPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.billPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class="row my-3">
+                                                <b class=" color_title col-8">Ngày tạo:</b> <span class="col-4 color_title1 f-f-SanF-Thin">${data.createdAt == null ? "" : new Date(data.createdAt).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7 ">
+                                            <div class="row my-3">
+                                                <b class=" color_title col-5">Tổng giá trị:</b> <span class="col-7 color_title1 f-f-SanF-Thin ps-0">${data.totalPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.totalPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class="row my-3">
+                                                <b class=" color_title col-8">Ngày cập nhật gần đây:</b> <span class="col-4 color_title1 f-f-SanF-Thin">${data.updatedAt == null ? "" : new Date(data.updatedAt).toLocaleDateString("vi-VN")}</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row color_header my-3">
+                                        <div class="col-12 ">
+                                            <span class="underline_blue f-s-24" style="z-index: 1">Thông số kỹ thuật</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <div class="row my-3">
+                                                <b class=" color_title col-4">Cổng kết nối:</b> <span class="col-8 color_title1 f-f-SanF-Thin">${data.attributes.connector}</span> 
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col-sm-6 ">
+                                           <b class=" color_title col-6">Ghi chú:</b> <span class="col-6 color_title1 f-f-SanF-Thin">${data.note}</span> 
+                                        </div>
+                                    </div>                                                                                                                                                                                                         
+                                    <div class="row align-items-center justify-content-start">
+                                        <b class="col-12 text-start color_header">
+                                            Tạo ghi chú thu hồi (nếu có)
+                                        </b>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="form-floating">
+                                            <input class="form-control" placeholder="Ghi chú" style="border: none;border-bottom: 2px solid #D9D9D9;outline: none;background-color: transparent;padding: 5px 0; onfocus=" this.style.boxshadow="none" ;"="" onblur="this.style.boxShadow = '';" "="" id="floatingTextarea">
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center" style="border-top: none;">
+                                <button type="button" class="btn btn-danger px-5 py-2" style="border-radius: 29px;" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" onclick="revokeDevice('${_id}','data-Detail')" class="btn btn-warning px-5 py-2" style="border-radius: 29px;">Thu hồi</button>
+                            </div>    
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>`
+            $('#data-Detail').html(monitorTheme)
+            $('#data-Detail').modal('toggle')
+
+        }
+        async function staffModal(staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            let staffTheme = ""
+            staffTheme += `
+        <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center  f-s-22">
+                                <div class = "color_header">Chi tiết nhân viên</div>
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body f-s-18" id="">
+                                <div class="container">
+                                    <div class="row justify-content-center my-3">
+                                        <div class = "col-6 color_title text-start">Mã nhân viên:</div>
+                                        <div class = "col-6 text-start">${staff.staff.code}</div>
+                                    </div>
+                                    <div class="row justify-content-center my-3">
+                                        <div class = "col-6 color_title text-start">Họ tên:</div>
+                                        <div class = "col-6 text-start">${staff.staff.name}</div>
+                                    </div>
+                                    <div class="row justify-content-center my-3">
+                                        <div class = "col-6 color_title text-start">Công ty:</div>
+                                        <div class = "col-6 text-start">${staff.staff.company}</div>
+                                    </div>
+                                    <div class="row justify-content-center my-3">
+                                        <div class = "col-6 color_title text-start">Công việc:</div>
+                                        <div class = "col-6 text-start">${staff.staff.job.name}</div>
+                                    </div>
+                                    <div class="row justify-content-center my-3">
+                                        <div class = "col-6 color_title text-start">Phòng ban:</div>
+                                        <div class = "col-6 text-start">${staff.staff.department.name}</div>
+                                    </div>
+                                    <div class="row justify-content-center my-3">
+                                        <div class = "col-6 color_title text-start">Ví trí:</div>
+                                        <div class = "col-6 text-start">${staff.staff.position.name}</div>
+                                    </div>
+                                    <div class="row justify-content-center my-3">
+                                        <div class = "col-6 color_title text-start">Số điện thoại:</div>
+                                        <div class = "col-6 text-start">${staff.staff.phoneNumber}</div>
+                                    </div>
+                                    <div class="row justify-content-center my-3">
+                                        <div class = "col-6 color_title text-start">Địa chỉ:</div>
+                                        <div class = "col-6 text-start">${staff.staff.location.address}</div>
+                                    </div>
+                                    <div class="row justify-content-center my-3">
+                                        <div class = "col-6 color_title text-start">Tầng:</div>
+                                        <div class = "col-6 text-start">${staff.staff.location.floor}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+        `
+            $('#staff_detail').html(staffTheme)
+            $('#staff_detail').modal('toggle')
+        }
+
+        async function caseModal(_id, staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            if (!staff) {
+                return
+            }
+            const data = staff.devices.find(_ => _._id == _id)
+            let caseTheme = ""
+            caseTheme += `
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style = "color : #0A146C">
+                    <div class="row justify-content-center">
+                            <div class="col-10">
+                                <div class="modal-header modal_header f-s-22 px-0 mt-3">
+                                <div>
+                                    <span class = "color_header f-s-30 mt-2">Chi tiết máy số ${data.attributes.num}</span>
+                                    <br>
+                                    <span class = "${data.status == 1 ? "color_can_use" : `${data.status == 0 ? "color_in_use" : "color_error"}`} f-s-18"><img src = "/images/${data.status == 1 ? "icon_can_use.svg" : `${data.status == 0 ? "icon_in_use.svg" : "icon_error.svg"}`}"/>${data.status == 1 ? " Có thẻ sử dụng" : `${data.status == 0 ? " Đang sử dụng" : " Đã hỏng"}`} </span>
+                                </div>
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute;right: 2%;top: 2%;"></button>
+                            </div>
+                            <div class="modal-body f-s-18 px-0">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <a class="col-sm-5 col-lg-5 col text-decoration-none text-end" style = "color: #0085FF;font-weight: 700;" href="${GVS.GetDetailDevice}${_id}">
+                                            <span class = "underline"> Trang chi tiết của thiết bị </span> >
+                                        </a>
+                                    </div>
+                                    <div class = "row color_header my-2">
+                                        <div class = "col-12 ">
+                                            <span class = "underline_blue f-s-24" style = "z-index: 1">Thông tin</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <div class = "row my-3 ">
+                                                <b class="color_title col-5"> Loại thiết bị:</b> 
+                                                <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">Case</span>
+                                            </div>
+                                        </div>
+                                        <div class = "col-5"></div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-5">Địa chỉ thiết bị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.address}</span> 
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Nhà cung cấp:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.supplier ? data.supplier.name : ""}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                        
+                                                <b class=" color_title col-5">Tầng đặt thiết bị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.floor}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Thời hạn bảo hành:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.expirationDate == null ? "" : new Date(data.expirationDate).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-5">Giá theo hóa đơn:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.billPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.billPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Ngày tạo:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.createdAt == null ? "" : new Date(data.createdAt).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-5">Tổng giá trị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.totalPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.totalPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Ngày cập nhật gần đây:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.updatedAt == null ? "" : new Date(data.updatedAt).toLocaleDateString("vi-VN")}</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row color_header my-3">
+                                        <div class = "col-12 ">
+                                            <span class = "underline_blue f-s-24" style = "z-index: 1">Thông số kỹ thuật</span>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-2">Nguồn:</b> <span class = "col-8 color_title1 f-f-SanF-Thin">${data.attributes.PSU}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-3">Chipset:</b> <span class = "col-8 color_title1 f-f-SanF-Thin">${data.attributes.chipset}</span> 
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class = "row">
+                                        <div class = "col-sm-4">
+                                            <div class = "my-2">
+                                                <div class = "col-12">
+                                                ${renderVGAData(data)}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-sm-4">
+                                            <div class = "my-2">
+                                                <div class = "col-12">
+                                                ${renderHardDrivesData(data)}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-sm-4">
+                                            <div class = "my-2">
+                                                <div class = "col-12">
+                                                ${renderRamData(data)}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-6 mb-2">
+                                           <b class=" color_title col-6">Ghi chú:</b> <span class = "col-6 color_title1 f-f-SanF-Thin">${data.note}</span> 
+                                        </div>
+                                    </div>                                                                                                                                                                                                         
+                                    <div class="row align-items-center justify-content-start mt-2">
+                                        <b class="col-12 text-start color_header">
+                                            Tạo ghi chú thu hồi (nếu có)
+                                        </b>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="form-floating">
+                                            <input class="form-control" placeholder="Ghi chú" style ="border: none;border-bottom: 2px solid #D9D9D9;outline: none;background-color: transparent;padding: 5px 0; onfocus="this.style.boxShadow = 'none';" onblur="this.style.boxShadow = '';""
+                                                id="floatingTextarea"></input>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center" style ="border-top: none;">
+                                <button type="button"   class="btn btn-danger px-5 py-2" style ="border-radius: 29px;" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" onclick="revokeDevice('${_id}','data-Detail')" class="btn btn-warning px-5 py-2" style ="border-radius: 29px;">Thu hồi</button>
+                            </div>    
+                            </div>
+                        </div>
+                        </div>
+                        </div>`
+            // TODO Lịch sử Thiết bị
+            // <div class="row my-3 align-items-center justify-content-center">
+            //                 <b class="col-12 color_header text-center">
+            //                     Lịch sử thiết bị
+            //                 </b>
+            //             </div>
+            //             <div class="row  align-items-center " >
+            //                 ${await GetHistoryByIdDevice(_id)}
+            //             </div>
+            $('#data-Detail').html(caseTheme)
+            $('#data-Detail').modal('toggle')
+
+
+        }
+
+        async function wacomModal(_id, staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            if (!staff) {
+                //////
+                return
+            }
+            const data = staff.devices.find(_ => _._id == _id)
+            let wacomTheme = ""
+            wacomTheme += `
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style = "color : #0A146C">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="modal-header modal_header f-s-22 mt-3 px-0">
+                                <div>
+                                    <span class = "color_header f-s-30 mt-2">Chi tiết wacom số ${data.attributes.num}</span>
+                                    <br>
+                                    <span class = "${data.status == 1 ? "color_can_use" : `${data.status == 0 ? "color_in_use" : "color_error"}`} f-s-18"><img src = "/images/${data.status == 1 ? "icon_can_use.svg" : `${data.status == 0 ? "icon_in_use.svg" : "icon_error.svg"}`}"/>${data.status == 1 ? " Có thẻ sử dụng" : `${data.status == 0 ? " Đang sử dụng" : " Đã hỏng"}`} </span>
+                                </div>
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute;right: 2%;top: 2%;"></button>
+                            </div>
+                            <div class="modal-body f-s-18">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <a class="col-sm-5 col-lg-5 col text-decoration-none text-end" style = "color: #0085FF;font-weight: 700;" href="${GVS.GetDetailDevice}${_id}">
+                                            <span class = "underline"> Trang chi tiết của thiết bị </span> >
+                                        </a>
+                                    </div>
+                                    <div class = "row color_header my-2">
+                                        <div class = "col-12 ">
+                                            <span class = "underline_blue f-s-24" style = "z-index: 1">Thông tin</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <div class = "row my-3">
+                                                <b class="color_title col-5"> Loại thiết bị:</b> 
+                                                <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">Wacom</span>
+                                            </div>
+                                        </div>
+                                        <div class = "col-5"></div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-5">Địa chỉ thiết bị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.address}</span> 
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-8">Nhà cung cấp:</b> <span class = "col-4 color_title1 f-f-SanF-Thin ">${data.supplier ? data.supplier.name : ""}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3">
+                                        
+                                                <b class=" color_title col-5">Tầng đặt thiết bị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.floor}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-8">Thời hạn bảo hành:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.expirationDate == null ? "" : new Date(data.expirationDate).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-5">Giá theo hóa đơn:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.billPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.billPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-8">Ngày tạo:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.createdAt == null ? "" : new Date(data.createdAt).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-5">Tổng giá trị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.totalPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.totalPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-8">Ngày cập nhật gần đây:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.updatedAt == null ? "" : new Date(data.updatedAt).toLocaleDateString("vi-VN")}</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row color_header my-3">
+                                        <div class = "col-12 ">
+                                            <span class = "underline_blue f-s-24" style = "z-index: 1">Thông số kỹ thuật</span>
+                                        </div>
+                                    </div>
+                                    <div class = "row my-3">
+                                        <div class="col-sm-7">
+                                            <div class ="row">
+                                                <b class=" color_title col-2">Số seri:</b> <span class = "col-8 color_title1 f-f-SanF-Thin">${data.attributes.seriesNumber}</span> 
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class = "row my-3">
+                                        <div class="col-sm-6 ">
+                                            <div class ="row">
+                                                <b class=" color_title col-4">Ghi chú:</b> <span class = "col-6 color_title1 f-f-SanF-Thin">${data.note}</span> 
+                                            </div>
+                                        </div>
+                                    </div>                                                                                                                                                                                                         
+                                    <div class="row align-items-center justify-content-start mt-2">
+                                        <b class="col-12 text-start color_header">
+                                            Tạo ghi chú thu hồi (nếu có)
+                                        </b>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-floating">
+                                            <input class="form-control" placeholder="Ghi chú" style ="border: none;border-bottom: 2px solid #D9D9D9;outline: none;background-color: transparent;padding: 5px 0; onfocus="this.style.boxShadow = 'none';" onblur="this.style.boxShadow = '';""
+                                                id="floatingTextarea"></input>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer d-flex" style ="border-top: none;">
+                                <button type="button"   class="btn btn-danger px-5 py-2" style ="border-radius: 29px;" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" onclick="revokeDevice('${_id}','data-Detail')" class="btn btn-warning px-5 py-2" style ="border-radius: 29px;">Thu hồi</button>
+                            </div>
+                        </div>    
+                    </div>
+                        </div>
+                        </div>
+                        `
+            $('#data-Detail').html(wacomTheme)
+            $('#data-Detail').modal('toggle')
+
+        }
+
+        async function UpsModal(_id, staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            if (!staff) {
+                return
+            }
+            const data = staff.devices.find(_ => _._id == _id)
+            let UPSTheme = ""
+            UPSTheme += `
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style = "color : #0A146C">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="modal-header modal_header f-s-22 mt-3 px-0">
+                                <div>
+                                    <span class = "color_header f-s-30 mt-2">Chi tiết UPS số ${data.attributes.num}</span>
+                                    <br>
+                                    <span class = "${data.status == 1 ? "color_can_use" : `${data.status == 0 ? "color_in_use" : "color_error"}`} f-s-18"><img src = "/images/${data.status == 1 ? "icon_can_use.svg" : `${data.status == 0 ? "icon_in_use.svg" : "icon_error.svg"}`}"/>${data.status == 1 ? " Có thẻ sử dụng" : `${data.status == 0 ? " Đang sử dụng" : " Đã hỏng"}`} </span>
+                                </div>
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute;right: 2%;top: 2%;"></button>
+                            </div>
+                            <div class="modal-body f-s-18">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <a class="col-sm-5 col-lg-5 col text-decoration-none text-end" style = "color: #0085FF;font-weight: 700;" href="${GVS.GetDetailDevice}${_id}">
+                                            <span class = "underline"> Trang chi tiết của thiết bị </span> >
+                                        </a>
+                                    </div>
+                                    <div class = "row color_header my-2">
+                                        <div class = "col-12 ">
+                                            <span class = "underline_blue f-s-24" style = "z-index: 1">Thông tin</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <div class = "row my-3">
+                                                <b class="color_title col-5"> Loại thiết bị:</b> 
+                                                <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">UPS</span>
+                                            </div>
+                                        </div>
+                                        <div class = "col-5"></div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-5">Địa chỉ thiết bị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.address}</span> 
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-8">Nhà cung cấp:</b> <span class = "col-4 color_title1 f-f-SanF-Thin ">${data.supplier ? data.supplier.name : ""}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3">
+                                        
+                                                <b class=" color_title col-5">Tầng đặt thiết bị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.floor}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-8">Thời hạn bảo hành:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.expirationDate == null ? "" : new Date(data.expirationDate).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-5">Giá theo hóa đơn:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.billPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.billPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-8">Ngày tạo:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.createdAt == null ? "" : new Date(data.createdAt).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-5">Tổng giá trị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.totalPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.totalPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3">
+                                                <b class=" color_title col-8">Ngày cập nhật gần đây:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.updatedAt == null ? "" : new Date(data.updatedAt).toLocaleDateString("vi-VN")}</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row color_header my-3">
+                                        <div class = "col-12 ">
+                                            <span class = "underline_blue f-s-24" style = "z-index: 1">Thông số kỹ thuật</span>
+                                        </div>
+                                    </div>
+                                    <div class = "row my-3">
+                                        <div class="col-sm-6 ">
+                                            <div class ="row">
+                                                <b class=" color_title col-4">Ghi chú:</b> <span class = "col-6 color_title1 f-f-SanF-Thin">${data.note}</span> 
+                                            </div>
+                                        </div>
+                                    </div>                                                                                                                                                                                                         
+                                    <div class="row align-items-center justify-content-start mt-2">
+                                        <b class="col-12 text-start color_header">
+                                            Tạo ghi chú thu hồi (nếu có)
+                                        </b>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-floating">
+                                            <input class="form-control" placeholder="Ghi chú" style ="border: none;border-bottom: 2px solid #D9D9D9;outline: none;background-color: transparent;padding: 5px 0; onfocus="this.style.boxShadow = 'none';" onblur="this.style.boxShadow = '';""
+                                                id="floatingTextarea"></input>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer d-flex" style ="border-top: none;">
+                                <button type="button"   class="btn btn-danger px-5 py-2" style ="border-radius: 29px;" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" onclick="revokeDevice('${_id}','data-Detail')" class="btn btn-warning px-5 py-2" style ="border-radius: 29px;">Thu hồi</button>
+                            </div>
+                        </div>    
+                    </div>
+                        </div>
+                        </div>
+                        `
+            $('#data-Detail').html(UPSTheme)
+            $('#data-Detail').modal('toggle')
+
+        }
+
+        async function webcamModal(_id, staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            if (!staff) {
+                //////
+                return
+            }
+            const data = staff.devices.find(_ => _._id == _id)
+            let webcamTheme = ""
+            webcamTheme += `
+        <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style ="color : #0A146C">
+                    <div>
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <div class="modal-header modal_header f-s-22 px-0 mt-3">
+                                <div>
+                                    <span class = "color_header f-s-30 mt-2">Chi tiết webcam số ${data.attributes.num}</span>
+                                    <br>
+                                    <span class = "${data.status == 1 ? "color_can_use" : `${data.status == 0 ? "color_in_use" : "color_error"}`} f-s-18"><img src = "/images/${data.status == 1 ? "icon_can_use.svg" : `${data.status == 0 ? "icon_in_use.svg" : "icon_error.svg"}`}"/>${data.status == 1 ? " Có thẻ sử dụng" : `${data.status == 0 ? " Đang sử dụng" : " Đã hỏng"}`} </span>
+                                </div>
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute;right: 2%;top: 2%;"></button>
+                            </div>
+                            <div class="modal-body f-s-18 px-0">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <a class="col-sm-5 col-lg-5 col text-decoration-none text-end" style = "color: #0085FF;font-weight: 700;" href="${GVS.GetDetailDevice}${_id}">
+                                            <span class = "underline"> Trang chi tiết của thiết bị </span> >
+                                        </a>
+                                    </div>
+                                    <div class = "row color_header my-2">
+                                        <div class = "col-12 ">
+                                            <span class = "underline_blue f-s-24" style = "z-index: 1">Thông tin</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <div class = "row my-3 ">
+                                                <b class="color_title col-5"> Loại thiết bị:</b> 
+                                                <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">Webcam</span>
+                                            </div>
+                                        </div>
+                                        <div class = "col-5"></div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-5">Địa chỉ thiết bị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.address}</span> 
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Nhà cung cấp:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.supplier ? data.supplier.name : ""}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                        
+                                                <b class=" color_title col-5">Tầng đặt thiết bị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.floor}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Thời hạn bảo hành:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.expirationDate == null ? "" : new Date(data.expirationDate).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-5">Giá theo hóa đơn:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.billPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.billPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Ngày tạo:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.createdAt == null ? "" : new Date(data.createdAt).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-5">Tổng giá trị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.totalPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.totalPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Ngày cập nhật gần đây:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.updatedAt == null ? "" : new Date(data.updatedAt).toLocaleDateString("vi-VN")}</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row my-3">
+                                        <div class="col-sm-6 ">
+                                            <div class ="row ">
+                                                <b class=" color_title col-4">Ghi chú:</b> <span class = "col-6 color_title1 f-f-SanF-Thin">${data.note}</span> 
+                                            </div>
+                                        </div>
+                                    </div>                                                                                                                                                                                                         
+                                    <div class="row align-items-center justify-content-start mt-2">
+                                        <b class="col-12 text-start color_header">
+                                            Tạo ghi chú thu hồi (nếu có)
+                                        </b>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="form-floating">
+                                            <input class="form-control" placeholder="Ghi chú" style ="border: none;border-bottom: 2px solid #D9D9D9;outline: none;background-color: transparent;padding: 5px 0; onfocus="this.style.boxShadow = 'none';" onblur="this.style.boxShadow = '';""
+                                                id="floatingTextarea"></input>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer d-flex " style ="border-top: none;">
+                                <button type="button"   class="btn btn-danger px-5 py-2" style ="border-radius: 29px;" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" onclick="revokeDevice('${_id}','data-Detail')" class="btn btn-warning px-5 py-2" style ="border-radius: 29px;">Thu hồi</button>
+                            </div>
+                            </div>
+                        </div>    
+                    </div>
+                        </div>
+                        </div>`
+            $('#data-Detail').html(webcamTheme)
+            $('#data-Detail').modal('toggle')
+
+        }
+
+        async function headphoneModal(_id, staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            if (!staff) {
+                //////
+                return
+            }
+            const data = staff.devices.find(_ => _._id == _id)
+            let headphoneTheme = ""
+            headphoneTheme += `
+        <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style = "color : #0A146C">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="modal-header modal_header f-s-22 px-0 mt-3">
+                                <div>
+                                    <span class = "color_header f-s-30 mt-2">Chi tiết tai nghe số ${data.attributes.num}</span>
+                                    <br>
+                                    <span class = "${data.status == 1 ? "color_can_use" : `${data.status == 0 ? "color_in_use" : "color_error"}`} f-s-18"><img src = "/images/${data.status == 1 ? "icon_can_use.svg" : `${data.status == 0 ? "icon_in_use.svg" : "icon_error.svg"}`}"/>${data.status == 1 ? " Có thẻ sử dụng" : `${data.status == 0 ? " Đang sử dụng" : " Đã hỏng"}`} </span>
+                                </div>
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute;right: 2%;top: 2%;"></button>
+                            </div>
+                            <div class="modal-body f-s-18 px-0">
+                                <div class="container">
+                                    <div class="row justify-content-end">
+                                        <a class="col-sm-5 col-lg-5 col text-decoration-none text-end" style = "color: #0085FF;font-weight: 700;" href="${GVS.GetDetailDevice}${_id}">
+                                            <span class = "underline"> Trang chi tiết của thiết bị </span> >
+                                        </a>
+                                    </div>
+                                    <div class = "row color_header my-2">
+                                        <div class = "col-12 ">
+                                            <span class = "underline_blue f-s-24" style = "z-index: 1">Thông tin</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <div class = "row my-3 ">
+                                                <b class="color_title col-5"> Loại thiết bị:</b> 
+                                                <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">Headphone</span>
+                                            </div>
+                                        </div>
+                                        <div class = "col-5"></div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-5">Địa chỉ thiết bị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.address}</span> 
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Nhà cung cấp:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.supplier ? data.supplier.name : ""}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                        
+                                                <b class=" color_title col-5">Tầng đặt thiết bị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.staff.location.floor}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Thời hạn bảo hành:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.expirationDate == null ? "" : new Date(data.expirationDate).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-5">Giá theo hóa đơn:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.billPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.billPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Ngày tạo:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.createdAt == null ? "" : new Date(data.createdAt).toLocaleDateString("vi-VN")}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-sm-7 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-5">Tổng giá trị:</b> <span class = "col-7 color_title1 f-f-SanF-Thin ps-0">${data.totalPrice == null ? "" : new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(data.totalPrice)}</span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 ">
+                                            <div class = "row my-3 ">
+                                                <b class=" color_title col-8">Ngày cập nhật gần đây:</b> <span class = "col-4 color_title1 f-f-SanF-Thin">${data.updatedAt == null ? "" : new Date(data.updatedAt).toLocaleDateString("vi-VN")}</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "row my-3">
+                                        <div class="col-sm-6 ">
+                                            <div class ="row ">
+                                                <b class=" color_title col-4">Ghi chú:</b> <span class = "col-6 color_title1 f-f-SanF-Thin">${data.note}</span> 
+                                            </div>
+                                        </div>
+                                    </div>                                                                                                                                                                                                         
+                                    <div class="row align-items-center justify-content-start mt-2">
+                                        <b class="col-12 text-start color_header">
+                                            Tạo ghi chú thu hồi (nếu có)
+                                        </b>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="form-floating">
+                                            <input class="form-control" placeholder="Ghi chú" style ="border: none;border-bottom: 2px solid #D9D9D9;outline: none;background-color: transparent;padding: 5px 0; onfocus="this.style.boxShadow = 'none';" onblur="this.style.boxShadow = '';""
+                                                id="floatingTextarea"></input>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer d-flex " style ="border-top: none;">
+                                <button type="button"   class="btn btn-danger px-5 py-2" style ="border-radius: 29px;" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" onclick="revokeDevice('${_id}','data-Detail')" class="btn btn-warning px-5 py-2" style ="border-radius: 29px;">Thu hồi</button>
+                            </div>
+                        </div>    
+                    </div>
+                        </div>
+                        </div>
+                        `
+            $('#data-Detail').html(headphoneTheme)
+            $('#data-Detail').modal('toggle')
+        }
+
+        function renderConnector(data) {
+            let connectorTheme = ""
+            let elmConnector = data.attributes.connector
+            if (elmConnector.length > 1) {
+                var connectorArr = elmConnector.join(" , ")
+            } else {
+                var connectorArr = elmConnector.join("")
+            }
+            connectorTheme += `
+                <div class="col-sm-6">
+                    <div class = "row my-3 justify-content-center">
+                        <span class="color_title my-3 col-4">Cổng kết nối:</span>
+                        <span class = "col-6 my-3   ">${connectorArr}</span> 
+                    </div>
+                     
+                </div>`
+            return connectorTheme
+        }
+
+        // The above code defines a function called `renderVGAData` that takes in a `data` object as a parameter. The function loops through the `VGA` array in the `attributes` property of the `data` object and generates HTML code for each VGA element. The generated HTML code includes the VGA name, VRAM, and connector information. The function then returns the generated HTML code as a string.
+        function renderVGAData(data) {
+            let vgaTheme = ""
+            for (let i = 0; i < data.attributes.VGA.length; i++) {
+                const elmVGA = data.attributes.VGA[i];
+                if (elmVGA.connector.length > 1) {
+                    var connectorArr = elmVGA.connector.join(" , ")
+                } else {
+                    var connectorArr = elmVGA.connector.join("")
+                }
+                vgaTheme += `
+                <div class="row" style="position: relative;">
+                    <div class="col color_title">VGA:</div> 
+                    <div class="col" style="width: 210px;height: 2px;border-radius: 3px;background: #558FFF80;position: absolute;bottom: 25%;left: 18%;"></div> 
+                </div>
+                <div class="row">
+                    <div class="col-12 mx-auto ms-1 p-0" style="color: #0A146C">
+                        <ul>
+                            <li>
+                                <div class="row mt-3 mb-2">
+                                    <div class="col-4">
+                                        VGA ${i + 1}:
+                                    </div>   
+                                    <div class="col-7 p-0 color_title1 f-f-SanF-Thin">
+                                        ${elmVGA.name}
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="mb-2" style="display: flex;">
+                                    <div class="col-4">
+                                        Vram: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </div>   
+                                    <div class="col-7 p-0 color_title1 f-f-SanF-Thin">
+                                        ${elmVGA.vram.length > 0 ? elmVGA.vram : "không có"}
+                                    </div>
+                            </div>
+                            <div class="mb-2" style="display: flex">
+                                    <div class="col-4">
+                                        Kết nối: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </div>   
+                                    <div class="col-7 p-0 color_title1 f-f-SanF-Thin">
+                                         ${" " + connectorArr}
+                                    </div>
+                            </div>
+                        </ul>
+                    </div>
+                    
+                </div>
+            `
+            }
+            return vgaTheme
+
+        }
+        // The above code defines a function called `renderHardDrivesData` that takes in a `data` parameter. The function loops through the `hardDrives` array in the `attributes` object of the `data` parameter and generates HTML code for each hard drive. The generated HTML code includes the type, brand, and size of each hard drive. The function then returns the generated HTML code as a string.
+        function renderHardDrivesData(data) {
+            let hardDrivesTheme = ""
+            for (let i = 0; i < data.attributes.hardDrives.length; i++) {
+                const elmHDR = data.attributes.hardDrives[i];
+                hardDrivesTheme += `
+            
+            <div class="row" style="position: relative;">
+                    <div class="col color_title">Ổ cứng:</div> 
+                    <div class="col" style="width: 184px;height: 2px;border-radius: 3px;background: #558FFF80;position: absolute;bottom: 25%;left: 26%;"></div> 
+                </div>
+
+                <div class="row">
+                    <div class="col-12 mx-auto ms-1 p-0" style="color: #0A146C">
+                        <ul>
+                            <li>
+                                <div class="row mt-3 mb-2">
+                                    <div class="col-4">
+                                        Ổ số ${i + 1}:
+                                    </div>   
+                                    <div class="col-7 p-0">
+                                    
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="mb-2" style="display: flex">
+                                    <div class="col-6">
+                                        Loại: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </div>   
+                                    <div class="col-6 p-0 color_title1 f-f-SanF-Thin">
+                                        ${elmHDR.type}
+                                    </div>
+                            </div>
+                            <div class="mb-2" style="display: flex">
+                                    <div class="col-6">
+                                        Hãng: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </div>   
+                                    <div class="col-6 p-0 color_title1 f-f-SanF-Thin">
+                                        ${elmHDR.brand.length > 0 ? elmHDR.brand : " "}
+                                    </div>
+                            </div>
+                            <div class="mb-2" style="display: flex">
+                                    <div class="col-6">
+                                        Dung lượng: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </div>   
+                                    <div class="col-6 p-0 color_title1 f-f-SanF-Thin">
+                                        ${elmHDR.size}
+                                    </div>
+                            </div>
+                        </ul>
+                    </div>
+                    
+                </div>
+            
+            `
+            }
+            return hardDrivesTheme
+
+        }
+        // The above code defines a function called `renderRamData` that takes in a parameter called `data`. The function loops through the `ram` attribute of the `data` object and creates a string of HTML elements that display the RAM information. The resulting HTML string is returned by the function.
+        function renderRamData(data) {
+            let ramTheme = ""
+            for (let i = 0; i < data.attributes.ram.length; i++) {
+                const elmRAM = data.attributes.ram[i];
+                ramTheme +=
+                    `
+                <div class="row" style="position: relative;">
+                    <div class="col color_title">Ram:</div> 
+                    <div class="col" style="width: 219px;height: 2px;border-radius: 3px;background: #558FFF80;position: absolute;bottom: 25%;left: 19%;"></div> 
+                </div>
+                <div class="row">
+                    <div class="col-12 mx-auto ms-1 p-0" style="color: #0A146C">
+                        <ul>
+                            <li>
+                                <div class="row justify-content-center mt-3 mb-2">
+                                    <div class="col-4">
+                                        RAM ${i + 1}:
+                                    </div>   
+                                    <div class="col-8 p-0 color_title1 f-f-SanF-Thin">
+                                        ${elmRAM}
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+                    `
+            }
+            return ramTheme
+        }
+        // The above code defines a function called `removeData` that takes an argument `_id`. Within the function, it uses jQuery to select the element with the ID specified by the `_id` argument and empties its contents. This function can be used to remove the contents of an HTML element with a specific ID.
+        function removeData(_id) {
+            $(`#${_id}`).empty()
+        }
+        async function GetHistoryByIdDevice(id_device) {
+            var result = await $.ajax(GVS.setting(GVS.GetHistoryByIdDevice + `${id_device}`, 'POST'))
+            let html = ""
+            result.metadata.forEach(elm => {
+                html += `
+            <div class="col-sm-6 col">
+                <div class="d-flex justify-content-between my-2"><b class="color_header">${elm.type == 1 ? "Bàn giao cho:" : "Thu hồi của:"}</b> <span>${elm.staff.name}</span></div>
+                <div class="d-flex justify-content-between my-2"><b class="color_header">${elm.type == 1 ? "Bàn giao bởi:" : "Thu hồi bởi:"}&nbsp&nbsp&nbsp&nbsp&nbsp</b> <span>${elm.user.name}</span></div>
+                <div class="d-flex justify-content-between my-2"><b class="color_header">${elm.type == 1 ? "Ngày bàn giao:" : "Ngày thu hồi"}&nbsp&nbsp&nbsp&nbsp&nbsp</b> <span>${new Date(elm.createdAt).toLocaleDateString("vi-VN")}</span></div>
+            </div>
+            `
+            });
+            return html
+        }
+        const id = window.location.pathname.split('/').pop();
+
+        function renderOptionHandover() {
+            renderSelectOptionStaff()
+
+            $.ajax(GVS.setting(GVS.GetAllInventories, 'GET')).done(res => {
+                if (res.success == 1) {
+                    renderSelectOptionHandover('case', res.metadata)
+                    renderSelectOptionHandover('monitor', res.metadata)
+                    renderSelectOptionHandover('wacom', res.metadata)
+                    renderSelectOptionHandover('webcam', res.metadata)
+                    renderSelectOptionHandover('headphone', res.metadata)
+                    renderSelectOptionHandover('ups', res.metadata)
+                    renderIdMouseKeyboard('mouse', res.metadata)
+                    renderIdMouseKeyboard('keyboard', res.metadata)
+                } else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    })
+                }
+            })
+        }
+
+        function renderSelectOptionStaff() {
+            $.ajax(GVS.setting(GVS.GetStaffToHanover, 'GET')).done(data => {
+                console.log(data)
+                let html = ""
+                html += `<option value = "">Chọn nhân viên bàn giao</option>`
+                data.metadata.forEach(elm => {
+                    html += `
+                        <optgroup class=" w-100" label="${elm._id}">`
+                    for (let i = 0; i < elm.staff.length; i++) {
+                        const element = elm.staff[i];
+                        html += `
+                            <option class="p-s-2" value="${element._id}">${element.name} - ${element.company} - ${element.job[0].name} - ${element.location.floor}</option>`
+                        html += `</optgroup>`
+                    }
+
+                });
+                $('#handover_staff').html(html)
+                $('#handover_staff').select2({
+                    dropdownParent: $('#handover'),
+                    matcher: customMatcher
+                });
+            })
+        }
+        function renderIdMouseKeyboard(typeDevice, datas) {
+            var data = datas.find(_ => _.type == typeDevice)
+            $(`#checkBox${typeDevice}`).attr("data", data.device[0].device._id)
+        }
+        function renderSelectOptionHandover(typeDevice, data) {
+            data.forEach((device) => {
+                if (device.type == typeDevice) {
+                    let html = '';
+                    html += `<option value = "">Chọn ${typeDevice} bàn giao</option>`
+                    device.device.forEach((element) => {
+                        if (parseInt(element.quantity) != 0) {
+                            html +=
+                                `<option value="${element.device._id}">${element.device.type == "case" ? "Máy số " : ""}${element.device.attributes && element.device.attributes.num ? element.device.attributes.num : ""}  ${element.device.type == "case" ? "" : "- " + element.device.name}</option>`
+                        }
+                    })
+                    $('#handover_device_' + `${typeDevice}`).html(html)
+
+                }
+            })
+        }
+        $(document).ready(async () => {
+            placeholderSelectHandoverDevice('case')
+            placeholderSelectHandoverDevice('monitor')
+            placeholderSelectHandoverDevice('webcam')
+            placeholderSelectHandoverDevice('wacom')
+            placeholderSelectHandoverDevice('headphone')
+            placeholderSelectHandoverDevice('ups')
+
+        });
+
+        function placeholderSelectHandoverDevice(typeDevice) {
+            $(`#handover_device_${typeDevice}`).select2();
+            $(`#handover_device_${typeDevice}`).select2({
+                dropdownParent: $('#handover'),
+                placeholder: `Chọn ${typeDevice} bàn giao`,
+                "language": {
+                    "noResults": function () {
+                        return "Không tìm thấy thiết bị";
+                    }
+                },
+            });
+        }
+
+        function revokeDevice(deviceId, id_modal) {
+            const note = $('#floatingTextarea').val()
+            const id_device = deviceId
+            Swal.fire({
+                title: "Bạn có chắc chắn muốn thu hồi thiết bị này không?",
+                showDenyButton: true,
+                confirmButtonText: "Có",
+                denyButtonText: `Không`,
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax(GVS.setting(GVS.RevokeDevice, 'POST', {
+                        deviceId: id_device,
+                        note
+                    })).done(data => {
+                        if (data.success == 1) {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: data.message,
+                                icon: "success",
+                                confirmButtonText: "OK",
+                            }).then(() => {
+                                removeData(id_modal)
+                                $(`#${id_modal}`).modal('toggle')
+                            }).then(() => {
+                                //  renderListDevice()
+                                location.reload();
+
+                            })
+                        } else {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: data.message,
+                                icon: "error",
+                                confirmButtonText: "OK",
+                            })
+                        }
+                    })
+                }
+            })
+
+        }
+        function revokeDeviceMK(deviceId, idStaff, nameStaff, type) {
+            const typeObject = {
+                "mouse": "chuột",
+                "keyboard": "bàn phím"
+            }
+            const note = `Thu hồi ${typeObject[type]} của ${nameStaff}`
+            const id_device = deviceId
+            Swal.fire({
+                title: "Bạn có chắc chắn muốn thu hồi thiết bị này không?",
+                showDenyButton: true,
+                confirmButtonText: "Có",
+                denyButtonText: `Không`,
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax(GVS.setting(GVS.RevokeDevice, 'POST', {
+                        deviceId: id_device,
+                        type: type,
+                        staffId: idStaff,
+                        note
+                    })).done(data => {
+                        if (data.success == 1) {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: data.message,
+                                icon: "success",
+                                confirmButtonText: "OK",
+                            }).then(() => {
+                                location.reload();
+                            })
+                        } else {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: data.message,
+                                icon: "error",
+                                confirmButtonText: "OK",
+                            })
+                        }
+                    })
+                }
+            })
+        }
+        function changePreviewSelect(e, nameSelect) {
+            if ($(e).val() != "") {
+                if (nameSelect == "staff") {
+                    $(`#preview_select_${nameSelect} `).text($(`#handover_${nameSelect} option:selected`).text())
+                } else {
+                    var selectedTexts = $(`#handover_device_${nameSelect}`).find('option:selected').map(function () {
+                        return $(this).text();
+                    }).get();
+                    let html = ''
+                    // selectedTexts.forEach(el => {
+                    //     html += `
+                    //             <p class="my-1">${el}</p>
+                    //         `
+                    // })
+                    selectedTexts.forEach((el, index) => {
+                        if (index == 0) {
+                            html += `${el} `
+                        } else {
+                            html += `, ${el} `
+                        }
+                    })
+                    $(`#preview_select_${nameSelect} `).html(html)
+                }
+            } else {
+                $(`#preview_select_${nameSelect}`).text("")
+            }
+        }
+
+        function checkDataHandover() {
+            const vlaueStaff = $('#handover_staff option:selected').val()
+            if (vlaueStaff == "") {
+                Swal.fire({
+                    title: "Thông báo!",
+                    text: "Vui lòng chọn nhân viên muốn bàn giao!",
+                    icon: "error",
+                    confirmButtonText: "OK",
+                })
+            } else {
+                let ids = []
+                ids = [...ids, ...$('#handover_device_case').val(), ...$('#handover_device_monitor').val(), ...$('#handover_device_wacom').val(), ...$('#handover_device_headphone').val(), ...$('#handover_device_webcam').val(), ...$('#handover_device_ups').val()]
+                const valueNote = $('#note_handover').val()
+                if ($("#checkBoxmouse").prop("checked")) {
+                    ids.push($('#checkBoxmouse').attr("data"))
+                }
+                if ($("#checkBoxkeyboard").prop("checked")) {
+                    ids.push($('#checkBoxkeyboard').attr("data"))
+                }
+                if (ids.length != 1) {
+                    handoverDeviceAll(vlaueStaff, ids, valueNote)
+                } else {
+                    handoverDevice(vlaueStaff, ids[0], valueNote)
+
+                }
+            }
+        }
+
+        function handoverDeviceAll(staff, ids, note) {
+            $.ajax(GVS.setting(GVS.handoverDeviceAll, "POST", {
+                staff: staff,
+                ids: ids,
+                note: note
+            })).done(res => {
+                if (res.success == 1) {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "success",
+                        confirmButtonText: "OK",
+                    }).then(() => {
+                        $(`#handover`).modal('toggle')
+                    }).then(() => {
+                        //  renderListDevice()
+                        location.reload();
+
+                    })
+                } else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    })
+                }
+            })
+        }
+
+        function handoverDevice(staff, id, note) {
+            $.ajax(GVS.setting(GVS.Hanover, 'POST', {
+                staff: staff,
+                deviceId: id,
+                note: note
+            })).done(res => {
+                if (res.success == 1) {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "success",
+                        confirmButtonText: "OK",
+                    }).then(() => {
+                        $(`#handover`).modal('toggle')
+                    }).then(() => {
+                        // renderListDevice()
+                        location.reload();
+
+                        deleteInput()
+                    })
+                } else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    })
+                }
+            })
+        }
+
+        function revokeAllDevice(idStaff, name, company, job) {
+            Swal.fire({
+                title: `Bạn có chắc chắn muốn thu hồi tất cả thiết bị của ${name} không`,
+                showDenyButton: true,
+                confirmButtonText: "Có",
+                denyButtonText: `Không`,
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax(GVS.setting(GVS.revokeDeviceAll, 'POST', {
+                        idStaff: idStaff,
+                        note: `Thu hồi tất cả thiết bị của ${name}-${company}-${job}`
+                    })).done(res => {
+                        if (res.success == 1) {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: res.message,
+                                icon: "success",
+                                confirmButtonText: "OK",
+                            })
+                                .then(() => {
+                                    //  renderListDevice()
+                                    location.reload();
+
+                                })
+                        } else {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: res.message,
+                                icon: "error",
+                                confirmButtonText: "OK",
+                            })
+                        }
+                    })
+                }
+            })
+
+        }
+        async function revokeMK(idStaff, nameStaff, type) {
+            var data = await $.ajax(GVS.setting(GVS.GetAllDeciveByType, 'POST', {
+                type: type
+            }));
+            revokeDeviceMK(data.metadata[0]._id, idStaff, nameStaff, type)
+        }
+        function deleteInput() {
+            $("#note_handover").val("")
+            $(".js-example-basic-multiple").val([]).trigger('change')
+            $("#handover_staff").val("").trigger('change')
+
+        }
+
+        $('.nav_link').hover(
+            function () {
+                $(this).addClass("active");
+            },
+            function () {
+                $(this).removeClass("active");
+            }
+        );
+
+        function hoverChangeBgColor(e) {
+            $(e).find(".device-style").css('animation-duration', "1.5s")
+            $(e).find(".device-style").css('animation-name', "bg-device-style")
+            $(e).find(".device-style").css('color', "rgba(0, 133, 255, 1)")
+            $(e).find(".device-text").css('animation-duration', "1.5s")
+            $(e).find(".device-text").css('animation-name', "bg-device-style")
+            $(e).find(".device-text").css('color', "rgba(0, 133, 255, 1)")
+            $(e).parent().find(".line-device").css("background",
+                "radial-gradient(100.97% 1071199.98% at 100.97% 50.06%, #558FFF 0%, #74E6FF 0.01%, #30689E 100%")
+        }
+
+        function hoverDeleteChangeBgColor(e) {
+            $(e).find(".device-style").css('animation-duration', "")
+            $(e).find(".device-style").css('animation-name', "")
+            $(e).find(".device-style").css('color', "#0A146C")
+            $(e).find(".device-text").css('animation-duration', "")
+            $(e).find(".device-text").css('animation-name', "")
+            $(e).find(".device-text").css('color', "#0A146C")
+            $(e).parent().parent().find(".device-text").css('color', "#0A146C")
+            $(e).parent().find(".line-device").css("background", "#DBDBDB")
+        }
+        function customMatcher(params, data) {
+            // Nếu không có thuộc tính tìm kiếm, trả về tất cả dữ liệu
+            if ($.trim(params.term) === '') {
+                return data;
+            }
+
+            // Tìm kiếm không phân biệt chữ hoa chữ thường
+            if (typeof data.text === 'undefined') {
+                return null;
+            }
+
+            // Đơn giản hóa cả chuỗi tìm kiếm và dữ liệu để loại bỏ dấu
+            var term = params.term.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+            var text = data.text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+            if (text.indexOf(term) > -1) {
+                var modifiedData = $.extend({}, data, true);
+                return modifiedData;
+            }
+
+            // Trả về `null` để ẩn lựa chọn không khớp
+            return null;
+        }
+    </script>
+
+</html>

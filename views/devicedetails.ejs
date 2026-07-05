@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/timline.css">
+    <link rel="stylesheet" href="/stylesheets/detail.css">
+    <style>
+        .select2-selection__rendered {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 150px;
+        }
+
+        .nav-pills .nav-link {
+            background: #c4d3d6;
+            /* border: 1.5px solid #3b7ddd; */
+            color: white;
+            border-radius: var(--bs-nav-pills-border-radius);
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background-color: #0085FF;
+            color: white;
+        }
+
+        .nav-link:hover {
+            background: #0085FF;
+            transition: all 1.5s
+        }
+
+        hr {
+            border-top: 2px solid;
+            color: #0d6efd
+        }
+    </style>
+
+    <body class="body-pd bg-white" id="body-pd">
+        <%- include("./nav.html") %>
+            <!--Container Main start-->
+            <div class="height-100 bg-white">
+                <main class="content px-0 pb-0">
+                    <div class="container-fluid p-0 ">
+                        <div class="row mt-3 justify-content-start">
+                            <div class="col-12">
+                                <ul class="nav nav-pills mb-3 h-auto" id="pills-tab" role="tablist">
+                                    <div class="row justify-content-start align-items-center mx-0">
+                                        <button class="nav-link active col-1 mx-1" id="pills-details-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-details" type="button"
+                                            role="tab" aria-controls="pills-details" aria-selected="true">Chi
+                                            tiết</button>
+                                        <button class="nav-link  col-auto d-none" id="pills-component-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-component" type="button"
+                                            role="tab" aria-controls="pills-component" aria-selected="false">Thành
+                                            phần</button>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active text-black" id="pills-details" role="tabpanel"
+                                    aria-labelledby="pills-details-tab" tabindex="0">
+                                    <div id="details_device"></div>
+                                    <hr>
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 f-s-18">
+                                            Lịch sử sử dụng của thiết bị
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col-10">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <th>Nhân viên</th>
+                                                    <th>Thời gian bắt đầu sử dụng</th>
+                                                    <th>Bàn giao bởi</th>
+                                                    <th>Thời gian kết thúc</th>
+                                                    <th>Thu hồi bởi</th>
+                                                </thead>
+                                                <tbody id="historiyDevice">
+                                                    <tr>
+                                                        <td>Đặng Tuấn Anh</td>
+                                                        <td>25/01/2023</td>
+                                                        <td>25/08/2023</td>
+                                                        <td>Hà Minh Chí</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 f-s-18">
+                                            Lịch sử thay đổi cấu hình của thiết bị
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-3 my-5 py-5">
+                                        <section class="timeline" id="timelineHistory">
+                                        </section>
+                                        <!-- <div class="col-10">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <th>Nhân viên</th>
+                                                    <th>Kiểu linh kiện</th>
+                                                    <th>Cấu hình cũ</th>
+                                                    <th>Cấu hình mới</th>
+                                                    <th>Thời gian thay đổi</th>
+                                                </thead>
+                                                <tbody id="changeComponentDevice">
+                                                    <tr>
+                                                        <td>Đặng Tuấn Anh</td>
+                                                        <td>16GB bus 2900</td>
+                                                        <td>08GB 1866MHz</td>
+                                                        <td>16-09-2023</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade text-black" id="pills-component" role="tabpanel"
+                                    aria-labelledby="pills-component-tab" tabindex="0">
+                                    <div class="row justify-content-start f-s-24" id="numDeviceShow">Máy số 1</div>
+                                    <hr>
+                                    <div class="row" id="coponent_device">
+                                        <div class="row justify-content-center">
+                                            <div class="col-12">
+                                                <span class="f-s-18">- Chip set</span>
+                                                <button class="btn btn-success ms-3">
+                                                    <i class="fa fa-add"></i>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-11">
+                                                <table class="table table-bordered mt-2 text-center">
+                                                    <thead style="background-color: #e1f2da;">
+                                                        <th class="col-3">Tên thiết bị</th>
+                                                        <th class="col-3">Cấu hình</th>
+                                                        <th class="col-3">Kiểu thiết bị</th>
+                                                        <th class="col-1">Thu hồi</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Chip set</td>
+                                                            <td>RYZEN 5</td>
+                                                            <td>Thiết bị trong</td>
+                                                            <td>
+                                                                <i class="fa fa-trash"></i>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div class="modal  fade " tabindex="-1" id="modal-handover" data-bs-backdrop="static"
+                data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-black">
+                        <div class="modal-header text-center ">
+                            <button type="button" class="btn-close" onclick="deleteData()" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <div class="container ">
+                                <div class="row my-3">
+                                    <b class="col c-black">
+                                        Chọn nhân viên để bàn giao:
+                                    </b>
+                                </div>
+                                <div class="row my-3 justify-content-between align-items-center">
+                                    <div class="col-4">
+                                        <select class="js-example-basic-single w-100" id="mySelect2" name="state"
+                                            onchange="changePreviewSelect(this,'staff','mySelect2')" tabindex="0"
+                                            data-dropdown-auto-width="true">
+                                            <optgroup class=" w-100" label="ababab">
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                    <div class="col text-primary font-bold text-end" id="preview_select_staff"></div>
+                                </div>
+                                <div class="row my-3">
+                                    <b class="col c-black">
+                                        Tạo ghi chú:
+                                    </b>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea"></textarea>
+                                        <label for="floatingTextarea">Ghi chú:</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" onclick="deleteData()" data-bs-dismiss="modal">Hủy</button>
+                            <button class="btn btn-success" onclick="handover()">Bàn giao</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal  fade " tabindex="-1" id="modal-components" data-bs-backdrop="static"
+                data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-black">
+                        <div class="modal-header text-center ">
+                            <button type="button" class="btn-close" onclick="deleteDataComponent()"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <div class="container ">
+                                <div class="row my-3">
+                                    <b class="col c-black">
+                                        Chọn link kiện để thêm:
+                                    </b>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col">
+                                        <select class="js-example-basic-single w-100" id="mySelect2-1" name="state"
+                                            onchange="changePreviewSelect(this,'component','mySelect2-1')" tabindex="0"
+                                            data-dropdown-auto-width="true">
+                                        </select>
+                                    </div>
+                                    <div class="col text-primary font-bold text-end" id="preview_select_component">
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <b class="col c-black">
+                                        Tạo ghi chú:
+                                    </b>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2"></textarea>
+                                        <label for="floatingTextarea2">Ghi chú:</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" onclick="deleteDataComponent()"
+                                data-bs-dismiss="modal">Hủy</button>
+                            <button class="btn btn-success" onclick="handoverComponents()">Thêm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </body>
+    <script src="/javascripts/details.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="/javascripts/rowGroup.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+    <!-- <script src="/javascripts/GVS.js"></script> -->
+
+    <script>
+        $(document).ready(async () => {
+            await getDataDevice()
+            $('.js-example-basic-single').select2();
+            $('#mySelect2').select2({
+                dropdownParent: $('#modal-handover'),
+                // placeholder:'Chọn nhân viên để bàn giao'
+            });
+            $('#mySelect2-1').select2({
+                dropdownParent: $('#modal-components'),
+                // placeholder:'Chọn nhân viên để bàn giao'
+            });
+            // $("#mySelect2 option:first").prop("disabled", true);
+            checkStaffExsis()
+        });
+
+        function checkStaffExsis() {
+            if (device.hasOwnProperty('staff')) {
+                $('#detail__button-hanover').off("click")
+                $('#detail__button-hanover').removeAttr("onclick")
+                $('#detail__button-hanover').removeAttr("data-bs-toggle")
+                $('#detail__button-hanover').removeAttr("data-bs-target")
+            } else {
+                $('#detail__button-hanover').removeClass('d-none')
+
+            }
+
+        }
+
+        function renderStaff() {
+            $.ajax({
+                url: GVS.GetStaffToHanover,
+                method: "GET",
+                success: (data) => {
+                    let html = ""
+                    html += `<option class=""  value="">Chọn nhân viên bàn giao</option>`
+                    data.metadata.forEach(elm => {
+
+                        html +=
+                            `
+                        <optgroup class=" w-100" label="${elm._id}">                                                                                              `
+                        for (let i = 0; i < elm.staff.length; i++) {
+                            const element = elm.staff[i];
+                            html += `
+                            <option class="p-s-2" value="${element._id}">${element.name} - ${element.company} - ${element.job[0].name} - ${element.location.floor}</option>
+                        </optgroup>`
+                        }
+                    });
+                    $('#mySelect2').html(html)
+                }
+            })
+        }
+        var check = false
+
+        $("#mySelect2").on("select2:open", function () {
+            check = true
+        })
+
+        function handover() {
+            const dataNote = $("#floatingTextarea").val()
+            var valueOption
+            if (check) {
+                valueOption = $('#mySelect2 option:selected').val()
+            } else {
+                valueOption = ''
+            }
+            const deviceId = device._id
+            if (valueOption == '') {
+                Swal.fire({
+                    title: "Thông báo!",
+                    text: 'Vui lòng chọn viên viên để bàn giao!',
+                    icon: "error",
+                    confirmButtonText: "OK",
+                })
+            } else {
+                $.ajax({
+                    url: GVS.Hanover,
+                    method: "POST",
+                    data: {
+                        staff: valueOption,
+                        deviceId,
+                        note: dataNote
+                    },
+                    success: (data) => {
+                        if (data.success == 1) {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: data.message,
+                                icon: "success",
+                                confirmButtonText: "OK",
+                            }).then(() => {
+                                deleteData()
+                                $('#modal-handover').modal('toggle')
+                            })
+                        } else {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: data.message,
+                                icon: "error",
+                                confirmButtonText: "OK",
+                            })
+                        }
+                    }
+                })
+            }
+        }
+
+        function revokeComponent(type, index) {
+            if (!device.hasOwnProperty('staff')) {
+                Swal.fire({
+                    title: "Thông báo!",
+                    text: 'Không thể thu hồi linh kiện do case chưa được ai sử dụng!',
+                    icon: "error",
+                    confirmButtonText: "OK",
+                })
+            } else {
+                Swal.fire({
+                    title: "Bạn có chắc chắn muốn thu hồi linh kiện này không?",
+                    showDenyButton: true,
+                    confirmButtonText: "Có",
+                    denyButtonText: `Không`,
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        const numCase = device.attributes.num
+                        const typeComponent = type
+                        const indexOfComponent = index
+                        $.ajax({
+                            url: GVS.RevokeComponent,
+                            method: "POST",
+                            data: {
+                                numCase,
+                                typeComponent,
+                                indexOfComponent,
+                                note: `Thu hồi ${typeComponent} của case số ${numCase}`
+                            },
+                            success: (data) => {
+                                if (data.success == 1) {
+                                    Swal.fire({
+                                        title: "Thông báo!",
+                                        text: data.message,
+                                        icon: "success",
+                                        confirmButtonText: "OK",
+                                    }).then(() => {
+                                        getDataDevice()
+                                    })
+                                } else {
+                                    Swal.fire({
+                                        title: "Thông báo!",
+                                        text: data.message,
+                                        icon: "error",
+                                        confirmButtonText: "OK",
+                                    })
+                                }
+                            }
+
+                        })
+                    }
+
+                })
+
+
+            }
+        }
+
+        function deleteData() {
+            $('#mySelect2').empty()
+            $('#mySelect2').append('<option  class=""  value="default-value" >Chọn nhân viên bàn giao</option>')
+            $('#modal-handover textarea').val("")
+            $(`#preview_select_staff`).text("")
+
+            check = false
+        }
+        // function changePreviewSelect(e, name,id) {
+        //     if ($(e).val() != "") {
+        //         $(`#preview_select_${name}`).text($(`#${id} option:selected`).text())
+        //     }
+        //     else{
+        //         $(`#preview_select_${name}`).text("")
+        //     }
+        // }
+    </script>
+
+</html>

@@ -1,0 +1,27 @@
+{
+  "items": [{
+      "_id": "64a90b60cbdfc98ee05dcd31",
+      "name": "Ban lãnh đạo",
+      "level": 0,
+      "status": 1
+    },
+    {
+      "_id": "64a90b67cbdfc98ee05dcd34",
+      "name": "Trưởng bộ phận",
+      "level": 1,
+      "status": 1
+    },
+    {
+      "_id": "64a90b6ecbdfc98ee05dcd37",
+      "name": "Nhân viên",
+      "level": 2,
+      "status": 1
+    },
+    {
+      "_id": "64bf52355154f14e328dad5f",
+      "name": "Thực tập",
+      "level": 3,
+      "status": 1
+    }
+  ]
+}

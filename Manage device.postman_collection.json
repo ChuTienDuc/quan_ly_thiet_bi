@@ -1,0 +1,1061 @@
+{
+	"info": {
+		"_postman_id": "5f966467-2419-4ad5-b9e5-6682aeee59f7",
+		"name": "Manage device",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22890335",
+		"_collection_link": "https://orange-equinox-56475.postman.co/workspace/My-Workspace~400cf54e-04b3-4a18-8515-4cf9346b2682/collection/22890335-5f966467-2419-4ad5-b9e5-6682aeee59f7?action=share&source=collection_link&creator=22890335"
+	},
+	"item": [
+		{
+			"name": "Staff",
+			"item": [
+				{
+					"name": "CreateStaff",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name_staff\": \"Tuấn Anh\",\r\n    \"case\":[\"55\"],\r\n    \"monitor\":[\"216.1\"],\r\n    \"wacom\":\"1\",\r\n    \"webcam\":\"\",\r\n    \"headphone\":\"4\",\r\n    \"keyBoard\":\"Công ty\",\r\n    \"mouse\": \"Công ty\",\r\n    \"company\": \"Minh Việt\",\r\n    \"job\":\"Code\",\r\n    \"location\":\"1C Đinh Công Thượng\",\r\n    \"floor\":\"Tầng 4\",\r\n    \"phone_number\":\"0375871003\"\r\n    \r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}staffs/createStaff",
+							"host": [
+								"{{URL}}staffs"
+							],
+							"path": [
+								"createStaff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateStaff",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name_staff\": \"Đặng Tuấn Anh\",\r\n    \"company\": \"Minh Việt\",\r\n    \"job\":\"Code\",\r\n    \"location\":\"1C Đinh Công Thượng\",\r\n    \"floor\":\"Tầng 5\",\r\n    \"phone_number\":\"0375871003\",\r\n    \"id_headPhone\":\"\",\r\n    \"id_wacom\":\"\",\r\n    \"id_webCam\":\"\",\r\n    \"data_monitor\":[\"46.2\"],\r\n    \"data_case\":[\"78\"],\r\n    \"keyBoard\":\"Công ty\",\r\n    \"mouse\": \"Công ty\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}staffs/updateStaff/63fc7224dae280862196dfe9",
+							"host": [
+								"{{URL}}staffs"
+							],
+							"path": [
+								"updateStaff",
+								"63fc7224dae280862196dfe9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteStaff",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}staffs/deleteStaff/63fc7c69e4bef8738d7bc586",
+							"host": [
+								"{{URL}}staffs"
+							],
+							"path": [
+								"deleteStaff",
+								"63fc7c69e4bef8738d7bc586"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllStaff",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}staffs/getAllStaff",
+							"host": [
+								"{{URL}}staffs"
+							],
+							"path": [
+								"getAllStaff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetStaff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}staffs/getStaff/64006d86da91b300d27595bd",
+							"host": [
+								"{{URL}}staffs"
+							],
+							"path": [
+								"getStaff",
+								"64006d86da91b300d27595bd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update staff device",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"device\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}staffs/updateDeviceStaff?device_type=headphone&id_staff=640ec9e2e152cb9d6b880940",
+							"host": [
+								"{{URL}}staffs"
+							],
+							"path": [
+								"updateDeviceStaff"
+							],
+							"query": [
+								{
+									"key": "device_type",
+									"value": "headphone"
+								},
+								{
+									"key": "device",
+									"value": "[\"12\",\"9\"]",
+									"disabled": true
+								},
+								{
+									"key": "id_staff",
+									"value": "640ec9e2e152cb9d6b880940"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody)\r",
+									"pm.environment.set(\"JWT\",jsonData.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\":\"0368471986\",\r\n    \"password\":\"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}users/login",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Up",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\":\"0375871002\",\r\n    \"password\":\"123\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}users/signUp",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Accounts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}users/getAllAccounts",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"getAllAccounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}users/deleteAccount/63fc6a917c3f9052becdfd73",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"deleteAccount",
+								"63fc6a917c3f9052becdfd73"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}users/changePassword/",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"changePassword",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}users/updateAccount",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"updateAccount"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Device",
+			"item": [
+				{
+					"name": "Case",
+					"item": [
+						{
+							"name": "usageHistoryCase",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_case\": \"78\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/usageHistoryCase",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"usageHistoryCase"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllCase",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/getAllCase",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"getAllCase"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateCase",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"_id\": \"9\",\r\n  \"mac_address\": \"31-5B-2A-7C-8D-F1\",\r\n  \"main_broard\": \"\",\r\n  \"chipset\": \"Intel Core i7 4790\",\r\n  \"ram\": \"08GBx1 1600MHz\",\r\n  \"VGA\": \"NVIDIA Quadro K620\",\r\n  \"SSD\": \"250GB\",\r\n  \"HDD\": \"\",\r\n  \"PSU\": \"\",\r\n  \"transfer_date\": \"\",\r\n  \"status\": \"Not deployed yet\",\r\n  \"location\": \"1C\",\r\n  \"bill_price\": \"\",\r\n  \"total_price\": \"\",\r\n  \"distributor\": \"\",\r\n  \"note\": \"\",\r\n  \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/updateCase",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"updateCase"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteCase",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/deleteCase/:id",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"deleteCase",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createCase",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"_id\": \"10\",\r\n  \"mac_address\": \"33-5A-3A-7E-FA-BA\",\r\n  \"main_broard\": \"\",\r\n  \"chipset\": \"Intel Core i7 4790\",\r\n  \"ram\": \"08GBx1 1600MHz\",\r\n  \"VGA\": \"NVIDIA Quadro K620\",\r\n  \"SSD\": \"1000GB\",\r\n  \"HDD\": \"\",\r\n  \"PSU\": \"\",\r\n  \"transfer_date\": \"\",\r\n  \"status\": \"Not deployed yet\",\r\n  \"location\": \"461\",\r\n  \"bill_price\": \"\",\r\n  \"total_price\": \"\",\r\n  \"distributor\": \"\",\r\n  \"note\": \"\",\r\n  \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/createCase",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"createCase"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Monitor",
+					"item": [
+						{
+							"name": "usageHistoryMonitor",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_monitor\": \"46.2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/usageHistoryMonitor",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"usageHistoryMonitor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllMonitor",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/getAllMonitor",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"getAllMonitor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteMonitor",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/deleteMonitor/:id",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"deleteMonitor",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateMonitor",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"_id\": \"12.1\",\r\n  \"name_monitor\": \"DELL P2214H123\",\r\n  \"transfer_date\": \"\",\r\n  \"status\": \"Not deployed yet\",\r\n  \"location\": \"461 Vũ Tông Phan\",\r\n  \"connector\": \"\",\r\n  \"warranty_period\": \"\",\r\n  \"total_price\": \"\",\r\n  \"bill_price\": \"\",\r\n  \"note\": \"\",\r\n  \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/updateMonitor",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"updateMonitor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createMonitor",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/createMonitor",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"createMonitor"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "headPhone",
+					"item": [
+						{
+							"name": "getAllHeadPhone",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/getAllHeadPhone",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"getAllHeadPhone"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateHeadPhone",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"_id\": \"1\",\r\n  \"name_headphone\": \"Dareu VH350SEAWS\",\r\n  \"transfer_date\": \"08/03/2023\",\r\n  \"status\": \"Not deployed yet\",\r\n  \"distributor\": \"\",\r\n  \"warranty_period\": \"\",\r\n  \"total_price\": \"\",\r\n  \"bill_price\": \"\",\r\n  \"location\": \"\",\r\n  \"note\": \"\",\r\n  \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/updateHeadPhone",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"updateHeadPhone"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteHeadPhone",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/deleteHeadPhone/:id",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"deleteHeadPhone",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createHeadPhone",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"_id\": \"3\",\r\n  \"name_headphone\": \"Dareu VH500SEABC\",\r\n  \"transfer_date\": \"10/03/2023  \",\r\n  \"status\": \"Not deployed yet\",\r\n  \"distributor\": \"\",\r\n  \"warranty_period\": \"\",\r\n  \"total_price\": \"\",\r\n  \"bill_price\": \"\",\r\n  \"location\": \"\",\r\n  \"note\": \"\",\r\n  \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/createHeadPhone",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"createHeadPhone"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "wacom",
+					"item": [
+						{
+							"name": "getAllWacom",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/getAllWacom",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"getAllWacom"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateWacom",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"_id\": \"1\",\r\n  \"name_wacom\": \"Wacom Intuos PTH-85123\",\r\n  \"series_number\": \"\",\r\n  \"transfer_date\": \"07/03/2023\",\r\n  \"status\": \"Not deployed yet\",\r\n  \"bill_price\": \"\",\r\n  \"total_price\": \"\",\r\n  \"distributor\": \"\",\r\n  \"warranty_period\": \"\",\r\n  \"location\": \"\",\r\n  \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/updateWacom",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"updateWacom"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteWacom",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/deleteWacom/:id",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"deleteWacom",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createWacom",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"_id\": \"13.9\",\r\n  \"name_wacom\": \"Wacom Intuos PTH-851\",\r\n  \"series_number\": \"\",\r\n  \"transfer_date\": \"\",\r\n  \"status\": \"Not deployed yet\",\r\n  \"bill_price\": \"\",\r\n  \"total_price\": \"\",\r\n  \"distributor\": \"\",\r\n  \"warranty_period\": \"\",\r\n  \"location\": \"\",\r\n  \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/createWacom",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"createWacom"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "webcam",
+					"item": [
+						{
+							"name": "getAllWebCam",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/getAllWebCam",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"getAllWebCam"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateWebcam",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/updateWebCam",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"updateWebCam"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteWebCam",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/deleteWebCam/:id",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"deleteWebCam",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createWebCam",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}devices/createWebCam",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"createWebCam"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DeviceUsed",
+					"item": [
+						{
+							"name": "Revoke",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/revoke?id_staff=640ec9e2e152cb9d6b880940&device=13.2&device_type=monitor",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"revoke"
+									],
+									"query": [
+										{
+											"key": "id_staff",
+											"value": "640ec9e2e152cb9d6b880940"
+										},
+										{
+											"key": "device",
+											"value": "13.2"
+										},
+										{
+											"key": "device_type",
+											"value": "monitor"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Revoke all",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_staff\":\"640ec9e2e152cb9d6b880940\",\r\n    \"id_case\":[\r\n    \"52\"\r\n  ],\r\n    \"id_monitor\":[\r\n            \"12.1\",\r\n            \"13.2\",\r\n            \"3.1\"\r\n        ],\r\n    \"id_headphone\":\"\",\r\n    \"id_wacom\":\"6\",\r\n    \"id_webcam\":\"\",\r\n    \"case_type\":\"case\",\r\n    \"monitor_type\":\"monitor\",\r\n    \"headphone_type\":\"headphone\",\r\n    \"wacom_type\":\"wacom\",\r\n    \"webcam_type\":\"webcam\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}devices/revokeAll",
+									"host": [
+										"{{URL}}devices"
+									],
+									"path": [
+										"revokeAll"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "handoverDoc",
+			"item": [
+				{
+					"name": "Creat handover doc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_case\":[\"38\"],\r\n    \"id_monitor\":[\"12.1\",\"13.2\",\"3.1\"],\r\n    \"keyBoard\":\"Công ty\",\r\n    \"mouse\":\"Công ty\",\r\n    \"id_headphone\":\"\",\r\n    \"id_wacom\":\"6\",\r\n    \"id_webcam\":\"\",\r\n    \"tranfer_date\":\"07/03/2023\",\r\n    \"sign_date\":\"08/03/2023\",\r\n    \"note\":\"thêm màn sửa máy\",\r\n    \"status\":\"Đã ký\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}handoverDocs/640ec9e2e152cb9d6b880940",
+							"host": [
+								"{{URL}}handoverDocs"
+							],
+							"path": [
+								"640ec9e2e152cb9d6b880940"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inventory",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Summary",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Request Device",
+			"item": [
+				{
+					"name": "Create require Device",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"devices\": [\r\n        \"675470c0e5e4e5b0b81c65f2\"\r\n    ],\r\n    \"note_staff\": \"Yêu cầu bàn giao thêm\",\r\n    \"type\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}require-device",
+							"host": [
+								"{{URL}}require-device"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Required By Staff",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}require-device/by-staff",
+							"host": [
+								"{{URL}}require-device"
+							],
+							"path": [
+								"by-staff"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

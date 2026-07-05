@@ -1,0 +1,51 @@
+/* :root {
+    --border-px: 0.01px;
+    --background-color: white !important;
+    --border-color: #dee2e6;
+}
+
+#table_monitor th {
+    background-color: var(--background-color);
+    position: sticky;
+    top: -1px;
+    border: var(--border-px) solid var(--border-color);
+}
+
+
+#table_monitor th:first-child,
+#table_monitor th:nth-child(2) {
+    z-index: 1;
+}
+
+#table_monitor th:first-child,
+#table_monitor td:first-child {
+    position: sticky;
+    left: 0px;
+    border: var(--border-px) solid var(--border-color);
+    background-color: var(--background-color);
+}
+
+#table_monitor th:nth-child(2),
+#table_monitor td:nth-child(2) {
+    position: sticky;
+    left: 38px;
+}
+
+#table_monitor {
+    border-spacing: 0px;
+}
+
+#table_monitor td {
+    border: var(--border-px) solid var(--border-color);
+    background-color: var(--background-color);
+}
+table td{
+    padding-top: 2px!important;
+    padding-bottom: 2px!important;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+ */
+ 

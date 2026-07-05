@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+    <link rel="stylesheet" href="/stylesheets/monitor.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <style>
+        .custom-dropdown-menu {
+            z-index: 1050;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .custom-dropdown-menu .link-action {
+            text-align: center;
+            padding: 0.25rem 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-dropdown-menu .link-action:hover {
+            background-color: #f8f9fa;
+        }
+
+        .custom-dropdown-menu button.dropdown-link {
+            border: none;
+            background-color: transparent;
+            color: #212529;
+            text-align: center;
+            width: 100%;
+        }
+
+        .dropdown-menu.show {
+            position: absolute;
+            top: calc(100% + 5px) !important;
+            left: 0;
+            transform: translate3d(0%, 0%, 0) !important;
+        }
+
+        #table_require_device {
+            table-layout: fixed;
+        }
+
+        #table_require_device th {
+            width: max-content !important;
+        }
+    </style>
+
+    <body id="body-pd" class="body-pd">
+        <%- include("./nav.html") %>
+            <div class="height-100 ">
+                <main class="content p-0 pt-4">
+                    <div class="container-fluid p-0">
+                        <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                            <div class="col-5" style="width: max-content;">
+                                <h3 class="color_header">Quản lý phiếu bàn giao cá nhân</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12  d-flex">
+                                <div class="card flex-fill"
+                                    style="overflow-x:auto; overflow-x: scroll; max-height: 85vh; min-height: 85vh;">
+
+                                    <table class="table table-hover table-bordered  my-0 text-center"
+                                        id="table_require_device"
+                                        style="width: max-content !important; min-width: 100%;">
+                                        <thead class="th_table_sticky">
+                                            <tr class="align-middle text-center">
+                                                <th class="col text-center ">
+                                                    <span>Thao tác</span>
+                                                </th>
+                                                <th class="col text-center ">
+                                                    <span>STT</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Thiết bị bàn giao</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Thiết bị hoàn trả</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Ghi chú nhân viên</span>
+                                                </th>
+                                                <th class="col text-center text-break">
+                                                    <span>Ghi chú người duyệt</span>
+                                                </th>
+                                                <th class="col text-center text-break">
+                                                    <span>Người duyệt</span>
+                                                </th>
+                                                <th class="col text-center text-break">
+                                                    <span>Loại phiếu</span>
+                                                </th>
+                                                <th class="col text-center text-break">
+                                                    <span>Trạng thái</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="content_table">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+    </body>
+    <script>
+        $(document).ready(() => {
+            getAllRequestDevice()
+        })
+        function getAllRequestDevice() {
+            $.ajax(GVS.setting(GVS.getAllRequestDevice, 'GET')).done(res => {
+                if (res.success == 1) {
+                    var data = res.metadata
+                    var dataRequire = []
+                    data.forEach(el => {
+                        dataRequire.push({
+                            _id: el._id,
+                            devices: el.devices,
+                            devices_return: el.devices_return,
+                            note_staff: el.note_staff,
+                            note_user: el.note_user,
+                            user: el.user,
+                            status: el.status,
+                            type: el.type,
+                        })
+                    })
+                    renderTableMain(dataRequire)
+                    $("#table_require_device").DataTable({
+                        "pageLength": 50,
+                        lengthMenu: [20, 40, 50, 100, 200, 500],
+                    })
+                }
+            })
+        }
+        function renderTableMain(requireData) {
+            let html = '';
+            requireData.forEach((require, index) => {
+                console.log(require)
+                const deviceLinks = require.devices.map(device => `<a href="${GVS.GetDetailDevice.concat(device._id)}" class="d-block text-primary" target="_blank">${device.name}</a>`).join('');
+
+                const deviceReturnLinks = require.devices_return?.map(device => `<a href="${GVS.GetDetailDevice.concat(device._id)}" class="d-block text-primary" target="_blank">${device.name}</a>`).join('') || '';
+
+                // Chuyển đổi trạng thái
+                const statusMap = {
+                    0: 'Từ chối',
+                    1: 'Đã duyệt',
+                    2: 'Chưa duyệt'
+                };
+                const status = statusMap[require.status] || 'Unknown';
+
+                // Chuyển đổi loại phiếu
+                const typeMap = {
+                    0: 'Luân chuyển',
+                    1: 'Bàn giao',
+                    2: 'Hoàn trả'
+                };
+                const type = typeMap[require.type] || 'Unknown';
+
+                const isPending = require.status === 2;
+                html += `
+                            <tr>
+                                <td>
+                                    ${isPending ? `
+                                    <div class="btn-group dropstart cursor-pointer">
+                                            <button class="f-s-24 btn border border-dark rounded" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Chọn <i class="fa fa-angle-down ms-2 icon-angle1"></i>
+                                            </button>
+                                            <ul class="dropdown-menu custom-dropdown-menu">
+                                                <li class="text-center link-action">
+                                                    <button class="btn dropdown-link my-2" onclick = "acceptRequestDevice('${require._id}')">
+                                                        <span>Duyệt</span>
+                                                    </button>
+                                                </li>
+                                                <li class="text-center link-action">
+                                                    <button class="btn dropdown-link my-2" onclick = "rejectRequestDevice('${require._id}')">
+                                                        <span>Từ chối</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    ` : `<span class="text-muted">Đã xử lý</span>`}
+                                </td>
+                                <td class="col text-center">
+                                    <span>${index + 1}</span>
+                                </td>
+                                <td class="col text-center">
+                                    ${deviceLinks}
+                                </td>
+                                <td class="col text-center">
+                                    ${deviceReturnLinks}
+                                </td>
+                                <td class="col text-center">
+                                    <span>${require.note_staff || ''}</span>
+                                </td>
+                                <td class="col text-center text-break">
+                                    <span>${require.note_user || ''}</span>
+                                </td>
+                                <td class="col text-center text-break">
+                                    <span>${require.user?.name || ''}</span>
+                                </td>
+                                <td class="col text-center text-break">
+                                    <span>${type}</span>
+                                </td>
+                                <td class="col text-center text-break">
+                                    <span>${status}</span>
+                                </td>
+                            </tr>
+                        `;
+            });
+
+
+            $("#content_table").html(html)
+        }
+        function acceptRequestDevice(requireId) {
+            $.ajax(GVS.setting(GVS.requestHandoverDevice + '/accept/' + requireId, 'POST')).done(res => {
+                if (res.success == 1) {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "success",
+                        confirmButtonText: "OK",
+                    }).then(() => {
+                        location.reload();
+                        deleteInput();
+                    });
+                } else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    });
+                }
+            })
+        }
+        function rejectRequestDevice(requireId) {
+            Swal.fire({
+                title: "Từ chối yêu cầu",
+                input: "textarea",
+                inputLabel: "Lý do từ chối",
+                inputPlaceholder: "Nhập lý do từ chối...",
+                inputValidator: (value) => {
+                    if (!value || value.trim().length === 0) {
+                        return "Lý do từ chối không được để trống!";
+                    }
+                },
+                showCancelButton: true,
+                confirmButtonText: "Xác nhận",
+                cancelButtonText: "Hủy",
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax(GVS.setting(GVS.requestHandoverDevice + '/reject/' + requireId, 'POST', { note_user: result.value })).done(res => {
+                        if (res.success == 1) {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: res.message,
+                                icon: "success",
+                                confirmButtonText: "OK",
+                            }).then(() => {
+                                location.reload();
+                            });
+                        } else {
+                            Swal.fire({
+                                title: "Thông báo!",
+                                text: res.message,
+                                icon: "error",
+                                confirmButtonText: "OK",
+                            });
+                        }
+                    })
+                }
+            });
+        }
+    </script>
+
+</html>

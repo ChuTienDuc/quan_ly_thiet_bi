@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+
+<link rel="stylesheet" href="/stylesheets/case.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+<style>
+    #table_case {
+        table-layout: fixed;
+        width: max-content !important;
+    }
+
+    #table_case th {
+        width: max-content !important;
+        /* border-color:transparent; */
+    }
+
+    #inputNumPreview::-webkit-outer-spin-button,
+    #inputNumPreview::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    #VRAM_addcase::-webkit-outer-spin-button,
+    #VRAM_addcase::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+</style>
+
+<body id="body-pd" class="body-pd">
+    <%- include("./nav.html") %>
+
+    <!--Container Main start-->
+    <div class="height-100">
+        <main class="content p-0 pt-4">
+            <div class="container-fluid p-0 ">
+                <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                    <div class="col-5" style="width: max-content;">
+                        <h3 class="color_header">Quản lý máy tính</h3>
+                    </div>
+                    <button class="col-1 btn bg-color-all c-white" onclick="renderOptionSupplier()"
+                        data-bs-toggle="modal" data-bs-target="#addDevice" style="width: max-content; border-radius: 29px;">Thêm
+                        máy tính
+                    </button>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 p-0 d-flex">
+                        <div class="card flex-fill" style="overflow-y:auto; overflow-x: scroll; max-height: 85vh;">
+                            <table class="table table-bordered table-hover table-responsive  my-0"
+                                style="width: max-content;" id="table_case">
+                                <thead class="th_table_sticky" >
+                                    <tr class="align-middle text-center">
+                                        <th class="col text-center">
+                                            Chi tiết
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Số tem</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Chipset</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Ram</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>VGA</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Cổng kết nối</span>
+                                        </th>
+                                        <th class="col text-center">Ổ cứng</th>
+                                        <th class="col text-center">
+                                            <span>Nguồn máy tính</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Trạng thái</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Địa chỉ</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Tầng</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Ghi chú</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Nhà cung cấp</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Địa chỉ MAC</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Bo mạch chủ</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Ngày nhập kho</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Hạn bảo hành</span>
+                                        </th>
+                                        <th class="col text-center">
+                                            <span>Giá hóa đơn</span>
+                                        </th>
+                                        <!-- <th class="col text-center">
+                                            <span>Tổng giá </span>
+                                        </th> -->
+                                    </tr>
+                                </thead>
+                                <tbody id="dataCase" style="background-color: #fff;">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- TODO MODAL ADD_CASE -->
+    <div class="modal fade modal-xl" id="addDevice" tabindex="-1" aria-labelledby="exampleModalLabel"
+        data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-black">
+                <div class="modal-header text-center border-bottom-0">
+                    <b class="modal-title f-s-30 color_header " id="addDeviceLabel">
+                        Thêm máy tính
+                    </b>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        onclick="deleteInput()"></button>
+                </div>
+                <div class="modal-body f-s-16 container pb-0 px-4">
+                    <div id="input_case">
+                        <div class="row justify-content-around">
+                            <div class="col-5 mb-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-3">
+                                        <label for="quantity" class="col-form-label color_title_add_device">Số lượng:
+                                        </label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="number" min="1" step="1" id="quantity" class="form-control"
+                                            placeholder="Nhập số lượng Case">
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                            </div>
+                            <div class="col-5 mb-3">
+                                <div class="row justify-content-around">
+                                    <div class="col-3">
+                                        <label for="_id_addcase" class="col-form-label color_title_add_device">Số máy:
+                                        </label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="number" autocomplete="off" id="_id_addcase" class="form-control"
+                                            placeholder="Nhập tên máy">
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <label for="bill_price" class="col-form-label color_title_add_device">Giá hóa
+                                            đơn:
+                                        </label>
+                                    </div>
+                                    <div class="col-8" style="position: relative;">
+                                        <input type="text" id="bill_price" autocomplete="off" list="datalistbillprice"
+                                            class="form-control" placeholder="Nhập giá hóa đơn">
+                                        <div class="invalid-feedback">Vui lòng nhập giá hóa đơn</div>
+                                        <div style="position: absolute;top: 5.5%;right: 11%; color: #163EB1;">VND</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-around">
+                            <div class="col-5 mb-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-3">
+                                        <label for="chipset_addcase"
+                                            class="col-form-label color_title_add_device">Chipset:
+                                        </label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="chipset_addcase" list="datalistchipset"
+                                            class="form-control" autocomplete="off" spellcheck="false"
+                                            placeholder="Nhập chipset">
+
+                                        <div class="invalid-feedback">Vui lòng nhập chipset</div>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <label for="total_price" class="col-form-label color_title_add_device">Tổng giá:
+                                        </label>
+                                    </div>
+                                    <div class="col-8" style="position: relative;">
+                                        <input type="text" id="total_price" disabled autocomplete="off"
+                                            class="form-control" placeholder="Nhập tổng giá">
+                                        <div style="position: absolute;top: 5.5%;right: 11%; color: #163EB1;">VND</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around">
+                            <div class="col-5 mb-3" id="ram">
+                                <div class="row justify-content-between" onmouseover="showDeleteAndAddRam(this)"
+                                    onmouseout="hiddenDeleteAndAddRam(this)">
+                                    <div class="col-3 ">
+                                        <label class="col-form-label color_title_add_device">Ram: </label>
+                                    </div>
+                                    <div class="col-8" style="position: relative;">
+                                        <input type="text" name="ram" list="datalistram" autocomplete="off"
+                                            class="form-control" placeholder="Nhập Ram 1">
+                                        <div class="invalid-feedback">Vui lòng nhập ram</div>
+                                        <i class="fa fa-x d-none"
+                                            style="position: absolute; top: 36%; right: 8%; cursor: pointer; font-size: 13px; color: #000000;"
+                                            onclick="removeRam(this)"></i>
+                                    </div>
+
+                                    <div class="col-1 ps-0 d-flex align-items-end"><button
+                                            class="btn btn_add d-none btn_add_ram" onclick="addRam(this)"><i
+                                                class="fa fa-plus text-white"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <label for="supplier_addcase" class="col-form-label color_title_add_device">Nhà
+                                            cung cấp:
+                                        </label>
+                                    </div>
+                                    <div class="col-7">
+                                        <select class="form-select form-select-md supplier" id="supplier_addcase"
+                                            aria-label=".form-select-lg example">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-1 ps-0 d-flex align-items-end"><button
+                                            data-bs-target="#create_supplier" data-bs-toggle="modal" class="btn btn_add"
+                                            id="createSupplier"><i class="fa fa-plus text-white"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around">
+                            <div class="col-5 mb-3" id="hardDrives">
+                                <div class="row justify-content-between" onmouseover="showDeleteAndAddHardDrives(this)"
+                                    onmouseout="hiddenDeleteAndAddHardDrives(this)">
+                                    <div class="col-3">
+                                        <label for="hardDrives_addCase" class="col-form-label color_title_add_device">Ổ
+                                            cứng:
+                                        </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="number" name="size" list="datalistsize" autocomplete="off"
+                                            class="form-control form_hardDrives" min="0" placeholder="Size"
+                                            onclick="fomatValueSize(this)" onblur="fomatValue(this)">
+                                        <div class="invalid-feedback" style="width: max-content;">Vui lòng nhập
+                                            dung lượng</div>
+                                    </div>
+                                    <div class="col-2 p-0">
+                                        <select class="form-select pe-2 ps-2 form_hardDrives" name="type"
+                                            aria-label="Default select example">
+                                            <option value="SSD" selected>SSD</option>
+                                            <option value="HDD">HDD</option>
+                                            <option value="M2">M2</option>
+                                        </select>
+                                        <div class="invalid-feedback">Vui lòng nhập loại</div>
+
+                                    </div>
+                                    <div class="col-3" style="position: relative;">
+                                        <input type="text" name="brand" list="datalistbrand" autocomplete="off"
+                                            class="form-control form_hardDrives" placeholder="Brand">
+                                        <div class="invalid-feedback">Vui lòng nhập hãng</div>
+                                        <i class="fa fa-x i_remove text-white d-none"
+                                            onclick="removeHardDrives(this)"></i>
+
+                                    </div>
+                                    <div class="col-1 ps-0 d-flex align-items-end"><button
+                                            class="btn btn_add btn_add_hardDrives d-none"
+                                            onclick="addHardDrives(this)"><i class="fa fa-plus text-white"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <label for="expirationDate" class="col-form-label color_title_add_device">Hạn
+                                            bảo hành:
+                                        </label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="date" id="expirationDate" class="form-control"
+                                            placeholder="Nhập hạn bảo hành">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-around">
+                            <div class="col-5 mb-3" id="vga">
+                                <div class="row justify-content-between" onmouseover="showDeleteAndAddVGA(this)"
+                                    onmouseout="hiddenDeleteAndAddVGA(this)">
+                                    <div class="col-3">
+                                        <label class="col-form-label color_title_add_device" for="VGA_addcase">VGA:
+                                        </label>
+                                    </div>
+                                    <div class="col-5" style="position: relative;">
+                                        <input type="text" id="VGA_addcase" name="vga" autocomplete="off"
+                                            list="datalistvga" class="form-control" placeholder="Nhập VGA">
+                                        <div class="invalid-feedback">Vui lòng nhập VGA</div>
+                                        
+                                    </div>
+                                    <div class="col-3" style="position: relative;">
+                                        <input type="number" autocomplete="off" id="VRAM_addcase" name="vram"
+                                            onclick="fomatValueVram(this)" onblur="fomatValueVramGB(this)"
+                                            list="datalistvram" class="form-control" placeholder="VRAM">
+                                        <div class="invalid-feedback">Vui lòng nhập VRAM</div>
+                                        <i class="fa fa-x i_remove_vga d-none"
+                                            style="position: absolute; top: 36%; right: 8%; cursor: pointer; font-size: 13px; color: #000000;"
+                                            onclick="removeVGA(this,0)"></i>
+                                    </div>
+                                    <div class="col-1 ps-0 d-flex align-items-end"><button
+                                            class="btn btn_add btn_add_VGA" onclick="addVGA(this)"><i
+                                                class="fa fa-plus text-white"></i></button>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <div class="row justify-content-between" onmouseover="showDeleteAndAddConector(this)"
+                                        onmouseout="hiddenDeleteAndAddConector(this)">
+                                            <div class="col-4"></div>
+                                            <div class="col-3">
+                                                <label class="col-form-label color_title_add_device"
+                                                    for="connect_addcase"
+                                                    style="width: max-content; font-size: 14px;">Cổng kết nối:
+                                                </label>
+                                            </div>
+                                            <div class="col-4" style="position: relative;">
+                                                <select class="form-select form-select-md connector"
+                                                    list="datalistconnector" name="connector_0"
+                                                    aria-label=".form-select-lg example">
+                                                    <option value="VGA">VGA</option>
+                                                    <option value="DVI">DVI</option>
+                                                    <option value="HDMI" selected>HDMI</option>
+                                                    <option value="DisplayPort">DisplayPort</option>
+                                                    <option value="Mini-DP">Mini-DP</option>
+                                                    <option value="Type-C">Type-C</option>
+                                                </select>
+                                                <i class="fa fa-x i_remove i_remove_connnector text-white d-none" style="right: 7%;"
+                                                    onclick="removeConnector(this,0)"></i>
+                                            </div>
+                                            <div class="col-1 ps-0 d-flex align-items-end"><button
+                                                    class="btn btn_add btn_add_connnector d-none"
+                                                    onclick="addConnector(this,0)"><i class="fa fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <label for="mac_address_addcase"
+                                            class="col-form-label color_title_add_device">Địa chỉ MAC:
+                                        </label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="mac_address_addcase" class="form-control"
+                                            autocomplete="off" list="datalistmacaddress" placeholder="Nhập địa chỉ MAC">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around">
+                            <div class="col-5 mb-3"></div>
+                            <div class="col-6 mb-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <label for="main_board_addcase" class="col-form-label color_title_add_device">Bo
+                                            mạch chủ:
+                                        </label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="main_board_addcase" list="datalistmainbroard"
+                                            autocomplete="off" class="form-control" placeholder="Nhập MainBroard">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around">
+                            <div class="col-5 mb-3"></div>
+                            <div class="col-6 mb-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <label for="PSU_addcase" class="col-form-label color_title_add_device"
+                                            style="width: max-content;">Nguồn máy tính: </label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="PSU_addcase" list="datalistpsu" autocomplete="off"
+                                            class="form-control" placeholder="Nhập nguồn máy tính">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around mt-2">
+                            <div class="col-5"></div>
+                            <div class="col-6 mb-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <label for="note_addcase" class="col-form-label color_title_add_device"
+                                            style="width: max-content;">Ghi chú: </label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="note_addcase" autocomplete="off" class="form-control"
+                                            placeholder="Ghi chú">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row  justify-content-center mb-4">
+                        <div class="col-11 d-flex justify-content-end pe-0">
+                            <button class="btn text-white" id="preview"
+                                style="background-color:#30689E; border-radius: 29px;">Xem trước</button>
+                        </div>
+                    </div>
+                    <div class="row mt-3 justify-content-center" id="table_preview">
+                        <div class="col-12">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="text-center" style="color: #0A146C; width: max-content;">
+                                        <th scope="col"><span>Số tem</span> </th>
+                                        <th scope="col"><span>Chipset</span> </th>
+                                        <th scope="col"><span>Ram</span> </th>
+                                        <th scope="col"><span>Ổ cứng</span> </th>
+                                        <th scope="col"><span>VGA</span> </th>
+                                        <th scope="col"><span>Nhà cung cấp</span> </th>
+                                        <th scope="col"><span>Giá hóa đơn</span> </th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="dataCreate" class="text-center">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-lg" id="create_supplier" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1" data-bs-backdrop="static">
+    </div>
+
+    <script src="/javascripts/autocomplete.js"></script>
+    <script src="/javascripts/fomat.js"></script>
+    <script src="/javascripts/case.js"></script>
+    <script src="/javascripts/supplier.js"></script>
+</body>
+
+</html>

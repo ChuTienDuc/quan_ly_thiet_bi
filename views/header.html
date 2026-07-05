@@ -1,0 +1,54 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+  <meta name="author" content="AdminKit">
+  <link rel="stylesheet" href="/bootstrap-5.2.1/css/bootstrap.min.css" />
+
+
+  <link rel="stylesheet" href="/stylesheets/dataTable.css">
+  <!-- <link rel="stylesheet" href="/DataTables-1.13.4/css/dataTables.bootstrap5.min.css"> -->
+
+  <link rel="stylesheet" href="/stylesheets/font.css">
+  <link rel="stylesheet" href="/stylesheets/font-san.css">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="/stylesheets/nav.css">
+  <!-- <link rel="stylesheet" href="/stylesheets/boxicon.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="/fontawesome-6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="/stylesheets/app.css">
+  <link rel="stylesheet" href="/stylesheets/chatbot.css">
+  <script rel="stylesheet" href="/bootstrap-5.2.1/js/bootstrap.bundle.min.js"></script>
+  <script src="/javascripts/app.js"></script>
+  <script src="/javascripts/sweetAlert2.js"></script>
+  <script defer src="/javascripts/nav.js"></script>
+  <script defer src="/javascripts/toolTip.js"></script>
+  <script src="/jquery/jquery-3.5.1.min.js"></script>
+
+
+
+  <script src="/javascripts/jquery.dataTables.min.js"></script>
+  <script src="/javascripts/dataTable.min.js"></script>
+  <!-- 
+  <script src="/DataTables-1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="/DataTables-1.13.4/js/dataTables.bootstrap.min.js"></script> -->
+
+
+  <script src="/javascripts/GVS.js"></script>
+  <script>
+    $.ajaxSetup({
+      beforeSend: function(xhr) {
+        const meta = document.querySelector('meta[name="csrf-token"]');
+        if (meta) {
+          xhr.setRequestHeader('CSRF-Token', meta.getAttribute('content'));
+        }
+      }
+    });
+  </script>
+  <script src="/javascripts/renderDeviceByStatus.js"></script>
+  <script src="/javascripts/sortData.js"></script>
+  <title>
+    Web quản lý
+  </title>
+</head>

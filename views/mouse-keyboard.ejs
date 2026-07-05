@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./header.html') %>
+
+    <body id="body-pd" class="body-pd">
+        <%- include('./nav.html') %>
+            <div class="height-100 ">
+                <main class="content p-0 pt-4">
+                    <div class="container-fluid p-0">
+                        <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                            <div class="col-5" style="width: max-content;">
+                                <h3 class="color_header">Quản lý Chuột, Bàn phím</h3>
+                            </div>
+                            <div class="col-7">
+                                <div class="row justify-content-end gap-3">
+                                    <button class="col-1 btn bg-color-all c-white" data-bs-toggle="modal"
+                                        data-bs-target="#addMouse" style="width: max-content; border-radius: 29px;">Thêm
+                                        chuột
+                                    </button>
+                                    <button class="col-1 btn bg-color-all c-white" data-bs-toggle="modal"
+                                        data-bs-target="#addKeyBoard"
+                                        style="width: max-content; border-radius: 29px;">Thêm bàn phím
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <table id="table_mouse"
+                                            class="table table-bordered table-hover table-responsive my-0 text-center">
+                                            <tr>
+                                                <td rowspan="2">Total</td>
+                                                <td>Chuột</td>
+                                                <td rowspan="2">Ghi chú</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="quantity_mouse">0</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col-6">
+                                        <table id="table_keyboard"
+                                            class="table table-bordered table-hover table-responsive my-0 text-center">
+                                            <tr>
+                                                <td rowspan="2">Total</td>
+                                                <td>Bàn phím</td>
+                                                <td rowspan="2">Ghi chú</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="quantity_keyboard">0</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <!-- TODO Modal Thêm Chuột -->
+            <div class="modal fade modal-lg" id="addMouse" tabindex="-1" aria-labelledby="exampleModalLabel"
+                data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-black">
+                        <div class="modal-header text-center border-bottom-0">
+                            <b class="modal-title f-s-30 color_header " id="addMouseLabel">
+                                Thêm chuột
+                            </b>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body f-s-16 container pb-0 px-4">
+                            <div class="row justify-content-around">
+                                <div class="col-8 mb-3">
+                                    <div class="row justify-content-between">
+                                        <div class="col-4">
+                                            <label for="total_mouse" class="col-form-label color_title_add_device">Số
+                                                lượng:
+                                            </label>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="number" min="1" step="1" value="1" id="total_mouse"
+                                                class="form-control" placeholder="Nhập số lượng chuột">
+                                        </div>
+                                        <div class="col-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-around mt-2">
+                                <div class="col-8 mb-3">
+                                    <div class="row justify-content-between">
+                                        <div class="col-4">
+                                            <label for="note_addMouse" class="col-form-label color_title_add_device"
+                                                style="width: max-content;">Ghi chú: </label>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text" id="note_addMouse" autocomplete="off"
+                                                class="form-control" placeholder="Ghi chú">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center my-3">
+                                <div class="col-1" style="width: max-content;">
+                                    <button type="button" onclick="createMouse()" id="btn_create_mouse"
+                                        class="btn btn-success px-4" style="border-radius: 29px;
+                                    background-color: #04A544;">
+                                        Đồng ý
+                                    </button>
+                                </div>
+                                <div class="col-1 ps-0">
+                                    <button type="button" class="btn text-white" data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                        style="background-color: #F81111;border-radius: 29px;padding-left: 45%;padding-right: 45%;">
+                                        Hủy
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TODO Modal Thêm Bàn phím -->
+            <div class="modal fade modal-lg" id="addKeyBoard" tabindex="-1" aria-labelledby="exampleModalLabel"
+                data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-black">
+                        <div class="modal-header text-center border-bottom-0">
+                            <b class="modal-title f-s-30 color_header " id="addKeyBoardLabel">
+                                Thêm bàn phím
+                            </b>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body f-s-16 container pb-0 px-4">
+                            <div class="row justify-content-around">
+                                <div class="col-8 mb-3">
+                                    <div class="row justify-content-between">
+                                        <div class="col-4">
+                                            <label for="total" class="col-form-label color_title_add_device">Số
+                                                lượng:
+                                            </label>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="number" min="1" step="1" value="1" id="total_keyboard"
+                                                class="form-control" placeholder="Nhập số lượng bàn phím">
+                                        </div>
+                                        <div class="col-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-around mt-2">
+                                <div class="col-8 mb-3">
+                                    <div class="row justify-content-between">
+                                        <div class="col-4">
+                                            <label for="note_addKeyboard" class="col-form-label color_title_add_device"
+                                                style="width: max-content;">Ghi chú: </label>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text" id="note_addKeyboard" autocomplete="off"
+                                                class="form-control" placeholder="Ghi chú">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center my-3">
+                                <div class="col-1" style="width: max-content;">
+                                    <button type="button" onclick="createKeyboard()" id="btn_create_keyboard"
+                                        class="btn btn-success px-4" style="border-radius: 29px;
+                                    background-color: #04A544;">
+                                        Đồng ý
+                                    </button>
+                                </div>
+                                <div class="col-1 ps-0">
+                                    <button type="button" class="btn text-white" data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                        style="background-color: #F81111;border-radius: 29px;padding-left: 45%;padding-right: 45%;">
+                                        Hủy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+    <script>
+        $(document).ready(() => {
+            getAllMouse()
+            getAllKeyboard()
+        })
+        function renderMouse(id) {
+            $.ajax(GVS.setting(GVS.findByDeviceId, 'POST', {
+                deviceId: id
+            })).done(res => {
+                $("#quantity_mouse").text(res.metadata.quantity)
+            })
+        }
+        function renderKeyboard(id) {
+            $.ajax(GVS.setting(GVS.findByDeviceId, 'POST', {
+                deviceId: id
+            })).done(res => {
+                $("#quantity_keyboard").text(res.metadata.quantity)
+            })
+        }
+        function getAllMouse() {
+            $.ajax(GVS.setting(GVS.GetAllDeciveByType, 'POST', {
+                type: "mouse"
+            })).done(res => {
+                if (res.metadata.length != 0) {
+                    $("#btn_create_mouse").attr("onclick", "increaseMouse()")
+                    renderMouse(res.metadata[0]._id)
+                    renderHistoy("mouse", res.metadata[0]._id)
+                }
+            })
+        }
+        function getAllKeyboard() {
+            $.ajax(GVS.setting(GVS.GetAllDeciveByType, 'POST', {
+                type: "keyboard"
+            })).done(res => {
+                if (res.metadata.length != 0) {
+                    $("#btn_create_keyboard").attr("onclick", "increaseKeyBoard()")
+                    renderKeyboard(res.metadata[0]._id)
+                    renderHistoy("keyboard", res.metadata[0]._id)
+                }
+            })
+        }
+        function increaseKeyBoard() {
+            $.ajax(GVS.setting(GVS.IncreaseKeyBoardOrMouse, 'POST', {
+                quantity: parseInt($("#total_keyboard").val()),
+                note: $("#note_addKeyboard").val(),
+                type: "keyboard"
+            })).done(res => {
+                if (res.success == 1) {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "success",
+                        confirmButtonText: "OK",
+                    }).then((result) => {
+                        location.reload();
+                    });
+                } else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    });
+                }
+            })
+        }
+        function increaseMouse() {
+            $.ajax(GVS.setting(GVS.IncreaseKeyBoardOrMouse, 'POST', {
+                quantity: parseInt($("#total_mouse").val()),
+                note: $("#note_addMouse").val(),
+                type: "mouse"
+            })).done(res => {
+                if (res.success == 1) {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "success",
+                        confirmButtonText: "OK",
+                    }).then((result) => {
+                        location.reload();
+                    });
+                } else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    });
+                }
+            })
+        }
+        function createMouse() {
+            $.ajax(GVS.setting(GVS.CreateDevice, 'POST', {
+                total: parseInt($("#total_mouse").val()),
+                note: $("#note_addMouse").val(),
+                type: "mouse"
+            })).done(res => {
+                if (res.success == 1) {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "success",
+                        confirmButtonText: "OK",
+                    }).then((result) => {
+                        location.reload();
+                    });
+                } else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    });
+                }
+            })
+        }
+        function createKeyboard() {
+            $.ajax(GVS.setting(GVS.CreateDevice, 'POST', {
+                total: parseInt($("#total_keyboard").val()),
+                note: $("#note_addKeyboard").val(),
+                type: "keyboard"
+            })).done(res => {
+                if (res.success == 1) {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "success",
+                        confirmButtonText: "OK",
+                    }).then((result) => {
+                        location.reload();
+                    });
+                } else {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: res.message,
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    });
+                }
+            })
+        }
+        function renderHistoy(type, _id) {
+            $.ajax(GVS.setting(GVS.GetHistoryByIdDevice + _id, 'POST', {
+            })).done(res => {
+                var html = ''
+                res.metadata.forEach(dv => {
+                    html += `<tr>
+                        <td>${new Date(dv.createdAt).toLocaleDateString("vi-VN")}</td>
+                        <td>${dv.count}</td>
+                        <td>${dv.note}</td>
+                        </tr>`
+                });
+                $(`#table_${type}`).append(html)
+            })
+        }
+    </script>
+
+</html>

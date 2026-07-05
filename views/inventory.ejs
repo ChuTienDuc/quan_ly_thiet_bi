@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    <style>
+        #table_inventory th,
+        td {
+            white-space: nowrap;
+        }
+
+        /* Tổng thể menu dropdown */
+        .custom-dropdown-menu {
+            z-index: 1050;
+            background-color: #ffffff;
+            /* Màu nền trắng */
+            border: 1px solid #dee2e6;
+            /* Đường viền nhẹ */
+            border-radius: 0.25rem;
+            /* Bo góc */
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            /* Hiệu ứng đổ bóng */
+            transform: translate3d(0, 0, 0);
+            /* Đặt vị trí */
+        }
+
+        /* Phần tử trong menu */
+        .custom-dropdown-menu .link-action {
+            text-align: center;
+            padding: 0.25rem 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            /* Hiệu ứng hover mượt */
+        }
+
+        /* Liên kết trong menu */
+        .custom-dropdown-menu .dropdown-link {
+            text-decoration: none;
+            /* Xóa gạch chân */
+            color: #212529;
+            /* Màu chữ */
+            font-size: 1rem;
+            /* Kích thước chữ */
+            display: block;
+            /* Hiển thị block để dễ căn chỉnh */
+            width: 100%;
+            /* Chiếm toàn bộ chiều rộng */
+            /* Khoảng cách bên trong */
+        }
+
+        /* Hiệu ứng hover */
+        .custom-dropdown-menu .link-action:hover {
+            background-color: #f8f9fa;
+            /* Màu nền khi hover */
+        }
+
+        /* Nút trong menu */
+        .custom-dropdown-menu button.dropdown-link {
+            border: none;
+            background-color: transparent;
+            color: #212529;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Điều chỉnh vị trí của dropdown khi hiển thị */
+        .dropdown-menu.show {
+            position: absolute;
+            top: calc(100% + 5px) !important;
+            /* Cách nút kích hoạt một chút */
+            left: 0;
+            transform: translate3d(0%, 0%, 0) !important;
+            /* Loại bỏ translate3d */
+        }
+    </style>
+
+    <body id="body-pd" class="body-pd">
+        <%- include("./nav.html") %>
+            <div class="height-100 bg-light">
+                <main class="content p-0 pt-4">
+                    <div class="container-fluid p-0">
+                        <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                            <div class="col-5" style="width: max-content;">
+                                <h3><strong>Quản lý</strong> nhà kho</h3>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12  d-flex">
+                                <div class="card flex-fill"
+                                    style="overflow-y:scroll; overflow-x: scroll; max-height: 85vh;">
+                                    <table class="table table-hover table-bordered  my-0 text-center"
+                                        id="table_inventory">
+                                        <thead class="th_table_sticky">
+                                            <tr class="align-middle text-center">
+                                                <th class="col text-center ">
+                                                    Thao tác
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Loại thiết bị</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Tên thiết bị</span>
+                                                </th>
+
+                                                <th class="col text-center">
+                                                    <span>Cấu hình</span>
+                                                </th>
+
+                                                <th class="col text-center">
+                                                    <span>Trạng thái</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Tồn kho</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Nhà cung cấp</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Ngày nhập kho</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Hạn bảo hành</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Địa chỉ kho</span>
+                                                </th>
+
+                                                <th class="col text-center">
+                                                    <span>Ghi chú</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Giá hóa đơn</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Tổng giá</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="data_inventory">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+    </body>
+    <script>
+        var htmlCase = ''
+        var htmlMonitor = ''
+        var htmlWacom = ''
+        var htmlWebcam = ''
+        var htmlHeadphone = ''
+
+        var inventorys = [];
+
+        function dataInventory() {
+            $.ajax({
+                url: GVS.GetAllInventories,
+                method: "GET",
+                success: (res) => {
+
+                    inventorys.push(res.metadata)
+                    renderInventory(res.metadata)
+                    $("#table_inventory").DataTable()
+
+                }
+            })
+        }
+        function renderInventory(inventorys) {
+            var html = ''
+            inventorys.forEach((el, index) => {
+                if (el.type == 'case') {
+                    html += renderAttrCase(el.device)
+                }
+                if (el.type == 'monitor') {
+
+                    html += renderAttrMonitor(el.device)
+                }
+                if (el.type == 'wacom') {
+
+                    html += renderAttrWacom(el.device)
+                }
+                if (el.type == 'webcam') {
+
+                    html += renderAttrWebcam(el.device)
+                }
+                if (el.type == 'headphone') {
+
+                    html += renderAttrHeadphone(el.device)
+                }
+            })
+            $('#data_inventory').html(html)
+        }
+
+        dataInventory()
+
+        function renderAttrCase(dataCase) {
+            dataCase.forEach((el, index) => {
+                console.log(el)
+                if (el.quantity != 0) {
+                    if (el.device.status == -1) {
+                        htmlCase += `<tr class= "align-middle text-center ">`
+                    }
+                    else if (el.device.status == 1) {
+                        htmlCase += `<tr class= "align-middle text-center">`
+                    }
+                    else {
+
+                        htmlCase += `<tr class= "align-middle text-center">`
+
+                    }
+                    htmlCase += `
+                    <td>
+                        <div class="btn-group dropstart cursor-pointer">
+                                <button class="f-s-24 btn border border-dark rounded" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Chọn <i class="fa fa-angle-down ms-2 icon-angle1"></i>
+                                </button>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li class="text-center link-action">
+                                        <a href="${GVS.GetDetailDevice.concat(el.device._id)}" class="dropdown-link my-2">
+                                            <span>Xem chi tiết</span>
+                                        </a>
+                                    </li>
+                                    <li class="text-center link-action">
+                                        <button class="btn dropdown-link my-2" onclick = "requestHandoverDevice('${el.device._id}')">
+                                            <span>Yêu cầu bàn giao</span>
+                                        </button>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </td>
+                            
+                            <td>${el.device.type}</td>
+                            <td>${el.device.name}</td>
+                            <td>
+                               <p> Chipset: ${el.device.attributes.chipset} </p> 
+                               <p> Ram: 
+                                `
+                    const result = {}
+                    el.device.attributes.ram.forEach((el, index) => {
+                        if (result[el]) {
+                            result[el]++
+                        }
+                        else result[el] = 1;
+
+                    })
+                    for (const [key, value] of Object.entries(result)) {
+                        if (value > 1) {
+                            htmlCase += `x${value} ${key} </p>`
+                        }
+                        else
+                            htmlCase += `${key} </p>`
+                    }
+                    htmlCase += `
+                        <p> VGA: `
+                    el.device.attributes.VGA.forEach((el, index) => {
+                        htmlCase += `${el.name} ${el.vram} </p>`
+                    })
+                    htmlCase += `    
+                        <p> Ổ cứng :`
+                    el.device.attributes.hardDrives.forEach((el, index) => {
+                        htmlCase += ` ${el.brand} ${el.size} ${el.type} </p>`
+                    })
+
+                    htmlCase += `
+                            </td>
+                            <td>`
+                    if (el.device.status == 0) {
+                        htmlCase += `Using `
+                    }
+                    else htmlCase += `Free`
+                    htmlCase += `
+                            </td>
+                            <td>${el.quantity ?? 0}</td>
+                            <td>${el.device.supplier?.address ?? ''}</td>
+                            <td>${new Date(el.device.createdAt).toLocaleDateString('vi-VN')}</td>
+                            <td>${new Date(el.device.expirationDate).toLocaleDateString('vi-VN')}</td>
+                            <td>${el.location}</td>
+                            <td>${el.device.note}</td>
+                            <td>${el.device.billPrice > 0 ? new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(el.device.billPrice) : ''}</td>
+                            <td>${el.device.totalPrice > 0 ? new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(el.device.totalPrice) : ''}</td>
+                            
+                        </tr>                       
+                    `
+                }
+            })
+
+            return htmlCase;
+        }
+        function renderAttrMonitor(dataMonitor) {
+            dataMonitor.forEach((el, index) => {
+                if (el.quantity != 0) {
+
+                    if (el.device.status == -1) {
+                        htmlMonitor += `<tr class= "align-middle text-center ">`
+                    }
+                    else if (el.device.status == 1) {
+                        htmlMonitor += `<tr class= "align-middle text-center">`
+                    }
+                    else {
+
+                        htmlMonitor += `<tr class= "align-middle text-center">`
+
+                    }
+                    htmlMonitor += `
+                            <td>
+                                <div class="btn-group dropstart cursor-pointer">
+                                <button class="f-s-24 btn border border-dark rounded" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Chọn <i class="fa fa-angle-down ms-2 icon-angle1"></i>
+                                </button>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li class="text-center link-action">
+                                        <a href="${GVS.GetDetailDevice.concat(el.device._id)}" class="dropdown-link my-2">
+                                            <span>Xem chi tiết</span>
+                                        </a>
+                                    </li>
+                                    <li class="text-center link-action">
+                                        <button class="btn dropdown-link my-2" onclick = "requestHandoverDevice('${el.device._id}')">
+                                            <span>Yêu cầu bàn giao</span>
+                                        </button>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            </td>
+                            <td>${el.device.type}</td>
+                            <td>${el.device.name}</td>
+                            <td>
+                                Connector:
+                                ${el.device.attributes.connector}
+                            </td>
+                            <td>`
+                    if (el.device.status == 0) {
+                        htmlMonitor += `Using `
+                    }
+                    if (el.device.status == 1) {
+                        htmlMonitor += `Free `
+                    }
+
+                    htmlMonitor += `
+                            </td>
+                            <td>${el.quantity ?? 0}</td>
+                            <td>${el.device.supplier?.address ?? ''}</td>
+                            <td>${new Date(el.device.createdAt).toLocaleDateString('vi-VN')}</td>
+                            <td>${new Date(el.device.expirationDate).toLocaleDateString('vi-VN')}</td>
+                            <td>${el.location}</td>
+                            <td>${el.device.note}</td>
+                            <td>${el.device.billPrice > 0 ? new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(el.device.billPrice) : ''}</td>
+                            <td>${el.device.totalPrice > 0 ? new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(el.device.totalPrice) : ''}</td>
+                            </tr>
+                    `
+                }
+            })
+            return htmlMonitor
+        }
+        function renderAttrWacom(dataWacom) {
+            dataWacom.forEach((el, index) => {
+                if (el.quantity != 0) {
+
+                    if (el.device.status == -1) {
+                        htmlWacom += `<tr class= "align-middle text-center ">`
+                    }
+                    else if (el.device.status == 1) {
+                        htmlWacom += `<tr class= "align-middle text-center">`
+                    }
+                    else {
+
+                        htmlWacom += `<tr class= "align-middle text-center">`
+
+                    }
+                    htmlWacom += `
+                            <td>
+                                <div class="btn-group dropstart cursor-pointer">
+                                <button class="f-s-24 btn border border-dark rounded" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Chọn <i class="fa fa-angle-down ms-2 icon-angle1"></i>
+                                </button>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li class="text-center link-action">
+                                        <a href="${GVS.GetDetailDevice.concat(el.device._id)}" class="dropdown-link my-2">
+                                            <span>Xem chi tiết</span>
+                                        </a>
+                                    </li>
+                                    <li class="text-center link-action">
+                                        <button class="btn dropdown-link my-2" onclick = "requestHandoverDevice('${el.device._id}')">
+                                            <span>Yêu cầu bàn giao</span>
+                                        </button>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            </td>
+                            <td>${el.device.type}</td>
+                            <td>${el.device.name}</td>
+                            <td>
+                                Số series:
+                                ${el.device.attributes.seriesNumber}
+                            </td>
+                            <td>`
+                    if (el.device.status == 0) {
+                        htmlWacom += `Using `
+                    }
+                    if (el.device.status == 1) {
+                        htmlWacom += `Free `
+                    }
+
+                    htmlWacom += `
+                            </td>
+                            <td>${el.quantity ?? 0}</td>
+                            <td>${el.device.supplier?.address ?? ''}</td>
+                            <td>${new Date(el.device.createdAt).toLocaleDateString('vi-VN')}</td>
+                            <td>${new Date(el.device.expirationDate).toLocaleDateString('vi-VN')}</td>
+                            <td>${el.location}</td>
+                            <td>${el.device.note}</td>
+                            <td>${el.device.billPrice > 0 ? new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(el.device.billPrice) : ''}</td>
+                            <td>${el.device.totalPrice > 0 ? new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(el.device.totalPrice) : ''}</td>
+                            </tr>
+                    `
+                }
+            })
+            return htmlWacom
+        }
+        function renderAttrWebcam(dataWebcam) {
+            dataWebcam.forEach((el, index) => {
+                if (el.quantity != 0) {
+
+                    if (el.device.status == -1) {
+                        htmlWebcam += `<tr class= "align-middle text-center ">`
+                    }
+                    else if (el.device.status == 1) {
+                        htmlWebcam += `<tr class= "align-middle text-center">`
+                    }
+                    else {
+
+                        htmlWebcam += `<tr class= "align-middle text-center">`
+
+                    }
+                    htmlWebcam += `
+                            <td>
+                                <div class="btn-group dropstart cursor-pointer">
+                                <button class="f-s-24 btn border border-dark rounded" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Chọn <i class="fa fa-angle-down ms-2 icon-angle1"></i>
+                                </button>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li class="text-center link-action">
+                                        <a href="${GVS.GetDetailDevice.concat(el.device._id)}" class="dropdown-link my-2">
+                                            <span>Xem chi tiết</span>
+                                        </a>
+                                    </li>
+                                    <li class="text-center link-action">
+                                        <button class="btn dropdown-link my-2" onclick = "requestHandoverDevice('${el.device._id}')">
+                                            <span>Yêu cầu bàn giao</span>
+                                        </button>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            </td>
+                            <td>${el.device.type}</td>
+                            <td>${el.device.name}</td>
+                            <td>
+                                
+                            </td>
+                            <td>`
+                    if (el.device.status == 0) {
+                        htmlWebcam += `Using `
+                    }
+                    if (el.device.status == 1) {
+                        htmlWebcam += `Free `
+                    }
+
+                    htmlWebcam += `
+                            </td>
+                            <td>${el.quantity ?? 0}</td>
+                            <td>${el.device.supplier?.address ?? ''}</td>
+                            <td>${new Date(el.device.createdAt).toLocaleDateString('vi-VN')}</td>
+                            <td>${new Date(el.device.expirationDate).toLocaleDateString('vi-VN')}</td>
+                            <td>${el.location}</td>
+                            <td>${el.device.note}</td>
+                            <td>${el.device.billPrice > 0 ? new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(el.device.billPrice) : ''}</td>
+                            <td>${el.device.totalPrice > 0 ? new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(el.device.totalPrice) : ''}</td>
+                            </tr>
+                    `
+                }
+            })
+            return htmlWebcam
+        }
+        function renderAttrHeadphone(dataHeadphone) {
+            dataHeadphone.forEach((el, index) => {
+                if (el.quantity != 0) {
+
+                    if (el.device.status == -1) {
+                        htmlHeadphone += `<tr class= "align-middle text-center ">`
+                    }
+                    else if (el.device.status == 1) {
+                        htmlHeadphone += `<tr class= "align-middle text-center">`
+                    }
+                    else {
+
+                        htmlHeadphone += `<tr class= "align-middle text-center">`
+
+                    }
+                    htmlHeadphone += `
+                            <td>
+                                <div class="btn-group dropstart cursor-pointer">
+                                <button class="f-s-24 btn border border-dark rounded" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Chọn <i class="fa fa-angle-down ms-2 icon-angle1"></i>
+                                </button>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li class="text-center link-action">
+                                        <a href="${GVS.GetDetailDevice.concat(el.device._id)}" class="dropdown-link my-2">
+                                            <span>Xem chi tiết</span>
+                                        </a>
+                                    </li>
+                                    <li class="text-center link-action">
+                                        <button class="btn dropdown-link my-2" onclick = "requestHandoverDevice('${el.device._id}')">
+                                            <span>Yêu cầu bàn giao</span>
+                                        </button>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            </td>
+                            <td>${el.device.type}</td>
+                            <td>${el.device.name}</td>
+                            <td>
+                                
+                            </td>
+                            <td>`
+                    if (el.device.status == 0) {
+                        htmlHeadphone += `Using `
+                    }
+                    if (el.device.status == 1) {
+                        htmlHeadphone += `Free `
+                    }
+
+                    htmlHeadphone += `
+                            </td>
+                            <td>${el.quantity ?? 0}</td>
+                            <td>${el.device.supplier?.address ?? ''}</td>
+                            <td>${new Date(el.device.createdAt).toLocaleDateString('vi-VN')}</td>
+                            <td>${new Date(el.device.expirationDate).toLocaleDateString('vi-VN')}</td>
+                            <td>${el.location}</td>
+                            <td>${el.device.note}</td>
+                            <td>${el.device.billPrice > 0 ? new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(el.device.billPrice) : ''}</td>
+                            <td>${el.device.totalPrice > 0 ? new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(el.device.totalPrice) : ''}</td>
+                            </tr>
+                    `
+                }
+            })
+            return htmlHeadphone
+        }
+        
+        function requestHandoverDevice(deviceId) {
+            Swal.fire({
+                title: "Yêu cầu bàn giao",
+                input: "textarea",
+                inputLabel: "Ghi chú của nhân viên",
+                inputPlaceholder: "Nhập ghi chú...",
+                showCancelButton: true,
+                confirmButtonText: "Gửi yêu cầu",
+                cancelButtonText: "Hủy",
+                inputValidator: (value) => {
+                    if (!value || value.trim().length === 0) {
+                        return "Ghi chú của nhân viên không được để trống.";
+                    }
+                }
+            }).then((result) => {
+                if (!result.isConfirmed) {
+                    return;
+                }
+
+                $.ajax(GVS.setting(GVS.requestHandoverDevice, 'POST', {
+                    devices: [deviceId],
+                    note_staff: result.value.trim(),
+                    type: 1
+                })).done(res => {
+                    if (res.success == 1) {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "success",
+                            confirmButtonText: "OK",
+                        }).then(() => {
+                            location.reload();
+                        })
+                    } else {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "error",
+                            confirmButtonText: "OK",
+                        })
+                    }
+                }).fail(err => {
+                    Swal.fire({
+                        title: "Thông báo!",
+                        text: err.responseJSON?.message || "Không thể gửi yêu cầu bàn giao.",
+                        icon: "error",
+                        confirmButtonText: "OK",
+                    })
+                })
+            })
+        }
+    </script>
+
+</html>

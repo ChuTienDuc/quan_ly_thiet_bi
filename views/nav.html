@@ -1,0 +1,376 @@
+<% if (typeof csrfToken !== 'undefined') { %>
+    <meta name="csrf-token" content="<%= csrfToken %>">
+  <% } %>
+  
+  
+<header class="header body-pd " style="z-index: 200;" id="header">
+    <div class="header_img ">
+
+        <a class="w-100 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/images/avt.png" alt="" style="width: 42px;">
+
+            <!-- <span
+                class="position-absolute c-white d-flex justify-content-center align-items-center align-items-middle  f-s-12"
+                id="number-hanoverdoc"
+                style="top:14%; right: 1%;border-radius: 50%; height: 23px; width: 23px; background-color: #e41e3f;"></span> -->
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <li><span class="dropdown-item" id="name_user" style="pointer-events: none;"></span></li>
+            <li><a class="dropdown-item" id="link-handoverOpen"></a></li>
+            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#changePassword">Đổi mật khẩu</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
+            <li><a class="dropdown-item" onclick="logOut()"><i class="fa fa-right-from-bracket f-s-12"></i>&nbsp Đăng
+                    xuất </a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="l-navbar shownav" id="nav-bar"
+    style="left: 0 !important; height: 100% !important; background-color: #061828; z-index: 300;">
+    <!-- <img src="/images/logoMV.svg" class="logoMV" alt=""> -->
+    <div class="header_toggle"> <i class='bx bx-menu bx-x'
+            style="color: #fff; position: absolute; top: 0.5%; right: 0%;" id="header-toggle"></i> </div>
+    <nav class="nav">
+        <div>
+
+            <a href="/" class="nav_logo" style="margin-bottom: 1rem !important; margin-left: -5px;">
+                <i class="fa fa-home nav_icon" data-bs-toggle="tooltip" data-bs-placement="right" title="Trang chủ"></i>
+                <span class="nav_logo-name">Trang chủ
+                </span>
+            </a>
+            <div class="nav_list">
+                <a href="/api/require-device/staff" class="nav_link" style="margin-left: -5px;">
+                    <i class="fa-regular fa-envelope" data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Yêu cầu bàn giao"></i>
+                    <span class="nav_name">Yêu cầu bàn giao
+                    </span>
+                </a>
+                <a href="/api/device/inventory" class="nav_link" style="margin-left: -5px;">
+                    <i class="fa fa-box nav_icon" data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Quản lý nhà kho"></i>
+                    <span class="nav_name">Kho thiết bị
+                    </span>
+                </a>
+                <a href="/api/staff" class="nav_link" style="margin-left: -5px;" id="manage-staff">
+                    <i class="fa fa-users nav_icon" data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Quản lý nhân sự "></i>
+                    <span class="nav_name">Quản lý nhân sự
+                    </span>
+                </a>
+                <a href="/api/require-device/management" class="nav_link" style="margin-left: -5px;" id="manage-require-device">
+                    <i class="fa fa-file nav_icon" data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Quản lý yêu cầu bàn giao"></i>
+                    <span class="nav_name">Quản lý yêu cầu bàn giao
+                    </span>
+                </a>
+                <a href="#devices" class="nav_link collapse_devices" data-bs-toggle="collapse"
+                    style="margin-left: -5px;" id="manage-device">
+                    <i class="fa fa-computer nav_icon" data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Quản lý thiết bị"></i>
+                    <span class="nav_name">Quản lý thiết bị
+                        <i class="fa fa-angle-down ms-2 icon-angle1" style="font-size: 1rem;"></i>
+                    </span>
+
+                </a>
+                <ul id="devices" class="nav-dropdown list-unstyled collapse">
+                    <li class="ms-1">
+                        <a href="/api/device/case" class="nav_link" style="margin-left: -5px;">
+                            <i class='bx bx-speaker nav_icon' data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="Quản lý Case">
+                            </i>
+
+                            <span class="nav_name">Quản lý máy tính
+                            </span>
+                        </a>
+                    </li>
+                    <li class="ms-1">
+                        <a href="/api/device/monitor" class="nav_link" style="margin-left: -5px;">
+                            <i class='nav_icon bx bx-desktop' data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="Quản lý màn hình">
+                            </i>
+                            <span class="nav_name">Quản lý màn hình
+                            </span>
+                        </a>
+                    </li>
+                    <li class="ms-1">
+                        <a href="/api/device/wacom" class="nav_link" style="margin-left: -5px;">
+                            <i class=' nav_icon bx bx-tab' data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="Quản lý Wacom"></i>
+                            <span class="nav_name">Quản lý wacom</span>
+                        </a>
+                    </li>
+                    <li class="ms-1">
+                        <a href="/api/device/webcam" class="nav_link" style="margin-left: -5px;">
+                            <i class=' nav_icon bx bxs-webcam' data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="Quản lý Webcam"></i>
+                            <span class="nav_name">Quản lý webcam</span>
+                        </a>
+                    </li>
+                    <li class="ms-1">
+                        <a href="/api/device/headphone" class="nav_link" style="margin-left: -5px;">
+                            <i class='nav_icon bx bx-headphone' data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="Quản lý tai nghe">
+                            </i>
+                            <span class="nav_name">Quản lý tai nghe</span>
+                        </a>
+                    </li>
+                    <li class="ms-1">
+                        <a href="/api/device/ups" class="nav_link" style="margin-left: -5px;">
+                            <i class='nav_icon fa fa-box' data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="Quản lý tai nghe">
+                            </i>
+                            <span class="nav_name">Quản lý UPS</span>
+                        </a>
+                    </li>
+                    <li class="ms-1">
+                        <a href="/api/device/mouse-keyboard" class="nav_link" style="margin-left: -5px;" id="manage-km">
+                            <i class='nav_icon fa fa-mouse' data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="Quản lý chuột, bàn phím">
+                            </i>
+                            <span class="nav_name">Quản lý chuột, bàn phím</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- <a href="/api/history/deviceUsed" class="nav_link" >
+                    <i class='fa fa-history nav_icon' data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Lịch sử sử dụng của nhân viên"></i>
+                    <span class="nav_name">Lịch sử sử dụng
+                    </span>
+                </a> -->
+                <!-- <a href="/api/supplier" class="nav_link">
+                    <i class='fa fa-shop nav_icon' data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Quản lý Supplier"></i>
+                    <span class="nav_name">Quản lý Supplier
+                    </span>
+                </a> -->
+                <a href="/api/handover/files" class="nav_link" id="manage-handover">
+                    <i class='fa fa-file-invoice nav_icon' data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Phiếu bàn giao"></i>
+                    <span class="nav_name">Phiếu bàn giao
+                    </span>
+                </a>
+                <!-- <a href="/api/device/inventory" class="nav_link">
+                    <i class='fa fa-warehouse nav_icon' data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Quản lý nhà kho"></i>
+                    <span class="nav_name">Nhà Kho
+                    </span>
+                </a> -->
+                <a href="/api/device/component" class="nav_link" id="manage-lk">
+                    <i class='fa fa-tools nav_icon' data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Quản lý linh kiện"></i>
+                    <span class="nav_name">Linh kiện
+                    </span>
+                </a>
+                <a href="/api/job/view" class="nav_link" id="manage-jdp">
+                    <i class='fa fa-briefcase nav_icon' data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Quản lý JDP"></i>
+                    <span class="nav_name">Quản lý JDP
+                    </span>
+                </a>
+                <a href="/api/user" class="nav_link" id="manage-account">
+                    <i class='fa fa-user-gear nav_icon' data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Quản lý User"></i>
+                    <span class="nav_name">Quản lý User
+                    </span>
+                </a>
+                <a onclick="logOut()" id="link-logout" class="nav_link">
+                    <i class='fa fa-right-from-bracket nav_icon' data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Đăng xuất"></i>
+                    <span class="nav_name">Đăng xuất
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="modal modal-lg fade" id="changePassword" tabindex="-1" aria-labelledby="changePasswordLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="changePasswordLabel" style="color: #3F52FF;">Đổi mật khẩu</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row justify-content-around">
+                    <div class="col-8 mb-3">
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <label for="currentPassword" class="col-form-label color_title_add_device">Mật khẩu cũ:
+                                </label>
+                            </div>
+                            <div class="col-8">
+                                <input type="password" id="currentPassword" class="form-control"
+                                    placeholder="Nhập mật khẩu cũ">
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-8 mb-3">
+                        <div class="row justify-content-around">
+                            <div class="col-4">
+                                <label for="newPassword" class="col-form-label color_title_add_device">Mật khẩu mới
+                                </label>
+                            </div>
+                            <div class="col-8">
+                                <input type="password" autocomplete="off" id="newPassword" class="form-control" minlength="6"
+                                    placeholder="Nhập mật khẩu mới">
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-success" onclick="changePassword()">Thay đổi</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".header_toggle").click(() => {
+        if ($("#nav-bar").hasClass("shownav")) {
+            $('.nav_logo').removeClass("mt-5");
+
+            $('.nav_logo').css("display", "");
+
+            $('.nav_name').css("display", "");
+            $("#header-toggle").removeClass("position_icon_nav");
+        } else {
+            $('.nav_logo').addClass("mt-5");
+            $('.nav_name').css("display", "none");
+
+
+            $("#header-toggle").addClass("position_icon_nav");
+        }
+    });
+
+
+
+    $('#devices').on('show.bs.collapse', function () {
+        $('.icon-angle1').removeClass('fa fa-angle-right')
+        $('.icon-angle1').addClass('fa fa-angle-down')
+
+    });
+    $('#devices').on('hidden.bs.collapse', function () {
+        $('.icon-angle1').removeClass('fa fa-angle-down')
+        $('.icon-angle1').addClass('fa fa-angle-right')
+    });
+
+    $(document).ready(function () {
+        // Lấy vị trí của trang hiện tại
+        var currentLocation = window.location.href;
+        // Kiểm tra mỗi phần tử trong thanh nav
+        $('.nav_link').each(function () {
+            // Lấy href của phần tử
+            var $href = $(this).attr('href');
+            // Nếu href trùng với vị trí của trang hiện tại
+            if (currentLocation.includes($href)) {
+                // Thêm class "active" vào phần tử
+                $(this).addClass('active');
+            }
+        });
+        $("#name_user").html(GVS.getUserId('username'))
+        // renderSummaryHandover()
+    });
+    if ($(window).width() < 768) {
+        $('.header_toggle').css("display", "none")
+    } else {
+        $('.header_toggle').css("display", "")
+    }
+    // function renderSummaryHandover() {
+    //     $.ajax(GVS.setting(GVS.getSummaryHanoverdocOpen, 'POST', {
+    //         userId: GVS.getUserId('userId')
+    //     }))
+    //         .done((res) => {
+    //             if (res.success == 1) {
+    //                 if (res.metadata == 0) {
+    //                     $('#number-hanoverdoc').remove()
+
+    //                 }
+    //                 $('#number-hanoverdoc').text(res.metadata)
+    //                 $('#link-handoverOpen').attr('href', '/api/handover/files' + '?isOpen=true')
+    //                 $('#link-handoverOpen').text(`Phiếu chưa in : ${res.metadata}`)
+    //                 // $('#link-logout').attr('href',GVS.LogOutRouter)
+    //                 // $('#link-logout').attr('href',GVS.LoginRouter)
+    //             } else {
+    //                 Swal.fire({
+    //                     title: "Thông báo!",
+    //                     text: res.message,
+    //                     icon: "error",
+    //                     confirmButtonText: "OK",
+    //                 })
+    //             }
+    //         })
+    // }
+
+    function logOut() {
+        $.ajax(GVS.setting(GVS.LogOutRouter, 'GET')).done(res => {
+            if (res.success == 1) {
+                Swal.fire({
+                    title: "Thông báo!",
+                    text: res.message,
+                    icon: "success",
+                    confirmButtonText: "OK",
+                    timer: 1000,
+                }).then(() => {
+                    window.location.href = '/login'
+                })
+            } else {
+                Swal.fire({
+                    title: "Thông báo!",
+                    text: res.message,
+                    icon: "error",
+                    confirmButtonText: "OK",
+                })
+            }
+
+        })
+    }
+    // Include chatbot widget
+</script>
+<%- include("./chatbot.html") %>
+<script>
+    function changePassword() {
+        const userId = GVS.getUserId('userId')
+        const newPassword = $("#newPassword").val()
+        const currentPassword = $("#currentPassword").val()
+        if (newPassword.length < 6) {
+            Swal.fire({
+                title: "Thông báo!",
+                text: "Mật khẩu mới phải có ít nhất 6 ký tự!",
+                icon: "error",
+                confirmButtonText: "OK",
+            })
+            return
+        }
+        $.ajax(GVS.setting(GVS.changePassword + `/${userId}`, 'POST', {
+            newPassword: newPassword,
+            currentPassword: currentPassword
+        })).done(res => {
+            if (res.success == 1) {
+                Swal.fire({
+                    title: "Thông báo!",
+                    text: res.message,
+                    icon: "success",
+                    confirmButtonText: "OK",
+                    timer: 1000,
+                }).then(() => {
+                    logOut()
+                    window.location.href = '/login'
+                })
+            } else {
+                Swal.fire({
+                    title: "Thông báo!",
+                    text: res.message,
+                    icon: "error",
+                    confirmButtonText: "OK",
+                })
+            }
+
+        })
+    }
+</script>

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+
+    <style>
+        .background {
+            background: #7f7f7f7f;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99999;
+        }
+
+        .background1 {
+            background: #7f7f7f7f;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99999;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .lds-spinner {
+            color: official;
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .lds-spinner div {
+            transform-origin: 40px 40px;
+            animation: lds-spinner 1.2s linear infinite;
+        }
+
+        .lds-spinner div:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 37px;
+            width: 6px;
+            height: 18px;
+            border-radius: 20%;
+            background: #fff;
+        }
+
+        .lds-spinner div:nth-child(1) {
+            transform: rotate(0deg);
+            animation-delay: -1.1s;
+        }
+
+        .lds-spinner div:nth-child(2) {
+            transform: rotate(30deg);
+            animation-delay: -1s;
+        }
+
+        .lds-spinner div:nth-child(3) {
+            transform: rotate(60deg);
+            animation-delay: -0.9s;
+        }
+
+        .lds-spinner div:nth-child(4) {
+            transform: rotate(90deg);
+            animation-delay: -0.8s;
+        }
+
+        .lds-spinner div:nth-child(5) {
+            transform: rotate(120deg);
+            animation-delay: -0.7s;
+        }
+
+        .lds-spinner div:nth-child(6) {
+            transform: rotate(150deg);
+            animation-delay: -0.6s;
+        }
+
+        .lds-spinner div:nth-child(7) {
+            transform: rotate(180deg);
+            animation-delay: -0.5s;
+        }
+
+        .lds-spinner div:nth-child(8) {
+            transform: rotate(210deg);
+            animation-delay: -0.4s;
+        }
+
+        .lds-spinner div:nth-child(9) {
+            transform: rotate(240deg);
+            animation-delay: -0.3s;
+        }
+
+        .lds-spinner div:nth-child(10) {
+            transform: rotate(270deg);
+            animation-delay: -0.2s;
+        }
+
+        .lds-spinner div:nth-child(11) {
+            transform: rotate(300deg);
+            animation-delay: -0.1s;
+        }
+
+        .lds-spinner div:nth-child(12) {
+            transform: rotate(330deg);
+            animation-delay: 0s;
+        }
+
+        @keyframes lds-spinner {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .lds-roller1 {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .lds-roller1 div {
+            animation: lds-roller1 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            transform-origin: 40px 40px;
+        }
+
+        .lds-roller1 div:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #fff;
+            margin: -4px 0 0 -4px;
+        }
+
+        .lds-roller1 div:nth-child(1) {
+            animation-delay: -0.036s;
+        }
+
+        .lds-roller1 div:nth-child(1):after {
+            top: 63px;
+            left: 63px;
+        }
+
+        .lds-roller1 div:nth-child(2) {
+            animation-delay: -0.072s;
+        }
+
+        .lds-roller1 div:nth-child(2):after {
+            top: 68px;
+            left: 56px;
+        }
+
+        .lds-roller1 div:nth-child(3) {
+            animation-delay: -0.108s;
+        }
+
+        .lds-roller1 div:nth-child(3):after {
+            top: 71px;
+            left: 48px;
+        }
+
+        .lds-roller1 div:nth-child(4) {
+            animation-delay: -0.144s;
+        }
+
+        .lds-roller1 div:nth-child(4):after {
+            top: 72px;
+            left: 40px;
+        }
+
+        .lds-roller1 div:nth-child(5) {
+            animation-delay: -0.18s;
+        }
+
+        .lds-roller1 div:nth-child(5):after {
+            top: 71px;
+            left: 32px;
+        }
+
+        .lds-roller1 div:nth-child(6) {
+            animation-delay: -0.216s;
+        }
+
+        .lds-roller1 div:nth-child(6):after {
+            top: 68px;
+            left: 24px;
+        }
+
+        .lds-roller1 div:nth-child(7) {
+            animation-delay: -0.252s;
+        }
+
+        .lds-roller1 div:nth-child(7):after {
+            top: 63px;
+            left: 17px;
+        }
+
+        .lds-roller1 div:nth-child(8) {
+            animation-delay: -0.288s;
+        }
+
+        .lds-roller1 div:nth-child(8):after {
+            top: 56px;
+            left: 12px;
+        }
+
+        @keyframes lds-roller1 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+
+    <body id="body-pd" class="body-pd">
+        <%- include("./nav.html") %>
+            <div class="row pt-5 mt-5">
+                <div class="col-6 mb-2">
+                    <h3 class="color_header">Phiếu bàn giao</h3>
+                </div>
+                <div class="col-6 pe-4">
+                    <div class="text-end">
+                        <a onclick="confirmExportAll()" class="text-decoration-none text-white">
+                            <button type="button" id="preview" class="btn bg-color-all c-white">
+                                Xuất tất cả phiếu
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 p-0 d-flex">
+                    <div class=" flex-fill" style="overflow-y:auto; overflow-x: scroll; max-height: 40vw;">
+                        <table class="table table-bordered table-hover table-responsive  my-0" id="table_handover">
+                            <thead class="th_table_sticky">
+                                <tr class="align-middle text-center">
+                                    <th class="col text-center">
+                                        <span>STT</span>
+                                    </th>
+                                    <th class="col text-center">
+                                        <span>Tên Nhân Viên</span>
+                                    </th>
+                                    <th class="col text-center">
+                                        <span>Địa Chỉ</span>
+                                    </th>
+                                    <th class="col text-center">
+                                        <span>Tầng</span>
+                                    </th>
+                                    <th class="col text-center">
+                                        <span>Thiết Bị Bàn Giao</span>
+                                    </th>
+                                    <th class="col text-center">
+                                        <span>Ngày Tạo Phiếu</span>
+                                    </th>
+                                    <th class="col text-center">
+                                        <span>Ghi Chú</span>
+                                    </th>
+                                    <th class="col text-center">
+                                        <span>Chức Năng</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="content_table" style="background-color: #fff;">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" style="pointer-events: inherit;">
+                    <div class="modal-content" id="content">
+                        <div class="">
+                            <div class="container-sm  p-5">
+                                <div id="content-pdf">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background hidden">
+                <div class="lds-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="background1 hidden">
+                <div class="lds-roller1">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <!-- <script>
+                const day = new Date().getDay() < 10 ? "0" + new Date().getDay() : new Date().getDay();
+                const Month = new Date().getMonth() < 10 ? "0" + new Date().getMonth() : new Date().getMonth();
+                // const Year = new Date().getgetFullYear() < 10 ? "0" + new Date().getgetFullYear() : new Date().getgetFullYear();
+                var time_report = `Hà Nội, Ngày ${day}; tháng ${Month}; năm ${new Date().getFullYear()}`
+                document.getElementById("time_report").innerText = time_report
+            </script> -->
+    </body>
+
+    <script type="module">
+        import { handoverType0HTML } from '/javascripts/custom_handover/handoverPDF/handoverType0HTML.js';
+        import { handoverType1HTML } from '/javascripts/custom_handover/handoverPDF/handoverType1HTML.js';
+        import { handoverType2HTML } from '/javascripts/custom_handover/handoverPDF/handoverType2HTML.js';
+        $(document).ready(() => {
+            dataHandover()
+        })
+        var handovers = [];
+        var idPDF = '';
+
+        function dataHandover() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const isOpenParam = urlParams.get('isOpen')
+            $.ajax({
+                url: `${isOpenParam == null ? '/api/handover/getAll' : '/api/handover/getAll?isOpen=true'}`,
+                method: "GET",
+                beforeSend: function () {
+                    $('.background').removeClass('hidden');
+                },
+                success: (res) => {
+                    handovers.push(res.metadata)
+                    renderHandover(res.metadata)
+                    $("#table_handover").DataTable().destroy()
+                    $("#table_handover").DataTable({
+                        "pageLength": 50,
+                        lengthMenu: [20, 40, 50, 100, 200, 500],
+                    })
+                    previewPDF(res.metadata)
+                },
+                complete: function () {
+                    $('.background').addClass('hidden');
+                }
+            })
+        }
+
+        // danh sách số lương thiết bị sắp xếp
+        let arrDeviceSort = ["case", "monitor", "wacom", "headphone", "webcam", "component", "ups", "mouse", "keyboard"]
+
+        function sortArrayByAnotherArray(array1, array2) {
+            return array1.sort((a, b) => {
+                const aIndex = array2.findIndex(item => item === a.type);
+                const bIndex = array2.findIndex(item => item === b.type);
+                if (aIndex === -1) {
+                    return 1;
+                }
+                if (bIndex === -1) {
+                    return -1;
+                }
+                return aIndex - bIndex;
+            });
+        }
+
+        // function renderHanoverOpenWithUserId(dataBefore) {
+        //     const urlParams = new URLSearchParams(window.location.search);
+        //     const isOpenParam = urlParams.get('isOpen')
+        //     const userIdParam = urlParams.get('user')
+        //     // const userIdParam = urlParams.get('user')
+        //     let dataAfter
+        //     if (isOpenParam !== null && userIdParam !== null) {
+        //         dataAfter = dataBefore.filter(_ => _.isOpen == JSON.parse(isOpenParam) && _.user._id == userIdParam)
+
+        //     } else {
+        //         dataAfter = dataBefore
+        //     }
+        //     return dataAfter
+        // }
+
+        function renderHandover(handovers) {
+            console.log(handovers)
+            var html = ''
+            handovers.sort((a, b) => (a.createdAt === b.createdAt) ? 0 : a.createdAt ? -1 : 1);
+            handovers.sort((a, b) => (a.isOpen === b.isOpen) ? 0 : a.isOpen ? -1 : 1);
+            // var datas = renderHanoverOpenWithUserId(handovers)
+            handovers.forEach((elm, index) => {
+                const typeMapping = {
+                    "mouse": "chuột",
+                    "keyboard": "bàn phím",
+                };
+                if (elm.isOpen == 0) {
+                    html += `
+                <tr class= "align-middle" id="info">
+                    <td class="text-center">${index + 1}</td>
+                    <td class="text-center">${elm.staff.name}</td>
+                    <td class="text-center">${elm.staff.location.address}</td>
+                    <td class="text-center">${elm.staff.location.floor}</td>
+                    <td class="text-center">`
+                    if (elm.type == 1 || elm.type == 2) {
+                        elm.deviceHandover.forEach((device) => {
+                            console.log(device)
+                            if (device.type === 'component') {
+                                const componentTypes = {
+                                    "hardDrives": `${device.attributes.type || ""} - ${device.attributes.attributes.size || ""} ${device.attributes.attributes.type || ""} ${device.attributes.attributes.brand || ""}`,
+                                    "mainBoard": `${device.attributes.type || ""} - ${device.attributes.attributes.name || ""}`,
+                                    "VGA": `${device.attributes.type || ""} - ${device.attributes.attributes.name || ""} ${device.attributes.attributes.vram || ""}`,
+                                    "ram": `${device.attributes.type || ""} - ${device.attributes.attributes || ""}`,
+                                    "PSU": `${device.attributes.type || ""} - ${device.attributes.attributes.name || ""}`,
+                                    "chipset": `${device.attributes.type || ""} - ${device.attributes.attributes.name || ""}`,
+                                };
+
+                                html +=
+                                    `<div class="text-center">${componentTypes[device.attributes.type] || ""}</div>`;
+                            } else if (device.type === "mouse" || device.type === "keyboard") {
+                                const translatedType = typeMapping[device.type] || device.type;
+                                html += `<div class="text-center">${translatedType || ""}</div>`;
+                            } else {
+                                html +=
+                                    `<div class="text-center">${device.type || ""} - ${device.attributes.num || ""}</div>`;
+                            }
+
+                        });
+                    }
+                    if (elm.type == 2 || elm.type == 0) {
+                        elm.deviceRevoke.forEach((device) => {
+                            console.log("1", device);
+
+                            if (["mainBoard", "ram", "PSU", "chipset"].includes(device.type_component)) {
+                                html += `<div>${device.type_component || ""} - ${device.name || ""}</div>`;
+                            } else if (device.type_component === 'VGA') {
+                                html += `<div>${device.name || ""} - ${device.vram || ""}</div>`;
+                            } else if (device.type_component === "hardDrives") {
+                                html +=
+                                    `<div class="text-center">${device.type || ""} - ${device.brand || ""} - ${device.size || ""}</div>`;
+                            } else if (["mouse", "keyboard"].includes(device.type)) {
+                                const translatedType = typeMapping[device.type] || device.type;
+                                html += `<div class="text-center">${translatedType || ""}</div>`;
+                            } else if (["case", "monitor", "wacom", "webcam", "headphone", "ups"].includes(
+                                device.type)) {
+                                console.log(device);
+                                html +=
+                                    `<div class="text-center">${device.type || ""} - ${device.attributes.num || ""}</div>`;
+                            }
+
+                        });
+                    }
+                    html += `
+                            </td>
+                            <td class="text-center">${new Date(elm.createdAt).toLocaleDateString("vi-VN")}</td>
+                            <td class="text-center">${elm.note}</td>
+                            <td class="text-center">
+                                <a onclick="previewPDF('${elm._id}')" class="text-decoration-none text-white">
+                                    <button type="button" id="preview" class="btn bg-color-all c-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Xem Chi Tiết
+                                    </button>
+                                </a>
+                            </td>
+                    </tr >`
+                }
+                if (elm.isOpen == 1) {
+                    html += `
+                    <tr class= "align-middle bg-yellow" id="info1">
+                        <td class="text-center">${index + 1}</td>
+                        <td class="text-center">${elm.staff.name}</td>
+                        <td class="text-center">${elm.staff.location.address}</td>
+                        <td class="text-center">${elm.staff.location.floor}</td>
+                        <td class="text-center">`
+                    if (elm.type == 1 || elm.type == 2) {
+                        elm.deviceHandover.forEach((device) => {
+                            if (device.type == 'component') {
+                                const attributes = device.attributes;
+                                const type = attributes.type || "";
+                                const size = attributes.attributes?.size || "";
+                                const brand = attributes.attributes?.brand || "";
+                                const name = attributes.attributes?.name || "";
+                                const vram = attributes.attributes?.vram || "";
+
+                                const componentType = {
+                                    "hardDrives": `${type || ""} - ${size || ""} ${type || ""} ${brand || ""}`,
+                                    "mainBoard": `${type || ""} - ${name || ""}`,
+                                    "VGA": `${type || ""} - ${name || ""} ${vram || ""}`,
+                                    "ram": `${type || ""} - ${name || ""}`,
+                                    "chipset": `${type || ""} - ${name || ""} ${vram || ""}`,
+                                    "PSU": `${type || ""} - ${name || ""}`
+                                };
+
+                                html += `<div class="text-center">${componentType[type] || ""}</div>`;
+                            } else if (device.type == "mouse" || device.type == "keyboard") {
+                                const translatedType = typeMapping[device.type] || device.type;
+                                html += `<div class="text-center">${translatedType || ""}</div>`;
+                            } else {
+                                const type = device.type || "";
+                                const num = device.attributes?.num || "";
+                                html += `<div class="text-center">${type || ""} - ${num || ""}</div>`;
+                            }
+                        });
+                    }
+                    if (elm.type == 2 || elm.type == 0) {
+                        elm.deviceRevoke.forEach((device) => {
+                            if (device.type == 'component') {
+                                const attributes = device.attributes;
+                                const type = attributes.type || "";
+                                const size = attributes.attributes?.size || "";
+                                const brand = attributes.attributes?.brand || "";
+                                const name = attributes.attributes?.name || "";
+                                const vram = attributes.attributes?.vram || "";
+
+                                const componentType = {
+                                    "hardDrives": `${type || ""} - ${size || ""} ${type || ""} ${brand || ""}`,
+                                    "mainBoard": `${type || ""} - ${name || ""}`,
+                                    "VGA": `${type || ""} - ${name || ""} ${vram || ""}`,
+                                    "ram": `${type || ""} - ${name || ""}`,
+                                    "chipset": `${type || ""} - ${name || ""} ${vram || ""}`,
+                                    "PSU": `${type || ""} - ${name || ""}`
+                                };
+
+                                html += `<div class="text-center">${componentType[type] || ""}</div>`;
+                            } else if (device.type == "mouse" || device.type == "keyboard") {
+                                const translatedType = typeMapping[device.type] || device.type;
+                                html += `<div class="text-center">${translatedType || ""}</div>`;
+                            } else {
+                                const type = device.type || "";
+                                const num = device.attributes?.num || "";
+                                html += `<div class="text-center">${type || ""} - ${num || ""}</div>`;
+                            }
+                        });
+                    }
+                    html += `
+                            </td>
+                            <td class="text-center">${new Date(elm.createdAt).toLocaleDateString("vi-VN")}</td>
+                            <td class="text-center">${elm.note}</td>
+                            <td class="text-center">
+                                <a onclick="previewPDF('${elm._id}')" class="text-decoration-none text-white">
+                                    <button type="button" id="preview" class="btn bg-color-all c-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Xem Chi Tiết
+                                    </button>
+                                </a>
+                            </td>
+                    </tr >`
+                }
+            });
+
+            $("#content_table").html(html)
+        }
+
+        function previewPDF(id, index) {
+            handovers.forEach(data => {
+                data.forEach(elm => {
+                    if (elm._id == id) {
+                        const dataDate = extractDataDate(elm.createdAt);
+                        let htmls = '';
+                        switch (elm.type) {
+                            case 0:
+                                htmls = handoverType0HTML(elm, dataDate, typeComponentObj);
+                                break;
+                            case 1:
+                                htmls = handoverType1HTML(elm, dataDate, typeComponentObj);
+                                break;
+                            case 2:
+                                htmls = handoverType2HTML(elm, dataDate, typeComponentObj);
+                                console.log(typeComponentObj);
+                                console.log(elm);
+                                break;
+                            default:
+                                htmls = "Invalid type";
+                        }
+                        $("#content-pdf").html(htmls);
+                    }
+                });
+            });
+        }
+        var typeComponentObj = {
+            "ram": "Ram",
+            "hardDrives": "Ổ cứng",
+            "chipset": "Chipset",
+            "mainBoard": "Bo mạch chủ",
+            "VGA": "VGA",
+            "PSU": "PSU",
+            "mouse": "Chuột FUHLEN",
+            "keyboard": "Bàn phím FUHLEN",
+            "Dấu Cộng": "Công ty Cổ phần Phần mềm Dấu Cộng",
+            "Minh Việt": "Công ty Cổ phần Dịch vụ và Truyền thông Minh Việt"
+        };
+
+        window.typeComponentObj = typeComponentObj;
+        window.previewPDF = previewPDF;
+        window.printPDF = printPDF;
+        window.exportAll = exportAll;
+        window.confirmExportAll = confirmExportAll;
+
+
+        function extractDataDate(createdAt) {
+            const date = new Date(createdAt);
+            return {
+                day: date.getDate(),
+                month: date.getMonth() + 1,
+                year: date.getFullYear()
+            };
+        }
+
+        var linkPDF = ''
+
+        function setCsrfHeader(xhr) {
+            const meta = document.querySelector('meta[name="csrf-token"]');
+            if (meta) {
+                xhr.setRequestHeader('CSRF-Token', meta.getAttribute('content'));
+            }
+        }
+
+        function printPDF(id) {
+            $.ajax({
+                url: "/api/handover/print-pdf",
+                method: "POST",
+                data: {
+                    id,
+                },
+                beforeSend: function (xhr) {
+                    setCsrfHeader(xhr);
+                    $('.background1').removeClass('hidden');
+                },
+                success: (res) => {
+                    if (res.success == 1) {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "success",
+                            timer: 500,
+                            showConfirmButton: false
+                        }).then((result) => {
+                            linkPDF = `/handover/${id}.pdf`
+                            var pdfWindow = window.open(`/handover/${id}.pdf`, "_blank")
+                            pdfWindow.onload = function () {
+                                window.location.reload();
+                            };
+                        })
+                            .then(() => {
+                                dataHandover()
+                            });
+
+                    } else {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "error",
+                            confirmButtonText: "OK",
+                        });
+                    }
+
+                },
+                complete: function () {
+                    $('.background1').addClass('hidden');
+                }
+            })
+        }
+
+        function confirmExportAll() {
+            let namesAndCompanies = handovers.flatMap(elm => {
+                if (Array.isArray(elm)) {
+                    return elm.filter(item => item.isOpen === true).map(item => {
+                        let name = item?.staff?.name || 'Tên không rõ';
+                        let company = item?.staff?.company || 'Công ty không rõ';
+                        return `${name} - ${company}`;
+                    });
+                }
+                else {
+                    return [];
+                }
+            }).join('<br>');
+
+            if (namesAndCompanies.length > 0) {
+                let scrollableNamesAndCompanies = `
+                <div style="max-height: 150px; overflow-y: auto; margin-top: 10px;">
+                    ${namesAndCompanies}
+                </div>
+            `;
+                let confirmText = `
+                Bạn có muốn xuất tất cả các phiếu đang mở cho các nhân viên sau không?
+            ` + scrollableNamesAndCompanies;
+
+                Swal.fire({
+                    title: 'Xác nhận',
+                    html: confirmText,
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Đồng ý',
+                    cancelButtonText: 'Hủy bỏ'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        exportAll();
+                    }
+                });
+            } else {
+                exportAll();
+            }
+        }
+
+
+
+        function exportAll() {
+            $.ajax({
+                url: "/api/handover/export",
+                method: "POST",
+                beforeSend: function (xhr) {
+                    setCsrfHeader(xhr);
+                    $('.background1').removeClass('hidden');
+                },
+                success: (res) => {
+                    if (res.success == 1) {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "success",
+                            timer: 1000,
+                            showConfirmButton: false
+                        }).then(() => {
+                            window.location.reload();
+                        });
+                    } else {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "error",
+                            confirmButtonText: "OK",
+                        });
+                    }
+                },
+                complete: function () {
+                    $('.background1').addClass('hidden');
+                }
+            });
+        }
+
+        renderHandover(handovers)
+    </script>
+
+</html>

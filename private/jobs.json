@@ -1,0 +1,73 @@
+{
+  "items": [{
+      "_id": "64a90b7ecbdfc98ee05dcd3a",
+      "name": "Dự án",
+      "status": 1
+    },
+    {
+      "_id": "64a90b83cbdfc98ee05dcd3d",
+      "name": "HC-KT",
+      "status": 1
+    },
+    {
+      "_id": "64a90b8bcbdfc98ee05dcd40",
+      "name": "Developer",
+      "status": 1
+    },
+    {
+      "_id": "64a90bb2cbdfc98ee05dcd44",
+      "name": "2D artist",
+      "status": 1
+    },
+    {
+      "_id": "64a90bbacbdfc98ee05dcd47",
+      "name": "2D editor",
+      "status": 1
+    },
+    {
+      "_id": "64a90bc0cbdfc98ee05dcd4a",
+      "name": "3D modeler",
+      "status": 1
+    },
+    {
+      "_id": "64a90bc6cbdfc98ee05dcd4d",
+      "name": "3D animator",
+      "status": 1
+    },
+    {
+      "_id": "64a90bcecbdfc98ee05dcd50",
+      "name": "UE editor",
+      "status": 1
+    },
+    {
+      "_id": "64a90bd3cbdfc98ee05dcd53",
+      "name": "Content",
+      "status": 1
+    },
+    {
+      "_id": "64a90be1cbdfc98ee05dcd56",
+      "name": "Sound Designer",
+      "status": 1
+    },
+    {
+      "_id": "64a90be6cbdfc98ee05dcd59",
+      "name": "Compositor",
+      "status": 1
+    },
+    {
+      "_id": "64a90beacbdfc98ee05dcd5c",
+      "name": "Marketing",
+      "status": 1
+    },
+    {
+      "_id": "64a90befcbdfc98ee05dcd5f",
+      "name": "IT",
+      "status": 1
+    },
+    {
+      "_id": "6544ac1b6a0a7a5130cd6182",
+      "name": "Biên kịch",
+      "status": 1
+    }
+  ]
+}

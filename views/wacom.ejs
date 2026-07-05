@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./header.html') %>
+    <style>
+        /* #table_wacom {
+        table-layout: fixed;
+        width: max-content !important;
+    } */
+
+        #table_wacom th {
+            width: max-content !important;
+        }
+
+        #inputNumPreview::-webkit-outer-spin-button,
+        #inputNumPreview::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+
+    <body id="body-pd" class="body-pd">
+        <%- include('./nav.html') %>
+            <div class="height-100 ">
+                <main class="content p-0 pt-4">
+                    <div class="container-fluid p-0 ">
+                        <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                            <div class="col-5" style="width: max-content;">
+                                <h3 class="color_header">Quản lý Wacom</h3>
+                            </div>
+                            <button class="col-1 btn bg-color-all c-white" onclick="renderOptionSupplier()"
+                                data-bs-toggle="modal" data-bs-target="#addDevice"
+                                style="width: max-content; border-radius: 29px;">Thêm
+                                Wacom
+                            </button>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 p-0 d-flex">
+                                <div class="card flex-fill"
+                                    style="overflow-y:auto; overflow-x: scroll; max-height: 40vw;">
+                                    <table class="table table-bordered table-hover table-responsive  my-0"
+                                        id="table_wacom">
+                                        <thead class="th_table_sticky">
+                                            <tr class="align-middle text-center">
+                                                <th class="col text-center ">
+                                                    <span>Chi tiết</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Số tem</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Tên</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Số series</span>
+                                                </th>
+                                                <!-- <th class="col text-center">
+                                            Tổng giá
+                                        </th> -->
+                                                <th class="col text-center">
+                                                    Giá hóa đơn
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Trạng thái</span>
+                                                </th>
+                                                <th class="col text-center" style="width: max-content;">
+                                                    <span>Nhà cung cấp</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Địa chỉ</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Tầng</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Ngày nhập kho</span>
+                                                </th>
+                                                <th class="col text-center" style="width: max-content;">
+                                                    <span>Hạn bảo hành</span>
+                                                </th>
+                                                <th class="col text-center">
+                                                    <span>Ghi chú</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="wacom_table" style="background-color: #fff;">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <!-- TODO MODAL ADD_WACOM -->
+            <div class="modal fade modal-xl" id="addDevice" tabindex="-1" aria-labelledby="exampleModalLabel"
+                data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-black">
+                        <div class="modal-header text-center border-bottom-0">
+                            <b class="modal-title f-s-24 font-weight-bold color_header" id="addDeviceLabel">
+                                Thêm Wacom
+                            </b>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                onclick="deleteInput()"></button>
+                        </div>
+
+                        <div class="modal-body f-s-16 container pb-0" id="input_wacom">
+                            <div class="row justify-content-center">
+                                <div class="col-6 mb-3">
+                                    <div class="row justify-content-center">
+                                        <div class="col-3">
+                                            <label for="quantity" class="col-form-label color_title_add_device">Số
+                                                lượng:
+                                            </label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="number" step="1" min="1" value="1" id="quantity" class="form-control"
+                                                placeholder="Nhập số lượng Wacom">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="row justify-content-center">
+                                        <div class="col-3">
+                                            <label for="_id_addwacom" class="col-form-label color_title_add_device">Số
+                                                tem:
+                                            </label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="text" autocomplete="off" id="_id_addwacom" class="form-control"
+                                                placeholder="Nhập số wacom">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="row justify-content-center">
+                                        <div class="col-3">
+                                            <label for="seriesnumber" class="col-form-label color_title_add_device">Số
+                                                series:
+                                            </label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="text" id="seriesnumber" autocomplete="off"
+                                                list="datalistseriesnumber" class="form-control"
+                                                placeholder="Nhập số series">
+                                            <div class="invalid-feedback">Vui lòng nhập số series</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row justify-content-center">
+
+                                <div class="col-6 mb-3">
+                                    <div class="row justify-content-center">
+                                        <div class="col-3">
+                                            <label for="name_addwacom" class="col-form-label color_title_add_device">Tên
+                                                Wacom:
+                                            </label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="text" id="name_addwacom" list="datalistname" autocomplete="off"
+                                                class="form-control" placeholder="Nhập tên Wacom">
+                                            <div class="invalid-feedback">Vui lòng nhập tên Wacom</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="row justify-content-center">
+                                        <div class="col-3" style="width: max-content;">
+                                            <label for="supplier_addwacom"
+                                                class="col-form-label color_title_add_device">Nhà
+                                                cung cấp:
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select class="form-select form-select-md supplier" id="supplier_addwacom"
+                                                aria-label=".form-select-lg example">
+                                            </select>
+                                        </div>
+                                        <div class="col-1 ps-0 d-flex align-items-end"><button
+                                                data-bs-target="#create_supplier" data-bs-toggle="modal"
+                                                class="btn btn_add" id="createSupplier"><i
+                                                    class="fa fa-plus text-white"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row justify-content-center">
+
+                                <div class="col-6 mb-3">
+                                    <div class="row justify-content-center">
+                                        <div class="col-3">
+                                            <label for="bill_price" class="col-form-label color_title_add_device">Giá
+                                                hóa
+                                                đơn:</label>
+                                        </div>
+                                        <div class="col-7 mb-2" style="position: relative;">
+                                            <input type="text" id="bill_price" list="datalistbillprice"
+                                                autocomplete="off" class="form-control" placeholder="Giá hóa đơn">
+                                            <div class="invalid-feedback">Vui lòng nhập giá hóa đơn</div>
+                                            <div style="position: absolute;top: 5.5%;right: 11%; color: #163EB1;">VND
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="row justify-content-center">
+                                        <div class="col-3">
+                                            <label for="total_price" class="col-form-label color_title_add_device">Tổng
+                                                giá:</label>
+                                        </div>
+                                        <div class="col-7 mb-2" style="position: relative;">
+                                            <input disabled type="text" id="total_price" list="datalisttotalprice"
+                                                autocomplete="off" class="form-control" placeholder="Nhập tổng giá">
+                                            <div style="position: absolute;top: 5.5%;right: 11%; color: #163EB1;">VND
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center p-0">
+                                <div class="col-6 mb-3">
+                                    <div class="row justify-content-center">
+                                        <div class="col-3" style="width: max-content;">
+                                            <label for="expirationDate"
+                                                class="col-form-label color_title_add_device">Hạn bảo
+                                                hành: </label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="date" id="expirationDate" autocomplete="off"
+                                                class="form-control">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="row justify-content-center">
+                                        <div class="input-group" style="max-width: 83%;">
+                                            <span class="input-group-text">Ghi chú</span>
+                                            <textarea class="form-control p-0" autocomplete="off" id="note_addwacom"
+                                                aria-label="With textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row my-3 justify-content-center mb-4">
+                            <div class="col-11 d-flex justify-content-end pe-0">
+                                <div class="row"></div>
+                                <button class="btn btn-primary py-2" id="preview" style="border-radius: 29px;
+                        background: #30689E;">Xem trước</button>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3 justify-content-center" id="table_preview">
+                            <div class="col-10">
+                                <table class="table table-bordered align-middle text-center">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="width: max-content;">Số tem</th>
+                                            <th scope="col" style="width: max-content;">Số series</th>
+                                            <th scope="col" style="width: max-content;">Tên</th>
+                                            <th scope="col" style="width: max-content;">Nhà cung cấp</th>
+                                            <th scope="col" style="width: max-content;">Giá hóa đơn</th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="dataCreate">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-lg" id="create_supplier" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2" tabindex="-1" data-bs-backdrop="static">
+            </div>
+            <script src="/javascripts/autocomplete.js"></script>
+            <script src="/javascripts/fomat.js"></script>
+            <script src="/javascripts/wacom.js"></script>
+            <script src="/javascripts/supplier.js"></script>
+    </body>
+
+</html>

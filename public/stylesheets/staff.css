@@ -1,0 +1,18 @@
+table td{
+    padding-top: 2px!important;
+    padding-bottom: 2px!important;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+/* .dt-row {
+    overflow-y: auto;
+    overflow-x: scroll;
+    max-height: 85vh;
+}
+
+.th_table_sticky {
+    top: -0.5px;
+} */

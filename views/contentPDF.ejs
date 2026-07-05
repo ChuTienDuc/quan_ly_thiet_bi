@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+<!-- <style>
+        @media screen and (min-width: 768px) {
+            body {
+                padding-left: 16px;
+                font-size: 11px;
+            }
+
+            strong {
+                font-size: 16px;
+            }
+
+            h3 {
+                margin: 0;
+            }
+        }
+
+        .table>:not(caption)>*>* {
+            padding: 0;
+        }
+    </style> -->
+<!-- style=" width: 595px;height: 841px;" -->
+
+<style>
+    .table>:not(caption)>*>* {
+        padding: 5px;
+    }
+</style>
+
+
+<body style="margin: 0; padding: 0;">
+    <!-- Modal -->
+    <div id="page">
+        <div>
+            <div style="display: flex;justify-content: center;">
+                <div class="mx-3 px-3">
+                    <div id="content-pdf">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="data"></div>
+</body>
+
+
+
+<script type="module">
+    import {contentType0HTML} from '/javascripts/custom_handover/contentPDF/contentType0HTML.js';
+    import {contentType1HTML} from '/javascripts/custom_handover/contentPDF/contentType1HTML.js';
+    import {contentType2HTML} from '/javascripts/custom_handover/contentPDF/contentType2HTML.js';
+    const urlParams = new URLSearchParams(window.location.search);
+    const myId = urlParams.get('id');
+    const handovers = [];
+    async function getData(id) {
+        return await $.ajax({
+            url: `/api/handover/preview-data/${id}`,
+            method: "GET",
+        })
+    }
+    async function getUser() {
+        return await $.ajax({
+            url: `/api/staff/getAll`,
+            method: "GET",
+        })
+    }
+    async function renderData(id) {
+        const data = await getData(id);
+        const users = await getUser();
+        console.log(data);
+        console.log(users.metadata);
+        console.log(users);
+
+        handovers.push(data);
+        previewPDF(data.metadata, users.metadata);
+    }
+
+    function sortArrayByAnotherArray(array1, array2) {
+        return array1.sort((a, b) => {
+            const aIndex = array2.findIndex(item => item === a.type);
+            const bIndex = array2.findIndex(item => item === b.type);
+            if (aIndex === -1) {
+                return 1;
+            }
+            if (bIndex === -1) {
+                return -1;
+            }
+            return aIndex - bIndex;
+        });
+    }
+
+    function previewPDF(metadata) {
+        const dataDate = extractDataDate(metadata.createdAt);
+        let htmls = '';
+        switch (metadata.type) {
+            case 0:
+                htmls = contentType0HTML(metadata, dataDate, typeComponentObj);
+                break;
+            case 1:
+                htmls = contentType1HTML(metadata, dataDate, typeComponentObj);
+                break;
+            case 2:
+                htmls = contentType2HTML(metadata, dataDate, typeComponentObj);
+                break;
+            default:
+                htmls = "Invalid type";
+        }
+        $("#content-pdf").html(htmls);
+        window.pdfReady = true;
+
+        
+        const pageHeight = 1122
+        console.log($('#page').height());
+        var pageCount = Math.ceil($('#page').height()/pageHeight)
+        if(!($('#page').height() > pageHeight*(pageCount-1) && $('#page').height() < pageHeight* (pageCount))){
+            $('#note').css('page-break-before','always')
+        }
+    }
+
+
+    var typeComponentObj = {
+        "ram": "Ram",
+        "hardDrives": "Ổ cứng",
+        "chipset": "Chipset",
+        "mainBoard": "Bo mạch chủ",
+        "VGA": "VGA",
+        "PSU": "PSU",
+        "mouse": "Chuột FUHLEN",
+        "keyboard": "Bàn phím FUHLEN",
+        "Dấu Cộng": "Công ty Cổ phần Phần mềm Dấu Cộng",
+        "Minh Việt": "Công ty Cổ phần Dịch vụ và Truyền thông Minh Việt"
+    };
+
+    window.typeComponentObj = typeComponentObj;
+
+    function extractDataDate(createdAt) {
+        const date = new Date(createdAt);
+        return {
+            day: date.getDate(),
+            month: date.getMonth() + 1,
+            year: date.getFullYear()
+        };
+    }
+    renderData(myId)
+</script>
+
+</html>

@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+    <link rel="stylesheet" href="/select2-4.1.0-rc.0/dist/css/select2.min.css">
+    <style>
+        .select2-selection__rendered {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 150px;
+        }
+
+        .select2-selection--multiple {
+            overflow: hidden;
+            white-space: nowrap;
+            max-width: 150px;
+        }
+
+        .select2-container--below {
+            width: 100% !important;
+        }
+    </style>
+
+
+    <body id="body-pd" class="body-pd">
+
+        <%- include("./nav.html") %>
+            <div class="height-100 bg-light">
+                <main class="content px-0 pb-0">
+                    <div class="container-fluid p-0 ">
+                        <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                            <div class="col-5">
+                                <h3><strong>Trang chủ</strong></h3>
+                            </div>
+                            <button style="width: max-content;" class="col-lg-1 col-md-2 col-sm-3 col-4 btn btn-success"
+                                data-bs-toggle="modal" data-bs-target="#handover" onclick="renderOptionHandover()">
+                                <i class="fa fa-plus"></i>
+                                Bàn giao
+                            </button>
+
+                        </div>
+                        <div class="row" id="device__index">
+
+
+
+                            <!-- <div class="col-xl-3 col-md-6 mb-4" id="monitor__index">
+                                <div class="card border-left-monitor shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Màn hình (monitor)
+                                                </div>
+                                                <div class="row no-gutters align-items-center">
+                                                    <div class="col-auto">
+                                                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="progress progress-sm mr-2">
+                                                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="bx bx-desktop fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0 d-flex">
+                                <div class="card flex-fill"
+                                    style="overflow-y:auto; overflow-x: scroll; max-height: 85vh;">
+                                    <table class="table table-bordered  table-responsive w-100  my-0" id="table-index">
+                                        <thead style="position: sticky; top: -1px; background-color: white;">
+                                            <tr class="align-middle text-center justify-content-between">
+                                                <th class="col">
+                                                    <span></span>
+                                                </th>
+                                                <th class="col">
+                                                    <span>Tên</span>
+                                                </th>
+                                                <th class="col">
+                                                    <span>Công ty</span>
+                                                </th>
+                                                <th class="col">
+                                                    <span>Công việc</span>
+                                                </th>
+                                                <th class="col">
+                                                    <span>Địa chỉ</span>
+                                                </th>
+                                                <th class="col">
+                                                    <span>Tầng</span>
+                                                </th>
+                                                <th scope="col">
+                                                    <span>Số điện thoại</span>
+                                                </th>
+                                                <th scope="col">
+                                                    <span>Tên thiết bị</span>
+                                                </th>
+                                                <th scope="col">
+                                                    <span>Loại thiết bị</span>
+                                                </th>
+                                                <th scope="col">
+                                                    <span>Nhà cung cấp</span>
+                                                </th>
+                                                <th scope="col">
+                                                    <span>Địa chỉ thiết bị</span>
+                                                </th>
+                                                <th scope="col">
+                                                    <span>Tầng đặt thiết bị</span>
+                                                </th>
+                                                <th class="col">
+                                                    <span>Trạng thái</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="dataDevice" style="background-color: #fff;">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <!--TODO modal bàn giao -->
+            <div class="modal modal-xl fade " id="handover" data-bs-backdrop="static" data-bs-keyboard="false"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                onclick="deleteInput('note_handover')"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container ">
+                                <div class="row mb-3">
+                                    <b class="col c-black f-s-20">
+                                        Chọn thiết bị để bàn giao:
+                                    </b>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col">
+                                        <select class="js-example-basic-single w-100" id="handover_staff"
+                                            name="handover_staff" tabindex="0" data-dropdown-auto-width="true"
+                                            onchange="changePreviewSelect(this,'staff')">
+                                        </select>
+
+                                        <div id="preview_select_staff" class="mt-3 font-bold px-2 text-primary"></div>
+                                    </div>
+                                    <div class="col">
+                                        <select class="js-example-basic-multiple" id="handover_device_case"
+                                            onchange="changePreviewSelect(this,'case')" name="states[]"
+                                            multiple="multiple">
+                                        </select>
+                                        <div id="preview_select_case" class="mt-3 font-bold px-2 text-case"></div>
+
+                                    </div>
+                                    <div class="col">
+                                        <!-- <select class="js-example-basic-single w-100" id="handover_device_monitor"
+                                            name="handover_monitor" tabindex="0" data-dropdown-auto-width="true"
+                                            onchange="changePreviewSelect(this,'monitor')">
+                                            <optgroup class=" w-100" label="ababab">
+                                            </optgroup>
+                                        </select> -->
+                                        <select class="js-example-basic-multiple" id="handover_device_monitor"
+                                            onchange="changePreviewSelect(this,'monitor')" name="handover_monitor"
+                                            multiple="multiple">
+                                        </select>
+                                        <div id="preview_select_monitor" class="mt-3 font-bold px-2 text-monitor"></div>
+
+                                    </div>
+                                    <div class="col">
+                                        <!-- <select class="js-example-basic-single w-100" id="handover_device_wacom"
+                                            name="handover_wacom" tabindex="0" data-dropdown-auto-width="true"
+                                            onchange="changePreviewSelect(this,'wacom')">
+                                            <optgroup class=" w-100" label="ababab">
+                                            </optgroup>
+                                        </select> -->
+                                        <select class="js-example-basic-multiple" id="handover_device_wacom"
+                                            onchange="changePreviewSelect(this,'wacom')" name="handover_wacom"
+                                            multiple="multiple">
+                                        </select>
+                                        <div id="preview_select_wacom" class="mt-3 font-bold px-2 text-wacom"></div>
+
+                                    </div>
+                                    <div class="col">
+                                        <!-- <select class="js-example-basic-single w-100" id="handover_device_webcam"
+                                            onchange="changePreviewSelect(this,'webcam')" name="state" tabindex="0"
+                                            data-dropdown-auto-width="true">
+                                            <optgroup class=" w-100" label="ababab">
+                                            </optgroup>
+                                        </select> -->
+                                        <select class="js-example-basic-multiple" id="handover_device_webcam"
+                                            onchange="changePreviewSelect(this,'webcam')" name="handover_webcam"
+                                            multiple="multiple">
+                                        </select>
+                                        <div id="preview_select_webcam" class="mt-3 font-bold px-2 text-webcam"></div>
+
+                                    </div>
+                                    <div class="col">
+                                        <!-- <select class="js-example-basic-single w-100" id="handover_device_headphone"
+                                            onchange="changePreviewSelect(this,'headphone')" name="state" tabindex="0"
+                                            data-dropdown-auto-width="true">
+                                            <optgroup class=" w-100" label="ababab">
+                                            </optgroup>
+                                        </select> -->
+                                        <select class="js-example-basic-multiple" id="handover_device_headphone"
+                                            onchange="changePreviewSelect(this,'headphone')"
+                                            name="handover_device_headphone" multiple="multiple">
+                                        </select>
+                                        <div id="preview_select_headphone" class="mt-3 font-bold px-2 text-headphone">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <b class="col c-black f-s-20">
+                                        <div id="selectedItems"></div>
+                                    </b>
+                                </div>
+                                <div class="row my-3">
+                                    <b class="col c-black f-s-20">
+                                        Tạo ghi chú:
+                                    </b>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="note_handover"></textarea>
+                                        <label for="note_handover">Ghi chú:</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-danger" data-bs-dismiss="modal"
+                                onclick="deleteInput('note_handover')">Hủy</button>
+                            <button class="btn btn-success" onclick="checkDataHandover()">Bàn giao</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--TODO modal case -->
+            <div class="modal modal-lg fade " id="data-Detail" data-bs-backdrop="static" data-bs-keyboard="false"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center c-black f-s-22">
+
+                            <!-- <h1 class="modal-title fs-5" id="">Case</h1> -->
+                            <div>Chi tiết case</div>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 col">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-danger px-4 py-2" data-bs-dismiss="modal">Hủy</button>
+                            <button type="button" class="btn btn-success px-4 py-2">Tạo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </body>
+    <!-- <script src="/javascripts/GVS.js"></script> -->
+    <script src="/select2-4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.datatables.net/rowgroup/1.3.1/js/dataTables.rowGroup.min.js"></script>
+
+    <script>
+        $(document).ready(async () => {
+            await renderDeviceSummary()
+            await renderListDevice()
+            await $("#table-index").DataTable({
+                rowGroup: true
+            });
+        })
+
+        var datas;
+        async function renderStaffSummary() {
+            const staff = await $.ajax({
+                url: GVS.GetStaffSummary,
+                method: "GET",
+            })
+            let html = ""
+            staff.metadata.forEach((elm) => {
+                html += `
+                <div class="col-xl-2 col-md-6 mb-4" id="staff__index">
+                    <div class="card border-left-staff shadow h-100 py-2">
+                        <div class="card-body pb-1 align-items-center">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs f-s-18 font-weight-bold text-primary text-uppercase mb-1">
+                                        Nhân sự</div>
+                                    <div class="d-flex flex-column">
+                                    <a href="${GVS.CreateStaff}" class="link__device--index text-decoration-none text-black f-s-16 mb-0 font-weight-bold  " href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">Tổng số: ${elm.total} </a>
+                                    <a href="${GVS.CreateStaff}?status=1" class="link__device--index text-decoration-none text-black f-s-16 mb-0 font-weight-bold  " href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">Đang làm: ${elm.is_working} </a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-auto">
+                                    <!-- fas fa-calendar -->
+                                    <i class="fa fa-users nav_icon fa-2x text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `
+            })
+            return html
+        }
+        // danh sách số lương thiết bị sắp xếp
+        let arrDeviceSort = ['case', 'monitor', 'wacom', 'webcam', 'headphone']
+        function sortArrayByAnotherArray(array1, array2) {
+            return array1.sort((a, b) => {
+                const aIndex = array2.findIndex(item => item === a._id);
+                const bIndex = array2.findIndex(item => item === b._id);
+                if (aIndex === -1) {
+                    return 1;
+                }
+                if (bIndex === -1) {
+                    return -1;
+                }
+                return aIndex - bIndex;
+            });
+        }
+        function renderDeviceSummary(params) {
+            $.ajax({
+                url: GVS.GetDeviceSummary,
+                method: "GET",
+                success: async (data) => {
+                    if (data.success == 1) {
+                        sortArrayByAnotherArray(data.metadata, arrDeviceSort)
+                        let html = ""
+                        html += await renderStaffSummary()
+                        data.metadata.forEach((elm) => {
+                            html += `
+                            <div class="col-xl-2 col-md-6 mb-4">
+                                <div class="card ${elm._id == "headphone" ? "border-left-headphone" :
+                                    elm._id == "webcam" ? "border-left-webcam" :
+                                        elm._id == "case" ? "border-left-case" :
+                                            elm._id == "monitor" ? "border-left-monitor" : "border-left-wacom"
+                                } shadow h-100 py-2">
+                                    <div class="card-body pb-1 align-items-center">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2 ">
+                                                <div class="text-xs f-s-18  ${elm._id == "headphone" ? "text-headphone" :
+                                    elm._id == "webcam" ? "text-webcam" :
+                                        elm._id == "case" ? "text-case" :
+                                            elm._id == "monitor" ? "text-monitor" : "text-wacom"
+                                } font-weight-bold  text-uppercase mb-1">
+
+
+                                                    ${elm._id == "headphone" ? "Tai nghe" :
+                                    elm._id == "case" ? "Máy tính" :
+                                        elm._id == "monitor" ? "Màn hình" :
+                                            elm._id == "wacom" ? "wacom" :
+                                                elm._id == "headphone" ? "Tai nghe" : "webcam"
+                                }
+
+                                                    </div>
+                                               <div class="d-flex flex-column">
+                                                <a href="${GVS.GETALLDEVICE}/${elm._id}"  class="link__device--index text-decoration-none f-s-16 mb-0 font-weight-bold
+                                                
+                                                text-black ">
+                                                
+                                                Tổng số: ${elm.total}
+                                                </a>
+                                               <a href="${GVS.GETALLDEVICE}/${elm._id}?status=1" class="link__device--index text-decoration-none f-s-16 mb-0 font-weight-bold text-black ">Chưa dùng: ${elm.not_inuse}</a>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-auto">
+                                                <!--  -->
+                                                <i class="${elm._id == "headphone" ? "bx bx-headphone" :
+                                    elm._id == "webcam" ? "bx bxs-webcam" :
+                                        elm._id == "case" ? "bx bx-speaker" :
+                                            elm._id == "monitor" ? "bx bx-desktop" : "bx bx-tab"
+                                } nav_icon  fa-2x text-gray-300">
+                                                </i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            `
+                        })
+                        $('#device__index').html(html)
+                    } else {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: data.message,
+                            icon: "error",
+                            confirmButtonText: "OK",
+                        })
+                    }
+                }
+            })
+        }
+        function renderListDevice() {
+            var html = ""
+            $.ajax({
+                url: GVS.GETALLDEVICE,
+                method: "GET",
+                success: (data) => {
+                    datas = data.metadata
+                    data.metadata.forEach((elm, index) => {
+                        html += `<tr>
+                            <td rowspan="${elm.devices.length + 1}" class="align-middle text-max-content" scope="row"><button class="btn badge bg-danger p-2" onclick = "revokeAllDevice('${elm.staff._id}','${elm.staff.name}','${elm.staff.company}','${elm.staff.job}')">Thu hồi tất cả</button></td>
+                            <td rowspan="${elm.devices.length + 1}" class="align-middle text-max-content" scope="row">${elm.staff.name}</td>
+                            <td rowspan="${elm.devices.length + 1}" class="align-middle" scope="row">${elm.staff.company}</td>
+                            <td rowspan="${elm.devices.length + 1}" class="align-middle" scope="row">${elm.staff.job}</td>
+                            <td rowspan="${elm.devices.length + 1}" class="align-middle" scope="row">${elm.staff.location.address}</td>
+                            <td rowspan="${elm.devices.length + 1}" class="align-middle" scope="row">${elm.staff.location.floor}</td>
+                            <td rowspan="${elm.devices.length + 1}" class="align-middle" scope="row">${elm.staff.phoneNumber}</td>`
+
+                        for (let i = 0; i < elm.devices.length; i++) {
+                            const el = elm.devices[i];
+                            html += `
+                            <tr>
+                                <td class="align-middle link__device--detail"  scope="row">
+                                    <a data-bs-toggle="tooltip" data-bs-title="Default tooltip" class="" 
+                                        onclick="${el.type == "case" ? `caseModal('${el._id}','${elm.staff._id}')` :
+                                    el.type == "monitor" ? `monitorModal('${el._id}','${elm.staff._id}')` :
+                                        el.type == "wacom" ? `wacomModal('${el._id}','${elm.staff._id}')` :
+                                            el.type == "webcam" ? `webcamModal('${el._id}','${elm.staff._id}')` : `headphoneModal('${el._id}','${elm.staff._id}')`}">${el.attributes.num}-${el.name}
+                                    </a>
+                                </td>
+                                <td class="align-middle" scope="row">${el.type}</td>
+                                <td class="align-middle" scope="row">${el.supplier.name}</td>
+                                <td class="align-middle" scope="row">${el.location.address}</td>
+                                <td class="align-middle" scope="row">${el.location.floor}</td>
+                                <td class="align-middle" scope="row">${el.status == 0 ? "Đang sử dụng" : el.status == 1 ? "Có thể sử dụng" : "Hỏng"}</td>
+                            </tr>`
+                        }
+                        html += `</tr>`
+                    });
+                    $("#dataDevice").html(html)
+                }
+            })
+        }
+
+        async function monitorModal(_id, staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            if (!staff) {
+                //////
+                return
+            }
+            const data = staff.devices.find(_ => _._id == _id)
+            let monitorTheme = ""
+            monitorTheme += `
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center c-black f-s-22">
+
+                                <!-- <h1 class="modal-title fs-5" id="">Case</h1> -->
+                                <div>Chi tiết Monitor</div>
+                                
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body f-s-18" id="">
+                                <div class="container">
+                                    <div class="row justify-content-end my-3">
+                                        <a class="col-sm-5 col-lg-4 col text-decoration-none text-end" href="${GVS.GetDetailDevice}${_id}">
+                                            Trang chi tiết của thiết bị
+                                            <i class="fa fa-sharp fa-solid fa-forward"></i>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Tên thiết bị:</b> <span>${data.name}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3"> Loại thiết bị:</b> <span>${data.type}</span>
+                                            </div>
+                                            <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Địa chỉ thiết bị:</b> <span>${data.location.address}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Tầng đặt thiết bị:</b> <span>${data.location.floor}</span>
+                                            </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                                <b class="c-black my-3">Nhà cung cấp:</b> <span>${data.supplier.name}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Giá theo hóa đơn:</b> <span>${data.billPrice}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Tổng giá trị:</b> <span>${data.totalPrice}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Thời hạn bảo hành:</b> <span>${new Date(data.expirationDate).toLocaleDateString("vi-VN")}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Ngày tạo:</b> <span>${new Date(data.createdAt).toLocaleDateString("vi-VN")}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Ngày cập nhật gần đây:</b> <span>${new Date(data.updatedAt).toLocaleDateString("vi-VN")}</span> 
+                                        </div>
+                                        ${renderConnector(data)}
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">số:</b> <span>${data.attributes.num}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Trạng thái:</b> <span>${data.status == 0 ? "Đang sử dụng" : 1 ? "Có thể sử dụng" : "Hỏng"}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Ghi chú:</b> <span>${data.note}</span> 
+                                        </div>
+                                    </div>
+                                    <div class="row my-3 align-items-center justify-content-center">
+                                        <b class="col-12 c-black text-center">
+                                            Lịch sử thiết bị
+                                        </b>
+                                    </div>
+                                    
+                                    <div class="row  align-items-center " >
+                                        ${await GetHistoryByIdDevice(_id)}
+                                    </div>
+                                    <div class="row my-3 align-items-center justify-content-center">
+                                        <b class="col-12 c-black text-center">
+                                            Tạo ghi chú thu hồi (nếu có)
+                                        </b>
+                                    </div>
+                                    <div class="row my-3 justify-content-center">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Ghi chú:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button"   class="btn btn-danger px-4 py-2" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" onclick="revokeDevice('${_id}','data-Detail')" class="btn btn-warning px-4 py-2">Thu hồi</button>
+                            </div>
+                        </div>
+                        </div>
+                        `
+            $('#data-Detail').html(monitorTheme)
+            $('#data-Detail').modal('toggle')
+
+        }
+
+
+        async function caseModal(_id, staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            if (!staff) {
+                //////
+                return
+            }
+            const data = staff.devices.find(_ => _._id == _id)
+            let caseTheme = ""
+            caseTheme += `
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center c-black f-s-22">
+
+                                <!-- <h1 class="modal-title fs-5" id="">Case</h1> -->
+                                <div>Chi tiết case</div>
+                                
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body f-s-18" id="">
+                                <div class="container">
+                                    <div class="row justify-content-end my-3">
+                                        <a class="col-sm-5 col-lg-4 col text-decoration-none text-end" href="${GVS.GetDetailDevice}${_id}">
+                                            Trang chi tiết của thiết bị
+                                            <i class="fa fa-sharp fa-solid fa-forward"></i>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Tên thiết bị:</b> <span>${data.name}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3"> Loại thiết bị:</b> <span>${data.type}</span>
+                                            </div>
+                                            <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Địa chỉ thiết bị:</b> <span>${data.location.address}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Tầng đặt thiết bị:</b> <span>${data.location.floor}</span>
+                                            </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                                <b class="c-black my-3">Nhà cung cấp:</b> <span>${data.supplier.name}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Giá theo hóa đơn:</b> <span>${data.billPrice}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Tổng giá trị:</b> <span>${data.totalPrice}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Thời hạn bảo hành:</b> <span>${new Date(data.expirationDate).toLocaleDateString("vi-VN")}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Ngày tạo:</b> <span>${new Date(data.createdAt).toLocaleDateString("vi-VN")}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Ngày cập nhật gần đây:</b> <span>${new Date(data.updatedAt).toLocaleDateString("vi-VN")}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Trạng thái:</b> <span>${data.status == 0 ? "Đang sử dụng" : 1 ? "Có thể sử dụng" : "Hỏng"}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Nguồn:</b> <span>${data.attributes.PSU} w</span> 
+                                        </div>
+                                        ${renderVGAData(data)}
+                                        ${renderHardDrivesData(data)}
+                                        <div class="col-sm-6 my-3 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black">Ram:</b> 
+                                            <div class="d-flex flex-column align-items-middle">
+                                            ${renderRamData(data)}
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Ghi chú:</b> <span>${data.note}</span> 
+                                        </div>
+                                    </div>
+                                    <div class="row my-3 align-items-center justify-content-center">
+                                        <b class="col-12 c-black text-center">
+                                            Lịch sử thiết bị
+                                        </b>
+                                    </div>
+                                    <div class="row  align-items-center " >
+                                        ${await GetHistoryByIdDevice(_id)}
+                                    </div>
+                                    <div class="row my-3 align-items-center justify-content-center">
+                                        <b class="col-12 c-black text-center">
+                                            Tạo ghi chú thu hồi (nếu có)
+                                        </b>
+                                    </div>
+                                    <div class="row my-3 justify-content-center">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Ghi chú:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button"   class="btn btn-danger px-4 py-2" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" onclick="revokeDevice('${_id}','data-Detail')" class="btn btn-warning px-4 py-2">Thu hồi</button>
+                            </div>
+                        </div>
+                        </div>
+                        `
+            $('#data-Detail').html(caseTheme)
+            $('#data-Detail').modal('toggle')
+
+
+        }
+
+        async function wacomModal(_id, staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            if (!staff) {
+                //////
+                return
+            }
+            const data = staff.devices.find(_ => _._id == _id)
+            let wacomTheme = ""
+            wacomTheme += `
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center c-black f-s-22">
+
+                                <!-- <h1 class="modal-title fs-5" id="">Case</h1> -->
+                                <div>Chi tiết Wacom</div>
+                                
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body f-s-18" id="">
+                                <div class="container">
+                                    <div class="row justify-content-end my-3">
+                                        <a class="col-sm-5 col-lg-4 col text-decoration-none text-end" href="${GVS.GetDetailDevice}${_id}">
+                                            Trang chi tiết của thiết bị
+                                            <i class="fa fa-sharp fa-solid fa-forward"></i>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Tên thiết bị:</b> <span>${data.name}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3"> Loại thiết bị:</b> <span>${data.type}</span>
+                                            </div>
+                                            <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Địa chỉ thiết bị:</b> <span>${data.location.address}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Tầng đặt thiết bị:</b> <span>${data.location.floor}</span>
+                                            </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                                <b class="c-black my-3">Nhà cung cấp:</b> <span>${data.supplier.name}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Giá theo hóa đơn:</b> <span>${data.billPrice}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Tổng giá trị:</b> <span>${data.totalPrice}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Số series: </b><span>${data.attributes.seriesNumber}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Thời hạn bảo hành:</b> <span>${new Date(data.expirationDate).toLocaleDateString("vi-VN")}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Ngày tạo:</b> <span>${new Date(data.createdAt).toLocaleDateString("vi-VN")}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Ngày cập nhật gần đây:</b> <span>${new Date(data.updatedAt).toLocaleDateString("vi-VN")}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Trạng thái:</b> <span>${data.status == 0 ? "Đang sử dụng" : 1 ? "Có thể sử dụng" : "Hỏng"}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Ghi chú:</b> <span>${data.note}</span> 
+                                        </div>
+                                    </div>
+                                    <div class="row my-3 align-items-center justify-content-center">
+                                        <b class="col-12 c-black text-center">
+                                            Lịch sử thiết bị
+                                        </b>
+                                    </div>
+                                    <div class="row  align-items-center " >
+                                        ${await GetHistoryByIdDevice(_id)}
+                                    </div>
+                                    <div class="row my-3 align-items-center justify-content-center">
+                                        <b class="col-12 c-black text-center">
+                                            Tạo ghi chú thu hồi (nếu có)
+                                        </b>
+                                    </div>
+                                    <div class="row my-3 justify-content-center">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Ghi chú:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button"   class="btn btn-danger px-4 py-2" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" onclick="revokeDevice('${_id}','data-Detail')" class="btn btn-warning px-4 py-2">Thu hồi</button>
+                            </div>
+                        </div>
+                        </div>
+                        `
+            $('#data-Detail').html(wacomTheme)
+            $('#data-Detail').modal('toggle')
+
+        }
+
+        async function webcamModal(_id, staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            if (!staff) {
+                //////
+                return
+            }
+            const data = staff.devices.find(_ => _._id == _id)
+            let webcamTheme = ""
+            webcamTheme += `
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center c-black f-s-22">
+
+                                <!-- <h1 class="modal-title fs-5" id="">Case</h1> -->
+                                <div>Chi tiết Webcam</div>
+                                
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body f-s-18" id="">
+                                <div class="container">
+                                    <div class="row justify-content-end my-3">
+                                        <a class="col-sm-5 col-lg-4 col text-decoration-none text-end" href="${GVS.GetDetailDevice}${_id}">
+                                            Trang chi tiết của thiết bị
+                                            <i class="fa fa-sharp fa-solid fa-forward"></i>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Tên thiết bị:</b> <span>${data.name}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3"> Loại thiết bị:</b> <span>${data.type}</span>
+                                            </div>
+                                            <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Địa chỉ thiết bị:</b> <span>${data.location.address}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Tầng đặt thiết bị:</b> <span>${data.location.floor}</span>
+                                            </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                                <b class="c-black my-3">Nhà cung cấp:</b> <span>${data.supplier.name}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Giá theo hóa đơn:</b> <span>${data.billPrice}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Tổng giá trị:</b> <span>${data.totalPrice}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Thời hạn bảo hành:</b> <span>${new Date(data.expirationDate).toLocaleDateString("vi-VN")}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Ngày tạo:</b> <span>${new Date(data.createdAt).toLocaleDateString("vi-VN")}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Ngày cập nhật gần đây:</b> <span>${new Date(data.updatedAt).toLocaleDateString("vi-VN")}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Trạng thái:</b> <span>${data.status == 0 ? "Đang sử dụng" : 1 ? "Có thể sử dụng" : "Hỏng"}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Ghi chú:</b> <span>${data.note}</span> 
+                                        </div>
+                                    </div>
+                                    <div class="row my-3 align-items-center justify-content-center">
+                                        <b class="col-12 c-black text-center">
+                                            Lịch sử thiết bị
+                                        </b>
+                                    </div>
+                                    <div class="row  align-items-center " >
+                                        ${await GetHistoryByIdDevice(_id)}
+                                    </div>
+                                    <div class="row my-3 align-items-center justify-content-center">
+                                        <b class="col-12 c-black text-center">
+                                            Tạo ghi chú thu hồi (nếu có)
+                                        </b>
+                                    </div>
+                                    <div class="row my-3 justify-content-center">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Ghi chú:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button"   class="btn btn-danger px-4 py-2" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" onclick="revokeDevice('${_id}','data-Detail')" class="btn btn-warning px-4 py-2">Thu hồi</button>
+                            </div>
+                        </div>
+                        </div>
+                        `
+            $('#data-Detail').html(webcamTheme)
+            $('#data-Detail').modal('toggle')
+
+        }
+
+        async function headphoneModal(_id, staffId) {
+            const staff = datas.find(_ => _.staff._id == staffId)
+            if (!staff) {
+                //////
+                return
+            }
+            const data = staff.devices.find(_ => _._id == _id)
+            let headphoneTheme = ""
+            headphoneTheme += `
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center c-black f-s-22">
+
+                                <!-- <h1 class="modal-title fs-5" id="">Case</h1> -->
+                                <div>Chi tiết Headphone</div>
+                                
+                                <button type="button" onclick="removeData('data-Detail')" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body f-s-18" id="">
+                                <div class="container">
+                                    <div class="row justify-content-end my-3">
+                                        <a class="col-sm-5 col-lg-4 col text-decoration-none text-end" href="${GVS.GetDetailDevice}${_id}">
+                                            Trang chi tiết của thiết bị
+                                            <i class="fa fa-sharp fa-solid fa-forward"></i>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Tên thiết bị:</b> <span>${data.name}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3"> Loại thiết bị:</b> <span>${data.type}</span>
+                                            </div>
+                                            <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Địa chỉ thiết bị:</b> <span>${data.location.address}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Tầng đặt thiết bị:</b> <span>${data.location.floor}</span>
+                                            </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                                <b class="c-black my-3">Nhà cung cấp:</b> <span>${data.supplier.name}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Giá theo hóa đơn:</b> <span>${data.billPrice}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Tổng giá trị:</b> <span>${data.totalPrice}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Thời hạn bảo hành:</b> <span>${new Date(data.expirationDate).toLocaleDateString("vi-VN")}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Ngày tạo:</b> <span>${new Date(data.createdAt).toLocaleDateString("vi-VN")}</span>
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Ngày cập nhật gần đây:</b> <span>${new Date(data.updatedAt).toLocaleDateString("vi-VN")}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                            <b class="c-black my-3">Trạng thái:</b> <span>${data.status == 0 ? "Đang sử dụng" : 1 ? "Có thể sử dụng" : "Hỏng"}</span> 
+                                        </div>
+                                        <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                                           <b class="c-black my-3">Ghi chú:</b> <span>${data.note}</span> 
+                                        </div>
+                                    </div>
+                                    <div class="row my-3 align-items-center justify-content-center">
+                                        <b class="col-12 c-black text-center">
+                                            Lịch sử thiết bị
+                                        </b>
+                                    </div>
+                                    <div class="row  align-items-center " >
+                                        ${await GetHistoryByIdDevice(_id)}
+                                    </div>
+                                    <div class="row my-3 align-items-center justify-content-center">
+                                        <b class="col-12 c-black text-center">
+                                            Tạo ghi chú thu hồi (nếu có)
+                                        </b>
+                                    </div>
+                                    <div class="row my-3 justify-content-center">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Ghi chú:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button"   class="btn btn-danger px-4 py-2" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" onclick="revokeDevice('${_id}','data-Detail')" class="btn btn-warning px-4 py-2">Thu hồi</button>
+                            </div>
+                        </div>
+                        </div>
+                        `
+            $('#data-Detail').html(headphoneTheme)
+            $('#data-Detail').modal('toggle')
+
+        }
+        function renderConnector(data) {
+            let connectorTheme = ""
+            let elmConnector = data.attributes.connector
+            if (elmConnector.length > 1) {
+                var connectorArr = elmConnector.join(" , ")
+            } else {
+                var connectorArr = elmConnector.join("")
+            }
+            connectorTheme += `
+                <div class="col-sm-6 d-flex justify-content-between align-items-center col">
+                    <b class="c-black my-3">Cổng kết nối:</b> <span>${connectorArr}</span> 
+                </div>
+                `
+            return connectorTheme
+        }
+
+        // The above code defines a function called `renderVGAData` that takes in a `data` object as a parameter. The function loops through the `VGA` array in the `attributes` property of the `data` object and generates HTML code for each VGA element. The generated HTML code includes the VGA name, VRAM, and connector information. The function then returns the generated HTML code as a string.
+        function renderVGAData(data) {
+            let vgaTheme = ""
+            for (let i = 0; i < data.attributes.VGA.length; i++) {
+                const elmVGA = data.attributes.VGA[i];
+                if (elmVGA.connector.length > 1) {
+                    var connectorArr = elmVGA.connector.join(" , ")
+                } else {
+                    var connectorArr = elmVGA.connector.join("")
+                }
+                vgaTheme += `
+            <div class="col-sm-6 my-3 d-flex justify-content-between align-items-center col">
+                <b class="c-black">VGA:</b> 
+                <div>
+                    <p class="text-center c-black">VGA ${i + 1}</p>
+                    <p class="d-flex justify-content-between">  <span  class="c-black ">tên: &nbsp&nbsp&nbsp&nbsp&nbsp</span>      <span>${elmVGA.name}</span></p>
+                    <p class="d-flex justify-content-between">  <span class="c-black" >vram: &nbsp&nbsp&nbsp&nbsp&nbsp</span>      <span>${elmVGA.vram.length > 0 ? elmVGA.vram : "không có"}</span></p>
+                    <p class="d-flex justify-content-between">  <span class="c-black" >kết nối: &nbsp&nbsp&nbsp&nbsp&nbsp</span>      <span> ${" " + connectorArr}</span></p>
+                </div> 
+            </div>
+            `
+            }
+            return vgaTheme
+
+        }
+        // The above code defines a function called `renderHardDrivesData` that takes in a `data` parameter. The function loops through the `hardDrives` array in the `attributes` object of the `data` parameter and generates HTML code for each hard drive. The generated HTML code includes the type, brand, and size of each hard drive. The function then returns the generated HTML code as a string.
+        function renderHardDrivesData(data) {
+            let hardDrivesTheme = ""
+            for (let i = 0; i < data.attributes.hardDrives.length; i++) {
+                const elmHDR = data.attributes.hardDrives[i];
+                hardDrivesTheme += `
+            <div class="col-sm-6 my-3 d-flex justify-content-between align-items-center col">
+                <b class="c-black">Ổ cứng:</b> 
+                <div>
+                    <p class="text-center c-black">Ổ số ${i + 1}</p>
+                    <p class="d-flex justify-content-between">  <span  class="c-black ">Loại: &nbsp&nbsp&nbsp&nbsp&nbsp</span>      <span>${elmHDR.type}</span></p>
+                    <p class="d-flex justify-content-between">  <span class="c-black" >Hãng: &nbsp&nbsp&nbsp&nbsp&nbsp</span>      <span>${elmHDR.brand.length > 0 ? elmHDR.brand : " "}</span></p>
+                    <p class="d-flex justify-content-between">  <span class="c-black" >Dung lượng: &nbsp&nbsp&nbsp&nbsp&nbsp</span>      <span>${elmHDR.size}</span></p>
+                </div> 
+            </div>
+            `}
+            return hardDrivesTheme
+
+        }
+        // The above code defines a function called `renderRamData` that takes in a parameter called `data`. The function loops through the `ram` attribute of the `data` object and creates a string of HTML elements that display the RAM information. The resulting HTML string is returned by the function.
+        function renderRamData(data) {
+            let ramTheme = ""
+            for (let i = 0; i < data.attributes.ram.length; i++) {
+                const elmRAM = data.attributes.ram[i];
+                ramTheme += `
+                    <p class="d-flex flex-cols justify-content-between">  <span  class="c-black ">Ram ${i + 1}: &nbsp&nbsp&nbsp&nbsp&nbsp</span>      <span>${elmRAM}</span></p>
+            `}
+            return ramTheme
+        }
+        // The above code defines a function called `removeData` that takes an argument `_id`. Within the function, it uses jQuery to select the element with the ID specified by the `_id` argument and empties its contents. This function can be used to remove the contents of an HTML element with a specific ID.
+        function removeData(_id) {
+            $(`#${_id}`).empty()
+        }
+        async function GetHistoryByIdDevice(id_device) {
+            var result = await $.ajax({
+                url: GVS.GetHistoryByIdDevice + `${id_device}`,
+                method: "POST",
+            })
+            let html = ""
+            result.metadata.forEach(elm => {
+
+                html += `
+            <div class="col-sm-6 col">
+                <div class="d-flex justify-content-between my-2"><b class="c-black">${elm.type == 1 ? "Bàn giao cho:" : "Thu hồi của:"}</b> <span>${elm.staff.name}</span></div>
+                <div class="d-flex justify-content-between my-2"><b class="c-black">${elm.type == 1 ? "Bàn giao bởi:" : "Thu hồi bởi:"}&nbsp&nbsp&nbsp&nbsp&nbsp</b> <span>${elm.user.name}</span></div>
+                <div class="d-flex justify-content-between my-2"><b class="c-black">${elm.type == 1 ? "Ngày bàn giao:" : "Ngày thu hồi"}&nbsp&nbsp&nbsp&nbsp&nbsp</b> <span>${new Date(elm.createdAt).toLocaleDateString("vi-VN")}</span></div>
+            </div>
+            `
+            });
+            return html
+        }
+        const id = window.location.pathname.split('/').pop();
+        function renderOptionHandover() {
+            renderSelectOptionStaff()
+            $.ajax({
+                url: GVS.GetAllInventories,
+                method: "GET",
+                success: (res) => {
+                    if (res.success == 1) {
+                        renderSelectOptionHandover('case', res.metadata)
+                        renderSelectOptionHandover('monitor', res.metadata)
+                        renderSelectOptionHandover('wacom', res.metadata)
+                        renderSelectOptionHandover('webcam', res.metadata)
+                        renderSelectOptionHandover('headphone', res.metadata)
+                    }
+                    else {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "error",
+                            confirmButtonText: "OK",
+                        })
+                    }
+                }
+            })
+        }
+        function renderSelectOptionStaff() {
+            $.ajax({
+                url: GVS.GetStaffToHanover,
+                method: "GET",
+                success: (data) => {
+                    let html = ""
+                    html += `<option value = "">Chọn nhân viên bàn giao</option>`
+                    data.metadata.forEach(elm => {
+                        html += `
+                        <optgroup class=" w-100" label="${elm._id}">                                                                                              `
+                        for (let i = 0; i < elm.staff.length; i++) {
+                            const element = elm.staff[i];
+                            html += `
+                            <option class="p-s-2" value="${element._id}">${element.name} - ${element.company} - ${element.job} - ${element.location.floor}</option>
+                        </optgroup>`
+                        }
+                    });
+                    $('#handover_staff').html(html)
+                }
+            })
+        }
+        function renderSelectOptionHandover(typeDevice, data) {
+            data.forEach((device) => {
+                if (device.type == typeDevice) {
+                    let html = '';
+                    html += `<option value = "">Chọn ${typeDevice} bàn giao</option>`
+                    device.device.forEach((element) => {
+                        if (parseInt(element.quantity) != 0) {
+                            html += `<option value="${element.device._id}">${element.device.attributes && element.device.attributes.num ? element.device.attributes.num : ""} - ${element.device.name}</option>`
+                        }
+                    })
+                    $('#handover_device_' + `${typeDevice}`).html(html)
+
+                }
+            })
+        }
+        $(document).ready(async () => {
+            placeholderSelectHandoverDevice('case')
+            placeholderSelectHandoverDevice('monitor')
+            placeholderSelectHandoverDevice('webcam')
+            placeholderSelectHandoverDevice('wacom')
+            placeholderSelectHandoverDevice('headphone')
+
+            $('#handover_staff').select2();
+            $('#handover_staff').select2({
+                dropdownParent: $('#handover'),
+            });
+            // checkStaffExsis()
+        });
+        function placeholderSelectHandoverDevice(typeDevice) {
+            $(`#handover_device_${typeDevice}`).select2();
+            $(`#handover_device_${typeDevice}`).select2({
+                dropdownParent: $('#handover'),
+                placeholder: `Chọn ${typeDevice} bàn giao`
+            });
+        }
+        function revokeDevice(deviceId, id_modal) {
+            const note = $('#floatingTextarea').val()
+            const id_device = deviceId
+            Swal.fire({
+                title: "Bạn có chắc chắn muốn thu hồi thiết bị này không?",
+                showDenyButton: true,
+                confirmButtonText: "Có",
+                denyButtonText: `Không`,
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: GVS.RevokeDevice,
+                        method: "POST",
+                        data: {
+                            deviceId: id_device,
+                            note
+                        },
+                        success: (data) => {
+                            if (data.success == 1) {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: data.message,
+                                    icon: "success",
+                                    confirmButtonText: "OK",
+                                }).then(() => {
+                                    removeData(id_modal)
+                                    $(`#${id_modal}`).modal('toggle')
+                                }).then(async () => {
+                                    await renderListDevice()
+                                })
+                            } else {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: data.message,
+                                    icon: "error",
+                                    confirmButtonText: "OK",
+                                })
+                            }
+                        }
+                    })
+                }
+            })
+
+        }
+        function changePreviewSelect(e, nameSelect) {
+            if ($(e).val() != "") {
+                if (nameSelect == "staff") {
+                    $(`#preview_select_${nameSelect} `).text($(`#handover_${nameSelect} option:selected`).text())
+                }
+                else {
+                    var selectedTexts = $(`#handover_device_${nameSelect}`).find('option:selected').map(function () {
+                        return $(this).text();
+                    }).get();
+                    $(`#preview_select_${nameSelect} `).text(selectedTexts.join(" , "))
+                }
+            }
+            else {
+                $(`#preview_select_${nameSelect}`).text("")
+            }
+
+
+        }
+        function checkDataHandover() {
+            const vlaueStaff = $('#handover_staff option:selected').val()
+            if (vlaueStaff == "") {
+                Swal.fire({
+                    title: "Thông báo!",
+                    text: "Vui lòng chọn nhân viên muốn bàn giao!",
+                    icon: "error",
+                    confirmButtonText: "OK",
+                })
+            }
+            else {
+                let ids = []
+                ids = [...ids, ...$('#handover_device_case').val(), ...$('#handover_device_monitor').val(), ...$('#handover_device_wacom').val(), ...$('#handover_device_headphone').val(), ...$('#handover_device_webcam').val()]
+                const valueNote = $('#note_handover').val()
+
+                if (ids.length != 1) {
+                    handoverDeviceAll(vlaueStaff, ids, valueNote)
+                }
+                else {
+                    handoverDevice(vlaueStaff, ids[0], valueNote)
+
+                }
+            }
+        }
+        function handoverDeviceAll(staff, ids, note) {
+            $.ajax({
+                url: GVS.handoverDeviceAll,
+                method: "POST",
+                header: {
+                    "Content-Type": "application/json"
+                },
+                data: {
+                    staff: staff,
+                    ids: ids,
+                    note: note
+                },
+                success: (res) => {
+                    if (res.success == 1) {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "success",
+                            confirmButtonText: "OK",
+                        }).then(() => {
+                            $(`#handover`).modal('toggle')
+                        }).then(async () => {
+                            await renderListDevice()
+                        })
+                    } else {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "error",
+                            confirmButtonText: "OK",
+                        })
+                    }
+                }
+
+            })
+        }
+        function handoverDevice(staff, id, note) {
+            $.ajax({
+                url: GVS.Hanover,
+                method: "POST",
+                header: {
+                    "Content-Type": "application/json"
+                },
+                data: {
+                    staff: staff,
+                    deviceId: id,
+                    note: note
+                },
+                success: (res) => {
+                    if (res.success == 1) {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "success",
+                            confirmButtonText: "OK",
+                        }).then(() => {
+                            $(`#handover`).modal('toggle')
+                        }).then(async () => {
+                            await renderListDevice()
+                            deleteInput("note_handover")
+                        })
+                    } else {
+                        Swal.fire({
+                            title: "Thông báo!",
+                            text: res.message,
+                            icon: "error",
+                            confirmButtonText: "OK",
+                        })
+                    }
+                }
+
+            })
+        }
+        function deleteInput(id) {
+            $(".js-example-basic-multiple").val([]).trigger('change')
+            $("#preview_select_staff").text("")
+
+            $(`#${id}`).val("")
+        }
+        function revokeAllDevice(idStaff, name, company, job) {
+            Swal.fire({
+                title: "Bạn có chắc chắn muốn thu hồi thiết bị này không?",
+                showDenyButton: true,
+                confirmButtonText: "Có",
+                denyButtonText: `Không`,
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: GVS.revokeDeviceAll,
+                        method: "POST",
+                        header: {
+                            "Content-Type": "application/json"
+                        },
+                        data: {
+                            idStaff: idStaff,
+                            note: `Thu hồi tất cả thiết bị của ${name}-${company}-${job}`
+                        },
+                        success: (res) => {
+                            if (res.success == 1) {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: res.message,
+                                    icon: "success",
+                                    confirmButtonText: "OK",
+                                })
+                                    .then(async () => {
+                                        await renderListDevice()
+                                    })
+                            } else {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: res.message,
+                                    icon: "error",
+                                    confirmButtonText: "OK",
+                                })
+                            }
+                        }
+
+                    })
+                }
+            })
+
+        }
+    </script>
+
+</html>

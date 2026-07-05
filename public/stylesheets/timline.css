@@ -1,0 +1,195 @@
+:root {
+    --white: #fff;
+    --black: #323135;
+}
+
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .section SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section {
+    padding: 50px 0;
+}
+
+.section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section h1 {
+    font-size: 2.5rem;
+    line-height: 1.25;
+}
+
+.section h2 {
+    font-size: 1.3rem;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+    position: relative;
+    white-space: nowrap;
+    max-width: 80%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.before-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.timeline .ol_timeline::-webkit-scrollbar {
+    height: 8px;
+}
+
+.timeline .ol_timeline::-webkit-scrollbar-thumb,
+.timeline .ol_timeline::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+
+.timeline .ol_timeline::-webkit-scrollbar-thumb {
+    background: rgb(31, 179, 50)
+        /* background: radial-gradient(100.97% 1071199.98% at 100.97% 50.06%, #9AFFFF 0%, #60AAC6 0.01%, #002778 100%); */
+
+}
+
+.timeline .ol_timeline::-webkit-scrollbar-track {
+    /* background: #7B50F3 */
+    background: radial-gradient(100.97% 1071199.98% at 100.97% 50.06%, #9AFFFF 0%, #60AAC6 0.01%, #002778 100%);
+
+}
+
+.timeline .ol_timeline {
+    height: 100%;
+    font-size: 0;
+    padding: 320px 0;
+    transition: all 1s;
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: #3F52FF
+}
+
+.timeline .ol_timeline .li_timelineHistory {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    width: 300px;
+    height: 6px;
+    background: radial-gradient(100.97% 1071199.98% at 100.97% 50.06%, #9AFFFF 0%, #74E6FF 0.01%, #60AAC6 100%);
+    scroll-snap-align: start;
+}
+
+.timeline .ol_timeline .li_timelineHistory:not(:first-child) {
+    margin-left: 0px;
+}
+
+.img_arrow_even {
+    position: absolute;
+    bottom: 18px;
+    right: 46%;
+    width: 16px;
+}
+
+.img_arrow_odd {
+    position: absolute;
+    top: 13px;
+    right: 46%;
+}
+
+.timeline .ol_timeline .li_timelineHistory::before {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(0%);
+    bottom: 0;
+    width: 17px;
+    height: 17px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #00246E;
+    z-index: 1;
+}
+
+.timeline .ol_timeline .li_timelineHistory:last-child {
+    width: 330px;
+}
+
+.ol_timeline .li_timelineHistory:last-child::after {
+    content: "";
+    position: absolute;
+    background-image: url(/images/arrowRight.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    right: -11px;
+    top: -7px;
+}
+
+.timeline .ol_timeline .li_timelineHistory .div_timeline {
+    overflow-y: auto;
+    position: absolute;
+    left: calc(0% + 7px);
+    width: 300px;
+    padding: 15px;
+    font-size: 1rem;
+    white-space: normal;
+    color: white;
+    background: linear-gradient(0deg, #00246E -16.87%, #2694BE 95.68%);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 11px 0px #64FFFF;
+    border-radius: 13px;
+}
+
+/* Ẩn thanh cuộn dọc */
+.timeline .ol_timeline .li_timelineHistory .div_timeline::-webkit-scrollbar {
+    width: 0.25em;
+    /* Chiều rộng của thanh cuộn */
+}
+
+.timeline .ol_timeline .li_timelineHistory .div_timeline::-webkit-scrollbar-track {
+    background-color: linear-gradient(0deg, #00246E -16.87%, #2694BE 95.68%);
+    /* Màu nền của vùng chứa thanh cuộn */
+}
+
+.timeline .ol_timeline .li_timelineHistory .div_timeline::-webkit-scrollbar-thumb {
+    background-color: linear-gradient(0deg, #00246E -16.87%, #2694BE 95.68%);
+    /* Màu của thanh cuộn */
+}
+
+.timeline .ol_timeline .li_timelineHistory .div_timeline::-webkit-scrollbar-thumb:hover {
+    background-color: linear-gradient(0deg, #00246E -16.87%, #2694BE 95.68%);
+    /* Màu của thanh cuộn khi di chuột qua */
+}
+
+.timeline .ol_timeline .li_timelineHistory:nth-child(odd) .div_timeline {
+    top: -25px;
+    transform: translateY(-100%);
+    /* border-radius: 10px 10px 10px 0; */
+}
+
+.timeline .ol_timeline .li_timelineHistory:nth-child(even) .div_timeline {
+    top: calc(100% + 25px);
+}
+
+.timeline time {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #3F52FF
+}

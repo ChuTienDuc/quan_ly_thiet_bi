@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./header.html") %>
+
+    <body id="body-pd" class="body-pd">
+        <%- include("./nav.html") %>
+            <div class="height-100 ">
+                <main class="content p-0 pt-4">
+                    <div class="container-fluid p-0">
+                        <div class="row mt-5 pt-0 py-3 justify-content-between ">
+                            <div class="col-5" style="width: max-content;">
+                                <h3 class="color_header">Quản lý công việc</h3>
+                            </div>
+                            <!-- <button class="col-1 btn bg-color-all c-white" onclick="renderOptionSupplier()"
+                                data-bs-toggle="modal" data-bs-target="#addJDP"
+                                style="width: max-content; border-radius: 29px;">Thêm công việc</button> -->
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row mt-3 justify-content-center">
+                            <div class="col-4">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Công việc</th>
+                                            <th><button class="btn btn_add d-flex" onclick="addJDP('job',this)"><i
+                                                        class="fa fa-plus text-white"></i></button></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="job_table">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-4" style="word-break: break-word;
+                            overflow-wrap: break-word;
+                            white-space: normal;">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Vị trí</th>
+                                            <th><button class="btn btn_add d-flex" onclick="addJDP('position',this)"><i
+                                                        class="fa fa-plus text-white"></i></button></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="position_table">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-4">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Phòng ban</th>
+                                            <th><button class="btn btn_add d-flex"
+                                                    onclick="addJDP('department',this)"><i
+                                                        class="fa fa-plus text-white"></i></button></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="department_table">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+
+            <script>
+                $(document).ready(async () => {
+                    await renderData()
+                })
+                function escapeHTML(str) {
+                    return GVS.escapeHTML(str);
+                }
+                function renderHtmlTable(data, name) {
+                    var html = ''
+                    data.metadata.forEach((datas, index) => {
+                        if (datas.status == 1) {
+                            html += `
+                        <tr> 
+                            <td id = '${name}_${index}'>${escapeHTML(datas.name)}</td>
+                            <td><i class="fa fa-edit cursor-pointer text-primary" style="font-size: 1.25rem;" onclick = "updateJDP('${name}','${datas._id}',${index},'${escapeHTML(datas.name)}')"></i></td>
+                            <td><i class="fa fa-trash text-danger cursor-pointer" style="font-size: 1.25rem;" onclick = "deleteJDP('${name}','${datas._id}')"></i></td>
+                        </tr>`
+                        }
+
+                    });
+                    return html
+                }
+                async function renderData() {
+                    var dataJob = await $.ajax(GVS.setting(GVS.GETALLJOB, 'GET'))
+                    var dataDepartment = await $.ajax(GVS.setting(GVS.GETALLDEPARTMENT, 'GET'))
+                    var dataPosition = await $.ajax(GVS.setting(GVS.GETALLPOSITION, 'GET'))
+                    $("#job_table").html(renderHtmlTable(dataJob, "job"))
+                    $("#department_table").html(renderHtmlTable(dataDepartment, 'department'))
+                    $("#position_table").html(renderHtmlTable(dataPosition, 'position'))
+                    setTimeout(() => {
+                        document.querySelectorAll("td[id^='name_']").forEach(td => {
+                            td.textContent = td.textContent;
+                        });
+                    }, 0);
+
+                }
+
+                function addJDP(name, e) {
+                    $(e).attr("onclick", "")
+                    $(`#${name}_table`).prepend(`
+                    <tr>
+                            <td><input class ="form-control" type="text" id="name_${name}_create" onblur = "create('${name}')"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>`)
+                }
+
+                function create(name) {
+                    var dataName = $(`#name_${name}_create`).val()
+                    const meta = document.querySelector('meta[name="csrf-token"]');
+                    const csrfToken = meta ? meta.getAttribute('content') : null;
+                    const data = {
+                        name: dataName,
+                    }
+                    $.ajax({
+                        url: `/api/${name}`,
+                        method: "POST",
+                        headers: {
+                            'Content-Type': 'application/json',
+                            ...(csrfToken && { 'CSRF-Token': csrfToken }) // chỉ thêm nếu có token
+                        },
+                        data: JSON.stringify(data),
+
+
+                        success: (res) => {
+                            if (res.success == 1) {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: res.message,
+                                    icon: "success",
+                                    confirmButtonText: "OK",
+                                    timer: 1500,
+                                }).then((result) => {
+                                    renderData()
+
+                                });
+                            } else {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: res.message,
+                                    icon: "error",
+                                    confirmButtonText: "OK",
+                                });
+                            }
+                        }
+                    })
+                }
+                function updateJDP(name, _id, index, value) {
+                    $(`#${name}_${index}`).html(`<input class ="form-control" type="text" id="name_${name}_update" onblur = "update('${name}','${_id}')">`)
+                    $(`#name_${name}_update`).val(value)
+                }
+                function update(name, _id) {
+                    var nameUpdate = $(`#name_${name}_update`).val()
+                    $.ajax({
+                        url: `/api/${name}/${_id}`,
+                        method: "PATCH",
+                        data: {
+                            name: nameUpdate,
+                        },
+                        success: (res) => {
+                            if (res.success == 1) {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: res.message,
+                                    icon: "success",
+                                    confirmButtonText: "OK",
+                                    timer: 1500,
+                                }).then((result) => {
+                                    renderData()
+                                    // window.location.href = "/api/job/view"
+                                });
+                            } else {
+                                Swal.fire({
+                                    title: "Thông báo!",
+                                    text: res.message,
+                                    icon: "error",
+                                    confirmButtonText: "OK",
+                                });
+                            }
+                        }
+                    })
+                }
+                function deleteJDP(name, id) {
+                    Swal.fire({
+                        title: "Bạn có chắc chắn muốn xóa không?",
+                        showDenyButton: true,
+                        confirmButtonText: "Có",
+                        denyButtonText: `Không`,
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            $.ajax({
+                                url: `/api/${name}/${id}`,
+                                method: "PATCH",
+                                data: {
+                                    status: 0,
+                                },
+                                success: (res) => {
+                                    if (res.success == 1) {
+                                        Swal.fire({
+                                            title: "Thông báo!",
+                                            text: res.message,
+                                            icon: "success",
+                                            confirmButtonText: "OK",
+                                            timer: 1500,
+                                        }).then((result) => {
+                                            renderData()
+
+                                            // window.location.href = "/api/job/view"
+                                        });
+                                    } else {
+                                        Swal.fire({
+                                            title: "Thông báo!",
+                                            text: res.message,
+                                            icon: "error",
+                                            confirmButtonText: "OK",
+                                        });
+                                    }
+                                }
+                            })
+                        }
+
+                    })
+
+                }
+
+            </script>
+    </body>
+
+</html>

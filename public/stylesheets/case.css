@@ -1,0 +1,69 @@
+table td {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+.circle_VGA{
+    background-color: #0085FF;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: 30%;
+}
+/* #addDevice .form-control {
+    color: #163EB1;
+    border: none;
+    border-bottom: 2px solid #C7C7C7;
+    border-radius: 0;
+}
+#addDevice .form-control:hover {
+    border-bottom: 2px solid #0085FF;
+}
+
+#addDevice .form-control:focus {
+    color: #163EB1;
+    box-shadow: none;
+    border-color: #C7C7C7;
+}
+#addDevice #supplier_addcase.form-select{
+    border: none;
+    border-bottom: 2px solid #C7C7C7;
+    border-radius: 0;
+    color: #163EB1;
+}
+#addDevice .btn_add{
+    background: linear-gradient(180deg, #0085FF 0%, #00246E 100%);
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    color: #fff !important;
+}
+#addDevice .i_remove{
+    cursor: pointer;
+    font-size: 10px;
+    position: absolute;
+    top: -15%;
+    right: 9%;
+    background: linear-gradient(180deg, #3F3DC9 0%, #2C74E0 100%);
+    padding: 4px;
+    border-radius: 3px;
+}
+#addDevice #supplier_addcase.form-select:focus{
+    outline: none;
+    box-shadow: none;
+}
+#addDevice .form_hardDrives{
+    border: 1px solid #C7C7C7;
+    border-radius: 3px;
+    color: #163EB1;
+}
+#addDevice .form-control:disabled {
+    background-color: #c1c1c1;
+    opacity: 1;
+} */
